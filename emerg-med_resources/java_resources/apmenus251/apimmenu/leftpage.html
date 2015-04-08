@@ -1,0 +1,44 @@
+
+<HTML>
+<HEAD>
+<link REL=stylesheet HREF=exstyle.css TYPE=text/css>
+</head>
+
+<BODY bgColor=#dddddd leftmargin=0>
+<p><span class=bmtext>leftpage.html</span></p>
+
+<applet code="apImageMenu" Archive="apImageMenu.jar" Width = "144" Height = "204" mayscript>
+<param name="Copyright" value="Apycom Software - www.apycom.com">
+<param name="alignText" value="center">
+<param name="backColor" value="ffffff">
+<param name="backHighColor" value="ffffff">
+<param name="fontColor" value="0">
+<param name="fontHighColor" value="FFFFFF">
+<param name="defaultImage" value="pix/bt2.gif,pix/bt1.gif,pix/bt3.gif">
+<param name="font" value="Courier,11,0">
+<param name="javascript:1" value="changeAll()">
+<param name="menuItems" value="
+{Applet,index.html,_parent}
+{_,_,_}
+{Main in Main,mainpage.html,main_wnd} 
+{Top in Main,toppage.html,main_wnd} 
+{Left in Main,leftpage.html,main_wnd}
+{Top in Top,toppage.html,top_wnd}
+{Main in Top,mainpage.html,top_wnd}
+{Left in Top,leftpage.html,top_wnd}
+{Change All,javascript:1,_}
+{_,_,_}
+{Previous,ex4.html,_parent}
+{Index,../index.html,_parent}
+">
+</APPLET> 
+<script language="Javascript">
+function changeAll()
+{
+  open('mainpage.html','left_wnd');
+  open('leftpage.html','main_wnd');
+  open('leftpage.html','top_wnd');
+}
+</script>
+</BODY>
+</HTML>

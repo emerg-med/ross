@@ -1,0 +1,13 @@
+Birmingham City Hospital NHS Trust,Dudley Road,Birmingham,B18 7QH,0121 554 3801,0121 523 0951
+Burton District Hospital,Burton-on-Trent,Staffordshire,DE13 0RB,01283 566333
+Coventry & Warwickshire Hospital,Coventry,West Midlands,CV1 4FH,01203 224055
+George Eliot Hospital,Nuneaton,Warwickshire,CV10 7DJ,(024) 76351351,(024) 76865257
+Hereford County Hospital,Hereford,Herefordshire,HR1 2ER,01432 355444,01432 364055
+New Cross Hospital,Wolverhampton,West Midlands,WV10 0QP,01902 307999
+North Staffs Hospital Trust,Stoke-on-Trent,Staffordshire,ST4 7PA,01782 715444
+Royal Shrewsbury Hospital,Shrewsbury,Shropshire,SY3 8XQ,01743 261000,01743 261006
+Russell's Hall Hospital,Dudley,West Midlands,DY1 2HQ,01384 456111,01384 244051
+Stafford District General Hospital,Stafford,Staffordshire,ST16 3SA,01785 257731,01785 245211
+Warwick Hospital,Warwick,Warwickshire,CV34 5BW,01926 495321,01926 403715
+Worcester Royal Infirmary,Worchester,Worcestershire,WR1 3AS,01905 763333,01905 726965
+The Queen Elizabeth Hospital,Edgbaston,Birmingham,B15 2TH,0121 472 1311

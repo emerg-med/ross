@@ -1,0 +1,3 @@
+put printcap into /etc
+put the lp files into /var/spool/lpd
+put rhs into usr/lib

@@ -1,0 +1,93 @@
+<?php
+#### remember that all references in this file are relative to the java file which executes it
+
+print "<TR><TD VALIGN=top>";
+
+print "<applet codebase='../meditute/java' Code=apPopupMenu Archive= apPopupMenu.jar Width=100% Height=20 MAYSCRIPT>
+<param name=\"key\" value=\"aP226392Ob9\">
+<param name=\"Copyright\" value=\"Apycom Software - www.apycom.com\">
+<param name=\"isHorizontal\" value=\"true\">
+<param name=\"overSound\" value=\"pix/bell.au\">
+<param name=\"clickSound\" value=\"pix/kap2.au\">
+<param name=\"systemSubFont\" value=\"false\">
+<param name=\"solidArrows\" value=\"true\">
+<param name=\"buttonType\" value=\"1\">
+<param name=\"status\" value=\"link\">
+<param name=\"alignText\" value=\"left\">
+
+<param name=\"backColor\" value=\"003399\">
+<param name=\"backHighColor\" value=\"FFCC00\">
+<param name=\"fontColor\" value=\"CCCCFF\">
+<param name=\"fontHighColor\" value=\"000000\">
+
+<param name=\"font\" value=\"Arial,12,1\">";
+
+print "<param name=\"menuItems\" value=\"
+
+{home,../../meditutewww/index.php,_self}
+
+{start}
+{|start now!,../index.php,_meditute}
+
+{meditute.org}
+{|about meditutes}
+{||what is a meditute?,../../meditutewww/wwwdisplay.php?text=meditutefeatures,_self}
+{||how to use meditutes,../../meditutewww/wwwdisplay.php?text=howtouse,_self}
+{||recording your progress,../../meditutewww/wwwdisplay.php?text=recordingprogress,_self}
+{||theory & practice,../../meditutewww/wwwdisplay.php?text=theory,_self}
+{||writing meditutes,../../meditutewww/wwwdisplay.php?text=help,_self}
+
+{|about us}
+{||background,../../meditutewww/wwwdisplay.php?text=background,_self}
+{||goals,../../meditutewww/wwwdisplay.php?text=goals,_self}
+{||progress,../../meditutewww/wwwdisplay.php?text=progress,_self}
+{||how you can help,../../meditutewww/wwwdisplay.php?text=help,_self}
+
+{|legal notices}
+{||conditions of use,../../meditutewww/wwwdisplay.php?text=legal,_self}
+{||privacy,../../meditutewww/wwwdisplay.php?text=privacy,_self}
+{||copyright,../../meditutewww/wwwdisplay.php?text=copyright,_self}
+
+{|contact}
+{||contact meditute.org,../../meditutewww/wwwdisplay.php?text=contact,_self}
+
+
+{system}
+{|meditute server}
+{||what does it do?,../../meditutewww/wwwdisplay.php?text=serverwhat,_self}
+{||how does it work?,../../meditutewww/wwwdisplay.php?text=serverwork,_self}
+{||why was it developed,../../meditutewww/wwwdisplay.php?text=medituteanalysis,_self}
+{||why set up your own server?,../../meditutewww/wwwdisplay.php?text=serverwhysetup,_self}
+{||server requirements,../../meditutewww/wwwdisplay.php?text=req,_self}
+{||server setup,../../meditutewww/wwwdisplay.php?text=setup,_self}
+{||download now,../../meditutewww/wwwdisplay.php?text=serverdl,_self}
+
+{|development pack}
+{||what does it do?,../../meditutewww/wwwdisplay.php?text=devfeatures,_self}
+{||how do I install it?,../../meditutewww/wwwdisplay.php?text=devbenefits,_self}
+{||how do I use it,../../meditutewww/wwwdisplay.php?text=devanalysis,_self}
+{||download now,../../meditutewww/wwwdisplay.php?text=devdl,_self}
+
+{FAQ}
+{|how much does it cost?}
+{||open source software,../../meditutewww/wwwdisplay.php?text=oss,_self}
+{||how free is free?,../../meditutewww/wwwdisplay.php?text=free,_self}
+{||licence,../../meditutewww/wwwdisplay.php?text=licence,_self}
+{||why buy a licence,../../meditutewww/wwwdisplay.php?text=licencewhybuy,_self}
+
+{|server FAQ}
+{||meditute on windows,../../meditutewww/wwwdisplay.php?text=serverfaq,_self}
+{||I can't set up a server,../../meditutewww/wwwdisplay.php?text=serverfaq,_self}
+{||problems with meditue,../../meditutewww/wwwdisplay.php?text=serverfaq,_self}
+
+{|development pack FAQ}
+{||problems uploading,../../meditutewww/wwwdisplay.php?text=devpackfaq,_self}
+
+
+
+\"></applet>\n";
+
+print "</TD></TR>";
+
+
+?>

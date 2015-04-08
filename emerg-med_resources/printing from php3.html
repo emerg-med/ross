@@ -1,0 +1,434 @@
+<HTML>
+<HEAD>
+	<META NAME="description" CONTENT="Printer giving your newly acquired Linux OS trouble?  No problem!  Let Stephen guide you through the printing process.">
+	<META NAME="keywords" CONTENT="linux, printing, redhat, spool, print, printers,">
+	<META NAME="author" CONTENT="Steve Singer">
+	<META NAME="site" CONTENT="LinuxPlanet">
+	<META NAME="date" CONTENT="1999-05-31">
+	<META NAME="section" CONTENT="tutorials">
+	<META NAME="channel" CONTENT="Linux">
+
+	<TITLE>LinuxPlanet - Tutorials - A Guide To Linux Printing - Introduction</TITLE>
+</HEAD>
+
+
+<BODY BGCOLOR="#FFFFFF" LINK="#000000" VLINK="#000000" ALINK="#666666" >
+<!--* begin header *-->
+	<TABLE WIDTH="100%" CELLSPACING=0 CELLPADDING=5 BORDER=0 BGCOLOR="#FFFFCC">
+<TR>
+    <TD WIDTH="100%" COLSPAN=2 BGCOLOR="#FF6600"><FONT FACE="Verdana, Tahoma" SIZE=1 COLOR="#FFFFFF"><A HREF="http://www.mydesktop.com/"><FONT COLOR="#FFFFFF" STYLE="color: #FFFFFF"><B>Home</B></FONT></A> | <A HREF="http://www.winplanet.com/"><FONT COLOR="#FFFFFF" STYLE="color: #FFFFFF"><B>Windows</B></FONT></A> | <A HREF="http://www.linuxplanet.com/"><FONT COLOR="#FFCC00" STYLE="color: #FFCC00"><B>Linux</B></FONT></A> | <A HREF="http://www.hardwarecentral.com/"><FONT COLOR="#FFFFFF" STYLE="color: #FFFFFF"><B>Hardware</B></FONT></A> | <A HREF="http://www.techsupplies.com/"><FONT COLOR="#FFFFFF" STYLE="color: #FFFFFF"><B>Shopping</B></FONT></A> | <A HREF="http://www.webpedia.com/"><FONT COLOR="#FFFFFF" STYLE="color: #FFFFFF"><B>Web Building</B></FONT></A> | <A HREF="http://www.filefarm.com/"><FONT COLOR="#FFFFFF" STYLE="color: #FFFFFF"><B>Downloads</B></FONT></A> |<A HREF="http://www.virtualdr.com/"><FONT COLOR="#FFFFFF" STYLE="color: #FFFFFF"><B>Tech Support</B></FONT></A><BR></FONT></TD>
+</TR></TABLE>
+<TABLE WIDTH="100%" CELLSPACING=0 CELLPADDING=0 BORDER=0 BGCOLOR="#FFFFCC">
+<TR>
+<!--* begin logo *-->
+<TD WIDTH=320 ALIGN="left"><IMG SRC="/graphics/headers/linuxplanet.com.gif" WIDTH=320 HEIGHT=60 ALT="LinuxPlanet" BORDER=0>
+</TD>
+<!--* end logo *-->
+
+<!--* begin internet.commerce *-->
+<SCRIPT LANGUAGE="JavaScript">
+<!-- 
+var sid="mitnamdliw_wildmantim";
+
+
+function selectaplace(form) { //default is 0; what loads is determined by OPTION SELECTED VALUE
+//Wildman Tim and D. Mark Newman Copyright 1997
+//tailor to the browser capabilities (because MSIE 3.01 is Javascript crippled<g>)
+var appname= navigator.appName;             
+var appversion=parseInt(navigator.appVersion);
+
+         if (appname == "Netscape" && appversion >= 3){
+
+        var formindex=form.select1.selectedIndex;
+        var storage=form.select1.options[formindex].text;
+        if (form.select1.options[formindex].value != "none") {
+        var msg=storage+"                        You are now being transported to the -> "+storage;
+                for (var spot=0;spot<msg.length-storage.length;spot++) {
+                var x=msg.substring(spot,msg.length);
+                form.select1.options[formindex].text=x;
+                for(var d=0;d<150;d++) { };
+                }   
+                    
+//parent.INDEXPAGE.location=form.select1.options[formindex].value; 
+//loads into a frame called INDEXPAGE under the parent ( top) window
+
+//windowname.location=form.select1.options[formindex].value; 
+//loads into a named window. If there is not one by that name, it will be created
+
+document.location=form.select1.options[formindex].value; 
+//loads into the current window;
+
+                form.select1[formindex].text=storage;
+        } else  {
+                form.select1[formindex].text="Not a real option!";
+                for(var d=0;d<1250;d++) { };
+                form.select1[formindex].text=storage;
+        }
+}
+
+        else {//do this only for MSIE 3.0x
+ 
+        var formindex=form.select1.selectedIndex;
+        
+
+//parent.frame2.location=form.select1.options[formindex].value; 
+//loads into a named frame under the parent ( top) window
+
+//windowname.location=form.select1.options[formindex].value; 
+//loads into a named window. If there is not one by that name, it will be created
+
+document.location=form.select1.options[formindex].value; 
+//loads into the current window;}
+} }
+function makeMyMenu() {
+   document.write ('<TD WIDTH=200 ALIGN="left">');
+   document.write ('<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 BGCOLOR="#FFFFCC">');
+   document.write ('<FORM>');
+   document.write ('<TR>');
+   document.write ('<TD VALIGN="middle">');
+
+   document.write ('<IMG SRC="/graphics/icons/internetcommerce.gif" ALIGN="bottom" BORDER=0 WIDTH=126 HEIGHT=20><BR>');
+
+   document.write ('<select name="select1" onChange="selectaplace(this.form)" size=1>');
+   document.write ('<option value=http://www.internet.com/affiliates/index.html>Be an Affiliate');
+   document.write ('<option value=http://software.internet.com/>Software Store');
+   document.write ('<option value=http://events.internet.com/travel.html>Travel');
+   document.write ('<option value=http://affiliate.compubank.com/>Banking');
+   document.write ('<option value=http://jobs.internet.com/>Internet Jobs');
+   document.write ('<option value=http://www.on24.com/>A/V Network');
+   document.write ('<option value=https://www2.scheduleonline.com/login.html>Schedule Meetings');
+   document.write ('<option value=http://www.internet.com/postmaster.html>Rent E-mal Lists');
+   document.write ('<option value=http://www.fatbrain.com/home.html?from=YEJ244>Bookstore');
+      document.write ('<option value=http://www.easycart.net/ecarts/>Shopping Carts');
+   document.write ('<option value=http://www.internetwire.com/conference/internetworld/internetcom.htx>Press Release Dist.');
+   document.write ('<option value=http://click.avenuea.com/go/adclub_internet_060399mg_02/direct/01>Sell Ad Space');
+   document.write ('<option value=http://www.allnetresearch.com/>Internet Research');
+   document.write ('<option value=http://www.internet.comvc.com/>Venture Capital');
+   document.write ('<option value=http://www.newslinx.com/4linxinfo.html>Web Publishing');
+   document.write ('<option value=http://thelist.internet.com/>Find an ISP');
+   document.write ('</select>');
+   document.write ('</td></tr></form>');
+   document.write ('</TABLE>');
+   document.write ('</TD>');
+}
+while(sid!="mitnamdliw_wildmantim"){};
+                makeMyMenu();
+//-->
+</SCRIPT>
+<!--* end internet.commerce *-->
+
+<!--* begin search *-->
+<TD WIDTH="100%" ALIGN="RIGHT" VALIGN="middle">
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=1>
+<FORM METHOD="POST" ACTION="http://search.internet.com/cgi-bin/search.mydesktop.com">
+<TR>
+<TD ALIGN="right" VALIGN="middle"><FONT FACE="Verdana, Arial, Helvetica" SIZE="-1"><B>Search</B>&nbsp;</FONT></TD>
+<TD>  <INPUT TYPE="HIDDEN" NAME="method" VALUE="mainQuery">
+      <INPUT TYPE="HIDDEN" NAME="QuerySummaryCB" VALUE="querysummary">
+      <INPUT TYPE="HIDDEN" NAME="numresults" VALUE="0">
+      <INPUT TYPE="HIDDEN" NAME="batchhits" VALUE="10">
+      <INPUT TYPE="text"   NAME="query" SIZE="13">
+      <INPUT TYPE="hidden" NAME="DB44" VALUE="LinuxPlanet"></TD><TD><INPUT TYPE="image" HEIGHT=17 WIDTH=56 ALT="Search" VALUE="Search" HSPACE=2 SRC="/graphics/buttons/submit/globalsearch.gif" BORDER=0></TD>
+</TR>
+<TR>
+<TD>&nbsp;</TD>
+<TD COLSPAN=2 ALIGN="left"><FONT FACE="Verdana, Arial, Helvetica" SIZE="-2"><A HREF="http://search.internet.com/KnowServ/power_search.html">Power Search</A>&nbsp;|&nbsp;<A HREF="http://search.internet.com/KnowServ/help.html">Tips</A>&nbsp;</FONT></TD>
+</TR></FORM>
+</TABLE>
+</TD>
+<!--* end search *-->
+
+</TR>
+</TABLE>
+<!--* end header *-->
+
+<!--* begin page *-->
+<TABLE WIDTH="100%" CELLSPACING=0 CELLPADDING=0 BORDER=0>
+<TR>
+	<!--** begin left sidebar **-->
+	<TD WIDTH=120 VALIGN="top">
+		<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=120>
+		<TR>
+			<TD WIDTH=115 BGCOLOR="#FFFFCC"><IMG HEIGHT=1 WIDTH=115 SRC="/graphics/fill/clear.gif" BORDER=0></TD>
+			<TD WIDTH=5 BGCOLOR="#FFFFCC"><IMG HEIGHT=1 WIDTH=5 SRC="/graphics/fill/clear.gif" BORDER=0></TD>
+		</TR>
+		<!--*** begin Toolbar ***-->
+		<TR>
+			<TD COLSPAN=2 VALIGN="top" ALIGN="left" BGCOLOR="#FFFFCC"><IMG HEIGHT=5 WIDTH=1 SRC="/graphics/fill/clear.gif"><BR>
+<FONT FACE="Tahoma, Arial, Helvetica" SIZE=2>
+	<B>
+		&nbsp;<A HREF="/linuxplanet/"><FONT COLOR="#0033CC" STYLE="color: #0033CC">Front Door</FONT></A><BR>
+		&nbsp;<A HREF="http://discussions.linuxplanet.com/"><FONT COLOR="#0033CC" STYLE="color: #0033CC">Discussion</FONT></A><BR>
+<!-- 		&nbsp;<A HREF="/linuxplanet/interviews/"><FONT COLOR="#0033CC" STYLE="color: #0033CC">Interviews</FONT></A><BR> -->
+                &nbsp;<A HREF="http://www.linuxplanet.com/linuxplanet/misc/922/1/"><FONT COLOR="#0033CC" STYLE="color: #0033CC">LinuxEngine</FONT></A><BR>
+		&nbsp;<A HREF="/linuxplanet/opinions/"><FONT COLOR="#0033CC" STYLE="color: #0033CC">Opinions</FONT></A><BR>
+<!-- 		&nbsp;<A HREF="/linuxplanet/previews/"><FONT COLOR="#0033CC" STYLE="color: #0033CC">Previews</FONT></A><BR> -->
+		&nbsp;<A HREF="/linuxplanet/reports/"><FONT COLOR="#0033CC" STYLE="color: #0033CC">Reports</FONT></A><BR>
+		&nbsp;<A HREF="/linuxplanet/reviews/"><FONT COLOR="#0033CC" STYLE="color: #0033CC">Reviews</FONT></A><BR>
+		&nbsp;<A HREF="/linuxplanet/tutorials/"><FONT COLOR="#0033CC" STYLE="color: #0033CC">Tutorials</FONT></A><BR>
+		<BR>
+		&nbsp;<A HREF="http://www.virtualdr.com/forums/"><FONT COLOR="#0033CC" STYLE="color: #0033CC">Tech Support</FONT></A> <FONT COLOR="#009900">&#187;</FONT><BR>
+	</B>
+		<IMG SRC="/graphics/fill/clear.gif" HEIGHT=7 WIDTH=1 BORDER=0 ALT=""><BR>
+		<IMG SRC="/graphics/fill/clear.gif" HEIGHT=7 WIDTH=1 BORDER=0 ALT=""><BR>
+		&nbsp;<FONT SIZE=1 FACE="Verdana, Arial, Helvetica">Browse by <A HREF="/linuxplanet/subjects/"><FONT COLOR="#0033CC" STYLE="color: #0033CC">subject</FONT></A></FONT>.
+		<IMG SRC="/graphics/fill/clear.gif" HEIGHT=1 WIDTH=1 BORDER=0 ALT=""><BR>
+</FONT>
+</TD>
+			<TD></TD>
+		</TR>
+		<!--*** end Toolbar ***-->
+
+	  	<TR><TD BGCOLOR="#FFFFCC" COLSPAN=2 VALIGN="top"><IMG HEIGHT=14 WIDTH=1 SRC="/graphics/fill/clear.gif" BORDER=0></TD></TR>
+		<TR><TD COLSPAN=2 VALIGN="top" BGCOLOR="#666666"><IMG HEIGHT=1 WIDTH=1 SRC="/graphics/fill/clear.gif" BORDER=0></TD></TR>
+
+				<!--*** begin Free Newsletter ***-->
+		<TR>
+			<TD VALIGN="top" ALIGN="left">
+<CENTER><a target="_blank" href="/event.ng/Type=click&ProfileID=560&RunID=497&AdID=595&TagValues=222.271.313.604.778.961&FamilyID=1&GroupID=1&Redirect=http://www.internet.com"><img src="/ads/1999/05/1pixel.gif" border=0 height=1 width=1 alt=""></a></CENTER>
+
+
+<CENTER><a target="_blank" href="/event.ng/Type=click&ProfileID=873&RunID=12756&AdID=8113&TagValues=197.222.271.313.604.961&FamilyID=1&GroupID=39&Redirect=http://www.allnetresearch.com"><img src="/ads/2000/12/125static.gif" border=0 height=125 width=125 alt=""></a></CENTER>
+</TD>
+			<TD></TD>
+		</TR>
+		<!--*** end Free Newsletter ***-->
+
+				<TR><TD COLSPAN=2 VALIGN="top" BGCOLOR="#666666"><IMG HEIGHT=1 WIDTH=1 SRC="/graphics/fill/clear.gif" BORDER=0></TD></TR>
+		<TR><TD COLSPAN=2 VALIGN="top"><IMG HEIGHT=7 WIDTH=1 SRC="/graphics/fill/clear.gif" BORDER=0></TD></TR>
+
+		<!--*** begin internet.com branding ***-->
+		<TR>
+			<TD VALIGN="top" ALIGN="left">
+			<!-- --------INTERNET.COM TOOLBAR-------- -->
+
+<FONT SIZE="1" FACE="Arial, Helvetica">
+
+<!-- --------INTERNET.COM TOOLBAR-------- -->
+<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" BGCOLOR="#000000">
+<TR>
+<TD WIDTH="100%" VALIGN="TOP">
+
+<TABLE WIDTH="100%" CELLSPACING="0" CELLPADDING="6" BORDER="0">
+<TR>
+<TD BGCOLOR="#000000" WIDTH="100%" ALIGN="CENTER">
+<FONT COLOR="#FFFFFF" FACE="ARIAL, HELVETICA"><B>internet.com</B></FONT>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="#FFFFFF">
+<FONT SIZE="-1">
+<A HREF="http://www.internet.com/sections/news.html">Internet News</A><BR>
+<A HREF="http://www.internet.com/sections/stocks.html">Internet Investing</A><BR>
+<A HREF="http://www.internet.com/sections/it.html">Internet Technology</A><BR>
+<A HREF="http://www.internet.com/sections/win.html">Windows Internet Tech.</A><BR>
+<A HREF="http://www.internet.com/sections/linux.html">Linux/Open Source</A><BR>
+<A HREF="http://www.internet.com/sections/webdev.html">Web Developer</A><BR>
+<A HREF="http://www.internet.com/sections/marketing.html">ECommerce/Marketing</A><BR>
+<A HREF="http://www.internet.com/sections/isp.html">ISP Resources</A><BR>
+<A HREF="http://www.internet.com/sections/asp.html">ASP Resources</A><BR>
+<A HREF="http://www.internet.com/sections/wireless.html">Wireless Internet</A><BR>
+<A HREF="http://www.internet.com/sections/downloads.html">Downloads</A><BR>
+<A HREF="http://www.internet.com/sections/resources.html">Internet Resources</A><BR>
+<A HREF="http://www.internet.com/sections/lists.html">Internet Lists</A><BR>
+<A HREF="http://www.internet.com/sections/international.html">International</A><BR>
+<BR>
+<A HREF="http://search.internet.com">Search internet.com</A><BR>
+<A HREF="http://www.internet.com/mediakit/">Advertising Info</A><BR>
+<A HREF="http://www.internet.com/corporate/">Corporate Info</A><BR>
+</FONT>
+</TD>
+</TR>
+</TABLE>
+
+</TD>
+</TR>
+</TABLE>
+<!-- =====INTERNET.COM TOOLBAR===== -->
+
+
+<img src="http://www.mydesktop.com/internetcomm.gif"><br>
+<A HREF="http://www.internet.com/partners/">Be a Commerce Partner</A><br>
+
+<a href="/event.ng/Type=click&ProfileID=921&RunID=13040&AdID=2553&TagValues=199.209.221.222.778.981&FamilyID=1&GroupID=1&Redirect=http://www.domainbank.net/index.cfm%3faffiliateid=233" target="_blank">Register Domains</a><br>
+<a href="/event.ng/Type=click&ProfileID=922&RunID=13139&AdID=8250&TagValues=199.209.221.222.778.982&FamilyID=1&GroupID=1&Redirect=http://www.ejigsaw.com/redir.jsp%3flf=int&pg=iai" target="_blank">IT Products</a><br>
+<a href="/event.ng/Type=click&ProfileID=923&RunID=13085&AdID=7353&TagValues=199.209.221.222.778.983&FamilyID=1&GroupID=1&Redirect=http://ph-ad11.focalink.com/SmartBanner/page?411.606-2001.1.6.11.26.12.0" target="_blank">Free Trade Leads</a><br>
+<a href="/event.ng/Type=click&ProfileID=924&RunID=13028&AdID=6842&TagValues=199.209.221.222.778.984&FamilyID=1&GroupID=1&Redirect=http://www.careerenginesolutions.com/contactus.asp" target="_blank">Add a Career Center</a><br>
+<a href="/event.ng/Type=click&ProfileID=925&RunID=13072&AdID=7937&TagValues=199.209.221.222.778.985&FamilyID=1&GroupID=1&Redirect=http://www.teamon.com/bridge/InternetCom.html%3fpcd=A76047000800" target="_blank">Free Online Office</a><br>
+<a href="/event.ng/Type=click&ProfileID=926&RunID=13045&AdID=6855&TagValues=199.209.221.222.778.986&FamilyID=1&GroupID=1&Redirect=https://www.goto.com/s/p/standard/%3fproject=bonus&amount=99&promoCode=BB56" target="_blank">Get Targeted Traffic</a><br>
+<a href="/event.ng/Type=click&ProfileID=927&RunID=13042&AdID=4503&TagValues=199.209.221.222.778.987&FamilyID=1&GroupID=1&Redirect=http://www.ejigsaw.com/redir.jsp%3flf=int&pg=iai" target="_blank">IT Products and Svcs</a><br>
+<a href="/event.ng/Type=click&ProfileID=928&RunID=13097&AdID=8312&TagValues=199.209.221.222.778.988&FamilyID=1&GroupID=1&Redirect=http://www.wgi.com/internet.htm" target="_blank">Search Engine Experts</a><br>
+<a href="/event.ng/Type=click&ProfileID=929&RunID=13066&AdID=3856&TagValues=199.209.221.222.778.989&FamilyID=1&GroupID=1&Redirect=https://affinity.qwest.com/RNT/" target="_blank">Hosting Services</a><br>
+<a href="/event.ng/Type=click&ProfileID=930&RunID=13077&AdID=7803&TagValues=199.209.221.222.778.990&FamilyID=1&GroupID=1&Redirect=http://www.planetpayment.com/jump_pages/text.cfm" target="_blank">E-Payment Solutions</a><br>
+
+</FONT>
+
+<!-- --------INTERNET.COM TOOLBAR-------- -->
+
+
+			</TD>
+			<TD></TD>
+		</TR>
+		<!--*** end internet.com branding ***-->
+
+		<TR><TD COLSPAN=2 VALIGN="top"><IMG HEIGHT=7 WIDTH=1 SRC="/graphics/fill/clear.gif" BORDER=0></TD></TR>
+		<TR><TD COLSPAN=2 VALIGN="top" BGCOLOR="#666666"><IMG HEIGHT=1 WIDTH=1 SRC="/graphics/fill/clear.gif" BORDER=0></TD></TR>
+		<TR><TD COLSPAN=2 VALIGN="top"><IMG HEIGHT=7 WIDTH=1 SRC="/graphics/fill/clear.gif" BORDER=0></TD></TR>
+		
+				<!--*** begin Print This Article ***-->
+			<TR><TD COLSPAN=2><CENTER><A HREF="/linuxplanet/print/210/"><IMG SRC="/graphics/buttons/submit/print_article.gif" WIDTH=115 HEIGHT=30 BORDER=0 ALT="Print this article"></A></CENTER></TR></TD>
+		<!--*** end Print This Article ***-->
+
+		<TR><TD COLSPAN=2 VALIGN="top"><IMG HEIGHT=7 WIDTH=1 SRC="/graphics/fill/clear.gif" BORDER=0></TD></TR>
+		<TR><TD COLSPAN=2 VALIGN="top" BGCOLOR="#666666"><IMG HEIGHT=1 WIDTH=1 SRC="/graphics/fill/clear.gif" BORDER=0></TD></TR>
+		<TR><TD COLSPAN=2 VALIGN="top"><IMG HEIGHT=7 WIDTH=1 SRC="/graphics/fill/clear.gif" BORDER=0></TD></TR>
+
+		<!--*** begin Email This Article ***-->
+			<TR><TD COLSPAN=2><CENTER><A HREF="/linuxplanet/email/210/?ReturnURL=/linuxplanet/tutorials/210/1"><IMG SRC="/graphics/buttons/submit/email_article.gif" WIDTH=115 HEIGHT=30 BORDER=0 ALT="Email this article"></A></CENTER></TR></TD>
+		  	<TR><TD COLSPAN=2 VALIGN="top"><IMG HEIGHT=7 WIDTH=1 SRC="/graphics/fill/clear.gif" BORDER=0></TD></TR>
+			<TR><TD COLSPAN=2 VALIGN="top" BGCOLOR="#666666"><IMG HEIGHT=1 WIDTH=1 SRC="/graphics/fill/clear.gif" BORDER=0></TD></TR>
+		<!--*** end Email This Article ***-->
+		
+		<TR><TD COLSPAN=2 VALIGN="top"><IMG HEIGHT=14 WIDTH=1 SRC="/graphics/fill/clear.gif" BORDER=0></TD></TR>
+
+		<!--*** Begin Related Items ***-->
+					<!--*** End Related Items ***-->
+
+		<!--*** Begin Poll ***-->
+		<!-- no poll -->		<!--*** End Poll ***-->
+
+			
+		</TABLE>
+	</TD>
+	<!--** end left sidebar **-->
+
+	<!--** begin variable divider (navigator workaround) **-->
+	<TD WIDTH=1 VALIGN="top" BACKGROUND="/graphics/bg/gray.gif"><IMG HEIGHT=400 WIDTH=1 SRC="/graphics/fill/gray.gif" BORDER=0></TD>
+	<!--** end variable divider (navigator workaround) **-->
+
+	<!--** begin page proper **-->
+	<TD WIDTH="100%" VALIGN="top"><FONT FACE="Verdana, Arial, Helvetica" SIZE=2>
+
+	<!--*** begin navigation layer ***-->
+	<FONT FACE="Tahoma, Arial, Helvetica" SIZE=2>
+	<IMG HEIGHT=5 WIDTH=324 SRC="/graphics/fill/clear.gif" BORDER=0><BR>&nbsp;&nbsp;<B>
+	<A CLASS="nav" HREF="/linuxplanet/">LinuxPlanet</A> / <A CLASS="nav" HREF="/linuxplanet/tutorials/">Tutorials</A>	<BR><IMG HEIGHT=1 WIDTH=324 SRC="/graphics/fill/clear.gif" BORDER=0><BR>
+	<HR WIDTH="100%" NOSHADE SIZE=1 COLOR="#666666">
+	</FONT>
+	<!--*** end navigation layer ***-->
+
+	<IMG SRC="/graphics/fill/clear.gif" HEIGHT=8 WIDTH=1 BORDER=0 ALT="" BORDER=0><BR>
+
+	<!-- *** begin advertisement *** -->
+		<CENTER><a target="_blank" href="/event.ng/Type=click&ProfileID=931&RunID=13210&AdID=7952&TagValues=194.222.271.313.604.961&FamilyID=880&GroupID=38&Redirect=http://seminars.internet.com/bot/sf01/"><img src="/ads/2000/10/bot01-468.gif" border=0 height=60 width=468 alt=""></a></CENTER>	<!-- *** end advertisement *** -->
+
+	<IMG SRC="/graphics/fill/clear.gif" HEIGHT=10 WIDTH=1 BORDER=0 ALT="" BORDER=0><BR>
+	
+	<!--content_start-->
+			<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH="100%">
+		<TR>
+			<TD WIDTH=7><IMG HEIGHT=1 WIDTH=7 SRC="/graphics/fill/clear.gif" BORDER=0></TD>
+			<TD WIDTH="100%"></TD>
+		</TR>
+		<TR>
+			<TD></TD>
+			<TD VALIGN="top" ALIGN="left"><FONT FACE="Verdana, Arial, Helvetica" SIZE=2>
+				<FONT COLOR="#FFBB00" SIZE=5><B>A Guide To Linux Printing</B></FONT><BR>
+	
+			<FONT COLOR="#000000" SIZE=3><B>Introduction</B></FONT><BR><IMG HEIGHT=7 WIDTH="324" SRC="/graphics/fill/clear.gif"><BR>
+			<FONT SIZE=1 FACE="Verdana, Arial, Helvetica"><a href="mailto:ssinger@mydesktop.com">Steve Singer</a></FONT><BR>
+			<P>
+			<!--**** begin content ****-->
+				<h2>Introduction.</h2> Are you wondering how the Linux printing system works? Or maybe you just think of the process as magic.  The software that handles printing under Linux is extremely flexible and this article explains how it works.  <h2>Overview</h2>  A file printed in Linux will pass through several programs.  The printing request will typically originate from an application that will invoke the printing client software.  The file will pass from the printing client, to the printing spooler and then through a series of filters and being finally sent to your printer.   Linux's printing system was designed to make it easy to add support for network printers and a variety of formatting options.   Normally all of the steps are transparent to the end user. However, a good understanding of the process helps when debugging printing problems. <p> <img src="/graphics/screenshots/thingy.gif">								<P ALIGN="RIGHT"><FONT FACE="Verdana, Arial, Helvetica" SIZE=1><B>Next: </B><A HREF="/linuxplanet/tutorials/210/2/" CLASS="nav">The Application</A></FONT>&nbsp;<FONT FACE="Tahoma, Arial, Helvetica" SIZE=2><FONT COLOR="#FFBB00"><B>&#187;</B></FONT></FONT>			<!--**** end content ****-->
+			<P>
+			<!--**** begin skip ahead ****-->
+				<table border=0 cellspacing=0 cellpadding=0><tr><td align="left" nowrap><FONT FACE="Verdana, Arial, Helvetica" SIZE=2><FONT COLOR="#FFBB00"><B>Skip Ahead</B></FONT><BR><IMG HEIGHT=5 WIDTH=1 SRC="/graphics/fill/clear.gif"><BR>1 <A HREF="/linuxplanet/tutorials/210/1/">Introduction</A><BR>2 <A HREF="/linuxplanet/tutorials/210/2/">The Application</A><BR>3 <A HREF="/linuxplanet/tutorials/210/3/">The Print Client</A><BR>4 <A HREF="/linuxplanet/tutorials/210/4/">The Print Spooler (lpd)</A><BR>5 <A HREF="/linuxplanet/tutorials/210/5/">The Filter</A><BR>6 <A HREF="/linuxplanet/tutorials/210/6/">The Printer</A><BR>7 <A HREF="/linuxplanet/tutorials/210/7/">Managing Printers</A><BR></font></td></tr></table>			<!--**** end skip ahead ****-->
+			</FONT>
+			<BR>
+	<!-- *** begin advertisement *** -->
+		<CENTER><a target="_blank" href="/event.ng/Type=click&ProfileID=931&RunID=12671&AdID=8057&TagValues=194.222.271.314.604.961&FamilyID=1&GroupID=38&Redirect=http://www.bsdcentral.com"><img src="/ads/2000/12/bsdcentral_meet.gif" border=0 height=60 width=468 alt=""></a></CENTER>
+
+<!--#include virtual="/icom_includes/footers/footer.html"-->
+
+	<!-- *** end advertisement *** -->
+			</TD>
+			<TD VALIGN="top">
+				<TABLE CELLSPACING=0 CELLPADDING=5 BORDER=0 WIDTH=150>
+				<TR>
+					<TD>
+		 			<!--**** Begin Find Lowest Prices ****-->
+											<!--**** end Find Lowest Prices ****-->
+
+		 			<!--**** begin screenshots ****-->
+											<!--**** end screenshots ****-->
+						
+					<!--**** begin dossier ****-->
+						  
+					<!--**** end dossier ****-->
+
+					<!--**** begin information ****-->
+											<!--**** end information ****-->
+  	 				</TD>
+				</TR>
+			</TABLE>
+			</TD>
+		</TR>
+		</TABLE>
+	
+	
+	
+		
+	
+	
+	
+	<BR>
+	</TD>
+	<!--content_stop--> 
+
+	<!--** end page proper **-->
+</TR>
+</TABLE>
+<!--* end page *-->
+
+<!--* begin footer *-->
+	<TABLE WIDTH="100%" CELLSPACING=0 CELLPADDING=3 BORDER=0 BGCOLOR="#FFFFCC">
+<TR>
+	<TD WIDTH="100%" COLSPAN=2 BGCOLOR="#FF6600"><IMG SRC="/graphics/fill/clear.gif" HEIGHT=1 WIDTH=5 BORDER=0 ALT=""></TD>
+</TR>
+<TR>
+<TD WIDTH=130 ALIGN="left"><A HREF="http://www.internet.com/?mydesktop"><IMG SRC="/graphics/logos/internet.com.sm.gif" WIDTH=130 HEIGHT=28 ALT="internet.com" BORDER="0" HSPACE=2 VSPACE=3></A></TD>
+<TD WIDTH="100%" ALIGN="right">
+	<FONT SIZE=1 FACE="Verdana, Arial, Helvetica"><B>
+	<A HREF="http://www.mydesktop.com/"><FONT COLOR="#0066FF" STYLE="color: #0066FF">home</FONT></A>
+	|
+	<A HREF="http://about.mydesktop.com/writeus/"><FONT COLOR="#0066FF" STYLE="color: #0066FF">write us</FONT></A>
+	|
+	<A HREF="http://search.internet.com/"><FONT COLOR="#0066FF" STYLE="color: #0066FF">search</FONT></A>
+	|
+	<A HREF="http://about.mydesktop.com/help/"><FONT COLOR="#0066FF" STYLE="color: #0066FF">help!</FONT></A>
+	|
+	<A HREF="http://about.mydesktop.com/"><FONT COLOR="#0066FF" STYLE="color: #0066FF">about us</FONT></A>
+	</FONT>
+</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF"><TD COLSPAN=2><IMG SRC="/graphics/fill/clear.gif" HEIGHT=1 WIDTH=1></TD></TR>
+</TABLE>
+
+<TABLE WIDTH="100%" CELLSPACING=0 CELLPADDING=3 BORDER=0>
+<TR>
+<TD NOWRAP><IMG HEIGHT=1 WIDTH=325 SRC="/graphics/fill/clear.gif"><BR>
+<FONT SIZE=1 FACE="Verdana, Arial, Helvetica">&nbsp;<!--NOBR--><A
+HREF="http://www.internet.com/corporate/legal.html"><FONT COLOR="#0066FF"
+STYLE="color: #0066FF">Copyright</FONT></A> &#169; 1999-2000 internet.com Corporation.
+All Rights Reserved.<!--/NOBR--></FONT> </TD>
+<TD WIDTH="100%" ALIGN="right"><FONT SIZE=1 FACE="Verdana, Arial,
+Helvetica"><A HREF="http://www.internet.com/corporate/"><FONT
+COLOR="#0066FF" STYLE="color: #0066FF">About internet.com Corp.</FONT></A>
+|
+<A HREF="http://www.internet.com/corporate/press.html"><FONT COLOR="#0066FF" STYLE="color: #0066FF">Press Releases</FONT></A><BR><a href="http://www.internet.com/corporate/privacy/privacypolicy.html"><FONT COLOR="#0066FF" STYLE="color: #0066FF">Privacy Policy</FONT></a> | <A HREF="http://www.internet.com/corporate/employtoc.html"><FONT COLOR="#0066FF" STYLE="color: #0066FF">Career Opportunities</FONT></A></FONT></TD>
+</TR></TABLE>
+<!--* end footer *-->
+
+</BODY>
+</HTML>

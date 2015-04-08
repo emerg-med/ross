@@ -1,0 +1,14 @@
+ADELAIDE ROYAL ADELAIDE HOSPITAL (Public),North Tce ,ADELAIDE SA ,5000,Dr Marie Kuhn ,08 8222 5063,08 8223 4761,m.kuhn@mahs.rah.sa.gov.au
+ST ANDREWS HOSPITAL (Private),South Tce ,ADELAIDE SA ,5000,Dr J Wenceslau ,08 8408 2111,08 8232 0328, 
+WAKEFIELD MEMORIAL HOSPITAL (Private),Wakefield St ,ADELAIDE SA ,5000,Dr Nick Wolianski ,08 8405 3454,08 8346 7570,nykola@webmedia.com.au
+ASHFORD HOSPITAL (Private),55 Anzac Hwy ,ASHFORD SA ,5035,Dr Chris Baggoley ,08 8375 5284,08 8375 5928,cbaggoley@acha.org.au
+FLINDERS MEDICAL CENTRE (Public),Flinders Dve ,BEDFORD PARK SA ,5042,Dr Diane King ,08 8204 4024,08 8204 5879,diane.king@fmc.sa.gov.au
+MODBURY HOSPITAL (Public),Smart Rd ,MODBURY SA ,5092,Dr E Markwick ,08 8264 6000,08 8265 8175, 
+QUEEN ELIZABETH HOSPITAL (Public),Woodville Rd ,WOODVILLE SA ,5011,Dr Margaret Crockford ,08 8222 7113,08 8222 6034,mcrock@nwahs.sa.gov.au
+WOMEN'S AND CHILDREN'S HOSPITAL (Public),72 King William Rd ,North Adelaide SA ,5065,Dr Jeremy Raftos ,08 8204 6651,08 8204 6750,raftosj@wch.sa.gov.au
+LYELL McEWIN HEALTH SERVICE (Public),Haydown Rd ,ELIZABETH VALE SA ,5112,Dr Peter Stuart ,08 8182 9279,08 8182 9179,peter.stuart@nwahs.sa.gov.au
+NOARLUNGA COMMUNITY HOSPITAL (Public),PO Box 437,NOARLUNGA CENTRE SA ,5168,Dr Lynton Stacey,08 8384 9222,08 8384 9710,stacey.lynton@saugov.sa.gov.au
+$$MOUNT GAMBIER AND DISTRICT HEALTH SERVICE (Public),PO Box 267 ,MOUNT GAMBIER SA ,5290,Dr Geoff Williamson,08 8721 1572,08 8721 1579,williamson.geoff@saugov.sa.gov.au
+PORT PIRIE REGIONAL HEALTH SERVICE (Public),PO Box 546,PORT PIRIE SA ,5540,Heather Burger,08 8638 4456,08 8638 4568,burger.heather@saugov.sa.gov.au
+WHYALLA HOSPITAL (Public),Wood Tce ,WHYALLA SA ,5600,Dr Paul Rainsford,08 8648 8410,08 8648 8399, 
+PORT LINCOLN HOSPITAL (Public),Oxford Tce ,PORT LINCOLN SA ,5606,Dr Peter Morton,08 8683 2200,08 8682 6947

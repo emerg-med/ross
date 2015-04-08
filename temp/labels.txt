@@ -1,0 +1,188 @@
+
+@SysInclude {doc}
+@SysInclude {tbl}
+@Doc 
+@Text @Begin
+@LP
+
+@Tbl
+
+aformat { @Cell width {6.3c} A | @Cell width {6.3c} B | @Cell width {6.3c} C }
+{
+
+@Rowa
+A { Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+B {
+Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+C { 
+Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+
+@Rowa
+A { Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+B {
+Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+C { 
+Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+
+@Rowa
+A { Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+B {
+Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+C { 
+Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+
+@Rowa
+A { Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+B {
+Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+C { 
+Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+
+@Rowa
+A { Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+B {
+Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+C { 
+Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+
+@Rowa
+A { Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+B {
+Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+C { 
+Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+
+@Rowa
+A { Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+B {
+Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+C { 
+Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+
+@Rowa
+A { Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+B {
+Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+C { 
+Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+
+@Rowa
+A { Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+B {
+Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+C { 
+Mark @B Wine @LP
+UR 37474795 @LP
+08"/"05"/"1965   Age 44 @LP
+Railway cottages, Swindon @LP BOX HILL  2765
+}
+
+}
+@LP
+
+
+@End @Text

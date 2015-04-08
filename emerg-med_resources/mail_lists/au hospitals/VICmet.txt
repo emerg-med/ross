@@ -1,0 +1,19 @@
+FRANKSTON HOSPITAL (Public),Hastings Rd ,FRANKSTON VIC ,3199,A/Prof Jeff Wassertheil ,03 9784 7777,03 9784 7067,Jwassertheil@phcn.vic.gov.au
+WERRIBEE MERCY HOSPITAL (Public),Princess Hwy ,WERRIBEE VIC ,3030,Dr Gavan Scott,03 9216 8600,03 9216 8722,gscott@mercy.com.au
+GEELONG HOSPITAL (Public),Ryrie St ,GEELONG VIC ,3220,Dr David Eddey ,03 5226 7111,03 5229 9972
+BALLARAT BASE HOSPITAL (Public),Drummond St ,BALLARAT VIC ,3353,Dr Gary Campain,03 5320 4490,03 5320 4090,garyc@bhs.grampianshealth.org.au
+ST JOHN OF GOD HOSPITAL BALLARAT (Private),PO Box 20 ,BALLARAT VIC ,3350,Dr Andrew Dean,03 5320 2126,03 5320 2125,andrew.dean@sjog.org.au
+BENDIGO HEALTH CARE GROUP (Public),Stewart St ,BENDIGO VIC ,3550,Dr Mike Taylor,03 5441 0431,03 5441 0208,MITaylor@bendigohealth.org.au
+WIMMERA HEALTH CARE GROUP (Public),Baillie St ,HORSHAM VIC ,3400,Dr Alan Wolff,03 5381 9111,03 5382 0829,alan.wolff@whcg.grampianshealth.org.au
+GOULBURN VALLEY BASE HOSPITAL (Public),Graham St ,SHEPPARTON VIC ,3630,Dr Emandil Geaboc,03 5832 2322,03 5831 6044,geabocm@gvbh.org.au
+HAMILTON BASE HOSPITAL (Public),Foster St ,HAMILTON VIC ,3300,Dr B Warton,03 5571 0222,03 5571 0300
+WARRNAMBOOL AND DISTRICT BASE HOSPITAL (Public),Ryot St ,WARRNAMBOOL VIC ,3280,Dr Daryl Pedler,03 5563 1475,03 5563 1463,dpedler@swh.net.au
+WANGARATTA DISTRICT BASE HOSPITAL (Public),Green St ,WANGARATTA VIC ,3677,Dr P Duggan,03 5722 0111,03 5722 0109
+BAIRNSDALE REGIONAL HEALTH SERVICES (Public),PO Box 474 ,BAIRNSDALE VIC ,3875,Therese Burke,03 5150 3430,03 5150 3374,brhscaes@net.tech.com.au
+GIPPSLAND BASE HOSPITAL (Public),Guthridge Pde ,SALE VIC ,3850,Barb Harper,03 5144 4111,03 5143 8795,edcghs@netspace.net.au
+LATROBE REGIONAL HOSPITAL(Public),Pacific Hwy ,TRARALGON VIC ,3844,Dr Craig Winter,03 5173 8222,03 5173 8270,cwinter@aushospcare.com.au
+MILDURA BASE HOSPITAL (Public),PO Box 620 ,MILDURA VIC ,3500,Dr John Russell,03 5022 3394,03 5022 3391,russellj@mildurabase.ramsayhealth.com.au
+SWAN HILL DISTRICT HOSPITAL (Public),PO Box 483,SWAN HILL VIC ,3585,Judelle McFarland ,03 5033 9231,03 5033 1722,emergency.dept@swanhillhosp.vic.gov.au
+ECHUCA REGIONAL HEALTH SERVICE (Public),PO Box 25 ,ECHUCA VIC ,3564,Dr Paul Francis,03 5482 0284,03 5482 5478,erh@origin.net.au
+WEST GIPPSLAND HOSPITAL (Public),Landsborough St ,WARRAGUL VIC ,3820,Dr Eric Kennelly,03 5623 0630,03 5623 0896,doms@wghg.org.au
+WODONGA HOSPITAL (Public),Vermont St ,WODONGA VIC ,3690, ,02 6051 7111,02 6051 7477,  

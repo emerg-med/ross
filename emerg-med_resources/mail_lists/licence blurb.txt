@@ -1,0 +1,23 @@
+Unlike previous releases of GFS that were available under 
+          the GNU General Public License, GFS 4.2 will be available only under 
+          the terms of the newly created Sistina Public License. This license 
+          is similar to the Aladdin Public License used for Ghostscript, a program 
+          developed by L. Peter Deutsch to interpret PostScript documents. Like 
+          Ghostscript, GFS was developed by a single entity (originally a research 
+          group at the University of Minnesota and later by Sistina Software), 
+          rather than a disparate community of free developers.
+In addition, like Ghostscript, GFS is a technology that 
+          has a clear OEM market. GFS has attracted OEM vendors who are embedding 
+          the technology into their storage appliances and their commercial software 
+          offerings. Under the GPL, these commercial vendors are less likely to 
+          provide funding for GFS development and maintenance because of the free-rider 
+          problem; competitors who don’t pay will directly benefit from those 
+          who do. The Sistina Public License solves the free–rider problem 
+          by creating a level playing field for all OEMs. The SPL provides Sistina 
+          with a means to attain a sustainable revenue stream to continue to develop 
+          and support GFS and other software.
+Sistina is also currently certifying hardware to 
+          be supplied by a network of qualified re-sellers. For this reason, it 
+          is important that Sistina’s licensing policies enforce standards 
+          for hardware certification, user support, and important customer service 
+          issues.

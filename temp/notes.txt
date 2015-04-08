@@ -1,0 +1,176 @@
+
+@SysInclude {doc} 
+@SysInclude {tbl} 
+@Doc
+@Text @Begin
+
+
+@Display @Heading 1.5f @Font{ @I {Bugs} Bunny         UR   093289832 +0.2f @VShift @IncludeGraphic "temp/barcode093289832.eps" } 
+
+
+
+@LP
+@Tbl rule {no}
+aformat { @Cell width {7c} A | @Cell width {5c} margin {.25c} B | @Cell width {7c} rule {yes} C }
+{
+@Rowa
+A { 1.2f @Font @B { Emergency Department } @LP Hinchingbrooke Hospital @LP Huntingdon @LP OX3 9DU @LP @LP @LP 0.8f 
+@Font { Telephone   (01480)741166 @LP Fax              (01480)456789 @LP email: 
+ED@huntingdon.nhs.uk }  }
+B { @LP @IncludeGraphic "notes/logo.eps" @LP 
+
+}
+C { 1.2f @Font @B {Patient Details:} @LP Name: @I {Bugs} Bunny @LP Age: 66   Sex: M @LP DoB: 04"/"05"/"1943 @LP @CurveBox { 0.7f @Font { Alerts: none }} 
+ }}
+}
+
+
+
+
+
+
+@LP
+
+
+
+@Tbl rule {yes} # triage/ prehospital table 
+aformat { @Cell width {14.25c}  A | @Cell width {4.75c} B }
+{
+@Rowa
+A { 1.2f @Font @B {Prehospital "/" triage assessment }  ( 07:06  01"/"10"/"09 )  @LP rabbit flu }
+B { 1.2f @Font @B Category @LP  4f @Font{ "  " 1 }}
+}
+
+@LP
+
+@Tbl rule {yes}
+aformat { @Cell width {14.25c}  A | @Cell width {4.75c} B }
+{
+@Rowa
+A { 1.2f @Font @B {Initial nurse assessment}  @LP }
+B { 0.9f @Font @B { Discharge risk screen } @LP 
+@LP
+"  "@Box margin {0.12c}{} > 65 years? @LP
+"  "@Box margin {0.12c}{} lives alone? @LP
+"  "@Box margin {0.12c}{} ADL assistance? @LP
+"  "@Box margin {0.12c}{} dependants? @LP
+@LP
+"  "yes to any = needs @LP
+"  "discharge plan
+}
+}
+
+@LP
+
+@Tbl rule {yes}
+aformat { @Cell width {9.5c}  A | @Cell width {4.75c} B | @Cell width {4.75c} C }
+
+{
+
+@Rowa
+A { @Box margin {0.15c}{} 1.2f @Font @B {  Admitted } @LP
+
+Consultant............................... Ward..........@LP
+@Box margin {0.12c}{} bed booked       @Box margin {0.12c}{} public patient @LP
+@Box margin {0.12c}{} private patient   @Box margin {0.12c}{} Workcover @LP
+@Box margin {0.12c}{} VA Gold Card    @Box margin {0.12c}{} TAC @LP
+@Box margin {0.12c}{} ward notified by fax    @Box margin {0.12c}{} by phone @LP
+ETA ward..............       @Box margin {0.12c}{} 30 mins after fax  @LP
+@Box margin {0.12c}{} admission completed  @Box margin {0.12c}{} name band @LP
+@LP
+@Box margin {0.12c}{} via Operating Theatre @LP
+@Box margin {0.12c}{} consent          weight ........... kgs @LP
+
+@Box margin {0.12c}{} XR"/"CT"/"MR     @Box margin {0.12c}{} i.v.  @Box margin {0.12c}{} O @Sub 2 @LP
+@Box margin {0.12c}{} dentures @Box margin {0.12c}{} in   @Box margin {0.12c}{} out @LP
+@Box margin {0.12c}{} clothing  @Box margin {0.12c}{} glasses  @Box margin {0.12c}{} valuables @LP
+valuables...................................................@LP
+@LP
+@LP
+@Box margin {0.12c}{} admission by unit complete OR @LP
+@Box margin {0.12c}{} 2 hrs of medical orders from ED
+
+
+
+}
+B { @Box margin {0.15c}{} 1.2f @Font @B{ Discharged } @LP
+
+"  "@Box margin {0.12c}{} home @LP
+"  "@Box margin {0.12c}{} at own risk @LP
+"  "@Box margin {0.12c}{} died @LP
+@LP {}
+time ................... @LP
+@LP 
+@LP 
+@LP
+@LP 
+Follow up: @LP
+"  "@Box margin {0.12c}{} none @LP
+"  "@Box margin {0.12c}{} outpatients @LP
+"  "@Box margin {0.12c}{} fracture clinic @LP
+"  "@Box margin {0.12c}{} GP @LP
+"  "@Box margin {0.12c}{} other @LP
+@LP {}
+date required: 
+@LP
+@LP
+@LP
+@LP
+"  ".......................... @LP
+}
+C { @Box margin {0.15c}{} 1.2f @Font @B {Transferred} @LP
+@LP
+to .......................... @LP
+@LP
+time ....................... @LP
+@LP
+@LP
+@LP
+@Box margin {0.12c}{} car   @Box margin {0.12c}{} ambulance @LP
+@Box margin {0.12c}{} taxi   @Box margin {0.12c}{} other @LP
+@LP
+@LP
+@LP
+Accompanied by: @LP
+"  "@Box margin {0.12c}{} XR"/"CT"/"MR @LP
+"  "@Box margin {0.12c}{} letter @LP
+"  "@Box margin {0.12c}{} notes @LP
+"  "@Box margin {0.12c}{} valuables @LP
+"  "@Box margin {0.12c}{} drugs @LP
+"  "@Box margin {0.12c}{} staff @LP
+"  "@Box margin {0.12c}{} relative @LP
+
+}
+}
+@LP
+
+
+@Tbl rule {yes}
+aformat { @Cell width {9.5c}  A | @Cell width {9.5c} B }
+{
+@Rowa
+A { 1.2f @Font @B Diagnosis  @LP }
+B { 1.2f @Font @B{ Contact: } @LP 
+@LP
+@LP
+@LP
+phone: ..................... relationship ................ @LP
+@Box margin {0.12c}{} contacted "    "@Box margin {0.12c}{} no contact at pt's request @LP
+}
+
+}
+@LP
+
+0.4f @Font { Notes printed: 20:16 - Tuesday October 6th, 2009  at Hinchingbrooke Hospital Emergency Department   @CopyRight 2009 emerg-med.com} 	@LP 
+		@NP
+		@Display @Heading 1.5f @Font{ @I {Bugs} Bunny         UR   093289832 +0.2f @VShift @IncludeGraphic "temp/barcode093289832.eps" } 
+
+		@IncludeGraphic "notes/notesshort1.eps" 
+		@LP 
+		@CurveBox { 0.7f @Font { Alerts: none }} 
+		@LP
+		@IncludeGraphic "notes/notesshort2.eps" 
+		@LP
+		0.4f @Font { Notes printed: 20:16 - Tuesday October 6th, 2009  at Hinchingbrooke Hospital Emergency Department   @CopyRight 2009 emerg-med.com} 	@LP  
+@LP
+@End @Text

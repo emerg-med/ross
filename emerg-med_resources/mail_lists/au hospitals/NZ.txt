@@ -1,0 +1,28 @@
+AUCKLAND HOSPITAL ,Private Bag 92024,Auckland ,ED Director,(09) 379 7440 EXT 7145 ,(09) 307 8968  ,lesleyg@ahsl.co.nz 
+HAWERA HOSPITAL ,PO Box 98,Hawera ,ED Director,(06) 278 9933 EXT 6688 ,(06) 278 9936 ,mathew@netsource.co.nz 
+GISBORNE HOSPITAL ,Private Bag 7001,Gisborne ,ED Director,(06) 867 9099  EXT 8139 / 8141/ 8284/ 8003 ,(06) 868 0022 , Jocelyn@thl.co.nz 
+DUNEDIN HOSPITAL , ,Dunedin,ED Director,(03) 474 0999 EXT 8000 ,(03) 474 7908 ,johnch@healthotago.co.nz 
+CHRISTCHURCH HOSPITAL ,Private Bag 4710,Christchurch ,ED Director,(03) 364 0270 EXT 89614 ,(03) 364 0286  ,angelap@chhlth.govt.nz 
+PALMERSTON NORTH HOSPITAL ,Private Bag 11036,Palmerston North ,ED Director,(06) 356 9169 EXT 8750 ,(06) 350 8171 ,graemec@midcentral.co.nz. 
+OAMARU HOSPITAL ,PO Box 94,Oamaru ,ED Director,(03) 434 8770 EXT 4030  ,(03) 434 7820 ,patT@healthotago.co.nz 
+NORTH SHORE HOSPITAL ,Private Bag 93 503,Takapuna -North Shore,ED Director ,(09) 486 8917 ,(09) 486 8918 ,Sheehana@whl.co.nz 
+NELSON HOSPITAL ,Private Bag,Nelson ,ED Director,(03) 546 1800 EXT 7608 / 7609 ,(03) 546 1255 ,clive.garlick@nmhs.govt.nz 
+MIDDLEMORE HOSPITAL ,Otahuhu,Auckland ,ED Director,(09) 276 1999 EXT 8028 ,(09) 276 0013 ,BhavaniP@middlemore.co.nz 
+MASTERTON HOSPITAL ,Box 96,Masterton,ED Director,(06 ) 378 2099 EXT 4700 ,(06) 378 9817  ,EMOUT@waihealth.co.nz 
+LOWER HUTT HOSPITAL ,Private Bag 31907,Lower Hutt ,ED Director,(04) 566 6999 EXT 8640 ,(04) 570 9209 ,Donald.Mackie@hvh.co.nz 
+HAWKES BAY REGIONAL HOSPITAL , ,Hastings ,ED Director,(06) 878 8109 EXT 2619 / 2234 ,(06) 878 1353 ,jtrewick@healthcarehb.co.nz
+KAITAIA HOSPITAL ,Kaitaia,, ,(09) 408 0100  ,  , 
+WHANGAREI HOSPITAL ,PO Box 742,Whangarei ,ED Director,(09) 430 4101 EXT 8587  ,(09) 430 4132 ,chipj@nhl.co.nz 
+WHAKATANE HOSPITAL ,Stewart Street,Whakatane , ,(07) 307 8999 EXT 4868 / 70 ,(07) 307 8852 , 
+WELLINGTON HOSPITAL ,Private Bag 7902,Wellington ,Dr G Hughes,(04) 385 5999 EXT 6465 ,(04) 385 5899  , geoffrey.hughes@wnhealth.co.nz 
+WANGANUI HOSPITAL ,Private Bag 3003,Wanganui ,ED Director ,(06) 348 1234 PAGER 125 ,(06) 348 1309 ,athols@ghw.co.nz 
+WAIRU HOSPITAL (MARLBOROUGH) ,Box 46,Blenheim ,ED Director ,(03) 577 1955 ,(03) 577 1921 ,stuart.watchman@nmhs.govt.nz 
+WAIKATO HOSPITAL ,Private Bag 3200,Hamilton ,ED Director ,(07) 839 8899 EXT 8707 ,(07) 839 8772 ,clareg@HWL.co.nz 
+TIMARU HOSPITAL ,Private Bag 911,Timaru , ED Director,(03) 684 4000 EXT 8595 ,(03) 684 1539 
+THAMES HOSPITAL ,PO Box 707,Thames ,ED Director ,(07) 868 6550 EXT 8834 ,(07) 868 6290 ,reidj@hwl.co.nz 
+TAURANGA HOSPITAL ,Private Bag 12024,TAURANGA ,ED Director ,(07) 579 8420 ,(07) 579 8429 ,sharonk@wbhealth.co.nz 
+TARANAKI HEALTHCARE ,Private Bag,New Plymouth ,ED Director ,(06) 753 7820  ,(06) 753 7845 ,mallen@netsource.co.nz 
+STARSHIP CHILDREN'S HOSPITAL  ,Private Bag 92024,Grafton  Auckland ,ED Director ,(09) 375 4308 EXT 5208 ,(09) 375 4308 ,richarda@ahsl.co.nz 
+SOUTHLAND HOSPITAL ,PO Box 828,Invercargill,ED Director ,(03) 214 5735 EXT 8677  ,(03) 218 6890 , JAM2@sche.co.nz 
+ROTORUA HOSPITAL ,Private Bag 2023,Rotorua ,ED Director ,(07) 349 7955 EXT 8846 ,(07) 349 7877  ,goodk@lhl.co.nz 
+PALMERSTON NORTH HOSPITAL ,Private Bag 11036,Palmerston North ,ED Director ,(06) 356 9169 EXT 8750 ,(06) 350 8171 ,graemec@midcentral.co.nz. 

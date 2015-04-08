@@ -1,0 +1,27 @@
+
+
+
+
+create table www (
+key_ID int(10)unsigned default '0' not null auto_increment,
+
+Code tinytext,
+Title tinytext,
+Text tinytext,
+
+primary key (key_ID)
+);
+
+
+
+
+
+
+****************
+
+
+create table EmergMedSetup (
+key_ID int(10)unsigned default '0' not null auto_increment,
+
+primary key (key_ID)
+);

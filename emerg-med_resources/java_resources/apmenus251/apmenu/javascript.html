@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>Javascript Tips</title>
+</head>
+
+<body>
+
+</head>
+<body bgcolor="#FFFFFF" link="#ff0000" vlink="#0000ff">
+<h3><font face="Verdana, sans-serif, Arial, Helvetica" size="3" color=#006000>Javascript Tips</font></h3>
+<font face="Verdana, sans-serif, Arial, Helvetica" size="2">
+<font color=#006000><b><p>To enable Javascript support:</p></b></font><font face="Verdana, sans-serif, Arial, Helvetica" size="2">
+* add <b>MAYSCRIPT</b> to the applet tag;<br>
+* add <b>javascript:N</b> parameter with javascript call value, where N - any number;<br>
+* place <b>javascript:N</b> string in the link;<br>
+* set the target to "<b>_</b>"<br>
+as shown in the following example :</font><font size="3"><pre>
+&lt;applet code=&quot;apMenu&quot; archive=&quot;apMenu.jar&quot; Width=&quot;125&quot; Height=&quot;156&quot; MAYSCRIPT&gt;
+      &lt;param name=&quot;javascript:1&quot; value=&quot;somefunction('param1','param2')&quot;&gt;
+      &lt;param name=&quot;javascript:2&quot; value=&quot;open('index.html','_blank')&quot;&gt;
+      &lt;param name="menuItems" value="
+              {Script1,javascript:1,_}
+              {Script2,javascript:2,_}&quot;&gt; 
+&lt;/applet&gt;
+</pre>
+</font><font face="Verdana, sans-serif, Arial, Helvetica" size="2">
+
+<font color=#006000><b><p>Javascript calls limitations:</b></font></p><font face="Verdana, sans-serif, Arial, Helvetica" size="2">
+* Value and variable assignments are <b>not</b> supported<br>
+* Empty strings in arguments are <b>not</b> supported<br>
+* Use single quotes (') instead of double quotes (") for arguments<br>
+* Arguments are treated as String literals during the function call. Therefore, they must be converted to the appropriate format using standard Javascript methods such as parseInt(String) and parseFloat(String).
+
+<p align="justify">The best way to overcome most of the limitations is placing the instructions within a javascript function:</p>
+<font size="3"><pre>
+.....
+function open_w(arg){
+ if (confirm('Open a new window?') == true){
+      open(arg,'window','scrollbars,resizeable=yes,width=680,height=600')
+    }
+}
+.....
+      &lt;param name=&quot;javascript:1&quot; value=&quot;open_w('index.html')&quot;&gt;
+      &lt;param name="menuItems" value="
+              {Open window,javascript:1,_}&quot;&gt; 
+.....
+</pre>
+
+</body>
+</html>

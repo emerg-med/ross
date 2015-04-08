@@ -1,0 +1,19 @@
+Charing Cross Hospital,Fulham Palace Road,London,W6 8RF,(020) 8846 1234,(020) 8846 1111
+Great Ormond Street Hospital For Children NHS Trust,Great Ormond Street,London,WC1N 3JH,(020) 7405 9200
+Orpington Hospital,Sevenoaks Road,Orpington,BR6 9JU,01689 815000,01689 815059
+Royal Free Hospital,Pond Street,London,NW3 2QE,(020) 7794 0500
+Royal London Hospital,Whitechapel,London,E1 1BB,(020) 7377 7000,(020) 7377 7095
+Royal Marsden Hospital,203 Fulham Road,London,SW3 6JJ,(020) 7352 8171,(020) 7351 3785
+University College Hospitals,UCLH,London,WC1E 6AU,(020) 7387 9300
+Whittington Hospital,Highgate Hill,London,N19 5NF,(020) 7272 3070,(020) 7288 5550
+Guy's Hospital,St Thomas' Street,London,SE1 9RT,(020) 7955 5000,(020) 7955 4914
+King's College Hospital,Camberwell,London,SE5 8RX,(020) 7737 4000,(020) 7346 3185
+St George's Hospital,Tooting,London,SW17 0QT,(020) 8672 1255
+Central Middlesex Hospital,Acton Lane,London,NW10 7NS,(020) 8965 5733
+Chase Farm Hospital,Chase Farm,Middlesex,N21 1PN,(020) 8366 6600,(020) 8967 5917
+Ealing Hospital,Southall,Middlesex,UB1 3HW,(020) 967 5000
+Mount Vernon Hospital,Northwood,Middlesex,HA6 2RN,01923 826111,01923 835803
+Whipp's Cross Hospital,Leytonstone,London,E11 1NR,(020) 8539 5522,(020) 8558 8115
+Bromley NHS Trust,Bromley,Kent,BR2 9AJ,0181 289 7000
+Kingston Hospital,Kingston-on-Thames,Surrey,KT6 6LH,(020) 8546 7711,(020) 8547 2182
+Queen Mary's University Hospital,Roehampton Lane,London,SW15 5PN,(020) 8789 6611,(020) 8780 1089

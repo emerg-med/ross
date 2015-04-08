@@ -1,0 +1,15 @@
+Arrowe Park Hospital,Wirral,Merseyside,L49 5PE,0151 678 5111
+Blackburn Royal Infirmary,Blackburn,Lancashire,BB2 3LR,01254 263555
+Royal Bolton Hospital,Bolton,Lancashire,BL4 0JR,01204 390390
+Burnley General Hospital,Burnley,Lancashire,BB10 2PQ,01282 425071
+Countess of Chester Hospital,Chester,Cheshire,CH2 1UL,01244 365000,01244 363993
+Fairfield General Hospital,Bury,Lancashire,BL9 7TD,0161 764 6081
+Hope Hospital,Salford,Lancashire,M6 8HD,0161 789 7373
+Manchester Royal Infirmary,Manchester,Lancashire,M13 9WL,0161 276 1234,0161 273 5642
+North Manchester General Hospital,Crumpsall,Manchester,M8 6RB,0161 795 4567,0161 720 2284
+Royal Albert Edward Infirmary,Wigan,Lancashire,WN1 2NN,01942 244000
+Royal Preston Hospital,Preston,Lancashire,PR2 9HT,01772 716565
+University Hospital of South Manchester,West Didsbury,Manchester,M20 2LR,0161 445 8111,0161 445 5631
+University Hospitals Aintree,Lower Lane,Merseyside,L9 7AL,0151 525 5980,0151 529 3239
+Royal Lancaster Infirmary,Lancaster,Lancashire,LA1 4RP,01524 65944,01524 846346
+Victoria Hospital,Blackpool,Lancashire,FY3 8NR,01253 300000

@@ -1,0 +1,40 @@
+00 Basser Lout Version 3.17 (September 1999) database index file
+00symbol 10 @BasicSetup @DocumentSetup @FigureCounterMarker
+00symbol 11 @BasicSetup @DocumentSetup @TablePrefixMarker
+00symbol 12 @BasicSetup @DocumentSetup @TableCounterMarker
+00symbol 13 @BasicSetup @PageMarker
+00symbol 14 @BasicSetup @DocumentSetup @FootNoteCounterMarker
+00symbol 15 @BasicSetup @DocumentSetup @Runner
+00symbol 1 @BasicSetup @DocumentSetup @TheoremCounterMarker
+00symbol 2 @BasicSetup @DocumentSetup @DefinitionCounterMarker
+00symbol 3 @BasicSetup @DocumentSetup @ClaimCounterMarker
+00symbol 4 @BasicSetup @DocumentSetup @PropositionCounterMarker
+00symbol 5 @BasicSetup @DocumentSetup @LemmaCounterMarker
+00symbol 6 @BasicSetup @DocumentSetup @CorollaryCounterMarker
+00symbol 7 @BasicSetup @DocumentSetup @ExampleCounterMarker
+00symbol 8 @BasicSetup @NumDispCounterMarker
+00symbol 9 @BasicSetup @DocumentSetup @FigurePrefixMarker
+10&3478.notes.txt.1	0	00010	1383	102	notes.txt
+11&3714.notes.txt.1	0	00011	1465	109	notes.txt
+12&3722.notes.txt.1	0	00012	1544	116	notes.txt
+1&2537.notes.txt.1	0	00001	0	1	notes.txt
+13&1036.notes.txt.1	0	00013	1625	123	notes.txt
+13&1036.notes.txt.2	0	00016	2055	161	notes.txt
+13&1036.notes.txt.3	0	00018	2305	182	notes.txt
+13&1036.notes.txt.4	0	00020	2562	204	notes.txt
+13&last.page	0	00024	2562	204	notes.txt
+14&1377.notes.txt.1	0	00014	1909	148	notes.txt
+14&1377.notes.txt.2	0	00017	2221	175	notes.txt
+14&1377.notes.txt.3	0	00019	2478	197	notes.txt
+14&1377.notes.txt.4	0	00021	2728	218	notes.txt
+15&792.notes.txt.1	0	00023	2877	231	notes.txt
+15&792.notes.txt.2	0	00015	1993	155	notes.txt
+15&792.notes.txt.3	0	00022	2812	225	notes.txt
+2&2596.notes.txt.1	0	00002	218	17	notes.txt
+3&2651.notes.txt.1	0	00003	366	27	notes.txt
+4&2706.notes.txt.1	0	00004	504	37	notes.txt
+5&2761.notes.txt.1	0	00005	654	47	notes.txt
+6&2816.notes.txt.1	0	00006	792	57	notes.txt
+7&2871.notes.txt.1	0	00007	938	67	notes.txt
+8&1202.notes.txt.1	0	00008	1080	77	notes.txt
+9&3470.notes.txt.1	0	00009	1303	95	notes.txt

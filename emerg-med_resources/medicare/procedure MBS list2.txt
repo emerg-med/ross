@@ -1,0 +1,153 @@
+Consultation
+
+5-25 minute{00053
+25-45 minute{00054
+> 45 minute{00057
+1-2hour exclusive{00160
+2-3hour exclusive{00161
+3-4hour exclusive{00162
+4-5hour exclusive{00163
+> 5hour exclusive{00164
+FACEM initial referred{00104
+FACEM f/u referred{00105
+
+Airway/ Breathing
+
+intubation & ventilation{13857
+surgical airway{41883
+intercostal drain{38409
+pleural aspiration{38403
+therapeutic anaesthetic{17974
+therapeutic anaesthetic (asst){17503
+
+Circulation
+
+pressure-monitoring{11600
+arterial puncture{13839
+arterial line insertion{13842
+blood administration{13706
+collect autologous blood{13709
+CVC insertion{13815 
+
+Cardiac
+
+ECG1  tracing and report{11700
+ECG2 (>1 hr after ECG1){11700
+cardioversion{13400
+Swann-Ganz insertion{13818
+pericardiocentesis{38406
+temporary pacemaker{38256
+thoracotomy{38418
+
+Head
+
+corneal/scleral FB (x1 only){42644
+packing of nose{41677
+direct laryngoscopy{41846
+ear FB forceps removal{41500
+nose FB removal{41659
+lumbar puncture{39600
+
+Abdo
+
+sigmoidoscopy{32072
+bladder catheterization{36800
+bladder, suprapubic catheter{37011
+bladder needle aspiration{37041
+peritoneal lavage/ascitic tap{30406
+Sengstaaken tube{13506
+gastric lavage{14200
+urine pregnancy test (in ED){73806
+emergency labour management{16518
+
+Regional Anaesthesia
+
+i.v. arm block{18213
+femoral nerve block{18270
+intercostal block x 1 rib{18258
+intercostal nerve blocks >1{18260
+
+Surgical
+
+Multiple lacerations 100 % 1 st Item; 50 % 2nd lacn. and 25% for others
+100%if DEM follow-up; 75% if LMO follow-up.
+
+Debridement deep,dirty wound and suture{30023
+body, superficial < 7cm{30026
+body, superficial > 7cm{30038
+body, deep wound < 7cm{30029
+body, deep wound > 7cm{30041
+full thickness lac to ear, eyelid, nose or lip{30052
+face/neck, superficial, < 7 em{30032
+face/neck, superficial > 7cm{30045
+face/neek, deep < 7 cm{30035
+face/neck, deep > 7 cm{30048
+
+removal of superficial FB{30061
+removal subcut FB with LA{30064
+incision & drainage{30219
+removal of nail{47906
+paronychia incision (excl. fu){47912
+toenail wedge resection inc. nailbed{47915
+
+Plastic/ burns
+
+small SSG{45400
+full thickness graft{45451
+hand, extensor tendon repair{46420
+foot, extensor tendon repair{49800
+Excision tumour/scar (pre-histology){31200
+burns dressing{30003
+extensive burns dressing{30006
+
+Orthopaedic
+
+joint aspiration{50124
+
+DISLOCATIONS
+
+mandible{47000
+shoulder with GA{47009
+shoulder with sedation{47015
+elbow{47018
+finger: IPJ{47036
+finger: MCPJ{47042
+hand- other{47030
+hip{47048
+patella{47057
+knee{47054
+ankle{47063
+toe{47069
+
+FRACTURES
+
+[100% if providing aftercare, 50% if not providing aftercare]
+
+distal phalanx UL digit closed red.{47300
+distal phalanx UL open red. of compound #{47306
+middle phalanx-closed red.{47312
+proximal phalanx-closed red.{47324
+metacarpal- closed red.{47336
+carpus{47348
+scaphoid{47354
+distal rad/ulna{47360
+red. radius/ulna{47363
+Colle's red.{47372
+radial head{47405
+clavicle{47462
+proximal humerus{47423
+shaft of humerus{47444
+ribs{47471
+femur -red.{47516
+tibial plateau{47543
+tibial shaft{47561
+fibula{47576
+patella{47579
+ankle{47594
+ankle- closed red.{47597
+calcaneus/ talus{47606
+tarsus{47627
+metatarsal x1{47633
+metatarsals >1{47642
+big toe red.{47663
+other toe red.{47672

@@ -1,0 +1,19 @@
+#
+# configuration related to postscript printing
+# generated automatically by PRINTTOOL
+# manual changes to this file may be lost
+#
+GSDEVICE=@@@gsdevice@@@
+RESOLUTION=@@@resolution@@@
+COLOR=@@@color@@@
+PAPERSIZE=@@@papersize@@@
+EXTRA_GS_OPTIONS=@@@extragsoptions@@@
+REVERSE_ORDER=@@@reversepages@@@
+PS_SEND_EOF=@@@pssendeof@@@
+
+#
+# following is related to printing multiple pages per output page
+#
+NUP=@@@nup@@@
+RTLFTMAR=@@@rtlftmar@@@
+TOPBOTMAR=@@@topbotmar@@@

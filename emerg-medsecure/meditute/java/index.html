@@ -1,0 +1,255 @@
+<html>
+
+<head>
+<title>Apycom | Free Java Menu Applets | apPopupMenu Applet vs javascript pull-down menus</title>
+<meta name="Description" content="The apPopupMenu is an extremely powerful popup menu solution. In contrast to other pulldown menus available in Web, the apPopupMenu can overlap not only HTML content but also can pop up over form elements, frames, and even go over the browser window. The applet supports an unlimited number of submenus and 6 button types.">
+<meta name="KeyWords" content="java,applet,apMenu,apPopupMenu,apButtonMenu,Apycom,source code,drop down,pull">
+<link REL=stylesheet HREF=exstyle.css TYPE=text/css>
+</head>
+
+<body bgcolor="#CCFF99"  leftmargin=4 topmargin=0 marginheight=0 marginwidth=0>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+<!-- main table --> 
+  <tr>
+    <td width="100%">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td width="50%">
+<a href=http://www.apycom.com><img src=logo.gif  border=0 alt="Apycom Software Home" width="160" height="45"></a>
+          </td>
+          <td width="50%" align="right"><span class=btitle>apPopupMenu Applet &nbsp;&nbsp;</span></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+<!-- end header  -->   
+ <tr>
+ <td width="100%" align="center">
+        <table bgcolor="#60c020" border="0" cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td width="16%" align="center"><a class=ssmenu  href=http://www.apycom.com>Apycom Home</a></td>
+            <td width="16%" align="center"><a class=ssmenu  href=http://www.apycom.com/apmenu>Applets' Home</a></td>            
+            <td width="17%" align="center"><a class=ssmenu  href=http://www.apycom.com/apmenu/order.html>Order Applets</a></td>
+            <td width="17%" align="center"><a class=ssmenu  href=http://www.apycom.com/download.html>Download</a></td>
+            <td width="17%" align="center"><a class=ssmenu  href=http://www.apycom.com/apmenu/faq.html>FAQ</a></td>            
+            <td width="17%" align="center"><a class=ssmenu  href=http://www.apycom.com/contact.html>Contact</a></td>            
+          </tr>
+        </table>
+    </td>
+  </tr>
+<!-- end nav 1  -->   
+  <tr>
+    <td width="100%" align="center">
+        <table bgColor=#60c020 border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td width="100%">
+              <table border="0" cellpadding="0" cellspacing="1" width="100%">
+                <tr>
+                  <td width="100%" bgColor=#FFFFFF>                  
+        <table border="0" cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td width="20%" align="center"><a href="../index.html" class=boldlink>Example Index</a></td>
+            <td width="20%" align="center"><a href="params.html" class=boldlink>Parameters</a></td>                  
+            <td width="20%" align="center"><a href="exframe.html" class=boldlink>Frame Example</a></td>            
+            <td width="20%" align="center"><a href="javascript.html" class=boldlink target=_blank>Javascript Tips</a></td>
+            <td width="20%" align="center"><a href="index.html" class=boldlink>Applet Index</a></td>
+          </tr>
+        </table>                  
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        
+    </td>
+  </tr>
+
+<tr><td><p>&nbsp;</p></td></tr>
+<!-- end nav 2  -->  
+  <tr>
+    <td bgColor=#ccff99>
+       <table border="0" cellspacing="2" cellpadding="10" width="600" align="center">
+          <tr>
+            <td width="100%" bgColor=#ffffff>
+<p align=center>
+<span class=blacktitle>apPopupMenu Applet</span></p>
+
+<p align=center>
+<applet Code=apPopupMenu Archive=apPopupMenu.jar Width=426 Height=23>
+<param name="Copyright" value="Apycom Software - www.apycom.com">
+<param name="isHorizontal" value="true">
+<param name="3DBorder" value="true">
+<param name="solidArrows" value="true">
+<param name="buttonType" value="0">	         	
+<param name="status" value="link">
+<param name="alignText" value="left">		         		
+<param name="backColor" value="d0d0d0">
+<param name="backHighColor" value="000080">
+<param name="fontColor" value="000000">
+<param name="fontHighColor" value="FFFFFF">
+<param name="font" value="Arial,11,0">
+<param name="menuItems" value="
+{_,http://www.apycom.com/,_self,pix/home.gif}
+{|Home,http://www.apycom.com/,_self}
+{|-}
+{|apMenu Home,http://www.apycom.com/apmenu/,_self}
+{|apPopupMenu Home,http://www.apycom.com/apmenu/,_self}
+{|apButtonMenu Home,http://www.apycom.com/apmenu/,_self}
+{|apImageMenu Home,http://www.apycom.com/apmenu/,_self}
+{|-}
+{|Order,http://www.apycom.com/apmenu/order.html,_self}
+{|FAQ,http://www.apycom.com/apmenu/faq.html,_self}
+{|Javascript Tips,http://www.apycom.com/apmenu/jstips.html,_self}
+{|Downloads,http://www.apycom.com/download.html,_self}
+{|-}	
+{|Contact,http://www.apycom.com/contact.html,_self}
+{-}
+
+{apMenus,http://www.apycom.com/apmenu/index.html,_self,pix/folders.gif}
+{|apMenu}
+{||Home,http://www.apycom.com/apmenu/index.html,_self}
+{||-}
+{||Parameters,apmenu/params.html,_}
+{||Examples,apmenu/ex1.html,_}
+{||Order,http://www.apycom.com/apmenu/order.html,_self}
+
+{|apPopupMenu}
+{||Home,http://www.apycom.com/apmenu/index.html,_self}
+{||-}
+{||Parameters,params.html,_self}
+{||Examples,ex1.html,_self}
+{||Order,http://www.apycom.com/apmenu/order.html,_self}
+
+{|apButtonMenu}
+{||Home,http://www.apycom.com/apmenu/index.html,_self}
+{||-}
+{||Parameters,apbtmenu/params.html,_}
+{||Examples,apbtmenu/ex1.html,_}
+{||Order,http://www.apycom.com/apmenu/order.html,_self}
+
+{|apImageMenu}
+{||Home,http://www.apycom.com/apmenu/index.html,_self}
+{||-}
+{||Parameters,apimmenu/params.html,_}
+{||Examples,apimmenu/ex1.html,_}
+{||Order,http://www.apycom.com/apmenu/order.html,_self}
+{Examples,ex1.html,_self,pix/edit.gif}
+{|Example Index,../index.html,_self}
+{|-}
+{|Example #1,ex1.html,_self}
+{|Example #2,ex2.html,_self}
+{|Example #3,ex3.html,_self}
+{|Example #4,ex4.html,_self}
+{|Example #5,ex5.html,_self}
+{|Example #6,ex6.html,_self}
+{|Frame Example,exframe.html,_self}
+{Parameters,params.html,_self,pix/edit.gif}
+{Download,http://www.apycom.com/download.html,_self,pix/favor.gif}
+{-}	
+{_,http://www.apycom.com/contact.html,_self,pix/mail.gif}
+">
+</applet>
+</p>
+<span class=mtext>
+apPopupMenu is an extremely powerful popup menu solution for your web site navigation. 
+Menus can pop up over HTML content, frames and even go over the browser window.
+Due to its highly user-configurability you can fully adopt an applet's appearance 
+(such as colors, fonts, image background, icons, sounds, text alignment, separators) to fit your website needs.  
+The applet also supports unlimited number of submenus, javascript calls, target frames and 6 different button types. Small (~6kb), highly performance, easy-to-use and free. Java source code is <a href="http://www.apycom.com/apmenu/order.html" class=txtlink>available</a>.
+</span>
+
+
+<p align=center>
+</p>
+<p align=center><span class=bmtext>Main features</span></p>
+<span class=mtext>
+<ul>
+<li>Ability to cascade unlimited pop-up menus - see <a href="ex3.html" class=txtlink>depth test example</a>
+<li>Submenus can overlap any number of frames as well as other HTML content and even jump outside the browser window - see <a href="exframe.html" class=txtlink>frame example</a>
+<li>6 button types
+<li>Menu structure can be loaded from an external txt file
+<li>Ability to call javascripts - see <a href="ex4.html" class=txtlink>javascript call example</a> and
+<a href="javascript.html" class=txtlink target=_blank>javascript tips</a>
+<li>Horizontal and vertical directions
+<li>Color parameters for normal and mouseover state of text and background
+<li>User-definable font style, font size and font face  
+<li>Tiled image background
+<li>Image icons for top items
+<li>3D, solid and hidden arrows
+<li>Support for target frames - see <a href="exframe.html" class=txtlink>frame example</a>
+<li>Top level text alignment
+<li>Mouseover and click sounds
+<li>Applet's 3D border
+<li>User-definable delimiter for "menuItems" param
+<li>3D text effects (normal and mouseover text shadow)
+<li>Inactive/disabled items
+<li>User defined browser's status string
+<li>Separators
+</ul>
+</span>
+<p align=center><span class=bmtext>Setup</span></p>
+
+<p>
+<span class=mtext>
+<ul>
+<li>Place the .jar file in the directory containing the HTML document into
+which you want to insert the applet (or into a different directory, and add the
+correct CODEBASE= attribute). It's not necessary to have .class file if you have
+.jar - see <a class=txtlink  href=http://www.apycom.com/apmenu/faq.html>FAQ</a>.
+<li>Add the applet tag to your HTML document in the position you want menu
+to appear. Usually the easiest way to customize the applet is cut and paste the
+applet tag information used in the <a href="ex1.html" class=txtlink>examples</a> 
+and modify it to fit your web page.&nbsp;<br>
+If you see a &quot;class
+    not found&quot; message, this means what your browser can't find the
+.jar file specified. This may mean a spelling or Case seNSitiVe mistake in the
+CODE= or ARCHIVE= attribute, the wrong location in the CODEBASE= attribute, or
+that you've forgotten to copy the .jar file to the necessary directory.
+<li>To add frame support edit &quot;menuItems&quot; parameter as shown:&nbsp; {ItemText,ItemLink,Frame}.&nbsp;<br>
+So {Home,home.htm,left} would display &quot;Home&quot; and make the frame called
+&quot;left&quot; go to &quot;home.htm&quot; on clicking. See also <a
+href="exframe.html" class=txtlink>frame example</a>.
+<li>To enable Javascript support see <a href="javascript.html" target=_blank class=txtlink>javascript tips</a> and
+<a href="ex4.html" class=txtlink>javascript call example</a>.
+</ul>
+</span>
+</p>
+<p align=center><span class=bmtext>Register</span></p>
+
+<p>
+<span class=mtext>
+Apycom Java Menu Applets may be used freely on non-commercial and non-profit sites. 
+However free version displays Apycom url in the browser's status bar. 
+It is a violation of 
+<a href="license.html" target=_blank class=txtlink>license agreement</a> to
+intentionally overwrite this message. The applets will disable this item, when running from
+local drive only. <br>
+If you want to use the applets on a commercial site you need to order
+the registered version of the applet. The purchased version does not display the Apycom
+url. Also you can order the Java source code of the applets. For more informations see <a
+href="http://www.apycom.com/apmenu/order.html" class=txtlink>applets' order page</a>.
+</span>
+</p>
+<p align=center>
+</p>
+         </tr>
+        </table>   
+    </td>
+  </tr>
+<!-- end example -->
+  <tr>
+    <td>  
+<br>      
+<p align="center">
+<span class=mtext>Copyright (c) 1998-2001, </span><span class=bmtext>Apycom Software</span> 
+</p>    
+    </td>
+  </tr>      
+<!-- main table -->     
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<HTML>
+<HEAD>
+<TITLE>Calculator</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Hide the script from browsers which do not support it.
+
+//  DECLARE AND INITIALIZE VARIABLES
+  var zero 	= '0';
+  var one 	= '1';
+  var two 	= '2';
+  var three = '3';
+  var four 	= '4';
+  var five 	= '5';
+  var six = '6';
+  var seven = '7';
+  var eight = '8';
+  var nine 	= '9';
+  var add 	= '+';
+  var subtract = '-';
+  var multiply = '*';
+  var divide = '/';
+  var decimal = '.';
+  var power = '^';
+
+//  FUNCTION: compute
+function compute(f)
+{
+  f.view.value = eval(f.view.value);
+}
+
+//  FUNCTION: getNum
+function getNum(f, val)
+{
+  f.view.value += val;
+}
+
+
+// End of hiding script from browsers which do not support it. -->
+</SCRIPT>
+</HEAD>
+<BODY BGCOLOR="#F6F6F6" BACKGROUND="../images/bckgrnd.gif" bgproperties="fixed">
+
+
+
+<CENTER>
+<TABLE CELLPADDING=0 CELLSPACING=0 BORDER=5 BORDERCOLOR=DDDDDD>
+<TR><TD>
+<TABLE CELLPADDING=7 CELLSPACING=0 BGCOLOR=AABBCC>
+
+
+<FORM NAME="calc">
+  <TR>
+    <TD COLSPAN=2>
+        <INPUT TYPE=text NAME="view" SIZE=30 action="compute(this)"><BR>
+      <HR>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD COLSPAN=2><DIV ALIGN=RIGHT>
+        <INPUT TYPE=button VALUE="  7  " onClick="getNum(this.form, seven)"> 
+        <INPUT TYPE=button VALUE="  8  " onClick="getNum(this.form, eight)"> 
+        <INPUT TYPE=button VALUE="  9  " onClick="getNum(this.form, nine)"> 
+        <INPUT TYPE=button VALUE="   .  " onClick="getNum(this.form, decimal)"> 
+        <INPUT TYPE=reset VALUE="   C  "> 
+      </DIV></TD>
+  </TR>		
+  <TR>
+      <TD COLSPAN=2><DIV ALIGN=RIGHT>
+        <INPUT TYPE=button VALUE="  4  " onClick="getNum(this.form, four)"> 
+        <INPUT TYPE=button VALUE="  5  " onClick="getNum(this.form, five)"> 
+        <INPUT TYPE=button VALUE="  6  " onClick="getNum(this.form, six)"> 
+        <INPUT TYPE=button VALUE="  *  " onClick="getNum(this.form, multiply)"> 
+        <INPUT TYPE=button VALUE="   /    " onClick="getNum(this.form, divide)">
+      </DIV></TD>
+  </TR>		
+  <TR>
+      <TD COLSPAN=2><DIV ALIGN=RIGHT>
+        <INPUT TYPE=button VALUE="  1  " onClick="getNum(this.form, one)"> 
+        <INPUT TYPE=button VALUE="  2  " onClick="getNum(this.form, two)"> 
+        <INPUT TYPE=button VALUE="  3  " onClick="getNum(this.form, three)"> 
+        <INPUT TYPE=button VALUE="  -  " onClick="getNum(this.form, subtract)"> 
+        <INPUT TYPE=button VALUE="   +   " onClick="getNum(this.form, add)"> 
+      </DIV></TD>
+  </TR>	
+  <TR>
+      <TD><DIV ALIGN=RIGHT>
+      <INPUT TYPE=button VALUE="  0  " onClick="getNum(this.form, zero)">
+      </DIV>
+      </TD>
+      <TD>
+      <DIV ALIGN=RIGHT>
+        <INPUT TYPE=button VALUE="   =   " onClick="compute(this.form)">
+      </DIV>
+      </TD>
+  </TR>
+
+</FORM>
+
+
+</TABLE>
+</TD></TR></TABLE>
+</CENTER>
+
+
+
+
+</BODY>
+</HTML>

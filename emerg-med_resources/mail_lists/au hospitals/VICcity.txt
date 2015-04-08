@@ -1,0 +1,22 @@
+MELBOURNE ALFRED HOSPITAL (Public),Commercial Rd ,PRAHAN VIC ,3181,A/Prof Mark Fitzgerald,03 9276 2000,03 9726 2699,m.fitzgerald@alfred.org.au
+BOX HILL HOSPITAL (Public),Nelson Rd ,BOX HILL VIC ,3128,Dr Andrew Maclean ,03 9895 4861,03 9895 4828,Andrew.Maclean@boxhill.org.au
+EPWORTH HOSPITAL (Private),Bridge Rd ,RICHMOND PARK VIC ,3121,Dr Alan Yuen ,03 9426 6340,03 9818 8556,alleny@epworth.org.au
+MAROONDAH HOSPITAL (Public),Mt Dandenong Rd ,RINGWOOD EAST VIC ,3135,Dr Andrew Rosengarten,03 9871 3560,03 9871 3580,rosengartena@maroondah.org.au
+AUSTIN AND REPATRIATION MEDICAL CENTRE (Public),Studley Rd ,HEIDELBERG VIC ,3084,Dr George Braitberg ,03 9496 5460,03 9496 3572,george.bratiberg@armc.org.au
+JOHN FAWKNER HOSPITAL (Private),Moreland Rd ,COBURG VIC ,3055,Dr Adam Janson,03 9385 2140 or 0408 464 383,03 9385 2173,akjan@netspace.net.au
+NORTHERN HOSPITAL (Public),Cooper St,EPPING VIC, ,Dr Craig Winter,03 9219 8000,03 9219 8724
+ROYAL CHILDREN'S HOSPITAL (Public),Flemington Rd ,PARKVILLE VIC ,3052,Dr Simon Young,03 9345 5522,03 9345 5789,youngs@cryptic.rch.unimelb.edu.au
+ROYAL MELBOURNE HOSPITAL (Public),Grattan St ,PARKVILLE VIC ,3052,Dr Peter Cameron ,03 9342 7013,03 9342 8777,peter.cameron@nwhcn.org.au
+ROYAL WOMEN'S HOSPITAL (Public),Grattan St ,CARLTON VIC ,3053,Dr Sheila Bryan ,03 9344 2811,03 9344 3092,bryans@cryptic.rch.unimelb.edu.au
+ST VINCENT'S HOSPITAL (Public),Victoria Pde ,FITZROY VIC ,3065,Dr Andrew Dent,03 9288 4387,03 9288 4374,dentaw@svhm.org.au
+SANDRINGHAM AND DISTRICT HOSPITAL (Public),Bluff Rd ,SANDRINGHAM VIC ,3191,Dr Glynn Derwent-Smith,03 9921 1472,03 9921 1474,glynnds@hotmail.com
+DANDENONG HOSPITAL (Public),David St ,DANDENONG VIC ,3175,Dr Johannes Wenzel,03 95948374,03 9554 8453,j.wenzel@shcn.com.au
+ANGLISS HEALTH SERVICE (Public),Albert St ,UPPER FERNTREE GULLY VIC ,3156,Dr Marcus Kennedy,03 9764 6111,03 9764 6399,markenne@angliss.org.au
+KNOX PRIVATE HOSPITAL (Private),Mountain Hwy ,WANTIRNA VIC ,3152,Dr Peter Archer ,03 9210 7400,03 9210 7401,peter.archer@aol.com
+MONASH MEDICAL CENTRE (Public),Clayton Rd ,CLAYTON VIC ,3168,Dr Pamela Rosengarten ,03 9594 2707,03 9594 6564,pamela.rosengarten@schn.com.au
+SOUTH EASTERN PRIVATE HOSPITAL (Private),Princes Hwy ,NOBLE PARK VIC ,3174,Dr Edward Ogden,03 9547 1200,03 9574 1360,eogden@aushospcare.com.au
+THE VALLEY PRIVATE HOSPITAL (Private),Gladstone Rd ,MULGRAVE VIC ,3170,Dr John Phillips,03 9790 4286,03 9790 4251,JohnMeilen@aol.com
+WESTERN HOSPITAL (Public),Gordon St ,FOOTSCRAY VIC ,3011,Dr Michael Bryant ,03 8345 6315,03 9318 4790,michael.bryant@wh.org.au
+SUNSHINE HOSPITAL (Public),Furlong Rd ,ST ALBANS VIC ,3021,Dr Stephen Priestley ,03 8345 1268,03 8345 1447,stephen.priestley@wh.org.au
+WILLIAMSTOWN HOSPITAL (Public),Railway Cres ,WILLIAMSTOWN VIC ,3016,Dr Peter Crossley,03 9393 0100,03 9393 0219
+FREEMASONS HOSPITAL (Private),166 Clarendon St ,EAST MELBOURNE,3002, ,03 9483 3833,03 9419 5556

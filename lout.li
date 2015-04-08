@@ -1,0 +1,110 @@
+00 Basser Lout Version 3.17 (September 1999) database index file
+00symbol 10 @BasicSetup @DocumentSetup @FigureCounterMarker
+00symbol 11 @BasicSetup @DocumentSetup @TablePrefixMarker
+00symbol 12 @BasicSetup @DocumentSetup @TableCounterMarker
+00symbol 13 @BasicSetup @PageMarker
+00symbol 14 @BasicSetup @DocumentSetup @FootNoteCounterMarker
+00symbol 15 @BasicSetup @DocumentSetup @Runner
+00symbol 1 @BasicSetup @DocumentSetup @TheoremCounterMarker
+00symbol 2 @BasicSetup @DocumentSetup @DefinitionCounterMarker
+00symbol 3 @BasicSetup @DocumentSetup @ClaimCounterMarker
+00symbol 4 @BasicSetup @DocumentSetup @PropositionCounterMarker
+00symbol 5 @BasicSetup @DocumentSetup @LemmaCounterMarker
+00symbol 6 @BasicSetup @DocumentSetup @CorollaryCounterMarker
+00symbol 7 @BasicSetup @DocumentSetup @ExampleCounterMarker
+00symbol 8 @BasicSetup @NumDispCounterMarker
+00symbol 9 @BasicSetup @DocumentSetup @FigurePrefixMarker
+10&3478.temp/bill.txt.1	0	00021	1419	102	temp/bill.txt
+10&3478.temp/labels.txt.1	0	00022	1437	102	temp/labels.txt
+10&3478.temp/letter.txt.1	0	00023	1437	102	temp/letter.txt
+10&3478.temp/notes.txt.1	0	00024	1428	102	temp/notes.txt
+10&3478./var/www/html/temp/notes.txt.1	0	00010	1554	102	/var/www/html/temp/notes.txt
+11&3714.temp/bill.txt.1	0	00025	1505	109	temp/bill.txt
+11&3714.temp/labels.txt.1	0	00026	1525	109	temp/labels.txt
+11&3714.temp/letter.txt.1	0	00027	1525	109	temp/letter.txt
+11&3714.temp/notes.txt.1	0	00028	1515	109	temp/notes.txt
+11&3714./var/www/html/temp/notes.txt.1	0	00011	1655	109	/var/www/html/temp/notes.txt
+12&3722.temp/bill.txt.1	0	00029	1588	116	temp/bill.txt
+12&3722.temp/labels.txt.1	0	00030	1610	116	temp/labels.txt
+12&3722.temp/letter.txt.1	0	00031	1610	116	temp/letter.txt
+12&3722.temp/notes.txt.1	0	00032	1599	116	temp/notes.txt
+12&3722./var/www/html/temp/notes.txt.1	0	00012	1753	116	/var/www/html/temp/notes.txt
+1&2537.temp/bill.txt.1	0	00033	0	1	temp/bill.txt
+1&2537.temp/labels.txt.1	0	00034	0	1	temp/labels.txt
+1&2537.temp/letter.txt.1	0	00035	0	1	temp/letter.txt
+1&2537.temp/notes.txt.1	0	00036	0	1	temp/notes.txt
+1&2537./var/www/html/temp/notes.txt.1	0	00001	0	1	/var/www/html/temp/notes.txt
+13&1036.temp/bill.txt.1	0	00037	1673	123	temp/bill.txt
+13&1036.temp/labels.txt.1	0	00038	1697	123	temp/labels.txt
+13&1036.temp/letter.txt.1	0	00039	1697	123	temp/letter.txt
+13&1036.temp/notes.txt.1	0	00040	1685	123	temp/notes.txt
+13&1036.temp/notes.txt.2	0	00041	2130	161	temp/notes.txt
+13&1036./var/www/html/temp/notes.txt.1	0	00013	1853	123	/var/www/html/temp/notes.txt
+13&1036./var/www/html/temp/notes.txt.2	0	00016	2340	161	/var/www/html/temp/notes.txt
+13&last.page	0	00020	2340	161	/var/www/html/temp/notes.txt
+13&last.page	0	00042	1697	123	temp/letter.txt
+13&last.page	0	00043	1697	123	temp/labels.txt
+13&last.page	0	00044	2130	161	temp/notes.txt
+13&last.page	0	00045	1673	123	temp/bill.txt
+14&1377.temp/bill.txt.1	0	00046	1961	148	temp/bill.txt
+14&1377.temp/labels.txt.1	0	00047	1987	148	temp/labels.txt
+14&1377.temp/letter.txt.1	0	00048	1987	148	temp/letter.txt
+14&1377.temp/notes.txt.1	0	00049	1974	148	temp/notes.txt
+14&1377.temp/notes.txt.2	0	00050	2301	175	temp/notes.txt
+14&1377./var/www/html/temp/notes.txt.1	0	00014	2156	148	/var/www/html/temp/notes.txt
+14&1377./var/www/html/temp/notes.txt.2	0	00017	2525	175	/var/www/html/temp/notes.txt
+15&792.temp/bill.txt.1	0	00051	2184	167	temp/bill.txt
+15&792.temp/bill.txt.2	0	00052	2049	155	temp/bill.txt
+15&792.temp/bill.txt.3	0	00053	2115	161	temp/bill.txt
+15&792.temp/labels.txt.1	0	00054	2216	167	temp/labels.txt
+15&792.temp/labels.txt.2	0	00055	2077	155	temp/labels.txt
+15&792.temp/labels.txt.3	0	00056	2145	161	temp/labels.txt
+15&792.temp/letter.txt.1	0	00057	2216	167	temp/letter.txt
+15&792.temp/letter.txt.2	0	00058	2077	155	temp/letter.txt
+15&792.temp/letter.txt.3	0	00059	2145	161	temp/letter.txt
+15&792.temp/notes.txt.1	0	00060	2460	188	temp/notes.txt
+15&792.temp/notes.txt.2	0	00061	2063	155	temp/notes.txt
+15&792.temp/notes.txt.3	0	00062	2390	182	temp/notes.txt
+15&792./var/www/html/temp/notes.txt.1	0	00019	2712	188	/var/www/html/temp/notes.txt
+15&792./var/www/html/temp/notes.txt.2	0	00015	2259	155	/var/www/html/temp/notes.txt
+15&792./var/www/html/temp/notes.txt.3	0	00018	2628	182	/var/www/html/temp/notes.txt
+2&2596.temp/bill.txt.1	0	00063	222	17	temp/bill.txt
+2&2596.temp/labels.txt.1	0	00064	224	17	temp/labels.txt
+2&2596.temp/letter.txt.1	0	00065	224	17	temp/letter.txt
+2&2596.temp/notes.txt.1	0	00066	223	17	temp/notes.txt
+2&2596./var/www/html/temp/notes.txt.1	0	00002	237	17	/var/www/html/temp/notes.txt
+3&2651.temp/bill.txt.1	0	00067	374	27	temp/bill.txt
+3&2651.temp/labels.txt.1	0	00068	378	27	temp/labels.txt
+3&2651.temp/letter.txt.1	0	00069	378	27	temp/letter.txt
+3&2651.temp/notes.txt.1	0	00070	376	27	temp/notes.txt
+3&2651./var/www/html/temp/notes.txt.1	0	00003	404	27	/var/www/html/temp/notes.txt
+4&2706.temp/bill.txt.1	0	00071	516	37	temp/bill.txt
+4&2706.temp/labels.txt.1	0	00072	522	37	temp/labels.txt
+4&2706.temp/letter.txt.1	0	00073	522	37	temp/letter.txt
+4&2706.temp/notes.txt.1	0	00074	519	37	temp/notes.txt
+4&2706./var/www/html/temp/notes.txt.1	0	00004	561	37	/var/www/html/temp/notes.txt
+5&2761.temp/bill.txt.1	0	00075	670	47	temp/bill.txt
+5&2761.temp/labels.txt.1	0	00076	678	47	temp/labels.txt
+5&2761.temp/letter.txt.1	0	00077	678	47	temp/letter.txt
+5&2761.temp/notes.txt.1	0	00078	674	47	temp/notes.txt
+5&2761./var/www/html/temp/notes.txt.1	0	00005	730	47	/var/www/html/temp/notes.txt
+6&2816.temp/bill.txt.1	0	00079	812	57	temp/bill.txt
+6&2816.temp/labels.txt.1	0	00080	822	57	temp/labels.txt
+6&2816.temp/letter.txt.1	0	00081	822	57	temp/letter.txt
+6&2816.temp/notes.txt.1	0	00082	817	57	temp/notes.txt
+6&2816./var/www/html/temp/notes.txt.1	0	00006	887	57	/var/www/html/temp/notes.txt
+7&2871.temp/bill.txt.1	0	00083	962	67	temp/bill.txt
+7&2871.temp/labels.txt.1	0	00084	974	67	temp/labels.txt
+7&2871.temp/letter.txt.1	0	00085	974	67	temp/letter.txt
+7&2871.temp/notes.txt.1	0	00086	968	67	temp/notes.txt
+7&2871./var/www/html/temp/notes.txt.1	0	00007	1052	67	/var/www/html/temp/notes.txt
+8&1202.temp/bill.txt.1	0	00087	1108	77	temp/bill.txt
+8&1202.temp/labels.txt.1	0	00088	1122	77	temp/labels.txt
+8&1202.temp/letter.txt.1	0	00089	1122	77	temp/letter.txt
+8&1202.temp/notes.txt.1	0	00090	1115	77	temp/notes.txt
+8&1202./var/www/html/temp/notes.txt.1	0	00008	1213	77	/var/www/html/temp/notes.txt
+9&3470.temp/bill.txt.1	0	00091	1335	95	temp/bill.txt
+9&3470.temp/labels.txt.1	0	00092	1351	95	temp/labels.txt
+9&3470.temp/letter.txt.1	0	00093	1351	95	temp/letter.txt
+9&3470.temp/notes.txt.1	0	00094	1343	95	temp/notes.txt
+9&3470./var/www/html/temp/notes.txt.1	0	00009	1455	95	/var/www/html/temp/notes.txt

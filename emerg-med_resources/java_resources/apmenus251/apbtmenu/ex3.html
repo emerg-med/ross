@@ -1,0 +1,203 @@
+<html>
+
+<head>
+<title>Apycom | Free Java Menu Applets | apButtonMenu Examples</title>
+<link REL=stylesheet HREF=exstyle.css TYPE=text/css>
+</head>
+
+<body bgcolor="#CCFF99"  leftmargin=4 topmargin=0 marginheight=0 marginwidth=0>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+<!-- main table --> 
+  <tr>
+    <td width="100%">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td width="50%">
+<a href=http://www.apycom.com><img src=logo.gif  border=0 alt="Apycom Software Home" width="160" height="45"></a>
+          </td>
+          <td width="50%" align="right"><span class=btitle>apButtonMenu Example #3&nbsp;&nbsp;</span></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+<!-- end header  -->   
+ <tr>
+ <td width="100%" align="center">
+        <table bgcolor="#60c020" border="0" cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td width="16%" align="center"><a class=ssmenu  href=http://www.apycom.com>Apycom Home</a></td>
+            <td width="16%" align="center"><a class=ssmenu  href=http://www.apycom.com/apmenu>Applets' Home</a></td>            
+            <td width="17%" align="center"><a class=ssmenu  href=http://www.apycom.com/apmenu/order.html>Order Applets</a></td>
+            <td width="17%" align="center"><a class=ssmenu  href=http://www.apycom.com/download.html>Download</a></td>
+            <td width="17%" align="center"><a class=ssmenu  href=http://www.apycom.com/apmenu/faq.html>FAQ</a></td>            
+            <td width="17%" align="center"><a class=ssmenu  href=http://www.apycom.com/contact.html>Contact</a></td>            
+          </tr>
+        </table>
+    </td>
+  </tr>
+<!-- end nav 1  -->   
+  <tr>
+    <td width="100%" align="center">
+        <table bgColor=#60c020 border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td width="100%">
+              <table border="0" cellpadding="0" cellspacing="1" width="100%">
+                <tr>
+                  <td width="40%" bgColor=#ffffff>
+ 
+
+       <table border="0" cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td width="30%" align="center"><a href="ex2.html" class=boldlink>Previous</a></td>
+            <td width="40%" align="center"><a href="../index.html" class=boldlink>Example Index</a></td>
+            <td width="30%" align="center"><a href="ex4.html" class=boldlink>Next</a></td>                  
+          </tr>
+        </table>                  
+
+
+                  </td>
+                  <td width="60%" bgColor=#CCFF99>                  
+        <table border="0" cellpadding="3" cellspacing="0" width="100%">
+          <tr>                  
+            <td width="25%" align="center"><a href="params.html" class=boldlink>Parameters</a></td>                  
+            <td width="25%" align="center"><a href="exframe.html" class=boldlink>Frame Example</a></td>            
+            <td width="25%" align="center"><a href="javascript.html" class=boldlink target=_blank>Javascript Tips</a></td>
+            <td width="25%" align="center"><a href="index.html" class=boldlink>Applet Index</a></td>
+          </tr>
+        </table>                  
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        
+    </td>
+  </tr>
+
+<tr><td><p>&nbsp;</p></td></tr>
+<!-- end nav 2  -->  
+  <tr>
+    <td bgColor=#ccff99>
+       <table border="0" cellspacing="2" cellpadding="10" width="600" align="center">
+          <tr>
+            <td width="100%" bgColor=#d0e090>
+<p align=left>
+<span class=blacktitle>apButtonMenu Example #3</span></p>
+
+<p align=left>
+<applet Code="apButtonMenu" Archive="apButtonMenu.jar" Width = "180" Height = "200">
+<param name="Copyright" value="Apycom Software - www.apycom.com">
+<param name="isHorizontal" value="false">
+<param name="3DBorder" value="true">
+<param name="buttonType" value="0">	         	
+<param name="status" value="link">
+<param name="alignText" value="left">		         		
+<param name="backHighColor" value="336699">
+<param name="backColor" value="d0e090">
+<param name="fontHighColor" value="fffff0">
+<param name="fontColor" value="000000">
+<param name="font" value="Arial,11,0">
+<param name="menuItems"	value="
+       {Apycom Software,http://www.apycom.com,_self,pix/home32.gif}
+       {-}
+       {Menu Applets,testlink.html,_self,pix/progs32.gif}
+       {Parameters,testlink.html,_,pix/setup32.gif}
+       {Examples,testlink.html,_,pix/help32.gif}
+       {Download Applets,http://www.apycom.com/download/apmenu.zip,_self,pix/run32.gif}
+       {-}	
+       {Contact Us,mailto:support@apycom.com,_self,pix/mail32.gif}
+       ">
+</applet>
+<p><span class=bmtext>This example demonstrates:</span></p>
+<span class=mtext>
+<ul>
+<li>Applet's 3D border
+<li>Item icons - <img src=pix/home32.gif border=0 width="32" height="32"><img src=pix/progs32.gif border=0 width="32" height="32"><img src=pix/setup32.gif border=0 width="32" height="32"><img src=pix/help32.gif border=0 width="32" height="32"><img src=pix/run32.gif border=0 width="32" height="32"><img src=pix/mail32.gif border=0 width="32" height="32">
+<li>Disabled items - target parameter equals "_"
+<li>Button type 0 ("no buttons")
+<li>Separators
+<li>Vertical menu direction
+<li>Text aligned to left
+<li>Browser's status bar shows item link
+</ul>
+</span>
+<p><span class=bmtext>HTML Source</span></p>
+
+<p>
+<span class=mtext>
+  &lt;applet Code="apButtonMenu" Archive="apButtonMenu.jar" Width = "180" Height = "200"><br>
+  &lt;param name="Copyright" value="Apycom Software - www.apycom.com"><br>
+  &lt;param name="isHorizontal" value="false"><br>
+  &lt;param name="3DBorder" value="true"><br>
+  &lt;param name="buttonType" value="0">&nbsp;<br>
+  &lt;param name="status" value="link"><br>
+  &lt;param name="alignText" value="left">&nbsp;<br>
+  &lt;param name="backHighColor" value="336699"><br>
+  &lt;param name="backColor" value="d0e0b0"><br>
+  &lt;param name="fontHighColor" value="fffff0"><br>
+  &lt;param name="fontColor" value="000000"><br>
+  &lt;param name="font" value="Arial,11,0"><br>
+  &lt;param name="menuItems"	value="<br>
+  &nbsp;&nbsp;&nbsp;&nbsp; {Apycom Software,http://www.apycom.com,_self,pix/home32.gif}<br>
+  &nbsp;&nbsp;&nbsp;&nbsp; {-}<br>
+  &nbsp;&nbsp;&nbsp;&nbsp; {Menu Applets,testlink.html,_self,pix/progs32.gif}<br>
+  &nbsp;&nbsp;&nbsp;&nbsp; {Parameters,testlink.html,_,pix/setup32.gif}<br>
+  &nbsp;&nbsp;&nbsp;&nbsp; {Examples,testlink.html,_,pix/help32.gif}<br>
+  &nbsp;&nbsp;&nbsp;&nbsp; {Download Applets,http://www.apycom.com/download/apmenu.zip,_self,pix/run32.gif}<br>
+  &nbsp;&nbsp;&nbsp;&nbsp; {-}&nbsp;<br>
+  &nbsp;&nbsp;&nbsp;&nbsp; {Contact Us,mailto:support@apycom.com,_self,pix/mail32.gif}<br>
+  &nbsp;&nbsp;&nbsp;&nbsp; "><br>
+  &lt;/applet><br>
+  <br>
+<br>
+</span>
+</p>
+
+          </tr>
+        </table>   
+    </td>
+  </tr>
+<!-- end example -->
+<tr><td><p>&nbsp;</p></td></tr>   
+  <tr>
+    <td >
+
+       <table bgColor=#60c020 border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td width="100%">
+              <table border="0" cellpadding="0" cellspacing="1" width="100%">
+                <tr>
+                  <td width="100%" bgColor=#ffffff>
+        <table border="0" cellpadding="3" cellspacing="0" width="55%" align="center">
+          <tr>
+            <td width="38%" align="center"><a href="ex2.html" class=boldlink>Previous Example</a></td>
+            <td width="33%" align="center"><a href="../index.html" class=boldlink>Example Index</a></td>
+            <td width="31%" align="center"><a href="ex4.html" class=boldlink>Next Example</a></td>                  
+          </tr>
+        </table>                  
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        
+    </td>
+  </tr>
+<!-- end nav3 --> 
+  <tr>
+    <td>  
+<br>      
+<p align="center">
+<span class=mtext>Copyright (c) 1998-2001, </span><span class=bmtext>Apycom Software</span> 
+</p>    
+    </td>
+  </tr>      
+<!-- main table -->     
+</table>
+
+</body>
+
+</html>

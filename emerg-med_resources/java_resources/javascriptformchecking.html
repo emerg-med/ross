@@ -1,0 +1,1066 @@
+<HTML><HEAD>
+
+<TITLE>Welcome to the Cyber Mortgage Helper</TITLE>
+<META content="text/html; charset=iso-8859-1" http-equiv=Content-Type>
+<script language="JavaScript">
+<!--
+function namosw_init_clock()
+{
+  var type, i, top, obj, clocks;
+  clocks = new Array();
+  for (i = 0, top = 0; i < namosw_init_clock.arguments.length; i += 2) {
+    obj = eval('document.'+namosw_init_clock.arguments[i]);
+    if (obj == null) continue;
+    if ((type = namosw_init_clock.arguments[i+1]) < 1 && 11 < type) continue;
+    clocks[top++] = obj;
+    clocks[top++] = type;
+  }
+  clocks.months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July',
+                            'August', 'September', 'October', 'November', 'December');
+  clocks.days   = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday',
+                            'Thursday', 'Friday', 'Saturday');
+  clocks.k_days = new Array('ÀÏ', '¿ù', 'È­', '¼ö', '¸ñ', '±Ý', 'Åä');
+  clocks.ampm_str   = new Array('AM', 'PM');
+  clocks.k_ampm_str = new Array('¿ÀÀü', '¿ÀÈÄ');
+
+  if (top > 0) {
+    document.namosw_clocks = clocks;
+    namosw_clock();
+  }
+}
+
+function namosw_clock()
+{
+  var i, type, clocks, next_call, str, hour, ampm, now, year2, year4;
+  clocks = document.namosw_clocks;
+  if (clocks == null) return;
+  next_call = false;
+  for (i = 0; i < clocks.length; i += 2) {
+    obj   = clocks[i];
+    type  = clocks[i+1];
+    now   = new Date();
+    year2 = now.getYear();
+    year4 = year2;
+    if (year2 < 1000) year4 = 1900 + year2;
+    if (year2 >= 100) year2 = year4;
+
+    if (type == 1 || type == 2) {
+      obj.value = clocks.months[now.getMonth()] + ' ' + now.getDate() + ', ' + year4;
+      if (type == 2) 
+        obj.value = clocks.days[now.getDay()] + ', ' + obj.value;
+    } else if (type == 3 || type == 4) {
+      obj.value = year2 + '/' + (now.getMonth()+1) + '/' + now.getDate();
+    } else if (type == 5 || type == 6) {
+      obj.value = (now.getMonth()+1) + '/' + now.getDate() + '/' + year2;
+    } else if (type == 8 || type == 9 || type == 10 || type == 11) {
+      obj.value = year4 + '³â ' + (now.getMonth()+1) + '¿ù ' + now.getDate() + 'ÀÏ';
+      if (type == 9)
+        obj.value += ' ' + clocks.k_days[now.getDay()] + '¿äÀÏ';
+    }
+    if (type == 4 || type == 6 || type == 7 || type == 10 || type == 11) {
+      hour = now.getHours();
+      ampm = 0;
+      if (hour >= 12) {
+	if (hour > 12) hour -= 12;
+	ampm = 1;
+      }
+      if (type == 10 || type == 11) {
+	str = clocks.k_ampm_str[ampm] +' '+ hour+'½Ã '+ now.getMinutes() +'ºÐ';
+	if (type == 11) str += ' ' + now.getSeconds() +'ÃÊ';
+      } else {
+	str = hour +':'+ ((now.getMinutes() < 10) ? '0'+now.getMinutes():now.getMinutes()) +':'+ ((now.getSeconds() < 10) ? '0'+now.getSeconds():now.getSeconds()) +' '+ clocks.ampm_str[ampm];
+      }
+      if (type == 7) obj.value  = str;
+      else           obj.value += ' ' + str;
+    }
+    if (type == 4 || type == 6 || type == 7 || type == 10 || type == 11)
+      next_call = true;
+  }
+  if (next_call)
+    window.setTimeout("namosw_clock();", 1000);
+}
+
+// -->
+</script>
+</HEAD>
+<BODY aLink=#333300 bgColor=#ffffff leftMargin=3 link=#333300 topMargin=3
+vLink=#333300 OnLoad="namosw_init_clock('form1.textclock1', 5)">
+
+<script language="JavaScript">
+
+function closewindow(){
+        window.close()
+}
+
+</script>
+
+
+
+<SCRIPT LANGUAGE="Javascript"><!--
+// ***********************************************
+// AUTHOR:
+// ***********************************************
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+var EnableRightClick = 0;
+if(isNS) 
+document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+function mischandler(){
+  if(EnableRightClick==1){ return true; }
+  else {return false; }
+}
+function mousehandler(e){
+  if(EnableRightClick==1){ return true; }
+  var myevent = (isNS) ? e : event;
+  var eventbutton = (isNS) ? myevent.which : myevent.button;
+  if((eventbutton==2)||(eventbutton==3)) return false;
+}
+function keyhandler(e) {
+  var myevent = (isNS) ? e : window.event;
+  if (myevent.keyCode==96)
+    EnableRightClick = 1;
+  return;
+}
+document.oncontextmenu = mischandler;
+document.onkeypress = keyhandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+//-->
+</script>
+
+<SCRIPT>
+<!-- Activate Cloaking Device
+
+// Reports if all forms have filled out properly.
+function checkForm(){   
+if ( (isOwner()) && (isYesOwner()) && (isAppName() ) && (isCoAppName()) && (isMonthly_Payment2()) && (isFixed_or_Adjustable2()) && (isCurrent_Interest_Rate_on_Second()) && (isSecond_Mortgage_Balance() ) && (isAddress()) && (isCity()) && (isZip()) && (isPhoneNum()) && (isPropertyType()) && (isPurchasePrice()) && (isPurchaseYear()) && (isPresentValue()) && (isAmountOwed()) && (isCurrentInterest()) && (isType()) && (isMonthlyPayment()) && (isCurrentEmployer()) && (isEmployerYears()) && (isYearlyIncome()) && (isCredit()) && (isContact()) && (isLoanType()) && (isLoanAmount()) && (isComments()) && (isEmail())){    
+alert("\nAll forms appear to be filled out properly.\n\nYour submission will now be made.");      
+}  else {return false;} 
+}
+
+function isOwner(){   
+var str = document.form1.Home_Owner.value;   
+
+// Return false if name field is blank.   
+if (str == "Select"){      
+alert("\nPlease select if you are a homeowner.")      
+document.form1.Home_Owner.focus();      
+return false;      
+}   
+return true;   
+}
+
+function disableForm(theform) {
+if (document.form1.all || document.form1.getElementById) {
+for (i = 0; i < theform.length; i++) {
+var tempobj = theform.elements[i];
+if (tempobj.type.toLowerCase() == "submit" || tempobj.type.toLowerCase() == "reset")
+tempobj.disabled = true;
+}
+setTimeout('alert("Your form has been submitted.  Notice how the submit and reset buttons were disabled upon submission.")', 2000);
+return true;
+}
+else {
+alert("The form has been submitted.  But, since you're not using IE 4+ or NS 6, the submit button was not disabled on form submission.");
+return false;
+   }
+}
+function isYesOwner(){   
+var str = document.form1.Home_Owner.value;   
+
+// Return false if name field is no.   
+if (str == "No"){      
+alert("\nYou must be a homeowner to receive a free quote.")      
+document.form1.Home_Owner.focus();      
+return false;      
+}   
+return true;   
+}
+
+function isAppName(){   
+var str = document.form1.Applicant_Name.value;   
+
+// Return false if name field is blank.   
+if (str == ""){      
+alert("\nPlease enter the primary applicant's name.")      
+document.form1.Applicant_Name.focus();      
+return false;      
+}   
+return true;   
+}
+
+function isCoAppName(){   
+var str = document.form1.CoApplicant_Name.value;   
+
+// Return false if name field is blank.   
+if (str == ""){      
+alert("\nPlease enter the co-applicant's name, if no co-applicant exists, enter N/A.")      
+document.form1.CoApplicant_Name.focus();      
+return false;      
+}   
+return true;   
+}
+
+function isAddress(){   
+var str = document.form1.Address.value;   
+
+// Return false if name field is blank.   
+if (str == ""){      
+alert("\nPlease enter your street address.")      
+document.form1.Address.focus();      
+return false;      
+}   
+return true;   
+}
+
+function isCity(){   
+var str = document.form1.City.value;   
+
+// Return false if name field is blank.   
+if (str == ""){      
+alert("\nPlease enter the city where you reside.")      
+document.form1.City.focus();      
+return false;      
+}   
+return true;   
+}
+
+function isZip(){   
+var str = document.form1.Zip_Code.value;   
+// Return false if number field is blank.   
+if (str == ""){         
+alert("\nPlease enter your zip code.");         
+document.form1.Zip_Code.focus();         
+return false;         
+}   
+// Return false if characters are not '0-9' or '-' .    
+for (var i = 0; i < str.length; i++){      
+var ch = str.substring(i, i + 1);      
+if ((ch < "0" || "9" < ch) && ch != '-'){         
+alert("\nThe Zip Code field accepts only numbers. \n\nPlease re-enter a number.");         
+document.form1.Zip_Code.select();         
+document.form1.Zip_Code.focus();         
+return false;         
+}      
+}   
+return true;   
+}
+
+function isPhoneNum(){   
+var str = document.form1.Home_Phone.value; 
+var str2 = document.form1.Work_Phone.value; 
+
+// Return false if number field is blank.   
+if ((str == "") && (str2 == "")){         
+alert("\nPlease enter your home phone number or your work phone number.");         
+document.form1.Home_Phone.focus();         
+return false;         
+}   
+return true;   
+}
+
+function isPropertyType(){   
+var str = document.form1.Property_Type.value;   
+
+// Return false if name field is blank.   
+if (str == "Select"){      
+alert("\nPlease select a property type.")      
+document.form1.Property_Type.focus();      
+return false;      
+}   
+return true;   
+}
+
+function isPurchasePrice(){   
+var str = document.form1.Purchase_Price.value;   
+
+// Return false if name field is blank.   
+if (str == "Select"){      
+alert("\nPlease select a Purchase Price type.")      
+document.form1.Purchase_Price.focus();      
+return false;
+}   
+return true;   
+}
+
+function isPurchaseYear(){   
+var str = document.form1.Year_Acquired.value;   
+// Return false if number field is blank.   
+if (str == ""){         
+alert("\nPlease enter the year you acquired the property.");         
+document.form1.Year_Acquired.focus();         
+return false;         
+}   
+return true;   
+}
+
+function isPresentValue(){   
+var str = document.form1.Present_Value.value;   
+
+// Return false if name field is blank.   
+if (str == "Select"){      
+alert("\nPlease select Present Value.")      
+document.form1.Present_Value.focus();      
+return false;      
+}  
+return true;   
+}
+
+function isAmountOwed(){   
+var str = document.form1.Amount_Owed_First_Mortgage.value;   
+
+// Return false if name field is blank.   
+if (str == "Select"){      
+alert("\nPlease select amount owed on first mortgage.")      
+document.form1.Amount_Owed_First_Mortgage.focus();      
+return false;      
+}  
+return true;   
+}
+
+function isCurrentInterest(){   
+var str = document.form1.Current_Interest_Rate_on_First.value;   
+
+// Return false if name field is blank.   
+if (str == "Select"){      
+alert("\nPlease select a current interest on first.")      
+document.form1.Current_Interest_Rate_on_First.focus();      
+return false;      
+}  
+return true;   
+}
+
+function isType(){   
+var str = document.form1.Fixed_or_Adjustable.value;   
+
+// Return false if name field is blank.   
+if (str == "Select"){      
+alert("\nPlease select fixed or adjustable.")      
+document.form1.Fixed_or_Adjustable.focus();      
+return false;      
+}   
+return true;   
+}
+
+function isMonthlyPayment(){   
+var str = document.form1.Monthly_Payment.value;   
+
+// Return false if name field is blank.   
+if (str == "Select"){      
+alert("\nPlease select monthly payment.")      
+document.form1.Monthly_Payment.focus();      
+return false;      
+}   
+return true;   
+}
+
+function isCurrentEmployer(){   
+var str = document.form1.Current_Employer.value;   
+// Return false if number field is blank.   
+if (str == ""){         
+alert("\nPlease enter your current employer.");         
+document.form1.Current_Employer.focus();         
+return false;         
+}     
+return true;   
+}
+
+function isEmployerYears(){   
+var str = document.form1.Years_with_Current_Employer.value;   
+
+// Return false if name field is blank.   
+if (str == "Select"){      
+alert("\nPlease enter how long you have been with your current employer.")      
+document.form1.Years_with_Current_Employer.focus();      
+return false;      
+}   
+return true;   
+}
+
+function isYearlyIncome(){   
+var str = document.form1.Yearly_Income.value;   
+// Return false if number field is blank.   
+if (str == ""){         
+alert("\nPlease enter your numeric yearly income.");         
+document.form1.Yearly_Income.focus();         
+return false;         
+}   
+return true;   
+}
+
+function isCredit(){   
+var str = document.form1.Credit.value;   
+
+// Return false if name field is blank.   
+if (str == "Select"){      
+alert("\nPlease rate your credit.")      
+document.form1.Credit.focus();      
+return false;      
+}   
+return true;   
+}
+
+function isContact(){   
+var str = document.form1.Best_Time_to_Contact_You.value;   
+
+// Return false if name field is blank.   
+if (str == "Select"){      
+alert("\nPlease select the best time to contact you.")      
+document.form1.Best_Time_to_Contact_You.focus();      
+return false;      
+}   
+return true;   
+}
+
+function isLoanType(){   
+var str = document.form1.Type_of_Loan_Desired.value;   
+
+// Return false if name field is blank.   
+if (str == "Select"){      
+alert("\nPlease select the type of loan you desire.")      
+document.form1.Type_of_Loan_Desired.focus();      
+return false;      
+}   
+return true;   
+}
+
+function isLoanAmount(){   
+var str = document.form1.Loan_Amount_Desired.value;   
+
+// Return false if name field is blank.   
+if (str == "Select"){      
+alert("\nPlease select the loan amount you are looking for.")      
+document.form1.Loan_Amount_Desired.focus();      
+return false;      
+}   
+return true;   
+}
+
+function isSecond_Mortgage_Balance(){   
+var str = document.form1.Second_Mortgage_Balance.value;   
+
+// Return false if name field is blank.   
+if (str == ""){      
+alert("\nPlease enter 0 If you have no second Mortgage Balance.")      
+document.form1.Second_Mortgage_Balance.focus();      
+return false;      
+}   
+return true;   
+}
+
+function isCurrent_Interest_Rate_on_Second(){   
+var str = document.form1.Current_Interest_Rate_on_Second.value;   
+
+// Return false if name field is blank.   
+if (str == ""){      
+alert("\nPlease enter 0 If you have no second Mortgage Interest Rate.")      
+document.form1.Current_Interest_Rate_on_Second.focus();      
+return false;      
+}   
+return true;   
+}
+
+function isMonthly_Payment2(){   
+var str = document.form1.Monthly_Payment2.value;   
+
+// Return false if name field is blank.   
+if (str == ""){      
+alert("\nPlease enter 0 If you have no second Mortgage Payment.")      
+document.form1.Monthly_Payment2.focus();      
+return false;      
+}   
+return true;   
+}
+
+function isFixed_or_Adjustable2(){   
+var str = document.form1.Fixed_or_Adjustable2.value;   
+
+// Return false if name field is blank.   
+if (str == "Select"){      
+alert("\nPlease select fixed or adjustable for second mortgage, or NONE if you do not have one.")      
+document.form1.Fixed_or_Adjustable2.focus();      
+return false;      
+}   
+return true;   
+}
+
+function isComments(){   
+var str = document.form1.Comments.value;   
+
+// Return false if name field is blank.   
+if (str == ""){      
+alert("\nPlease enter N/A If you have no Comments.")      
+document.form1.Comments.focus();      
+return false;      
+}   
+return true;   
+}
+
+function isEmail(){   
+// Return false if e-mail field is blank.   
+if (document.form1.email.value == ""){      
+alert("\nThe e-mail field is blank.\n\nPlease enter your e-mail address.")      
+document.form1.Email_Address.focus();      
+return false;       
+}   
+// Return false if e-mail field does not contain a '@' and '.' .   
+if (document.form1.email.value.indexOf ('@',0) == -1 || document.form1.email.value.indexOf ('.',0) == -1){      
+alert("\nThe e-mail field requires a \"@\" and a \".\"be used.\n\nPlease re-enter your e-mail address.")      
+document.form1.email.select();      
+document.form1.email.focus();      
+return false;      
+}   
+else {      
+return true;      
+}   
+}
+
+// Deactivate Cloaking -->
+</SCRIPT>
+
+<p><b>To be removed from Future Mailings please <a href="remove.html">click here</a>
+now.</b></p>
+
+<DIV align=center>
+<CENTER>
+<TABLE border=0 cellPadding=0 cellSpacing=0 height=179 width=1>
+  <TBODY>
+  <TR>
+    <TD height=179 width=718>
+     <form action="contact.php" method="post" name="form1" onsubmit="return checkForm()">
+      <input type=hidden name=print_blank_fields value=1><input type=hidden name=print_blank_fields value=1><input type=hidden name=print_blank_fields value=1><input type="hidden" name="action" value="file">      <DIV align=center>
+      <TABLE border=0 cellPadding=2 cellSpacing=0 height=234 width=645>
+        <TBODY>
+        <TR>
+          <TD align=middle width="100%">
+<TABLE border=0 cellPadding=0 cellSpacing=0 width=600>
+  <TBODY>
+  <TR align=middle bgColor=#cc0000 vAlign=top>
+    <TD align="center" bgcolor="#000099" width="600"><b><font size="6" color="#C0C0C0">Mortgage
+      Rate Newsletter</font></b></TD></TR></TBODY></TABLE>
+<TABLE border=0 cellPadding=0 cellSpacing=0 width=600>
+  <TBODY>
+  <TR>
+    <TD align=left vAlign=top width=380 bgcolor="#000099"><img border="0" src="greenspan.jpg" width="367" height="95"></TD>
+    <TD vAlign=top width="220" bgcolor="#000099">&nbsp;<p><b><font color="#FFFFFF" face="Tahoma" size="1">&quot;...Rates
+      are going up, now is the time to refinance your home&quot;</font></b></p>
+    </TD></TR></TBODY></TABLE>
+<TABLE border=0 cellPadding=0 cellSpacing=0 width=600>
+  <TBODY>
+  <TR>
+    <TD align=left vAlign=top width=420>
+      
+
+<b><font face="Times New Roman" size="3" color="#000000">Dear Homeowner,</font>
+      </b>
+      <p><b><i><font color="#000080" face="Times New Roman" size="3">&quot;Now
+      is the time to take
+      advantage of the still low interest rates!&nbsp; There is no advantage
+      in waiting any longer.&quot;</font></i></b></p>
+<p><b><font color="#000000" size="3" face="Times New Roman">Refinance or consolidate high
+interest credit card debt into a low interest mortgage.&nbsp; Mortgage interest
+is tax deductible, whereas credit card interest is not.</font></b></p>
+<p><font face="Times New Roman" size="3"><b>You can save thousands of dollars over the course of your loan with just a
+.25% drop in your rate!
+</b></font></p>
+<p><b><font face="Times New Roman" size="3" color="#000000">Our nationwide
+network of lenders have hundreds of different loan
+programs to fit your current situation:</font></b></p>
+<p style="margin-left: 64"><font face="Times New Roman"><b><font size="3" color="#000000">&nbsp;</font></b><font size="1">&nbsp;</font><font size="2"><font color="#000000">
+</font><font face="Times New Roman" size="3" color="#0000FF">*</font><font size="3" color="#000000" face="Times New Roman">&nbsp;
+</font></font><b><i><font color="#FF0000" size="3">Refinance</font></i></b></font></p>
+<p style="margin-left: 64"><font face="Times New Roman" size="2"><font color="#000000">&nbsp;&nbsp; </font><font face="Times New Roman" size="3" color="#0000FF">*</font><font size="3" color="#000000" face="Times New Roman">&nbsp;
+</font></font><b><i><font color="#FF0000" face="Times New Roman" size="3">Second Mortgage</font></i></b></p>
+<p style="margin-left: 64"><font face="Times New Roman" size="2"><font color="#000000">&nbsp;&nbsp; </font><font face="Times New Roman" size="3" color="#0000FF">*</font><font size="3" color="#000000" face="Times New Roman">&nbsp;
+</font></font><b><i><font color="#FF0000" face="Times New Roman" size="3">Debt Consolidation</font></i></b></p>
+<p style="margin-left: 64"><font face="Times New Roman" size="2"><font color="#000000">&nbsp;&nbsp; </font><font face="Times New Roman" size="3" color="#0000FF">*</font><font size="3" color="#000000" face="Times New Roman">&nbsp;
+</font></font><b><i><font color="#FF0000" face="Times New Roman" size="3">Home Improvement</font></i></b></p>
+<p style="margin-left: 64"><font face="Times New Roman" size="2"><font color="#000000">&nbsp;&nbsp;&nbsp; </font></font></p>
+      <p><font face="Times New Roman" size="3"><b> By filling out the form
+      below, the information you provide is
+      instantly transmitted to our network of financial experts who will respond
+      to your request with up to three offers. </b></font></p>
+      <p><b><font size="3" face="Times New Roman">This service is 100% free to and of course, without
+obligation.</font></b></p>
+      <p><img border="0" src="equal_housing.gif" width="60" height="58">&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="bbb.gif" width="50" height="77">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <img border="0" src="icoguarantee.gif" width="137" height="82"></p>
+    </TD>
+    <TD align=right vAlign=top width=180>
+      <table width="175">
+        <tr>
+          <td colspan=2 bgColor="#ffffff" width="100%" align="center"><font color="#0009e0" size="-2">National
+            Averages</font></td>
+        </tr>
+        <tr>
+          <td bgColor="#ffffff" width="91"><font color="#000099" size="-2">Program</font></td>
+          <td bgColor="#ffffff" width="42"><font color="#000099" size="-2">Rate</font></td>
+        </tr>
+        <tr>
+          <td align="left" bgColor="#eeeeee" width="91"><font color="#000099" size="-2">30
+            Year Fixed</font></td>
+          <td align="middle" bgColor="#eeeeee" width="42"><font color="black" size="-2">7.125%</font></td>
+        </tr>
+        <tr>
+          <td align="left" bgColor="#eeeeee" width="91"><font color="#000099" size="-2">15
+            Year Fixed</font></td>
+          <td align="middle" bgColor="#eeeeee" width="42"><font color="black" size="-2">6.717%</font></td>
+        </tr>
+        <tr>
+          <td align="left" bgColor="#eeeeee" width="91"><font color="#000099" size="-2">1/1
+            Arm</font></td>
+          <td align="middle" bgColor="#eeeeee" width="42"><font color="black" size="-2">5.58%</font></td>
+        </tr>
+        <tr>
+          <td align="left" bgColor="#eeeeee" width="91"><font color="#000099" size="-2">FHA
+            30 Year Fixed</font></td>
+          <td align="middle" bgColor="#eeeeee" width="42"><font color="black" size="-2">7.675%</font></td>
+        </tr>
+        <tr>
+          <td align="left" bgColor="#eeeeee" width="91"><font color="#000099" size="-2">VA
+            30 Year Fixed</font></td>
+          <td align="middle" bgColor="#eeeeee" width="42"><font color="black" size="-2">7.987%</font></td>
+        </tr>
+        <tr>
+          <td align="left" bgColor="#eeeeee" width="91">
+            <p align="center"><b><font color="#FF0000" size="4">THIS IS OUR
+            RATE!!</font></b></td>
+          <td align="middle" bgColor="#eeeeee" width="42"><b><font color="#FF0000">5.875%</font></b></td>
+        </tr>
+      </table>
+      <p align="right">&nbsp;</p>
+      <p align="right"><font color="#008080">&quot;<i>...was able to get 3 great offers in less than
+      24 hours.</i>&quot; <b>-<font size="1">Jennifer C.</font></b><br>
+      <br>
+      &quot;<i>Met all my needs... being able to search for loans in a way that
+      puts me in control.</i>&quot; <b>-<font size="1">Robert T.</font></b></font></p>
+      <p align="right"><font color="#008080">&quot;<i>..it was easy, effortless...!</i>&quot;<br>
+      <b>-<font size="1">Susan A.</font></b></font></p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <img border="0" src="lead_diagram.gif" align="baseline" width="180" height="130"><!--end quote table-->
+    </TD></TR>
+  </TBODY></TABLE>
+<CENTER>
+            <P>&nbsp; <FONT color=#458b74 face=Arial size=2>* All fields are 
+            required; please enter
+            </FONT> <b><font color="#458b74" face="Arial" size="3"> N/A</font></b> <FONT color=#458b74 face=Arial size=2> in those fields which do not apply to 
+            your circumstances.<br>
+            </FONT> <FONT color=#FF0000 face=Arial size=2>if all fields are not
+            filled out completely then we can not process your application.</FONT></P></center></TD></TR>
+        <TR>
+          <TD height=157 width="100%">
+            <DIV align=center>
+            <CENTER>
+            <TABLE border=0 cellPadding=2 cellSpacing=0 height=435 
+              width="780"><TBODY>
+              <TR>
+                <TD height=157 width=604>
+                  <TABLE border=0 cellPadding=2 width="577">
+                    <TBODY>
+                    <TR>
+                      <TD bgColor=#008000 vAlign=top width="292"><B>Are You a 
+                        Home Owner?</B></TD>
+                      <TD width="267"><SELECT name=Home_Owner 
+                        onchange=javascript:isYesOwner() size=1> <OPTION 
+                          selected value=Select>Please Select&nbsp;</OPTION> 
+                          <OPTION value=Yes>Yes&nbsp;</OPTION> <OPTION 
+                          value=No>No&nbsp;</OPTION></SELECT></TD></TR>
+                    <TR>
+                      <TD bgColor=#008000 vAlign=top width="292"><B>Applicant 
+                        Name</B></TD>
+                      <TD width="267"><INPUT name=Applicant_Name 
+size=30></TD></TR>
+                    <TR>
+                      <TD bgColor=#008000 vAlign=top 
+                        width="292"><B>Co-Applicant Name</B></TD>
+                      <TD width="267"><INPUT name=CoApplicant_Name 
+                    size=30></TD></TR>
+                    <TR>
+                      <TD bgColor=#008000 vAlign=top 
+                      width="292"><B>Address</B></TD>
+                      <TD width="267"><INPUT name=Address size=30></TD></TR>
+                    <TR>
+                      <TD bgColor=#008000 vAlign=top width="292"><B>City, 
+                        State</B>
+                        <p><font color="#000000"><B><FONT face=Arial size=1>*
+                        </FONT></B><FONT face=Verdana 
+                  size=1>We apologize, but at present we cannot offer help 
+                  for TX, AL, or HI.</FONT></font></p>
+                      </TD>
+                      <TD width="267"><INPUT name=City 
+                        size=15><B>,&nbsp;<font face="Arial" size="2"><select name="State" size="1">
+                          <option value="None">Please Select Your State&nbsp;
+                          <option value="AK">ALASKA&nbsp;
+                          <option value="AS">AMERICAN SAMOA&nbsp;
+                          <option value="AZ">ARIZONA&nbsp;
+                          <option value="AR">ARKANSAS&nbsp;
+                          <option value="CA">CALIFORNIA&nbsp;
+                          <option value="CO">COLORADO&nbsp;
+                          <option value="CT">CONNECTICUT&nbsp;
+                          <option value="DE">DELAWARE&nbsp;
+                          <option value="DC">DISTRICT OF COLUMBIA&nbsp;
+                          <option value="FL">FLORIDA&nbsp;
+                          <option value="GA">GEORGIA&nbsp;
+                          <option value="GU">GUAM&nbsp;
+                          <option value="ID">IDAHO&nbsp;
+                          <option value="IL">ILLINOIS&nbsp;
+                          <option value="IN">INDIANA&nbsp;
+                          <option value="IA">IOWA&nbsp;
+                          <option value="KS">KANSAS&nbsp;
+                          <option value="KY">KENTUCKY&nbsp;
+                          <option value="LA">LOUISIANA&nbsp;
+                          <option value="ME">MAINE&nbsp;
+                          <option value="MD">MARYLAND&nbsp;
+                          <option value="MA">MASSACHUSETTS&nbsp;
+                          <option value="MI">MICHIGAN&nbsp;
+                          <option value="MN">MINNESOTA&nbsp;
+                          <option value="MO">MISSOURI&nbsp;
+                          <option value="MT">MONTANA&nbsp;
+                          <option value="NE">NEBRASKA&nbsp;
+                          <option value="NV">NEVADA&nbsp;
+                          <option value="NH">NEW HAMPSHIRE&nbsp;
+                          <option value="NJ">NEW JERSEY&nbsp;
+                          <option value="NM">NEW MEXICO&nbsp;
+                          <option value="NY">NEW YORK&nbsp;
+                          <option value="NC">NORTH CAROLINA&nbsp;
+                          <option value="ND">NORTH DAKOTA&nbsp;
+                          <option value="OH">OHIO&nbsp;
+                          <option value="OK">OKLAHOMA&nbsp;
+                          <option value="OR">OREGON&nbsp;
+                          <option value="PA">PENNSYLVANIA&nbsp;
+                          <option value="PR">PUERTO RICO&nbsp;
+                          <option value="RI">RHODE ISLAND&nbsp;
+                          <option value="SC">SOUTH CAROLINA&nbsp;
+                          <option value="SD">SOUTH DAKOTA&nbsp;
+                          <option value="TN">TENNESSEE&nbsp;
+                          <option value="UT">UTAH&nbsp;
+                          <option value="VT">VERMONT&nbsp;
+                          <option value="VA">VIRGINIA&nbsp;
+                          <option value="VI">US VIRGIN ISLANDS&nbsp;
+                          <option value="WA">WASHINGTON&nbsp;
+                          <option value="WV">WEST VIRGINIA&nbsp;
+                          <option value="WI">WISCONSIN&nbsp;
+                          <option value="WY">WYOMING&nbsp;
+                          <option value="other">(other)&nbsp;
+                        </select></font> <BR></B></TD></TR>
+                    <TR>
+                      <TD bgColor=#008000 vAlign=top width="292"><B>Zip 
+                        Code</B></TD>
+                      <TD width="267"><INPUT name=Zip_Code size=15></TD></TR>
+                    <TR>
+                      <TD bgColor=#008000 vAlign=top width="292"><B>Home 
+                        Phone</B></TD>
+                      <TD width="267"><INPUT name=Home_Phone size=15> 
+                        <BR><FONT size=1>(XXX) XXX-XXXX</FONT></TD></TR>
+                    <TR>
+                      <TD bgColor=#008000 vAlign=top width="292"><B>Work 
+                        Phone</B></TD>
+                      <TD width="267"><INPUT name=Work_Phone size=15> 
+                        <BR><FONT size=1>(XXX) XXX-XXXX</FONT></TD></TR>
+                    <TR>
+                      <TD bgColor=#008000 vAlign=top width="292"><B>Property 
+                        Type</B></TD>
+                      <TD width="267"><SELECT name=Property_Type size=1> 
+                          <OPTION selected value=Select>Please Choose Property
+                          Type&nbsp;</OPTION> <OPTION 
+                          value="Single Family Residence">Single Family
+                          Residence&nbsp;</OPTION> <OPTION 
+                          value=Condominiums>Condominiums&nbsp;</OPTION> <OPTION 
+                          value="Town House">Town House&nbsp;</OPTION> <OPTION 
+                          value="Other">Other</OPTION></SELECT> <BR><FONT color=#458b74 
+                        face=Arial size=1>* Sorry, no mobile homes.</FONT></TD></TR>
+                    <TR>
+                      <TD bgColor=#008000 vAlign=top width="292"><b>Price Paid
+                        For Property</b></TD>
+                      <TD width="267"><SELECT size=1 
+                  name=Purchase_Price> <OPTION value="Select" selected>Please
+                          Select</OPTION> <OPTION value=20,000>20,000</OPTION> <OPTION 
+                    value=25,000>25,000</OPTION> <OPTION 
+                    value=30,000>30,000</OPTION> <OPTION 
+                    value=35,000>35,000</OPTION> <OPTION 
+                    value=40,000>40,000</OPTION> <OPTION 
+                    value=45,000>45,000</OPTION> <OPTION 
+                    value=50,000>50,000</OPTION> <OPTION 
+                    value=55,000>55,000</OPTION> <OPTION 
+                    value=60,000>60,000</OPTION> <OPTION 
+                    value=65,000>65,000</OPTION> <OPTION 
+                    value=70,000>70,000</OPTION> <OPTION 
+                    value=75,000>75,000</OPTION> <OPTION 
+                    value=80,000>80,000</OPTION> <OPTION 
+                    value=85,000>85,000</OPTION> <OPTION 
+                    value=90,000>90,000</OPTION> <OPTION 
+                    value=95,000>95,000</OPTION> <OPTION 
+                    value=100,000>100,000</OPTION> <OPTION 
+                    value=105,000>105,000</OPTION> <OPTION 
+                    value=110,000>110,000</OPTION> <OPTION 
+                    value=115,000>115,000</OPTION> <OPTION 
+                    value=120,000>120,000</OPTION> <OPTION 
+                    value=125,000>125,000</OPTION> <OPTION 
+                    value=130,000>130,000</OPTION> <OPTION 
+                    value=135,000>135,000</OPTION> <OPTION 
+                    value=140,000>140,000</OPTION> <OPTION 
+                    value=145,000>145,000</OPTION> <OPTION 
+                    value=150,000>150,000</OPTION> <OPTION 
+                    value=155,000>155,000</OPTION> <OPTION 
+                    value=160,000>160,000</OPTION> <OPTION 
+                    value=165,000>165,000</OPTION> <OPTION 
+                    value=170,000>170,000</OPTION> <OPTION 
+                    value=175,000>175,000</OPTION> <OPTION 
+                    value=180,000>180,000</OPTION> <OPTION 
+                    value=185,000>185,000</OPTION> <OPTION 
+                    value=190,000>190,000</OPTION> <OPTION 
+                    value=195,000>195,000</OPTION> <OPTION 
+                    value=200,000>200,000</OPTION> <OPTION 
+                    value=205,000>205,000</OPTION> <OPTION 
+                    value=210,000>210,000</OPTION> <OPTION 
+                    value=215,000>215,000</OPTION> <OPTION 
+                    value=220,000>220,000</OPTION> <OPTION 
+                    value=225,000>225,000</OPTION> <OPTION 
+                    value=230,000>230,000</OPTION> <OPTION 
+                    value=235,000>235,000</OPTION> <OPTION 
+                    value=240,000>240,000</OPTION> <OPTION 
+                    value=245,000>245,000</OPTION> <OPTION 
+                    value=250,000>250,000</OPTION> <OPTION 
+                    value=255,000>255,000</OPTION> <OPTION 
+                    value=260,000>260,000</OPTION> <OPTION 
+                    value=265,000>265,000</OPTION> <OPTION 
+                    value=270,000>270,000</OPTION> <OPTION 
+                    value=275,000>275,000</OPTION> <OPTION 
+                    value=280,000>280,000</OPTION> <OPTION 
+                    value=285,000>285,000</OPTION> <OPTION 
+                    value=290,000>290,000</OPTION> <OPTION 
+                    value=295,000>295,000</OPTION> <OPTION 
+                    value=300,000>300,000</OPTION> <OPTION 
+                    value=305,000>305,000</OPTION> <OPTION 
+                    value=310,000>310,000</OPTION> <OPTION 
+                    value=315,000>315,000</OPTION> <OPTION 
+                    value=320,000>320,000</OPTION> <OPTION 
+                    value=325,000>325,000</OPTION> <OPTION 
+                    value=330,000>330,000</OPTION> <OPTION 
+                    value=335,000>335,000</OPTION> <OPTION 
+                    value=340,000>340,000</OPTION> <OPTION 
+                    value=345,000>345,000</OPTION> <OPTION 
+                    value=350,000>350,000</OPTION> <OPTION 
+                    value=355,000>355,000</OPTION> <OPTION 
+                    value=360,000>360,000</OPTION> <OPTION 
+                    value=365,000>365,000</OPTION> <OPTION 
+                    value=370,000>370,000</OPTION> <OPTION 
+                    value=375,000>375,000</OPTION> <OPTION 
+                    value=380,000>380,000</OPTION> <OPTION 
+                    value=385,000>385,000</OPTION> <OPTION 
+                    value=390,000>390,000</OPTION> <OPTION 
+                    value=395,000>395,000</OPTION> <OPTION 
+                    value=400,000>400,000</OPTION> <OPTION 
+                    value=425,000>425,000</OPTION> <OPTION value=425,000 
+                    450,000>425,000 - 450,000</OPTION> <OPTION value=450,000 
+                    475,000>450,000 - 475,000</OPTION> <OPTION value=475,000 
+                    500,000>475,000 - 500,000</OPTION> <OPTION value=550,000 
+                    600,000>550,000 - 600,000</OPTION> <OPTION value=600,000 
+                    650,000>600,000 - 650,000</OPTION> <OPTION value=650,000 
+                    700,000>650,000 - 700,000</OPTION> <OPTION value=700,000 
+                    750,000>700,000 - 750,000</OPTION> <OPTION value=750,000 
+                    800,000>750,000 - 800,000</OPTION> <OPTION value=800,000 
+                    850,000>800,000 - 850,000</OPTION> <OPTION value=850,000 
+                    900,000>850,000 - 900,000</OPTION> <OPTION value=900,000 
+                    950,000>900,000 - 950,000</OPTION> <OPTION value=950,000 
+                    1,000,000>950,000 - 1,000,000</OPTION> <OPTION 
+                    value=1,000,000+>1,000,000+</OPTION></SELECT></TD></TR>
+                    <TR>
+                      <TD bgColor=#008000 vAlign=top width="292"><B>Year 
+                        Property was Acquired</B></TD>
+                      <TD width="267"><INPUT name=Year_Acquired size=7> Example
+                        (1992)</TD></TR>
+                    <TR>
+                      <TD bgColor=#008000 vAlign=top width="292"><B>Present 
+                        Value of Property (estimate)</B></TD>
+                      <TD width="267"><SELECT size=1 
+                  name=Present_Value> <OPTION value="Select" selected>Please
+                          Select</OPTION> <OPTION value=50,000>50,000</OPTION> <OPTION 
+                    value=55,000>55,000</OPTION> <OPTION 
+                    value=60,000>60,000</OPTION> <OPTION 
+                    value=65,000>65,000</OPTION> <OPTION 
+                    value=70,000>70,000</OPTION> <OPTION 
+                    value=75,000>75,000</OPTION> <OPTION 
+                    value=80,000>80,000</OPTION> <OPTION 
+                    value=85,000>85,000</OPTION> <OPTION 
+                    value=90,000>90,000</OPTION> <OPTION 
+                    value=95,000>95,000</OPTION> <OPTION 
+                    value=100,000>100,000</OPTION> <OPTION 
+                    value=105,000>105,000</OPTION> <OPTION 
+                    value=110,000>110,000</OPTION> <OPTION 
+                    value=115,000>115,000</OPTION> <OPTION 
+                    value=120,000>120,000</OPTION> <OPTION 
+                    value=125,000>125,000</OPTION> <OPTION 
+                    value=130,000>130,000</OPTION> <OPTION 
+                    value=135,000>135,000</OPTION> <OPTION 
+                    value=140,000>140,000</OPTION> <OPTION 
+                    value=145,000>145,000</OPTION> <OPTION 
+                    value=150,000>150,000</OPTION> <OPTION 
+                    value=155,000>155,000</OPTION> <OPTION 
+                    value=160,000>160,000</OPTION> <OPTION 
+                    value=165,000>165,000</OPTION> <OPTION 
+                    value=170,000>170,000</OPTION> <OPTION 
+                    value=175,000>175,000</OPTION> <OPTION 
+                    value=180,000>180,000</OPTION> <OPTION 
+                    value=185,000>185,000</OPTION> <OPTION 
+                    value=190,000>190,000</OPTION> <OPTION 
+                    value=195,000>195,000</OPTION> <OPTION 
+                    value=200,000>200,000</OPTION> <OPTION 
+                    value=205,000>205,000</OPTION> <OPTION 
+                    value=210,000>210,000</OPTION> <OPTION 
+                    value=215,000>215,000</OPTION> <OPTION 
+                    value=220,000>220,000</OPTION> <OPTION 
+                    value=225,000>225,000</OPTION> <OPTION 
+                    value=230,000>230,000</OPTION> <OPTION 
+                    value=235,000>235,000</OPTION> <OPTION 
+                    value=240,000>240,000</OPTION> <OPTION 
+                    value=245,000>245,000</OPTION> <OPTION 
+                    value=250,000>250,000</OPTION> <OPTION 
+                    value=255,000>255,000</OPTION> <OPTION 
+                    value=260,000>260,000</OPTION> <OPTION 
+                    value=265,000>265,000</OPTION> <OPTION 
+                    value=270,000>270,000</OPTION> <OPTION 
+                    value=275,000>275,000</OPTION> <OPTION 
+                    value=280,000>280,000</OPTION> <OPTION 
+                    value=285,000>285,000</OPTION> <OPTION 
+                    value=290,000>290,000</OPTION> <OPTION 
+                    value=295,000>295,000</OPTION> <OPTION 
+                    value=300,000>300,000</OPTION> <OPTION 
+                    value=305,000>305,000</OPTION> <OPTION 
+                    value=310,000>310,000</OPTION> <OPTION 
+                    value=315,000>315,000</OPTION> <OPTION 
+                    value=320,000>320,000</OPTION> <OPTION 
+                    value=325,000>325,000</OPTION> <OPTION 
+                    value=330,000>330,000</OPTION> <OPTION 
+                    value=335,000>335,000</OPTION> <OPTION 
+                    value=340,000>340,000</OPTION> <OPTION 
+                    value=345,000>345,000</OPTION> <OPTION 
+                    value=350,000>350,000</OPTION> <OPTION 
+                    value=355,000>355,000</OPTION> <OPTION 
+                    value=360,000>360,000</OPTION> <OPTION 
+                    value=365,000>365,000</OPTION> <OPTION 
+                    value=370,000>370,000</OPTION> <OPTION 
+                    value=375,000>375,000</OPTION> <OPTION 
+                    value=380,000>380,000</OPTION> <OPTION 
+                    value=385,000>385,000</OPTION> <OPTION 
+                    value=390,000>390,000</OPTION> <OPTION 
+                    value=395,000>395,000</OPTION> <OPTION 
+                    value=400,000>400,000</OPTION> <OPTION 
+                    value=450,000+>450,000</OPTION> <OPTION value=500000>Up to
+                          500,000</OPTION> <OPTION value=600000>Up to 600,000</OPTION> 
+                    <OPTION value=700000>Up to 700,000</OPTION> <OPTION 
+                    value=800000>Up to 800,000</OPTION> <OPTION value=900000>Up
+                          to 900,000</OPTION> <OPTION value=1000000>1,000,000</OPTION> 
+                    <OPTION value=1000001>1,000,000 +</OPTION></SELECT> 
+                        <BR><FONT color=#458b74 face=Arial size=1>* Property 
+                        value must be at least $50,000.</FONT></TD></TR>
+                    <TR>
+                      <TD bgColor=#008000 vAlign=top width="292"><B>Amount 
+                        Owed on First Mortgage&nbsp;</B></TD>
+                      <TD width="267"><SELECT size=1 
+                  name=Amount_Owed_First_Mortgage> <OPTION value="Select" selected>Please
+                          Select</OPTION> <OPTION value=50,000>50,000</OPTION> <OPTION 
+                    value=55,000>55,000</OPTION> <OPTION 
+                    value=60,000>60,000</OPTION> <OPTION 
+                    value=65,000>65,000</OPTION> <OPTION 
+                    value=70,000>70,000</OPTION> <OPTION 
+                    value=75,000>75,000</OPTION> <OPTION 
+                    value=80,000>80,000</OPTION> <OPTION 
+                    value=85,000>85,000</OPTION> <OPTION 
+                    value=90,000>90,000</OPTION> <OPTION 
+                    value=95,000>95,000</OPTION> <OPTION 
+                    value=100,000>100,000</OPTION> <OPTION 
+                    value=105,000>105,000</OPTION> <OPTION 
+                    value=110,000>110,000</OPTION> <OPTION 
+                    value=115,000>115,000</OPTION> <OPTION 
+                    value=120,000>120,000</OPTION> <OPTION 
+                    value=125,000>125,000</OPTION> <OPTION 
+                    value=130,000>130,000</OPTION> <OPTION 
+                    value=135,000>135,000</OPTION> <OPTION 
+                    value=140,000>140,000</OPTION> <OPTION 
+                    value=145,000>145,000</OPTION> <OPTION 
+                    value=150,000>150,000</OPTION> <OPTION 
+                    value=155,000>155,000</OPTION> <OPTION 
+                    value=160,000>160,000</OPTION> <OPTION 
+                    value=165,000>165,000</OPTION> <OPTION 
+                    value=170,000>170,000</OPTION> <OPTION 
+                    value=175,000>175,000</OPTION> <OPTION 
+                    value=180,000>180,000</OPTION> <OPTION 
+                    value=185,000>185,000</OPTION> <OPTION 
+                    value=190,000>190,000</OPTION> <OPTION 
+                    value=195,000>195,000</OPTION> <OPTION 
+                    value=200,000>200,000</OPTION> <OPTION 
+                    value=205,000>205,000</OPTION> <OPTION 
+                    value=210,000>210,000</OPTION> <OPTION 
+                    value=215,000>215,000</OPTION> <OPTION 
+                    value=220,000>220,000</OPTION> <OPTION 
+                    value=225,000>225,000</OPTION> <OPTION 
+                    value=230,000>230,000</OPTION> <OPTION 
+                    value=235,000>235,000</OPTION> <OPTION 
+                    value=240,000>240,000</OPTION> <OPTION 
+                    value=245,000>245,000</OPTION> <OPTION 
+                    value=250,000>250,000</OPTION> <OPTION 
+                    value=255,000>255,000</OPTION> <OPTION 
+                    value=260,000>260,000</OPTION> <OPTION 
+                    value=265,000>265,000</OPTION> <OPTION 
+                    value=270,000>270,000</OPTION> <OPTION 
+                    value=275,000>275,000</OPTION> <OPTION 
+                    value=280,000>280,000</OPTION> <OPTION 
+                    value=285,000>285,000</OPTION> <OPTION 
+                    value=290,000>290,000</OPTION> <OPTION 
+                    value=295,000>295,000</OPTION> <OPTION 
+                    value=300,000>300,000</OPTION> <OPTION 
+                    value=305,000>305,000</OPTION> <OPTION 
+                    value=310,000>310,000</OPTION> <OPTION 
+                    value=315,000>315,000</OPTION> <OPTION 
+                    value=320,000>320,000</OPTION> <OPTION 
+                    value=325,000>325,000</OPTION> <OPTION 
+                    value=330,000>330,000</OPTION> <OPTION 
+                    value=335,000>335,000</OPTION> <OPTION 
+                    value=340,000>340,000</OPTION> <OPTION 
+                    value=345,000>345,000</OPTION> <OPTION 
+                    value=350,000>350,000</OPTION> <OPTION 
+                    value=355,000>355,000</OPTION> <OPTION 
+                    value=360,000>360,000</OPTION> <OPTION 
+                    value=365,000>365,000</OPTION> <OPTION 
+                    value=370,000>370,000</OPTION> <OPTION 
+                    value=375,000>375,000</OPTION> <OPTION 
+                    value=380,000>380,000</OPTION> <OPTION 
+                    value=385,000>385,000</OPTION> <OPTION 
+                    value=390,000>390,000</OPTION> <OPTION 
+                    value=395,000>395,000</OPTION> <OPTION 
+                    value=400,000>400,000</OPTION> <OPTION 
+                    value=450,000+>450,000</OPTION> <OPTION value=500000>Up to
+                          500,000</OPTION> <OPTION value=600000>Up to 600,000</OPTION> 
+                    <OPTION value=700000>Up to 700,000</OPTION> <OPTION 
+                    value=800000>Up to 800,000</OPTION> <OPTION value=900000>Up
+                          to 900,000</OPTION> <OPTION value=1000000>1,000,000</OPTION> 
+                    <OPTION value=1000001>1,000,000 +</OPTION></SELECT>&nbsp; (current balance)</TD></TR>
+                    <TR>
+                      <TD bgColor=#008000 vAlign=top width="292"><B>Current 
+                        Interest Rate on First (Approx)</B></TD>
+                      <TD width="267"><SELECT size=1 
+                  name=Current_Interest_Rate_on_First> <OPTION value="Select" 
+                    selected>Please Select</OPTION> <OPTION value=5%>5%</OPTION> 
+                    <OPTION value=5.25%>5.25%</OPTION> <OPTION 
+                    value=5.5%>5.5%</OPTION> <OPTION value=5.75%>5.75%</OPTION> 
+                    <OPTION value=6%>6%</OPTION> <OPTION 
+                    value=6.25%>6.25%</OPTION> <OPTION value=6.5%>6.5%</OPTION> 
+                    <OPTION value=6.75%>6.75%</OPTION> <OPTION 
+                    value=7%>7%</OPTION> <OPTION value=7.25%>7.25%</OPTION> 
+                    <OPTION value=7.5%>7.5%</OPTION> <OPTION 
+                    value=7.75%>7.75%</OPTION> <OPTION value=8%>8%</OPTION> 
+                    <OPTION value=8.25%>8.25%</OPTION> <OPTION 
+                    value=8.5%>8.5%</OPTION> <OPTION value=8.75%>8.75%</OPTION> 
+                    <OPTION value=9%>9%</OPTION> <OPTION 
+                    value=9.25%>9.25%</OPTION> <OPTION value=9.5%>9.5%</OPTION> 
+                    <OPTION value=9.75%>9.75%</OPTION> <OPTION 
+                    value=10%>10%</OPTION> <OPTION value=10.25%>10.25%</OPTION> 
+                    <OPTION value=10.5%>10.5%</OPTION> <OPTION 
+                    value=10.75%>10.75%</OPTION> <OPTION value=11%>11%</OPTION> 
+                    <OPTION value=11.25%>11.25%</OPTION> <OPTION 
+                    value=11.5%>11.5%</OPTION> <OPTION 
+                    value=11.75%>11.75%</OPTION> <OPTION value=12%>12%</OPTION> 
+                    <OPTION value=12.25%>12.25%</OPTION> <OPTION 
+                    value=12.5%>12.5%</OPTION> <OPTION 
+    

@@ -1,0 +1,94 @@
+
+@SysInclude {doc} 
+@SysInclude {tbl} 
+@Doc
+@Text @Begin
+
+@LP
+@LP
+@LP
+
+@Tbl rule {no}
+aformat { @Cell width {7c} A | @Cell width {5c} margin {.25c} B }
+{
+@Rowa
+A { 1.2f @Font @B { Emergency Department } @LP St. John of God Hospital @LP Drummond St North, @LP Ballarat, Victoria @LP 3350 @LP @LP 
+0.8f @Font { Telephone   (03)  5320 2126 @LP Fax              (03)  5320 2125 
+@LP email: andrew.dean@sjog.org.au }  }
+B { @LP @LP @IncludeGraphic "temp/logo.eps" @LP }
+}
+
+@LP @LP @LP
+
+07"/"10"/"2003
+
+@LP @LP
+
+@Display @Heading 2f @Font{Tax Invoice}
+
+@LP @LP
+
+1.2f @Font @B { Invoice for: Joe Bloggs }
+
+@LP @LP
+
+Doctor: David Bruce
+
+@LP @LP
+
+@Tbl rule {yes}
+aformat { @Cell width {2.5c} A | @Cell width {14c} B | @Cell width {2.5c} C}
+{
+@Rowa
+A { 1.2f @Font @B {Item No}}
+B { 1.2f @Font @B {Description}}
+C { 1.2f @Font @B {Fee}}
+
+@Rowa
+A { 0.6f @Font {}}
+B { 0.6f @Font {Facility Fee}}
+C { 0.6f @Font {@Char dollar 80}}
+ 
+@Rowa
+A {0.6f @Font{ 00501}}
+B {0.6f @Font { nohyphen 0.5vx } @Break {Medical practitioner (emergency physician) attendances emergency department level 1 professional attendance on a patient at a recognised emergency department of a private hospital by a medical practitioner who is an emergency physician in the practice of emergency medicine - attendance for the unscheduled evaluation and management of a patient requiring the taking of a problem focussed history, limited examination, diagnosis and initiation of appropriate treatment interventions involving straightforward medical decision making. }}
+C {0.6f @Font{ @Char dollar 10.10}}
+ 
+@Rowa
+A {0.6f @Font{ 00503}}
+B {0.6f @Font { nohyphen 0.5vx } @Break {Medical practitioner (emergency physician) attendances emergency department level 2 professional attendance on a patient at a recognised emergency department of a private hospital by a medical practitioner who is an emergency medicine physician in the practice of emergency medicine - attendance for the unscheduled evaluation and management of a patient requiring the taking of an expanded problem focussed history, expanded examination of one or more systems and the formulation and documentation of a diagnosis and management plan in relation to one or more problems, and the initiation of appropriate treatment interventions involving medical decision making of low complexity. }}
+C {0.6f @Font{ @Char dollar 22.10}}
+ 
+@Rowa
+A {0.6f @Font{ 11700}}
+B {0.6f @Font { nohyphen 0.5vx } @Break {Twelve-lead electrocardiography, tracing and report }}
+C {0.6f @Font{ @Char dollar 19.00}}
+ 
+@Rowa
+A {0.6f @Font{ 11700}}
+B {0.6f @Font { nohyphen 0.5vx } @Break {Twelve-lead electrocardiography, tracing and report }}
+C {0.6f @Font{ @Char dollar 19.00}}
+ 
+@Rowa
+A {0.6f @Font{ 38256}}
+B {0.6f @Font { nohyphen 0.5vx } @Break {Temporary transvenous pacemaking electrode, insertion of }}
+C {0.6f @Font{ @Char dollar 162.50}}
+
+
+
+@Rowa
+A { 0.6f @Font @B {}}
+B { 1f @Font @B {Total}}
+C { 1f @Font @B {@Char dollar 312.70}}
+
+}
+
+@LP @LP
+
+0.4f @Font { Invoice printed: 13:14 - Tuesday October 7th, 2003  at St. John of God Hospital Emergency Department   @CopyRight 2003 emerg-med.com}
+@LP 
+0.4f @Font {This document becomes a tax invoice when stamped 'PAID' using an offical  St. John of God Hospital stamp}
+@LP 
+0.4f @Font {ABN Number 12345678 }
+
+@End @Text

@@ -1,0 +1,29 @@
+1{Head (not face)  
+2{Face (not eye)
+3{Neck                
+4{Thorax              
+5{Abdomen             
+6{Lower Back          
+7{Pelvis              
+8{Shoulder            
+9{Upper Arm           
+10{Elbow               
+11{Forearm             
+12{Wrist               
+13{Hand (inc. fingers) 
+14{Hip                 
+15{Thigh               
+16{Knee                
+17{Lower Leg           
+18{Ankle               
+19{Foot                
+20{Unspecified         
+21{Multiple            
+22{Not Applicable      
+F1{Eye                 
+F2{Ear                 
+F3{Nose                
+F4{Respiratory Tract   
+F5{Digestive tract     
+F6{Genitourinary Tract 
+F7{Soft Tissue         

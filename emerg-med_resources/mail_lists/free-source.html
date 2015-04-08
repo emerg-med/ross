@@ -1,0 +1,233 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN"
+ "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+ <head>
+  <title>Ken's Musings about Free Software and Open Source</title>
+  <link rel="StyleSheet" href="/common/base.css" type="text/css">
+  <link rel="StyleSheet" href="../musings.css" type="text/css">
+<!--#config timefmt="%Y-%m-%d %H:%M" -->
+ </head>
+ <body bgcolor="#ffffff">
+  <img src="../images/ken_coar_72x102.jpg" alt="" width="72" height="102"   align="left">
+  <h1>Ken's Musings about Free Software and Open Source</h1>
+  <p>
+  <small><i>Last updated: Monday, 13 August 2001 15:52 -0400</i></small>
+  </p>
+  <br clear="all">
+
+  <p>
+  For the last few years, more and more of my work has involved using
+  software that is freely available.  And to an increasing extent my
+  work has been <b>on</b> such software (such as Apache, Jikes, CVS,
+  Majordomo, and cvswe/cvswebedit).  There are two current
+  major philosophies concerning the creation and use of such stuff,
+  known as the <cite>free software</cite> and <cite>open source</cite>
+  models.  Mostly these refer to how the software is licenced, but
+  some of the issues deal with things like [re]distribution and
+  modification.
+  </p>
+  <p>
+  The emergence of the topic of freely-available source code onto the
+  public landscape has either raised or refueled ideological arguments
+  and discussions about almost all aspects, particularly nomenclature
+  and usage/distribution permissions.
+  </p>
+  <p>
+  As with almost everything with which I'm involved, I have opinions
+  in this space.  On this page I'll blather about the two different
+  viewpoints and conclude with my opinion -- complete with an explanation
+  of why I take the position I do.
+  </p>
+  <p>
+  My descriptions of the philosophies
+  should <b>not</b> be regarded as authoritative; there is plenty
+  of official documentation out there for both of them, so what's
+  described here are nutshell definitions viewed through my eyes.
+  </p>
+  <p>
+  Since most of the differences of opinion have to do with how
+  software can be used, re-used, modified, and distributed,
+  licencing is at the core of the matter.
+  </p>
+
+  <h2>Free Software</h2>
+  <p>
+  The word 'free' in English causes problems in this context, because
+  a lot of people regard it as meaning they don't have to pay for
+  the software.  That's not necessarily true, because the <i>intended</i>
+  meaning of 'free' matches the French term <i>libre</i> -- or, as
+  you may have heard it summarised, &quot;Free speech, not free beer.&quot;
+  </p>
+  <p>
+  So what does <i>that</i> mean?  Well, it means that users of the software
+  so categorised are free to modify it to suit their own needs -- which
+  typically means the source code of the software must be available as
+  well.
+  </p>
+
+  <h3>The Idea of Copyleft</h3>
+  <p>
+  One of the ideas to come out of the Free Software philosophy is
+  that of <i>copyleft</i>.  This is a play on the term 'copyright,'
+  which usually reserves most capabilities to the copyright holder and
+  doles out some subset to others.  A copyleft, on the other hand, takes
+  the opposite position, and forbids users of the software from
+  imposing conditions on subsequent users that are <i>less</i> restrictive
+  than the original licence.  In other words, if you received the
+  sources as part of the software package, then you are not permitted
+  to redistribute the package without including the sources as well.
+  And you cannot relicence the software in any way that would permit
+  subsequent users down the distribution change to do so, either.
+  </p>
+
+  <h3>GNU, the FSF, and the GPL</h3>
+  <p>
+  The ensign-carrier of the Free Software philosophy is the GNU
+  Project.  (GNU is a reflexive acronym standing for &quot;GNU's not
+  UNIX!&quot;)  The exact relationship between the GNU Project and the
+  FSF (the Free Software Foundation) is unclear to me, so all I can
+  reasonably say is that they're related somehow.
+  </p>
+  <p>
+  The <i>GPL</i> is the GNU <i>General Public Licence</i>, and all software
+  released as part of the GNU Project is licenced under either it
+  or the <i>LGPL</i> (Lesser GPL), which primarily covers reusable
+  packages such as libraries.  The GPL is an extremely popular copyleft
+  licence with very wide-ranging implications.  If you use any fragment
+  of GPLed software in another project, the result is covered by
+  the GPL.  Even if you use a subroutine <i>in toto</i> from a
+  GPLed source file, 
+  </p>
+
+  <h2>Open Source</h2>
+  <p>
+  &quot;Open source&quot; is a term coined relatively recently.  One
+  of its <i>raisons d'&ecirc;tre</i> is to make the concept of
+  source distribution more palatable to the commercial software
+  sector; another is to distinguish a subset of free software that
+  is <i>not</i> copylefted.
+  </p>
+  <p>
+  The <i>Open Software Initiative</i> (OSI) is considered by
+  many to be the keeper of the flame (and definition) for the
+  'open-source' term as the GNU project and the FSF are the standard-bearers
+  for the 'free software' idea.  The OSI has developed a document
+  called the <i>Open Source Definition</i> (OSD) which is used
+  to define whether a particular licence conforms to the requirements
+  necessary to be considered Open Source.<a href="#en01"><sup>1</sup></a>
+  </p>
+
+  <h2>Multi-Licenced Software</h2>
+  <p>
+  The originator of any piece of software is always free to release
+  (or re-release) it under whatever licence or combination of licences
+  he or she pleases.  Some packages, such as MySQL and Aladdin's
+  GhostScript, use variations on this theme to make the software
+  available to individuals or non-profit organisations while
+  requiring commercial ventures to purchase access to the software
+  using a different licence.  The Aladdin case in particular
+  is rather interesting, because it includes a time-based
+  element:  If you want the latest and greatest version of an
+  Aladdin software package, you need to pay money to purchase
+  a licence for it.  However, all versions of their software
+  is re-released under the GPL one year after the initial release.
+  So the source becomes available, but people and organisations that
+  want access to the latest features are required to pay for the privilege.
+  </p>
+
+  <h2>Where I Stand, and Why</h2>
+  <p>
+  I consider myself an open sourcerer; I won't work on (or release)
+  software covered by the GPL or any other copyleft licence except in
+  unusual circumstances.  I feel that the infective nature of copyleft
+  licences does a disservice to the developer community and, more
+  importantly, to the industry as a whole.
+  </p>
+  <p>
+  Regardless of whether there are viable alternatives,
+  a lot of commercial organisations are extremely reluctant to
+  release the source code to their products, regarding the source
+  as a trade secret.  And many copyleft licences include terms that
+  prevent any part of software covered by them from being included
+  as part of a package that is not itself completely source-available.
+  </p>
+  <p>
+  This reluctance translates into non-participation in many open
+  projects by companies that sell their software.  As a a consequence,
+  they will not expose their customers to copylefted software,
+  and thus an entire audience of potential users is missed.  Users
+  of commercial software quite possibly have different intentions
+  and needs than the traditional user of open software, and therefore
+  it seems quite likely that those different needs will never be
+  addressed by the open software -- because the developers aren't
+  even aware of the audience, much less its needs and requirements.
+  </p>
+  <p>
+  In addition, I feel quite strongly that the copyleft model can
+  -- and does -- stifle innovation and deprive open projects of
+  healthy competition.  If a person or organisation is free to
+  take open software and make proprietary changes to it, and
+  distribute/sell the result without making the source to the
+  changes available, some open sourcerer is likely (and free) to
+  reproduce the changes in the open project.<a href="#en02"><sup>2</sup></a>
+  This allows the commercial sector to continue adding value
+  to the product, and fuels the open project to re-engineer
+  proprietary changes into the open version.  The result can
+  be a sort of leap-frog effect, with the software and all three
+  communities -- open developers, private developers, and end-users --
+  benefiting.
+  </p>
+  <p>
+  If such proprietary enhancements are forbidden, on the other hand,
+  the only origin for innovation is the open sourcerers themselves.
+  Once they and their [smaller] user base have done all they find
+  interesting, there's a good chance the project may dwindle
+  into moribundity, if not obscurity.  Competition feeds innovation
+  and can add zest and interest.
+  </p>
+  <p>
+  So I'm personally <i>not</i> in favour of copyleft licences like the GPL,
+  and I <i>am</i> in favour of open-source licences such as BSD, Apache,
+  and X.  I also tend to be in favour of dual licences that eventually
+  lead to release of the source.
+  </p>
+
+  <hr>
+
+  <h3>End Notes</h3>
+  <p class="endnote">
+  <a name="en01"><sup>1</sup></a>
+  The OSI attempted to register the term 'Open Source' as a trademark,
+  which would permit them to control who was permitted to use it to
+  describe software.  I don't recall if the application was rejected
+  or if it was simply dropped, but use of the term is now essentially
+  generic.  Organisations that care may be more specific and note
+  that their licence(s) conform to the OSD rather than calling their
+  software 'Open Source.'
+  </p>
+  <p class="endnote">
+  <a name="en02"><sup>2</sup></a>
+  If an enterprise patents a
+  proprietary innovation and defends the patent, this positive
+  effect can be negated.
+  </p>
+
+  <hr>
+
+  <address>
+   <a href="mailto:Ken.Coar@Golux.Com">coar</a>
+  </address>
+<!-- BEGIN LE FASTCOUNTER CODE -->
+<A
+ HREF="http://member.linkexchange.com/cgi-bin/fc/fastcounter-login?81189"
+ TARGET="_top"
+><IMG
+  BORDER="0"
+  SRC="http://fastcounter.linkexchange.com/fastcounter?81189+162385"
+  ALT=""
+  HEIGHT=1
+  WIDTH=1
+ ></A>
+<!-- END LE FASTCOUNTER CODE -->
+ </body>
+</html>

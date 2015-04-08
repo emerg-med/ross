@@ -1,0 +1,13 @@
+Addenbrooke's Hospital,Box 47,Cambridge,CB2 2QQ,01223 245151,
+Bedford General Hospital,Kempson Road,Bedford,MK42 9DJ,01234 355122,01234 218106
+Ipswich Hospital,Ipswich,Suffolk,IP4 5PD,01473 712233,01473 703400
+John Radcliffe Hospital,Headington,Oxford,OX3 9DU,01865 741166,01865 741408
+Kettering General Hospital,Kettering,Northants,NN16 8UZ,01536 492000,01536 492361
+Luton and Dunstable Hospital,Lewsey Road,Luton,LU4 0DZ,01582 491122
+Northampton General Hospital,Billing Road,Northampton,NN1 5BD,01604 634700,01604 545674
+Peterborough District Hospital,Thorpe Road,Peterborough,PE6 3DA,01733 874000,01733 874001
+Queen Elizabeth Hospital,King's Lynn,Norfolk,PE30 4ET,01553 613613
+Royal Berkshire Hospital,Reading,Berkshire,RG1 5AN,01189 875111
+Stoke Mandeville Hospital,Aylesbury,Buckinghamshire,HP21 8AL,01296 315000
+West Norwich Hospital,Bowthorpe Road,Norwich,NR2 3TU,01603 286286,01603 287211
+Wexham Park Hospital,Slough,Berkshire,SL2 4HL,01753 633000,01753 634848

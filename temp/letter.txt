@@ -1,0 +1,95 @@
+
+@SysInclude {doc} 
+@SysInclude {tbl} 
+@Doc
+@Text @Begin
+
+@LP
+@LP
+@LP
+
+@LP
+@LP
+@LP
+
+@Tbl rule {no}
+aformat { @Cell width {7c} A | @Cell width {5c} margin {.25c} B }
+{
+@Rowa
+A { 1.2f @Font @B { Emergency Department } @LP Horton Hospital @LP Banbury @LP OX16 9AL @LP @LP @LP 0.8f 
+@Font { Telephone   (01295)229720 @LP Fax              (01295)229389 @LP email: 
+ED@orh.nhs.uk }  }
+B { @LP @LP @IncludeGraphic "temp/logo.eps" @LP }
+}
+
+@LP @LP @LP
+
+03"/"08"/"2009
+
+@LP @LP
+
+Dear Doctor,
+
+@LP @LP
+
+@Tbl rule {no} # table with hospital name, logo
+aformat { @Cell width {1c} A | @Cell width {4c} B | @Cell width {7c} C }
+{
+@Rowa
+A { }
+B { re your patient }
+C { 1.2f @Font @B { @I {Brian} Todd }}
+@Rowa
+A { }
+B { date of birth }
+C { 1.2f @Font @B { 00"/"00"/"0000 }}
+@Rowa
+A { }
+B { UR }
+C { 1.2f @Font @B { 000000 }}
+}
+@LP @LP
+
+This patient presented to the Emergency Department today. @LP At triage the problem was stated to be:
+
+pain after cycling
+
+@LP @LP
+
+Investigations"/" procedures performed included: @LP ET intubation, ECG monitoring, Breath alcohol.
+
+@LP @LP
+
+The final diagnosis was: 
+
+Injury to internal organ of abdomen
+
+@LP @LP
+
+He was discharged home.
+
+@LP @LP Follow-up should be through hospital outpatients(inc. fracture clinic).
+	@LP @LP I would be grateful if you could review him tomorrow
+	@LP @LP 
+	Additional information: off work for 2/52
+
+	@LP @LP 
+
+Yours faithfully
+
+@LP @LP @LP @LP @LP @LP @LP @LP
+
+
+Grizelda George
+
+
+
+
+
+
+@LP @LP @LP @LP @LP @LP @LP @LP
+
+
+0.4f @Font { Letter printed: 07:30 - Monday August 3rd, 2009  at Horton Hospital Emergency Department   @CopyRight 2009 emerg-med.com} 	@LP 
+
+@End @Text

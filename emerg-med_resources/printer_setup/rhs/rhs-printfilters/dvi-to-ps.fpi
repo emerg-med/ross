@@ -1,0 +1,74 @@
+#!/bin/sh
+#
+# convert TeX dvi to Postscript
+#
+# tricky because dvips needs a seekable input file when acting
+# as filter with -f option.
+#
+# will want to source print options for dvips
+[ -f ${SPOOLDIR}/postscript.cfg ] && . ${SPOOLDIR}/postscript.cfg
+
+if [ "$PAPERSIZE" != "" ]; then
+	DVIPS_OPTIONS="-t $PAPERSIZE"
+fi
+
+# Add support for resolution and guess some METAFONT mode for tipical 
+# printer resolutions (Giuseppe Ghibò <ghibo@linux-mandrake.com>)
+#
+if [ -z "$RESOLUTION" ]; then
+	DVIPSRES="600x600"
+fi
+
+case "$RESOLUTION" in
+	120x72)
+	DVIPSRES="-X 120 -Y 72 -mode epsdraft"
+	;;
+	180x180)
+	DVIPSRES="-D 180 -mode nec"
+	;;
+	240x216)
+	DVIPSRES="-X 240 -Y 216 -mode epson"
+	;;
+	360x180)
+	DVIPSRES="-X 360 -Y 180 -mode lqmed"
+	;;
+	300x300)
+	DVIPSRES="-D 300 -mode cx"
+	;;
+	360x360)
+	DVIPSRES="-D 360 -mode epstypro"
+	;;
+	600x600)
+	DVIPSRES="-D 600 -mode ljfour"
+	;;
+	720x360)
+	DVIPSRES="-X 720 -Y 360 -mode epstypmd"
+	;;
+	720x720)
+	DVIPSRES="-D 720 -mode epshi"
+	;;
+	800x800)
+	DVIPSRES="-D 800 -mode lwpro"
+	;;
+	1200x1200)
+	DVIPSRES="-D 1200 -mode ljfzzz"
+	;;
+	2540x2540)
+	DVIPSRES="-D 2540 -mode linotzzh"
+	;;
+	*)
+	DVIPSRES=""
+	;;
+esac
+
+DVIPS_OPTIONS="-P generic $DVIPSRES $DVIPS_OPTIONS"
+
+TMP_FILE=`mktemp /tmp/rhsprintfilter.XXXXXX` || exit 1
+cat > $TMP_FILE
+dvips -f $DVIPS_OPTIONS < $TMP_FILE
+
+if [ -f "$TMP_FILE" ]; then
+      rm -f $TMP_FILE
+fi
+
+exit 0

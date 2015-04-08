@@ -1,0 +1,11 @@
+1{Accident
+7{Assault -not specified
+8{Complication of medical care
+2{Intentional self-harm
+4{Child neglect/ NAI
+5{Domestic violence
+3{Sexual assault
+6{Legal intervention
+9{Intent cannot be determined
+10{Other specified intent
+11{Intent not specified                                                  

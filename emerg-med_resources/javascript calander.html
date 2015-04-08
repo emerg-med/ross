@@ -1,0 +1,138 @@
+<HTML><HEAD><TITLE>FREECG - ECG/ EKG Tutor</TITLE></HEAD><BODY BGCOLOR="#FFFFFF" BACKGROUND="bckgrnd.gif">							<!--
+CF_CAL Custom Tag
+
+Jason Bukowski
+4 Brattle Circle
+Cambridge, MA 02138
+6/28/2000
+
+UPDATED 7/11/2000
+- Fixed Netscape bug
+- Fixed Multiple Instances Bug
+- Minor UI Improvment
+
+jbukowski@dataware.com
+
+CF_CAL is designed to place a button that activates a popup calendar. The user may browse though the calendar and select and date he wants by clicking on it. That date is then send back to a definded text field in a defined form in the format MM/DD/YYYY. 
+
+To Use:
+Paramteres-- formname target date image 
+
+REQUIRED:
+	formname - the name of the form you want the date inserted into
+	target - the name of the text field in that form
+OPTIONAL
+	date - the date the calendar opens to. Default is current.
+	image - the graphic to appear as the button. Default is [C] -- path is relative to calling page.
+-->
+
+
+
+
+
+
+
+
+<script language="JavaScript">
+
+var months = new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+var totalDays = new Array(31,28,31,30,31,30,31,31,30,31,30,31)
+
+
+function openCalWin_date() { 
+	stats='toolbar=no,location=no,directories=no,status=no,menubar=no,'
+	stats += 'scrollbars=no,resizable=no,width=300,height=250'
+	CalWin = window.open ("","Calendar",stats)
+	
+	
+	var calMonth = 1
+	var calYear = 2003
+	
+	
+	
+	theDate = new Date(calYear, (calMonth - 1), 1)
+	buildCal_date(theDate)
+	
+}
+
+function buildCal_date(theDate) {
+	
+	var startDay = theDate.getDay()
+	var printDays = false
+	var currDay = 1
+	var rowsNeeded = 5
+	
+	if (startDay + totalDays[theDate.getMonth()] > 35)
+		rowsNeeded++
+	
+	CalWin.document.write('<html><head><Title>Select a Date</title>')
+	CalWin.document.write('<STYLE TYPE="text/css">')
+	CalWin.document.write('A { color: #000000; font-family:Arial,Helvetica;font-size:14pt; font-weight: bold; text-decoration: none}')
+	CalWin.document.write('A:hover { color: red; }')
+	CalWin.document.write('</STYLE></head>')
+	CalWin.document.write('<body><a name="this"></a>')
+	CalWin.document.write('<table align=center height=100% width=100% border=2 bordercolor=Black cellpadding=0 cellspacing=0>')
+	CalWin.document.write('<tr><th bgcolor=#172b62 colspan=7><font face=Arial color=white>' + months[theDate.getMonth()] + ' ' + theDate.getFullYear() + '</font></th></tr>')
+	CalWin.document.write('<tr bgcolor="#6b99de"><th><font face=Arial color=white>Su</font></th><th><font face=Arial color=white>Mo</font></th><th><font face=Arial color=white>Tu</font></th><th><font face=Arial color=white>We</font></th><th><font face=Arial color=white>Th</font></th><th><font face=Arial color=white>Fr</font></th><th><font face=Arial color=white>Sa</font></th></tr>')
+	for (x=1; x<=rowsNeeded; x++){
+		CalWin.document.write('<tr>')
+		for (y=0; y<=6; y++){
+			if (currDay == 1 && !printDays && startDay == y)
+				printDays = true
+			CalWin.document.write('<td align="center" width=14.28%>')
+			if (printDays){
+        		CalWin.document.write('<a href="javascript:opener.placeDate_date(' +  currDay + ',' + theDate.getMonth() + ',' + theDate.getFullYear() + ')">' + currDay++ + '</a></td>')
+				if (currDay > totalDays[theDate.getMonth()])
+					printDays = false
+			}
+			else
+				CalWin.document.write('&nbsp;</td>')
+		}		
+		CalWin.document.write('</tr>')
+	}	
+	CalWin.document.write('<form><tr bgcolor="#6b99de"><td colspan=7 align="center"><input type="Button" size="2" name="Back" value="<<" onClick="opener.getNewCal_date(-1)"><font face=Arial color=white size="1"> Use the arrows to browse through the months.</font> <input type="Button" size="2" name="Forward" value=">>" onClick="opener.getNewCal_date(1)"></td></tr></form>')
+	CalWin.document.write('</table></body></html>')
+	CalWin.document.close()
+	
+}
+
+function getNewCal_date(newDir) {
+	if (newDir == -1){
+		theDate.setMonth(theDate.getMonth() - 1)
+		if (theDate.getMonth() == 0){
+			theDate.setMonth(12)
+			theDate.setYear(theDate.getYear() - 1)
+		}
+	}
+	else if (newDir == 1){
+		theDate.setMonth(theDate.getMonth() + 1)
+		if (theDate.getMonth() == 13){
+			theDate.setMonth(1)
+			theDate.setYear(theDate.getYear() + 1)
+		}
+	}
+		
+		
+	CalWin.document.clear();
+	buildCal_date(theDate);
+
+}
+
+function placeDate_date(dayNum, monthNum, yearNum){
+	
+	var dateString = dayNum + '/' + (monthNum+1) + '/' + yearNum
+	document.bookenquiry.date.value = dateString
+		 
+	CalWin.close()
+}
+
+</script>
+ <form NAME="bookenquiry" ACTION="" METHOD=POST >
+<input TYPE="Text" NAME="date" SIZE="20" MAXLENGTH="20">
+<a href="javascript:openCalWin_date()">[Select Date]</a>
+</form>
+
+
+
+
+ </BODY></HTML>

@@ -1,0 +1,134 @@
+setup as per meditute
+[except substitute emerg-med]
+
+map
+staff details
+gps surname practice phone fax email
+local info details
+business abn
+latest medicare file
+
+php.ini
+lout
+barcode
+lout doc file from usr/share/lout/include
+
+
+
+
+
+
+
+
+
+Linux 6.2 custom setup
+
+printer
+development
+samba
+
+perl
+
+vi etc/smb.conf
+	change security to share
+add 
+[All]
+	path = /
+	public = yes
+	browseable = yes
+	writable = yes
+
+[Documents]
+	path = /home/httpd/html/documents
+	public = yes
+	browseable = yes
+	writable = yes
+
+
+
+openssl rpm 
+SSLeay perl module rpm
+
+webmin rpm
+
+
+
+apache mod ssl rpm
+
+go into etc/httpd.config and change servername to ed 
+
+apachectl startssl
+apachectl stop
+
+*************
+Make cert sign request:
+
+copy sign.sh to /etc/httpd/conf
+
+change directory to /etc/httpd/conf 
+
+openssl genrsa -des3 -out server.key 1024
+openssl req -new -key server.key -out server.csr
+[make sure common name is full www. name]
+Sign it
+openssl genrsa -des3 -out ca.key
+openssl req -new -x509 -days 365 -key ca.key -out ca.crt
+./sign.sh server.csr
+
+put 
+server.key and ca.key into ssl.key
+and 
+server.crt and ca.crt into ssl.crt in /etc/httpd/
+
+go into httpd.conf
+set servername and where to find ca.crt
+
+apachectl startssl
+*************
+
+
+
+
+MySQL
+server
+client
+develop
+libiodbc
+
+
+/usr/bin/mysqladmin -u root password 'newpassword'
+
+install arvin rpms 
+expat
+php
+mod_php
+phpsql
+ - php_imap (for paging)
+
+http://fsr.ku.dk/people/troels/rpms/php
+
+
+
+postfix
+when putting postfix on, need to edit the main config file in etc/postfix
+virtual domains enable in main.cf
+file 
+
+lout setup
+barcode setup
+setup printer lp
+
+
+
+
+create database ED
+use SQL setup to make tables
+
+set SQL permissions
+	emergmed, emergmed1
+	delete anonymous no permissions
+
+populate tables with FMPro
+	medhelp
+	triage
+

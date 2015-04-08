@@ -1,0 +1,155 @@
+<html>
+
+<head>
+<link REL=stylesheet HREF=exstyle.css TYPE=text/css>
+</head>
+
+<body bgcolor="#CCFF99"  leftmargin=4 topmargin=0 marginheight=0 marginwidth=0>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+<!-- main table --> 
+  <tr>
+    <td width="100%">
+      <table border="0" cellpadding="15" cellspacing="0" width="100%">
+        <tr>
+          <td width="50%">
+<p><span class=bmtext>mainpage.html</span></p>
+          </td>
+          <td width="50%" align="right"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+<!-- end header  -->   
+<!-- end nav 1  -->   
+  <tr>
+    <td width="100%" align="center">
+        <table bgColor=#60c020 border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td width="100%">
+              <table border="0" cellpadding="0" cellspacing="1" width="100%">
+                <tr>
+                  <td width="40%" bgColor=#ffffff>
+ 
+
+       <table border="0" cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td width="30%" align="center"><a href="ex8.html" target=_parent class=boldlink>Previous</a></td>
+            <td width="40%" align="center"><a href="../index.html" target=_parent class=boldlink>Example Index</a></td>
+            <td width="30%" align="center"><span class=bmtext>Next</span></td>                  
+          </tr>
+        </table>                  
+
+
+                  </td>
+                  <td width="60%" bgColor=#CCFF99>                  
+        <table border="0" cellpadding="3" cellspacing="0" width="100%">
+          <tr>                  
+            <td width="25%" align="center"><a href="params.html" class=boldlink target=_parent>Parameters</a></td>                       <td width="25%" align="center"><a href="exframe.html" class=boldlink target=_parent>Frame Example</a></td>     
+            <td width="25%" align="center"><a href="javascript.html" class=boldlink target=_blank>Javascript Tips</a></td>
+            <td width="25%" align="center"><a href="index.html" class=boldlink target=_parent>Applet Index</a></td>
+          </tr>
+        </table>                  
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        
+    </td>
+  </tr>
+
+<tr><td><p>&nbsp;</p></td></tr>
+<!-- end nav 2  -->  
+  <tr>
+    <td bgColor=#ccff99>
+       <table border="0" cellspacing="2" cellpadding="10" width="600" align="center">
+          <tr>
+            <td width="100%" bgColor=#eeff99>
+<p align=left>
+<span class=blacktitle>apMenu Frame Example</span></p>
+
+<p><span class=bmtext>This example demonstrates:</span></p>
+<span class=mtext>
+<ul>
+<li>Using the target parameter with frames
+<li>Javascript calls - "Change all" item allows to change the content of all frames by single click. See also <a class=txtlink target=_blank href=javascript.html >"Javascript tips"</a>
+<li>Inactive items
+<li>Label text aligned to center
+<li>Fade type 4
+<li>Vertical menu direction
+
+</ul>
+</span>
+<p><span class=bmtext>HTML Source</span></p>
+<p><span class=bmtext>exframe.html</span></p>
+<p>
+<span class=mtext>&lt;FRAMESET cols=135,85%><br>
+&lt;FRAME name = left_wnd scrolling=no  src="leftpage.html"><br>
+&lt;FRAMESET rows=15%,85%><br>
+&lt;FRAME name = top_wnd  scrolling=no  src="toppage.html"><br>
+&lt;FRAME name = main_wnd scrolling=yes src="mainpage.html"><br>
+&lt;/FRAMESET><br>
+&lt;/FRAMESET><br>
+</span>
+</p>
+<p><span class=bmtext>leftpage.html</span></p>
+<span class=mtext>&lt;APPLET code=&quot;apMenu&quot; Archive=&quot;apMenu.jar&quot; height=270 
+width=115 mayscript&gt;<br>
+&lt;param name=&quot;Copyright&quot; value=&quot;Apycom Software - www.apycom.com&quot;&gt;<br>
+&lt;param name=&quot;solidArrows&quot; value=&quot;true&quot;&gt;<br>
+&lt;param name=&quot;backColor&quot; value=&quot;ffffcc&quot;&gt;<br>
+&lt;param name=&quot;backHighColor&quot; value=&quot;88ff88&quot;&gt;<br>
+&lt;param name=&quot;fontColor&quot; value=&quot;888800&quot;&gt;<br>
+&lt;param name=&quot;fontHighColor&quot; value=&quot;00ff00&quot;&gt;<br>
+&lt;param name=&quot;fadeType&quot; value=&quot;4&quot;&gt;<br>
+&lt;param name=&quot;alignText&quot; value=&quot;center&quot;&gt;<br>
+&lt;param name=&quot;font&quot; value=&quot;Courier,12,0&quot;&gt;<br>
+&lt;param name=&quot;javascript:1&quot; value=&quot;changeAll()&quot;&gt;<br>
+&lt;param name=&quot;menuItems&quot; value=&quot;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {Applet,index.html,_parent}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {_,_,_}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {Main in Main,mainpage.html,main_wnd} <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {Top in Main,toppage.html,main_wnd} <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {Left in Main,leftpage.html,main_wnd}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {Top in Top,toppage.html,top_wnd}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {Main in Top,mainpage.html,top_wnd}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {Left in Top,leftpage.html,top_wnd}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {Change All,javascript:1,_}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {_,_,_}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {Previous,ex7.html,_parent}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {Index,../index.html,_parent}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;&gt;<br>
+&lt;/APPLET&gt; <br>
+<br>
+&lt;script language=&quot;Javascript&quot;&gt;<br>
+function changeAll()<br>
+{<br>
+open('mainpage.html','left_wnd');<br>
+open('leftpage.html','main_wnd');<br>
+open('leftpage.html','top_wnd');<br>
+}<br>
+&lt;/script&gt;<br>
+<br>
+</span>
+          </tr>
+        </table>   
+    </td>
+  </tr>
+<!-- end example -->
+<tr><td><p>&nbsp;</p></td></tr>   
+  <tr>
+    <td>  
+<br>      
+<p align="center">
+<span class=mtext>Copyright (c) 1998-2001, </span><span class=bmtext>Apycom Software</span> 
+</p>    
+    </td>
+  </tr>      
+<!-- main table -->     
+</table>
+
+</body>
+
+</html>

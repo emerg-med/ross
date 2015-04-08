@@ -1,0 +1,23 @@
+#!/bin/sh
+#
+# convert the rpm header to a nice ASCII format for printing
+#
+qf="Name        : %-27{NAME} Distribution: %{DISTRIBUTION}
+Version     : %-27{VERSION}       Vendor: %{VENDOR}
+Release     : %-27{RELEASE}   Build Date: %{BUILDTIME:date}
+Install date: %-27{INSTALLTIME:date}   Build Host: %{BUILDHOST}
+Group       : %-27{GROUP}   Source RPM: %{SOURCERPM}
+Size        : %{SIZE}
+Summary     : %{SUMMARY}
+Description :\n%{DESCRIPTION}
+
+Files:
+[        %{FILENAMES}\n]\
+
+Requires:
+[        %{REQUIRENAME} %{REQUIREFLAGS:depflags} %{REQUIREVERSION}\n]\
+
+Provides:
+[        %{PROVIDES}\n]"
+
+rpm --qf "$qf" -qp -- -

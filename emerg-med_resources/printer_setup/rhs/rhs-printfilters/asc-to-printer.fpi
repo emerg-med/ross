@@ -1,0 +1,35 @@
+#!/bin/sh
+#
+# convert ASCII to the format required by the printer on this queue
+#
+
+#
+# read in text-only configuration settings
+#
+. ${SPOOLDIR}/textonly.cfg
+
+#
+# are there any special options required for text-only printing?
+#
+if [ "$TEXTONLYOPTIONS" != "" ]; then
+   printf $TEXTONLYOPTIONS
+fi
+
+#
+# do we need to map lf into cr/lf for dos-loving printers?
+#
+if [ "$CRLFTRANS" = YES -o "$CRLFTRANS" = 1 ]; then
+    sed -e 's/$/'`echo -ne '\r'`'/g'
+else
+    cat -
+fi
+
+#
+#
+#   see if we need to send a form feed to eject the page from printer
+#
+if [ "$TEXT_SEND_EOF" = "YES" ]; then
+    printf "\014"
+fi
+
+exit 0

@@ -1,0 +1,1564 @@
+%!PS-Adobe-3.0
+%%Creator: Basser Lout Version 3.17 (September 1999)
+%%CreationDate: Tue Oct  7 13:14:03 2003
+%%DocumentData: Binary
+%%DocumentNeededResources: (atend)
+%%DocumentMedia: Plain 595 842 0 white ()
+%%DocumentSuppliedResources: (atend)
+%%Pages: (atend)
+%%BoundingBox: 0 0 595 842
+%%EndComments
+
+%%BeginProlog
+%%BeginResource: procset LoutStartUp
+/m  { 3 1 roll moveto show } bind def
+/s  { exch currentpoint exch pop moveto show } bind def
+/k  { exch neg 0 rmoveto show } bind def
+/ul { gsave setlinewidth dup 3 1 roll
+      moveto lineto stroke grestore } bind def
+/in { 1440 mul } def
+/cm { 567 mul } def
+/pt { 20 mul } def
+/em { 120 mul } def
+/sp { louts mul } def
+/vs { loutv mul } def
+/ft { loutf mul } def
+/dg {           } def
+
+/LoutGraphic {
+  /louts exch def
+  /loutv exch def
+  /loutf exch def
+  /ymark exch def
+  /xmark exch def
+  /ysize exch def
+  /xsize exch def
+} def
+
+/LoutGr2 { gsave translate LoutGraphic gsave } def
+
+/LoutFont
+{ findfont exch scalefont setfont
+} bind def
+
+/LoutRecode {
+  { findfont dup length dict begin
+    {1 index /FID ne {def} {pop pop} ifelse} forall
+    /Encoding exch def
+    currentdict end definefont pop
+  }
+  stopped pop
+} bind def
+
+/BeginEPSF {
+  /LoutEPSFState save def
+  /dict_count countdictstack def
+  /op_count count 1 sub def
+  userdict begin
+  /showpage { } def
+  0 setgray 0 setlinecap
+  1 setlinewidth 0 setlinejoin
+  10 setmiterlimit [] 0 setdash newpath
+  /languagelevel where
+  { pop languagelevel
+    1 ne
+    { false setstrokeadjust false setoverprint
+    } if
+  } if
+} bind def
+
+/EndEPSF {
+  count op_count sub { pop } repeat
+  countdictstack dict_count sub { end } repeat
+  LoutEPSFState restore
+} bind def
+%%EndResource
+
+%%BeginResource encoding vec2
+/vec2 [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/space /exclam /quotedbl /numbersign /dollar /percent /ampersand /quoteright
+/parenleft /parenright /asterisk /plus /comma /hyphen /period /slash
+/zero /one /two /three /four /five /six /seven
+/eight /nine /colon /semicolon /less /equal /greater /question
+/at /A /B /C /D /E /F /G
+/H /I /J /K /L /M /N /O
+/P /Q /R /S /T /U /V /W
+/X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+/quoteleft /a /b /c /d /e /f /g
+/h /i /j /k /l /m /n /o
+/p /q /r /s /t /u /v /w
+/x /y /z /braceleft /bar /braceright /asciitilde /.notdef
+/quotesinglbase /quotedblbase /ellipsis /OE /oe /quotedblleft /quotedblright /fi
+/fl /endash /emdash /bullet /dagger /daggerdbl /florin /fraction
+/dotlessi /grave /acute /circumflex /tilde /macron /breve /dotaccent
+/dieresis /.notdef /ring /cedilla /.notdef /hungarumlaut /ogonek /caron
+/space /exclamdown /cent /sterling /currency /yen /brokenbar /section
+/dieresis /copyright /ordfeminine /guillemotleft /logicalnot /hyphen /registered /macron
+/degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph /periodcentered
+/cedilla /onesuperior /ordmasculine /guillemotright /onequarter /onehalf /threequarters /questiondown
+/Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+/Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis
+/Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply
+/Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /germandbls
+/agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla
+/egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis
+/eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /divide
+/oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn /ydieresis
+] def
+%%EndResource
+
+%%BeginResource: procset LoutBasicSetup
+% @PrependGraphic file /usr/share/lout/include/bsf.lpg
+
+% width height linethickness louteuro -
+% draw a Euro symbol of this width and height with this line thickness
+% Author: Jeff Kingston, based on code from Andrew Beardsley
+/louteuro {
+  20 dict begin
+    /eurothick exch def
+    /euroheight exch def
+    /eurowidth exch def
+    /eurostrokewidth euroheight 0.8 mul def
+    /eurostep eurothick 60 cos mul 60 sin div def
+    /eurotheta 40 def
+
+    % llx lly width thickness louteurobox -
+    % draw angled box starting at (llx, lly) with given width and thickness
+    /louteurobox
+    {
+      /euroboxthick exch def
+      /euroboxwidth exch def
+      newpath moveto euroboxwidth 0 rlineto
+      eurostep euroboxthick rlineto
+      euroboxwidth neg 0 rlineto closepath fill
+    } def
+
+    % lower cross stroke
+    0 euroheight 2 div eurothick 1.5 mul sub
+    eurostrokewidth eurothick louteurobox
+
+    % upper cross stroke
+    0 euroheight 2 div eurothick 0.5 mul add
+    eurostrokewidth eurostep 2 mul add eurothick louteurobox
+
+    % circular part
+    /eurohctr eurowidth euroheight 2 div eurotheta cos mul sub def
+    /eurovctr euroheight 2 div def
+    newpath
+    eurohctr eurovctr eurovctr eurotheta 350 eurotheta sub arc
+    eurohctr eurovctr eurovctr eurothick sub 365 eurotheta sub eurotheta arcn
+    closepath fill
+  end
+} def
+
+% path for @FullWidthRule symbol
+/LoutRule
+{ 0 0 moveto xsize 0 lineto
+} def
+
+% path for @Box symbol
+/LoutBox
+{ 0 0 moveto xsize 0 lineto
+  xsize ysize lineto 0 ysize lineto
+  closepath
+} def
+
+% path for @CurveBox symbol
+/LoutCurveBox
+{ xmark 0 moveto
+  xsize xmark sub xmark xmark 270 360 arc
+  xsize xmark sub ysize xmark sub xmark 0 90 arc
+  xmark ysize xmark sub xmark 90 180 arc
+  xmark xmark xmark 180 270 arc
+  closepath
+} def
+
+% path for @ShadowBox symbol
+/LoutShadowBox
+{ xmark 2 mul 0 moveto xsize 0 lineto
+  xsize ysize xmark 2 mul sub lineto
+  xsize xmark sub ysize xmark 2 mul sub lineto
+  xsize xmark sub xmark lineto
+  xmark 2 mul xmark lineto
+  closepath
+} def
+
+% set up dictionary containing margin note data: parity LoutMargSet -
+/LoutMargSet
+{ /LoutMargDict 12 dict def
+  LoutMargDict begin
+    /parity exch def
+    /matr matrix currentmatrix def
+    /rightx xsize def
+    /lefty ysize def   % highest allowable point for top of next left note
+    /righty ysize def  % highest allowable point for top of next right note
+    /max { 2 copy gt { pop } { exch pop } ifelse } def
+    /min { 2 copy lt { pop } { exch pop } ifelse } def
+  end
+} def
+
+%translate coordinate system for marginal notes:  type LoutMargShift -
+% where type 0 is left margin, 1 is right margin, 2 is outer, 3 is inner
+/LoutMargShift
+{ LoutMargDict begin
+
+    % y coordinate of top of note, in margin coords, before vertical adjust
+    0 ysize transform matr itransform exch pop
+
+    % decide whether left or right margin based on type and parity
+    exch [ 0 1 parity 1 parity sub ] exch get 0 eq
+    {
+      % left margin: adjust top of note downwards if overlaps previous note
+      lefty min
+
+      % bottom of note is new lefty position and also translate position
+      ysize sub dup /lefty exch def
+
+      % want right edge of note at coordinate zero
+      xsize neg exch
+    }
+    {
+      % right margin: adjust top of note downwards if overlaps previous note
+      righty min
+
+      % bottom of note is new righty position and also translate position
+      ysize sub dup /righty exch def
+
+      % want left edge of note at coordinate rightx
+      rightx exch
+    } ifelse
+
+    % stack now contains coord of bottom left corner in margin coordinates
+    matr setmatrix translate
+  end
+} def
+
+% create LoutPageDict with left, right, foot, top for @Place symbol users
+/LoutPageSet
+{
+  /LoutPageDict 5 dict def
+  LoutPageDict begin
+    /matr matrix currentmatrix def
+    /left 0 def
+    /right xsize def
+    /foot 0 def
+    /top ysize def
+  end
+
+} def
+
+%%EndResource
+
+%%BeginResource: procset LoutTblPrependGraphic
+% @PrependGraphic file /usr/share/lout/include/tblf.lpg
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                    %
+%  PostScript @SysPrependGraphic file for @Tbl  Jeffrey H. Kingston  %
+%  Version 1.0                                             June 1998 %
+%                                                                    %
+%  To assist in avoiding name clashes, the names of all symbols      %
+%  defined here begin with "ltbl".                                   %
+%                                                                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% painting (i.e. filling): - ltblwhite - (etc.)
+/ltblnopaint		{			       } def
+/ltblnochange		{ 			  fill } def
+/ltbldarkblue		{ 0.0 0.0 0.5 setrgbcolor fill } def
+/ltblblue		{ 0.0 0.0 1.0 setrgbcolor fill } def
+/ltbllightblue		{ 0.5 0.5 1.0 setrgbcolor fill } def
+/ltbldarkgreen		{ 0.0 0.5 0.0 setrgbcolor fill } def
+/ltblgreen		{ 0.0 1.0 0.0 setrgbcolor fill } def
+/ltbllightgreen	        { 0.5 1.0 0.5 setrgbcolor fill } def
+/ltbldarkred		{ 0.5 0.0 0.0 setrgbcolor fill } def
+/ltblred		{ 1.0 0.0 0.0 setrgbcolor fill } def
+/ltbllightred		{ 1.0 0.5 0.5 setrgbcolor fill } def
+/ltbldarkcyan		{ 0.0 0.5 0.5 setrgbcolor fill } def
+/ltblcyan		{ 0.0 1.0 1.0 setrgbcolor fill } def
+/ltbllightcyan		{ 0.5 1.0 1.0 setrgbcolor fill } def
+/ltbldarkmagenta	{ 0.5 0.0 0.5 setrgbcolor fill } def
+/ltblmagenta		{ 1.0 0.0 1.0 setrgbcolor fill } def
+/ltbllightmagenta	{ 1.0 0.5 1.0 setrgbcolor fill } def
+/ltbldarkyellow        	{ 0.5 0.5 0.0 setrgbcolor fill } def
+/ltblyellow		{ 1.0 1.0 0.0 setrgbcolor fill } def
+/ltbllightyellow	{ 1.0 1.0 0.5 setrgbcolor fill } def
+/ltbldarkgray		{ 0.2 0.2 0.2 setrgbcolor fill } def
+/ltblgray		{ 0.5 0.5 0.5 setrgbcolor fill } def
+/ltbllightgray		{ 0.8 0.8 0.8 setrgbcolor fill } def
+/ltbldarkgrey		{ 0.2 0.2 0.2 setrgbcolor fill } def
+/ltblgrey		{ 0.5 0.5 0.5 setrgbcolor fill } def
+/ltbllightgrey		{ 0.8 0.8 0.8 setrgbcolor fill } def
+/ltblblack		{ 0.0 0.0 0.0 setrgbcolor fill } def
+/ltblwhite		{ 1.0 1.0 1.0 setrgbcolor fill } def
+%%EndResource
+
+%%EndProlog
+
+%%BeginSetup
+%%IncludeResource: font Helvetica
+/Helveticafnt35 vec2 /Helvetica LoutRecode
+/fnt35 { /Helveticafnt35 LoutFont } def
+%%IncludeResource: font Helvetica-Bold
+/Helvetica-Boldfnt37 vec2 /Helvetica-Bold LoutRecode
+/fnt37 { /Helvetica-Boldfnt37 LoutFont } def
+%%IncludeResource: font Symbol
+/fnt78 { /Symbol LoutFont } def
+%%EndSetup
+
+%%Page: 1 1
+%%BeginPageSetup
+%%PageResources: font Helvetica
+%%+ font Helvetica-Bold
+%%+ font Symbol
+/pgsave save def
+0.0500 dup scale 10 setlinewidth
+%%EndPageSetup
+
+gsave
+0 0 translate
+240 fnt35 0.0 0.0 0.0 setrgbcolor 11900 16840 0 16840 240 288 66 LoutGraphic
+gsave
+LoutPageSet
+grestore
+gsave
+0 16840 translate
+0.0000 rotate
+10766 16558 0 16558 240 288 66 567 -16699 LoutGr2
+1 LoutMargSet
+grestore
+288 fnt37 144 15981(Emer)m 4(g)k -2(enc)k 2(y)k
+1766(Depar)s -5(tment)k 240 fnt35 144 15622(St.)m 482(John)s
+1052(of)s 1314(God)s 1819(Hospital)s 144 15276(Dr)m -3(ummond)k
+1382(St)s 1669(Nor)s -9(th,)k 144 14950(Ballar)m 2(at,)k
+1064(Victor)s -3(ia)k 144 14627(3350)m 192 fnt35 144 14242(T)m 23(elephone)k
+1174(\(03\))s 1605(5320)s 2075(2126)s 144 13967(F)m 9(ax)k
+1195(\(03\))s 1626(5320)s 2096(2125)s 144 13691(email:)m 689(andre)s 3(w)k 11(.dean@sjog.org.au)k
+240 fnt35 0 13041(07/10/2003)m 480 fnt37 4124 12161(T)m 38(ax)k
+5037(In)s 19(v)k 14(oice)k 288 fnt37 0 11418(In)m 11(v)k 8(oice)k
+1043(f)s 5(or:)k 1569(Joe)s 2136(Blog)s 2(gs)k
+240 fnt35 0 10944(Doctor)m -7(:)k 823(Da)s 4(vid)k
+1484(Br)s -3(uce)k 12 412 0 208 240 288 66 0 10288 LoutGr2
+LoutBox ltblblack
+grestore
+
+grestore
+12 412 0 208 240 288 66 1417 10288 LoutGr2
+LoutBox ltblblack
+grestore
+
+grestore
+1417 12 144 12 240 288 66 0 10688 LoutGr2
+LoutBox ltblblack
+grestore
+
+grestore
+1417 12 144 12 240 288 66 0 10276 LoutGr2
+LoutBox ltblblack
+grestore
+
+grestore
+12 12 0 12 240 288 66 1417 10688 LoutGr2
+LoutBox ltblblack
+grestore
+
+grestore
+12 12 0 12 240 288 66 1417 10276 LoutGr2
+LoutBox ltblblack
+grestore
+
+grestore
+288 fnt37 144 10420(Item)m 797(No)s
+gsave
+1417 10288 translate
+240 fnt35 12 412 0 208 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 10288 translate
+240 fnt35 12 412 0 208 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 10688 translate
+240 fnt35 7932 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 10276 translate
+240 fnt35 7932 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 10688 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 10276 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+1561(Description)s gsave
+9349 10288 translate
+240 fnt35 12 412 0 208 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 10288 translate
+240 fnt35 12 412 0 208 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 10688 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 10276 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 10688 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 10276 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+9493(Fee)s gsave
+0 9904 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 9904 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+0 10276 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+0 9892 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 10276 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 9892 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 9904 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 9904 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 10276 translate
+240 fnt35 7932 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 9892 translate
+240 fnt35 7932 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 10276 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 9892 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+144 fnt35 1561 10059(F)m 7(acility)k
+2037(F)s 4(ee)k gsave
+9349 9904 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 9904 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 10276 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 9892 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 10276 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 9892 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+9493($)s 9608(80)s gsave
+0 8683 translate
+240 fnt35 12 1221 0 1029 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 8683 translate
+240 fnt35 12 1221 0 1029 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+0 9892 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+0 8671 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 9892 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 8671 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+144 9675(00501)m
+gsave
+1417 8683 translate
+240 fnt35 12 1221 0 1029 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 8683 translate
+240 fnt35 12 1221 0 1029 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 9892 translate
+240 fnt35 7932 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 8671 translate
+240 fnt35 7932 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 9892 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 8671 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+1561(Medical)s 2126(pr)s 1(actitioner)k 2915(\(emergency)s 3753(ph)s 4(ysician\))k
+4467(attendances)s 5328(emergency)s 6119(depar)s -5(tment)k 6929(le)s 4(v)k 3(el)k
+7289(1)s 7423(prof)s 4(essional)k 8265(attendance)s 9054(on)s
+1561 9527(a)m 8777(patient)s 1561 9379(at)m 1718(a)s 1835(recognised)s
+2569(emergency)s 3318(depar)s -5(tment)k 4086(of)s 4244(a)s
+4361(pr)s -2(iv)k 3(ate)k 4825(hospital)s 5350(b)s 2(y)k
+5539(a)s 5656(medical)s 6180(pr)s 1(actitioner)k 6927(who)s
+7225(is)s 7363(an)s 7554(emergency)s 8303(ph)s 4(ysician)k
+8928(in)s 1561 9229(the)m 1796(pr)s 1(actice)k 2332(of)s
+2490(emergency)s 3239(medicine)s 3847(-)s 3928(attendance)s 4675(f)s 4(or)k
+4878(the)s 5113(unscheduled)s 5960(e)s 4(v)k 3(aluation)k
+6638(and)s 6910(management)s 7785(of)s 7943(a)s 8060(patient)s
+8528(requir)s -2(ing)k 1561 9079(the)m 1854(taking)s 2327(of)s
+2544(a)s 2719(prob)s 2(lem)k 3323(f)s 4(ocussed)k
+3986(histor)s -4(y)k 14(,)k 4524(limited)s 5026(e)s 4(xamination,)k
+5922(diagnosis)s 6621(and)s 6951(initiation)s 7565(of)s 7781(appropr)s -2(iate)k
+8602(treatment)s 1561 8931(inter)m -4(v)k 3(entions)k 1561 8787(in)m 2(v)k 3(olving)k
+2145(str)s 1(aightf)k 4(orw)k 2(ard)k 3117(medical)s
+3641(decision)s 4198(making.)s gsave
+9349 8683 translate
+240 fnt35 12 1221 0 1029 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 8683 translate
+240 fnt35 12 1221 0 1029 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 9892 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 8671 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 9892 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 8671 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+9493 9675($)m 9608(10.10)s gsave
+0 7312 translate
+240 fnt35 12 1371 0 1179 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 7312 translate
+240 fnt35 12 1371 0 1179 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+0 8671 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+0 7300 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 8671 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 7300 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+144 8454(00503)m
+gsave
+1417 7312 translate
+240 fnt35 12 1371 0 1179 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 7312 translate
+240 fnt35 12 1371 0 1179 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 8671 translate
+240 fnt35 7932 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 7300 translate
+240 fnt35 7932 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 8671 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 7300 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+1561(Medical)s 2085(pr)s 1(actitioner)k 2832(\(emergency)s 3628(ph)s 4(ysician\))k
+4300(attendances)s 5119(emergency)s 5868(depar)s -5(tment)k 6636(le)s 4(v)k 3(el)k
+6954(2)s 7067(prof)s 4(essional)k 7867(attendance)s 8614(on)s
+8805(a)s 1561 8304(patient)m 2056(at)s 2241(a)s 2386(recognised)s
+3148(emergency)s 3925(depar)s -5(tment)k 4721(of)s 4907(a)s
+5052(pr)s -2(iv)k 3(ate)k 5543(hospital)s 6096(b)s 2(y)k
+6313(a)s 6458(medical)s 7010(pr)s 1(actitioner)k 7785(who)s
+8111(is)s 8277(an)s 8496(emergency)s 1561 8156(medicine)m 1561 8012(ph)m 4(ysician)k
+2221(in)s 2399(the)s 2670(pr)s 1(actice)k 3241(of)s
+3435(emergency)s 4220(medicine)s 4863(-)s 4980(attendance)s 5763(f)s 4(or)k
+6001(the)s 6272(unscheduled)s 7155(e)s 4(v)k 3(aluation)k
+7868(and)s 8176(management)s 9087(of)s 1561 7864(a)m 8777(patient)s
+1561 7716(requir)m -2(ing)k 2151(the)s 2386(taking)s 2801(of)s
+2959(an)s 3150(e)s 4(xpanded)k 3810(prob)s 2(lem)k
+4356(f)s 4(ocussed)k 4960(histor)s -4(y)k 14(,)k
+5440(e)s 4(xpanded)k 6100(e)s 4(xamination)k 6900(of)s
+7058(one)s 7333(or)s 7500(more)s 7861(systems)s 8423(and)s
+8695(the)s 1561 7566(f)m 4(or)k -3(m)k 1(ulation)k
+2298(and)s 2570(documentation)s 3543(of)s 3701(a)s 3818(diagnosis)s
+4459(and)s 4731(management)s 5606(plan)s 5908(in)s 6050(relation)s
+6550(to)s 6705(one)s 6980(or)s 7147(more)s 7508(prob)s 2(lems)k 2(,)k
+8161(and)s 8433(the)s 8668(initiation)s 1561 7416(of)m 1719(appropr)s -2(iate)k
+2481(treatment)s 3124(inter)s -4(v)k 3(entions)k 3973(in)s 2(v)k 3(olving)k
+4557(medical)s 5081(decision)s 5638(making)s 6132(of)s 6290(lo)s 2(w)k
+6541(comple)s 4(xity)k 14(.)k gsave
+9349 7312 translate
+240 fnt35 12 1371 0 1179 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 7312 translate
+240 fnt35 12 1371 0 1179 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 8671 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 7300 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 8671 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 7300 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+9493 8454($)m 9608(22.10)s
+gsave
+0 6928 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 6928 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+0 7300 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+0 6916 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 7300 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 6916 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+144 7083(11700)m gsave
+1417 6928 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 6928 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 7300 translate
+240 fnt35 7932 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 6916 translate
+240 fnt35 7932 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 7300 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 6916 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+1561(T)s 17(w)k 1(elv)k 3(e-lead)k
+2343(electrocardiog)s 1(r)k 1(aph)k 4(y)k 14(,)k
+3650(tr)s 1(acing)k 4111(and)s 4383(repor)s -5(t)k
+gsave
+9349 6928 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 6928 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 7300 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 6916 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 7300 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 6916 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+9493($)s 9608(19.00)s gsave
+0 6544 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 6544 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+0 6916 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+0 6532 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 6916 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 6532 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+144 6699(11700)m gsave
+1417 6544 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 6544 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 6916 translate
+240 fnt35 7932 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 6532 translate
+240 fnt35 7932 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 6916 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 6532 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+1561(T)s 17(w)k 1(elv)k 3(e-lead)k
+2343(electrocardiog)s 1(r)k 1(aph)k 4(y)k 14(,)k
+3650(tr)s 1(acing)k 4111(and)s 4383(repor)s -5(t)k
+gsave
+9349 6544 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 6544 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 6916 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 6532 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 6916 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 6532 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+9493($)s 9608(19.00)s gsave
+0 6160 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 6160 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+0 6532 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+0 6148 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 6532 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 6148 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+144 6315(38256)m gsave
+1417 6160 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 6160 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 6532 translate
+240 fnt35 7932 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 6148 translate
+240 fnt35 7932 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 6532 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 6148 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+1561(T)s 17(empor)k 1(ar)k -4(y)k
+2278(tr)s 1(ansv)k 3(enous)k 3092(pacemaking)s 3898(electrode)s 2(,)k
+4554(inser)s -5(tion)k 5131(of)s gsave
+9349 6160 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 6160 translate
+240 fnt35 12 384 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 6532 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 6148 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 6532 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 6148 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+9493($)s 9608(162.50)s
+gsave
+0 5774 translate
+240 fnt35 12 386 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 5774 translate
+240 fnt35 12 386 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+0 6148 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+0 5762 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 6148 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 5762 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 5774 translate
+240 fnt35 12 386 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 5774 translate
+240 fnt35 12 386 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 6148 translate
+240 fnt35 7932 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+1417 5762 translate
+240 fnt35 7932 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 6148 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 5762 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+240 fnt37 1561 5903(T)m 19(otal)k gsave
+9349 5774 translate
+240 fnt35 12 386 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 5774 translate
+240 fnt35 12 386 0 192 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 6148 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+9349 5762 translate
+240 fnt35 1417 12 144 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 6148 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+gsave
+10766 5762 translate
+240 fnt35 12 12 0 12 240 288 66 LoutGraphic
+gsave
+LoutBox ltblblack
+grestore
+
+grestore
+9493($)s 9685(312.70)s
+96 fnt35 0 5464(In)m 1(v)k 2(oice)k 322(pr)s -1(inted:)k
+657(13:14)s 918(-)s 971(T)s 11(uesda)k 2(y)k
+1349(October)s 1713(7th,)s 1889(2003)s 2150(at)s 2253(St.)s
+2387(John)s 2614(of)s 2718(God)s 2919(Hospital)s 3283(Emergency)s
+3790(Depar)s -3(tment)k 96 fnt78 4365 5465(\343)m 96 fnt35
+4462 5464(2003)m 4697(emerg-med.com)s 0 5253(This)m 203(document)s 645(becomes)s
+1055(a)s 1132(tax)s 1285(in)s 1(v)k 2(oice)k
+1602(when)s 1850(stamped)s 2236('P)s 11(AID')k 2510(using)s
+2759(an)s 2885(of\207cal)s 3180(St.)s 3314(John)s 3541(of)s
+3645(God)s 3846(Hospital)s 4210(stamp)s 0 5044(ABN)m 216(Number)s
+580(12345678)s 
+grestore
+
+grestore
+
+grestore
+
+pgsave restore
+showpage
+
+%%Trailer
+%%DocumentNeededResources: font Helvetica
+%%+ font Helvetica-Bold
+%%+ font Symbol
+%%DocumentSuppliedResources: procset LoutStartUp
+%%+  procset LoutBasicSetup
+%%+  procset LoutTblPrependGraphic
+%%+ encoding vec2
+%%Pages: 1
+%%EOF

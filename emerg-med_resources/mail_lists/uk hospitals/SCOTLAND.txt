@@ -1,0 +1,11 @@
+Aberdeen Royal Infirmary,,Aberdeen,AB9 2ZB,01224 681818,01224 685307
+Canniesburn Hospital,Bearsden,Glasgow,G61 1QL,0141 211 5600,0141 211 5703
+Crosshouse Hospital,Crosshouse,Kilmarnock,KA2 0BE,01563 521133,01563 572496
+Dumfries and Galloway Royal Infirmary,Bankend Road,Dumfries,DG1 4AP,01387 246246,01387 241639
+Dundee Royal Infirmary,Barrack Road,Dundee,DD1 9ND,01382 660111
+Edinburgh City Hospital,Greenbank Drive,Edinburgh,EH10 5SB,0131 536 6000,0131 536 6001
+Falkirk and District Royal Infirmary NHS Trust,Major's Loan,Falkirk,FK1 5QE,01324 624000,01324 612340
+Monklands & Bellshill Hospital Trust,Monkscourt Avenue,Airdrie,ML6 0JS,01236 748748,01236 760015
+Perth Royal Infirmary,Taymount Terrace,Perth,PH1 1NX,01738 623311,01738 473306
+Queen Margaret Hospital NHS Trust,Whitefield Road,Dunfermline,KY12 0SU,01383 623623,01383 621668
+Raigmore Hospital,Old Perth Road,Inverness,IV2 3UJ,01463 704000,01463 711322

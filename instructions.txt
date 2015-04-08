@@ -1,0 +1,121 @@
+
+
+
+This is a intranet web-based system for managing an emergency department (ED).
+It provides a map based system for managing details, tracking patients, coding diagnoses using standard ICD10 codes.
+It includes innovative systems for decision support for both doctors and nurses and anonymous reporting of quality control data.
+
+It is fast, secure, and robust. 
+It can easily be interfaced to other healthcare systems.
+It is open source software. This means that there is no charge for using the software if you meet certain criteria (see FAQ).
+
+
+
+
+	setup server as planned \point apache ssl at /secure
+
+
+Features 
+	poorly designed computer systems mean that time is often wasted looking for information that should be easily available.
+	the main screen is a map of your emergency department
+	By one glance, you know:
+	how many patients are in the department
+	what category they are 
+	which patient is next to be seen 
+	how long each patient has been waiting [show sequence of lights]
+	who is looking after the patient	
+	what the current plan is for the patient 'waiting for path''in CT'
+	how long the patient has been in the department
+
+	
+Triage screen
+
+	patient expected list - enter patients who are phoned through by ambulance or GP
+
+	shows patient triage category using UK or Australian colour codes
+
+	flashing lights indicate that the patient needs to be seen within the next 2 minutes to avoid going over the recommended time limits 
+			
+
+				Cat 1		2	3	4	5
+	1 green					1	4	10	18
+	2 green					2	10	22	38
+	3 orange				4	16	34	58
+	4 orange				6	22	46	78
+	5 red flashing				8	28	58	98
+	6 red flashing		0 mins		10	34	70	118
+
+
+	fully customisable triage decision support
+	to see an example of this, go to triage screen and start triaging a patient with 'chest pain'
+	then press the 'Help' button on the triage form, and a flow diagram for the triage, based on the widespread and well validated Manchester Triage Sytem (BMJ books ISBN 0727911260) appears. click on the relevant triage category, and continue.
+	
+	triage queue management- patients can be moved up or down	
+	stops 2 people editing the same record at once
+	waiting room display - real time display of patients' initals - stops constant "when am going to be seen" questions. message display.
+
+Medical
+	Good quality data needs to be complete data. Patients cannot be discharged without all data fields being entered. Data can be downloaded and analysed using Excel, or other tools.
+	
+	Extra data is collected about trauma and poisoning. Automatic data entry using the ICD10 diagnosis coding facilitates this.
+
+	Logical and well designed notes enable information to be understood quickly, resulting in quicker, better patient management. The notes are automatically customised with your institution name, address, phone, fax and email addresses. The patient's name, Unit Record (UR) number and a barcode of the patient's Unit Record number is printed on every sheet. 
+	A logo can be printed on the notes.
+
+	produces labels with barcodes
+	
+
+	fully customisable decision support - you can add
+	- text
+	- pictures
+	- video
+	- internet and intranet links
+	- adobe acrobat pages
+
+	validation - evidence on validation suggests that guidelines should be updated every three years. The emerg-med system sends you an email with a link to re-validate a guideline if it has not been changed for more than 3 years.
+
+	alert system - patients with known problems - allergies, behavioural can be recorded. When they reattend, the alert pops up on the screen, and is also printed on the patient's notes on the front sheet and next to the drug chart.
+
+	quality control alert system
+	- anyone can put a report in anonymously to alert supervisers to any problems - real or near misses.
+	- automatically reports:
+		- patients whose triage category is altered
+		- patients who wait more than the maximum recommended time for their triage category
+		- patients who stay in the department more than 12 hours (can be changed).
+
+Administative
+	Full ICD 10 coding with diagnosis searching.
+
+	decision support means that staff are always aware of hospital policy
+	
+	data can be processed and downloaded in different formats e.g. VEMD
+
+	does not allow patient to be discharged until data complete
+	comprehensive data validation
+
+	ultra fast - remains usable when stress testing at 30 webpage hits a second.
+
+	ultra secure - full encryption of all data is possible. All administrative functions are protected by commercial grade encryption and secure user validation. Access can be limited to certain computers.
+
+	ultra reliable - based on the Linux operating system, the Apache webserver, MySQL database and the PHP language. These are all open source, although if you buy an emerg-med.com commercial licence, we then buy a MySQL commercial licence for you. When a magazine did a 9 month test of Microsoft NT vs Linux as a network server, the Microsoft machines crashed once every six weeks. The two linux servers never crashed.
+		
+	open source means that you are not tied into any particular vendor. If you want an extra feature, anyone can write it.
+
+	Easy to interface industry-standard SQL interface.
+
+	uses cheap hardware and existing hospital networking systems.
+
+	can interface with radiology and pathology systems	
+
+
+walkthrough demonstration.
+
+
+FAQ
+
+troubleshooting
+if the screens all say "being used by another" user every time you update, check the system/ hardware time
+
+Browsers
+	opera - set normal font as Verdana
+	IE6 download java

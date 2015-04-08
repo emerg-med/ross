@@ -1,0 +1,407 @@
+<HTML>
+<HEAD>
+<TITLE>HP Printing Project - GPR/libppd HOWTO - Sponsored by HP</TITLE>
+
+<style type="text/css">
+<!--
+  .fgcolor { color: #FFFFFF; } 
+  .navmenu { font-weight: bold;
+     color: #FFFFFF;
+     text-decoration: none;
+   } 
+  .menus {
+     text-decoration: none;
+   }
+  .developer { font-weight: bold;
+     text-decoration: none;
+   } 
+  .normal {
+     font-family: Helvetica;
+     text-decoration: none;
+   }
+-->
+</style>
+
+</HEAD>
+<BODY BGCOLOR="#10769E" BACKGROUND="http://printing.sourceforge.net/new_html/images/printing/headerbg.gif" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0" marginheight="0" marginwidth="0">
+<TABLE ALIGN="left" WIDTH="125" BORDER="0" CELLPADDING=0 CELLSPACING=0>
+<TR>
+    <TD VALIGN="top" ALIGN="center" WIDTH="125">
+        <A HREF="http://printing.sourceforge.net/index.php"><IMG SRC="http://printing.sourceforge.net/new_html/images/printerlogo.gif" WIDTH="93" HEIGHT="70" BORDER="0" ALT="Printer"></A>
+    </TD>
+</TR>
+<TR>
+    <TD ALIGN="center">
+    <A HREF="http://sourceforge.net/"><IMG SRC="http://printing.sourceforge.net/new_html/images/SFlogo.gif" BORDER="0" ALT="SourceForge"></A>
+    <TABLE BORDER="0" WIDTH="120">
+    <TR>
+        <TD BGCOLOR="#10769E">
+            <FONT COLOR="#FFFFFF" FACE="Helvetica">Events</FONT>
+        </TD>
+    </TR>
+    <TR>
+        <TD BGCOLOR="#D0D0D0" VALIGN="top">
+	    <FONT COLOR="#FFFFFF" FACE="Helvetica">
+            <A class="menus" href="http://printing.sourceforge.net/new_html/printingsummit/">Printing Summit 2000</A>
+	    </FONT>
+	</TD>
+    </TR>
+    <TR>
+        <TD BGCOLOR="#10769E">
+            <FONT COLOR="#FFFFFF" FACE="Helvetica">Affiliate Projects</FONT>
+        </TD>
+    </TR>
+    <TR>
+        <TD BGCOLOR="#D0D0D0" VALIGN="top">
+            <FONT COLOR="#000000" FACE="Helvetica">
+            <A class="menus" href="http://printing.sourceforge.net/index.php">Open Source Printing</A>
+            <BR><A class="menus" href="http://sourceforge.net/project/?group_id=1658">libppd</A>
+            <BR><A class="menus" href="http://sourceforge.net/project/?group_id=3648">libprinterconf</A>
+            <BR><A class="menus" href="http://sourceforge.net/project/?group_id=2433">snmpkit</A>
+            <BR><A class="menus" href="http://sourceforge.net/project/?group_id=4868">rhs-printfilters</A>
+            <BR><A class="menus" href="http://sourceforge.net/project/?group_id=3800">lpr</A>
+            <BR><A class="menus" href="http://sourceforge.net/project/?group_id=1658">gpr</A>
+            <BR><A class="menus" href="http://npadmin.sourceforge.net">npadmin</A>
+            <BR><A class="menus" href="http://ceps.sourceforge.net/">CEPS</A>
+            <BR><A class="menus" href="http://www.samba.org/">Samba</A>
+            <BR><A class="menus" href="http://imprints.sourceforge.net/">Imprints</A>
+            <BR><A class="menus" href="http://sourceforge.net/project/?group_id=2328">Application Print Services Library</A>
+            </FONT>
+        </TD>
+    </TR>
+    </TABLE>
+    </TD>
+</TR>
+</TABLE>
+
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" ALIGN="right">
+    <TR>
+    <TD><A HREF="http://www.valinux.com"><IMG SRC="http://printing.sourceforge.net/new_html/images/VAlogo.gif" BORDER="0" ALT="VA Logo"></A></TD>
+    <TD><A HREF="http://www.hp.com/"><IMG SRC="http://printing.sourceforge.net/new_html/images/HPlogo.gif" BORDER="0" ALT="HP Logo"></A></TD>
+    </TR>
+</TABLE>
+
+<BR>
+<FONT COLOR="#FFFFFF" FACE="Helvetica" SIZE="+3"><B>HP Printing Project - GPR/libppd HOWTO</B></FONT>
+<BR>
+&nbsp;
+<TABLE BORDER="0" CELLPADDING=0 CELLSPACING=0>
+<TR>
+    <TD BGCOLOR="#FFFFFF" ALIGN="center" COLSPAN="3">
+    <TABLE WIDTH="100%" ALIGN="left" BGCOLOR="#000000" CELLSPACING="1" BORDER="0">
+        <TR>
+        <TD>
+            <TABLE BORDER="0" BGCOLOR="#FFFFFF" CELLPADDING="3" WIDTH="100%">
+            <TR>
+            <TD BGCOLOR="#10769E">
+                <FONT COLOR="#FFFFFF" FACE="Lucida, Helvetica" SIZE="2"><TABLE BORDER='0'><TR><TD ROWSPAN='2' VALIGN='top' ALIGN='right'><FONT COLOR='#FFFFFF' FACE='Lucida, Helvetica' SIZE='2'>Project Links:</FONT></TD><TD><FONT COLOR='#FFFFFF' FACE='Lucida, Helvetica' SIZE='2'><A CLASS='navmenu' HREF='http://printing.sourceforge.net/new_html/'>Home</A> | <A CLASS='navmenu' HREF='http://printing.sourceforge.net/new_html/overview.php'>Overview</A> | <A CLASS='navmenu' HREF='http://printing.sourceforge.net/new_html/projects.php'>Projects</A> |  <A CLASS='navmenu' HREF='http://printing.sourceforge.net/new_html/developers.php'>Developers</A> | <A CLASS='navmenu' HREF='http://printing.sourceforge.net/new_html/documentation.php'>Documentation</A> </FONT></TD></TR></TABLE></FONT>
+            </TD>
+            </TR>
+            </TABLE>
+        </Td>
+        </TR>
+    </TABLE>
+
+    </TD>
+</TR>
+<TR>
+    <TD BGCOLOR="#FFFFFF" WIDTH="50" ROWSPAN="5">&nbsp;</TD>
+    <TD BGCOLOR="#FFFFFF">&nbsp;</TD>
+    <TD BGCOLOR="#FFFFFF" WIDTH="50" ROWSPAN="5">&nbsp;</TD>
+</TR>
+<TR>
+    <TD BGCOLOR="#FFFFFF" class="normal">
+<center>
+<table width="100%">
+<tr><td align=left><a href="mailto:hp_print@users.sourceforge.net">HP 
+Open Printing Team</a></td><td align=right>
+June 22, 2000
+</td></tr>
+</table>
+<p>
+    <font size=+1><b>MICRO-HOWTO: GPR/LIBPPD ON REDHAT 6.2</b></font><br>
+</p>
+</center>
+
+<p>Here is a relatively simple procedure that will lead you through
+installing and using gpr, a graphical print-dialog frontend to lpr
+that lets you use libppd to adjust postscript printjobs in nice ways 
+(duplex, n-up, mediasize, watermarks, etc.).   
+
+<ol>
+<li> Bring up a stock RedHat 6.2 Desktop machine.  (This software will
+be distributed in a convenient form for other distributions, but for
+the moment RedHat is all that is supported for experimentation and
+testing.)<p>
+
+<li> Use your browser to download the i386 RPMs for the following
+packages from pages under the <a
+href="http://printing.sourceforge.net">Open Source Printing Project at
+SourceForge</a> (the following links are to the 0.4 libppd-based
+release, but newer releases may be available if you want to browse
+around on the given pages).
+
+<p>From the <a href="http://sourceforge.net/project/?group_id=1658">
+<b>libppd/gpr sub-page</b>:
+   <p>
+   <ul>
+   <li><a href="http://download.sourceforge.net/libppd/libppd-0.4-1.i386.rpm">
+   libppd-*.i386.rpm</a>
+   <li><a href="http://download.sourceforge.net/libppd/libppd-devel-0.4-1.i386.rpm">
+   libppd-devel-*.i386.rpm</a>
+   <li><a href="http://download.sourceforge.net/libppd/ppdfilt-0.4-1.i386.rpm">
+   ppdfilt-*.i386.rpm</a>
+   <li><a href="http://download.sourceforge.net/libppd/gpr-0.4-1.i386.rpm">
+   gpr-*.i386.rpm</a>
+</ul>
+
+<p>From the <a href="http://sourceforge.net/project/?group_id=3800">
+<b>lpr sub-page</b></a>:
+<p><ul>
+   <li><a href="http://download.sourceforge.net/lpr/lpr-0.50-4va.i386.rpm">
+   lpr-*va.i386.rpm</a>
+</ul>
+
+<p>And finally, from the 
+<a href="http://sourceforge.net/project/?group_id=4868">
+<b>rhs-printfilters sub-page</b></a>:
+<p><ul>
+   <li><a href="http://download.sourceforge.net/rhs-printfilter/rhs-printfilters-1.63-4va.i386.rpm">
+   rhs-printfilters-*va.i386.rpm</a>
+   </ul>
+
+<!--
+Hmmm.. After they start publishing binary rpms, get printtool (libprinterconf)
+from http://sourceforge.net/project/?group_id=3648,
+as well as snmpkit(and npadmin?) from sourceforge...
+-->
+
+   <p>Also, since it will be uninstalled and reinstalled later, 
+make sure you have a copy of the printtool RPM (from your
+   RedHat CD or downloaded from the Net)
+    If you don't have your CD handy, it can be downloaded from places like:
+   <p>
+   <ul>
+   <li><a href="ftp://ftp.cis.ufl.edu/pub/linux/redhat/redhat-6.2/alpha/RedHat/RPMS/printtool-3.44-1.noarch.rpm">
+   ftp://ftp.cis.ufl.edu/pub/linux/redhat/redhat-6.2/alpha/RedHat/RPMS/printtool-3.44-1.noarch.rpm</a>
+   </ul><p>
+
+<li> As root, stop the lpr daemon:
+
+   <pre>
+   # /etc/rc.d/init.d/lpd stop
+   </pre>
+
+<li> As root, remove packages we are going to replace (along with
+printtool, which depends on something we are removing):
+
+   <pre>
+   # rpm -e printtool 
+   # rpm -e rhs-printfilters
+   cannot remove /usr/lib/rhs/rhs-printfilters - directory not empty
+   # rpm -e lpr
+   cannot remove /var/spool/lpd - directory not empty
+   # rm -rf /var/spool/lpd
+   </pre>
+
+<li> As root, install the new RPMs:
+
+   <pre>
+   # rpm -Uvh lpr*rpm 
+   # rpm -Uvh libppd*rpm
+   # rpm -Uvh ppdfilt*rpm 
+   # rpm -Uvh *rhs-printfilters-*rpm 
+   # rpm -Uvh gpr*rpm 
+   # rpm -Uvh printtool*rpm 
+   </pre>
+
+<li> As root, restart the lpr daemon:
+
+   <pre>
+   # /etc/rc.d/init.d/lpd start
+   </pre>
+   
+<li> As root, configure a postscript printer (if you hadn't already
+done so), using printtool.
+
+   <pre>
+   # printtool
+	- select "add"
+    - select remote queue or local printer
+    - fill in fields:
+	  "Names": enter a unique name, xxxxxx (don't use uppercase characters)
+	  "Spool Directory": use /var/spool/lpd/xxxxxx
+	  "file Limit": leave as 0
+	  Input Filter: choose "Postscript printer" and options like 
+				600x600/letter, send EOF after job eject,
+				1 page per output page
+      (for remote printer)
+	  Remote Host: hostname or ip address of printer's jetdirect card
+	  Remote Queue: leave blank for a jetdirect card 
+	- select "ok"
+	- quit printtool by killing its window
+   </pre>
+
+<li> Test lpr:
+
+   <pre>
+   $ echo "hello" | lpr -Pxxxxxx 
+   </pre>
+
+<li> Get a PPD for the printer:
+
+   <p>PPDs for many printers can be downloaded from the sourceforge repository.  Visit the following URL and 
+   then browse to the appropriate "download" link, and save the PPD
+   text in a convenient location (say, inside the spooler directory
+   for the printer that was set up above):
+   <p>
+   <ul>
+   <li><a href="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/ppds/?cvsroot=libppd">
+   http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/ppds/?cvsroot=libppd</a>
+   </ul><p>
+	<p>Here are shortcuts to some HP PPDs with meaningful labels:
+
+<p><ul>
+
+<li> HP LaserJet 8100 Series PS <a
+href="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/~checkout~/ppds/Hp8100_4.ppd?rev=1.1&content-type=text/plain&cvsroot=libppd">(Hp8100_4.ppd
+1.1)</a>
+
+<li> HP LaserJet 2100 Series PS <a
+href="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/~checkout~/ppds/hp2100_4.ppd?rev=1.1&content-type=text/plain&cvsroot=libppd">(hp2100_4.ppd
+1.1)</a>
+
+<li> HP LaserJet IIISi Postscript 2 <a
+href="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/~checkout~/ppds/hp3sil21.ppd?rev=1.1&cvsroot=libppd">(hp3sil21.ppd
+1.1)</a>
+
+<li> HP LaserJet 4050 Series PS <a
+href="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/~checkout~/ppds/hp4050_4.ppd?rev=1.2&cvsroot=libppd">(hp4050_4.ppd
+1.2)</a>
+
+<li> HP LaserJet 4/4M PS 300 dpi <a
+href="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/~checkout~/ppds/hp4m3_v1.ppd?rev=1.1&cvsroot=libppd">(hp4m3_v1.ppd
+1.1)</a>
+
+<li> HP LaserJet 4/4M PS 600 dpi <a
+href="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/~checkout~/ppds/hp4m6_v1.ppd?rev=1.1&cvsroot=libppd">(hp4m6_v1.ppd
+1.1)</a>
+
+<li> HP LaserJet 4ML PostScript <a
+href="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/~checkout~/ppds/hp4ml_v1.ppd?rev=1.1&cvsroot=libppd">(hp4ml_v1.ppd
+1.1)</a>
+
+<li> HP LaserJet 4P/4MP PS 300 dpi <a
+href="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/~checkout~/ppds/hp4mp3_1.ppd?rev=1.1&cvsroot=libppd">(hp4mp3_1.ppd
+1.1)</a>
+
+<li> HP LaserJet 4P/4MP PS 600 dpi <a
+href="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/~checkout~/ppds/hp4mp6_1.ppd?rev=1.1&cvsroot=libppd">(hp4mp6_1.ppd
+1.1)</a>
+
+<li> HP LaserJet 4/4M Plus PS 300 <a
+href="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/~checkout~/ppds/hp4plus3.ppd?rev=1.1&cvsroot=libppd">(hp4plus3.ppd
+1.1)</a>
+
+<li> HP LaserJet 4/4M Plus PS 600 <a
+href="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/~checkout~/ppds/hp4plus6.ppd?rev=1.1&cvsroot=libppd">(hp4plus6.ppd
+1.1)</a>
+
+<li> HP LaserJet 4Si/4Si MX PostScript 300DPI <a
+href="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/~checkout~/ppds/hp4si3_1.ppd?rev=1.1&cvsroot=libppd">(hp4si3_1.ppd
+1.1)</a>
+
+<li> HP LaserJet 4Si/4Si MX PostScript 600DPI <a
+href="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/~checkout~/ppds/hp4si6_1.ppd?rev=1.1&cvsroot=libppd">(hp4si6_1.ppd
+1.1)</a>
+
+<li> HP LaserJet 5000 Series PS <a
+href="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/~checkout~/ppds/hp5000_4.ppd?rev=1.1&content-type=text/plain&cvsroot=libppd">(hp5000_4.ppd
+1.1)</a>
+
+<li> HP LaserJet 8000 Series PS <a
+href="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/~checkout~/ppds/hp8000_5.ppd?rev=1.1.1.1&cvsroot=libppd">(hp8000_5.ppd
+1.1.1.1)</a>
+
+<li> HP DesignJet 650C/PS <a
+href="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/~checkout~/ppds/hp_650c2.ppd?rev=1.1&cvsroot=libppd">(hp_650c2.ppd
+1.1)</a>
+
+<li> HP Color LaserJet PS <a
+href="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/~checkout~/ppds/hp__clj1.ppd?rev=1.1&cvsroot=libppd">(hp__clj1.ppd
+1.1)</a>
+
+<li> HP LaserJet 4V/4MV PostScript <a
+href="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/~checkout~/ppds/hplj4mv1.ppd?rev=1.1&cvsroot=libppd">(hplj4mv1.ppd
+1.1)</a>
+
+<li> HP LaserJet 5/5M PostScript <a
+href="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/~checkout~/ppds/hplj5m_4.ppd?rev=1.1&cvsroot=libppd">(hplj5m_4.ppd
+1.1)</a>
+
+<li> HP LaserJet 5P/5MP <a
+href="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/~checkout~/ppds/hplj5p_1.ppd?rev=1.1&cvsroot=libppd">(hplj5p_1.ppd
+1.1)</a>
+
+<li> HP LaserJet 6P/6MP - PostScript <a
+href="http://cvs.sourceforge.net/cgi-bin/cvsweb.cgi/~checkout~/ppds/hplj6p_4.ppd?rev=1.1&cvsroot=libppd">(hplj6p_4.ppd
+1.1)</a>
+</ul>
+<p>
+&nbsp;      
+
+<li> Test gpr by printing <a
+href="http://www.tuxedo.org/~esr/writings/cathedral-bazaar/cathedral-bazaar.ps">
+a postscript document</a>, or printing to gpr from within Netscape,
+manually pointing gpr to the appropriate PPD file using its graphical
+file finder.  
+
+<p>
+
+<li> Make it so gpr knows the PPD by default by adding (you need to be
+root) a <code>PPDFILE=path/ppdname</code> line to the postscript
+configuration file for the printer queue, in
+<code>/var/spool/lpd/xxxxxx/postscript.cfg</code>.
+
+</ol>
+
+<p>
+
+<hr>
+
+<font size=-1>
+<p>Copyright (C) 2000 Hewlett-Packard Company.  Permission is granted
+to copy, distribute and/or modify this document under the terms of the
+<a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation
+License</a>, Version 1.1 or any later version published by the Free
+Software Foundation; with no Invariant Sections, with no Front-Cover
+Texts, and with no Back-Cover Texts.</p>
+
+<p>This documentation is distributed in the hope that it will be
+useful, but without any warranty.</p>
+
+<p>Please direct comments, questions, and suggestions to the HP Open
+Printing Team, at <a
+href="mailto:hp_print@users.sourceforge.net">hp_print@users.sourceforge.net</a>.</p>
+</font>
+
+    </TD>
+</TR>
+<TR>
+    <TD BGCOLOR="#FFFFFF">&nbsp;</TD>
+</TR>
+<TR>
+    <TD BGCOLOR="#FFFFFF">
+&nbsp;
+
+    </TD>
+</TR>
+<TR>
+    <TD BGCOLOR="#FFFFFF">&nbsp;</TD>
+</TR>
+<TR>
+    <TD COLSPAN="3" BGCOLOR="#10769E"><FONT COLOR="#FFFFFF">All trademarks and copyrights on this page are properties of their respective owners. Forum comments are owned by the poster. The rest is copyright ©1999-2000 VA Linux Systems, Inc.</FONT></TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>

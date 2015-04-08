@@ -1,0 +1,20 @@
+Bristol Royal Infirmary,Bristol,Avon,BS1 2LY,0117 923 0050,0117 928 4443
+Cheltenham General Hospital,Cheltenham,Gloucestershire,GL53 7AN,01242 222222,01242 273516
+Derriford Hospital,Plymouth,Devon,PL6 8DH,01752 777111,01752 763185
+Royal Devon and Exeter Hospital,Exeter,Devon,EX2 5DW,01392 411611,01392 402067
+Frenchay Hospital,Bristol,Avon,BS16 1LE,0117 970 1212,0117 970 1627
+Gloucester Royal Hospital,Gloucester,Gloucestershire,GL1 3NN,01452 528555
+Exeter & North Devon Hospital,Barnstaple,Devon,EX31 4JB,01271 322577,01271 311541
+North Hampshire Hospital,Basingstoke,Hants,RG24 9NA,01256 473202, 
+Poole Hospital Trust,Poole,Dorset,BH15 2JB,01202 665511
+Princess Margaret Hospital,Swindon,Wiltshire,SN1 4JU,01793 536231
+Queen Alexandra Hospital,Portsmouth,Hants,PO6 3LY,01705 286000
+Royal Cornwall Hospital,Truro,Cornwall,TR1 2HZ,01872 274242,01872 222139, 
+Royal Hospital Haslar,Gosport,Hants,PO12 2AA,(023) 92584255
+Royal United Hospital,Bath,Avon,BA1 3NG,01225 428331,01225 332886, 
+Salisbury District General Hospital,Salisbury,Wiltshire,SP2 8BJ,01722 336262
+Southampton General Hospital,Southampton,Hants,SO16 6YD,01703 777222
+Southmead Hospital,Bristol,Avon,BS10 5NB,0117 950 5050
+St Mary's Hospital,Newport,Isle of Wight,PO30 5TG,01983 524081
+Taunton and Sumerset NHS Trust,Taunton,Somerset,TA1 5DA,01823 333444,01823 336877
+Torbay Hospital,Torquay,Devon,TQ2 7AA,01803 614567,01803 616331

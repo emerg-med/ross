@@ -1,0 +1,12 @@
+Bradford Hospitals NHS Trust,Bradford,Yorkshire,BD5 0NA,01274 734744,01274 364786
+The Cumberland Infirmary,Carlisle,Cumbria,CA2 7HY,01228 523444,01228 814275
+Dewsbury Healthcare NHS Trust,Dewsbury,West Yorkshire,WF13 4HS,01924 512000
+Halifax General Hospital,Halifax,West Yorkshire,HX3 0PW,01422 357171,01422 380357
+Huddersfield Royal Infirmary,Huddersfield,West Yorkshire,HD3 3EA,01484 422191,01484 482888
+Hull Royal Infirmary,Anlaby Road,Hull,HU3 2JZ,01482 328541,01482 223677
+Leeds General Infirmary,Leeds,West Yorkshire,LS2 9LU,0113 244 0111,0113 233 6282
+Middlesbrough General Hospital,Middlesbrough,Cleveland,TS5 5AZ,01642 850850,01642 854136
+Newcastle General Hospital,Newcastle-upon-Tyne,Tyne and Wear,NE4 6BE,0191 273 8811,0191 272 2641
+Pinderfields and Pontefract Hospitals NHS Trust,Wakefield,West Yorkshire,WF1 4DG,01924 201688,01924 814964
+Sunderland Royal Hospital,Sunderland,Tyne and Wear,SR4 7TP,0191 565 6256
+York District Hospital,York,Yorkshire,YO3 7HE,01904 631313

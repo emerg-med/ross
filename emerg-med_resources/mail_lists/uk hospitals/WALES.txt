@@ -1,0 +1,6 @@
+Glan Clwyd Hospital,Bodelwyddan,Denbighshire,LL18 5UJ,01745 583910,01745 583143
+Morriston Hospital,Morriston,Swansea,SA6 6NL,01792 702222,01792 703632
+Princess of Wales Hospital,Bridgend,Mid Glamorgan,CF31 1RQ,01656 752752,01656 752737
+Royal Gwent Hospital,Newport,Gwent,NP9 2UB,01633 234234,01633 221320
+University Hospital of Wales,Heath Park,Cardiff,CF4 4XY,01222 747747,01222 742421
+Prince Charles Hospital,Methyr Tydfil,S. Wales,CF47 9DT,01685 721721,01685 721109

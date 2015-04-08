@@ -1,0 +1,72 @@
+
+<HTML>
+<HEAD>
+<link REL=stylesheet HREF=exstyle.css TYPE=text/css>
+</head>
+
+<BODY bgColor=#66CCFF>
+<p><span class=bmtext>leftpage.html</span></p>
+
+<APPLET code="apPopupMenu" Archive="apPopupMenu.jar" height=270 width=115 mayscript>
+<param name="Copyright" value="Apycom Software - www.apycom.com">
+<param name="solidArrows" value="true">
+<param name="backColor" value="66CCFF">
+<param name="fontColor" value="FFFFFF">
+<param name="fontHighColor" value="FFFF00">
+<param name="buttonType" value="1">
+<param name="alignText" value="right">
+<param name="font" value="Courier,12,0">
+<param name="javascript:1" value="changeAll()">
+<param name="menuItems" value="
+       {Depth test  }
+       {|Level 1 Link 1,testlink.html,_parent}
+       {|Level 1 Link 2,testlink.html,_parent}
+       {|Level 1 Link 3,testlink.html,_parent}
+       {|Next level}
+       {||Level 2 Link 1,testlink.html,_parent}
+       {||Level 2 Link 2,testlink.html,_parent}
+       {||Level 2 Link 3,testlink.html,_parent}
+       {||Next level}
+       {|||Level 3 Link 1,testlink.html,_parent}
+       {|||Level 3 Link 2,testlink.html,_parent}
+       {|||Level 3 Link 3,testlink.html,_parent}
+       {|||Next level}
+       {||||Level 4 Link 1,testlink.html,_parent}
+       {||||Level 4 Link 2,testlink.html,_parent}
+       {||||Level 4 Link 3,testlink.html,_parent}
+       {||||Next level}
+       {|||||Level 5 Link 1,testlink.html,_parent}
+       {|||||Level 5 Link 2,testlink.html,_parent}
+       {|||||Level 5 Link 3,testlink.html,_parent}
+{Frame tests  } 
+{|Main in Main,mainpage.html,main_wnd} 
+{|Top in Main,toppage.html,main_wnd} 
+{|Left in Main,leftpage.html,main_wnd}
+{|Top in Top,toppage.html,top_wnd}
+{|Main in Top,mainpage.html,top_wnd}
+{|Left in Top,leftpage.html,top_wnd}
+{|-}
+{|Change All,javascript:1,_}
+{_,_,_}
+{Main in Main  ,mainpage.html,main_wnd} 
+{Top in Main  ,toppage.html,main_wnd} 
+{Left in Main  ,leftpage.html,main_wnd}
+{Top in Top  ,toppage.html,top_wnd}
+{Main in Top  ,mainpage.html,top_wnd}
+{Left in Top  ,leftpage.html,top_wnd}
+{Change All  ,javascript:1,_}
+{_,_,_}
+{Previous  ,ex9.html,_parent}
+{Index  ,../index.html,_parent}
+">
+</APPLET> 
+<script language="Javascript">
+function changeAll()
+{
+  open('mainpage.html','left_wnd');
+  open('leftpage.html','main_wnd');
+  open('leftpage.html','top_wnd');
+}
+</script>
+</BODY>
+</HTML>

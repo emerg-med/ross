@@ -1,0 +1,57 @@
+Sydney Hospital (Public),Macquarie St ,Sydney NSW ,2000,Dr Woodruff,02 9382 7111,02 9382 7010,woodruffp@sesahs.nsw.gov.au
+St Vincents Hospital (Public),Victoria St ,Darlinghurst NSW,2010,Dr Pratt,02 8382 2040,02 9360 1988,jpratt@stvincents.com.au
+Kareena Private Hospital (Private),Kareena Rd ,Caringbah NSW ,2229, ,02 9717 0170,02 9717 0138, 
+Sydney Children's Hospital (Public),High St ,Randwick NSW ,2031,Dr O'Meara,02 9382 1962,02 9382 1959,omeara@sesahs.nsw.gov.au
+Prince Of Wales Hospital (Public),Barker St ,Randwick NSW ,2031,Dr Abraham,02 9382 3901,02 9382 3966,abraham@sesahs.nsw.gov.au
+Royal Prince Alfred Hospital (Public),Missenden Rd ,Camperdown Nsw ,2050, ,02 9515 8141,02 9515 5099, 
+SUTHERLAND HOSPITAL (Public),430 The Kingsway ,CARINGBAH NSW ,2229,Dr John Raftos ,02 9540 7111,02 9540 7124
+HORNSBY AND KU-RING-GAI HOSPITAL (Public),Palmeston Rd ,HORNSBY NSW ,2113,Dr Robert Day ,02 9477 9530,02 9482 7630, 
+MANLY HOSPITAL (Public),Darley Rd ,MANLY NSW ,2095,Dr Brian Collits,02 9976 9611,02 9977 8907, 
+MONA VALE HOSPITAL (Public),Coronation St ,MONA VALE NSW ,2103,Dr Swinburne,02 9998 0741,02 9998 0563,eswinburne@doh.health.nsw.gov.au
+ROYAL NORTH SHORE HOSPITAL (Public),Pacific Hwy ,ST LEONARDS NSW ,2065,Dr John Morgan ,02 9926 7521,02 9906 8123,jmorgan@doh.health.nsw.gov.au
+SYDNEY ADVENTIST HOSPITAL (Private),185 Fox Valley Rd ,WAHROONGA NSW ,2076,Dr Greg McDonald,02 9487 9199,02 9487 9190,gregm@sah.org.au
+BLACKTOWN HOSPITAL (Public),Blacktown Rd ,BLACKTOWN NSW ,2148,Dr David Cooper ,02 9881 8000,02 9830 8020, 
+MT DRUITT HOSPITAL (Public),Railway St ,MOUNT DRUITT NSW ,2770,Dr David Cooper ,02 9881 1555,02 9839 1574,David_Cooper@wsahs.nsw.gov.au
+THE NEW CHILDRENS HOSPITAL (Public),Cnr Hawkesbury & Hainsworth Sts ,WESTMEAD NSW ,2124,Dr Gary Browne,02 9845 2460,02 9845 0825, 
+LIVERPOOL HOSPITAL (Public),Elizabeth St ,LIVERPOOL NSW ,2170,Dr Sally McCarthy ,02 9828 3990,02 9828 3984,sallymccarthy@swsahs.nsw.gov.au
+RYDE HOSPITAL (Public),Denistone Rd ,EASTWOOD NSW ,2122,Dr Paul Cunningham ,02 9858 7529,02 9858 7843,pcunning@doh.health.nsw.gov.au 
+THE HILLS PRIVATE HOSPITAL (Private),Windsor Rd ,BAULKAM HILLS NSW ,2153,Dr Peter Roberts,02 9686 0216,02 9686 2003, 
+WESTMEAD HOSPITAL (Public),Hawkesbury and Darcy Sts ,WESTMEAD NSW ,2145,Dr Robert Dowsett ,02 9845 7607,02 9633 4296,robertd@wm-general.wsahs.nsw.gov.au
+AUBURN DISTRICT HOSPITAL (Public),Norval St ,AUBURN NSW ,2144,Dr Gayle McInerney ,02 9563 9500,02 9563 9569,gayle_mcinerney@wsahs.nsw.gov.au
+BANKSTOWN - LIDCOMBE HOSPITAL (Public),Eldridge Rd ,BANKSTOWN NSW ,2200,Dr Linda Dann ,02 9722 8000,linda.dann@swsahs.nsw.gov.au
+NSW PRIVATE HOSPITAL (Private),Victoria St ,ASHFIELD NSW ,2131,Dr Steve Walker,02 9797 0555,02 9798 8561, 
+ST GEORGE HOSPITAL (Public),Gray St ,KOGARAH NSW ,2217,Dr Adam Chan ,02 9350 1650,02 9350 3946,chana@sesahs.nsw.gov.au
+CANTERBURY HOSPITAL (Public),Canterbury Rd ,CAMPSIE NSW ,2194,Dr Matthew Chu,02 9787 0223,02 9787 0311,chuma@email.cs.nsw.gov.au
+CONCORD REPATRIATION HOSPITAL (Public),Hospital Rd, CONCORD NSW ,2139,Dr Andrew Dwyer ,02 9767 7215,02 9767 7836,drandrewdwyer@hotmail.com
+FAIRFIELD HOSPITAL (Public),Polding St,WETHERILL PARK ,NSW 2164,Dr Keith Edwards,02 9616 8140,02 9616 8274,keith.edwards@swsahs.nsw.gov.au
+***NEPEAN HOSPITAL (Public),PO Box 63 ,PENRITH NSW ,2751,Dr Rod Bishop,02 4734 2444,02 4734 2494,bishop@wahs.nsw.gov.au
+BLUE MOUNTAINS DISTRICT HOSPITAL (Public),Great Western Hwy ,KATOOMBA NSW ,2780,Dr David Lee ,02 4784 6500,02 4784 6980, 
+JOHN HUNTER HOSPITAL (Public),Lookout Rd ,NEW LAMBTON NSW ,2305,Dr Richard Vane-Tempest ,02 4921 3000,02 4921 3065, 
+NEWCASTLE MATER MISERICORDIAE HOSPITAL (Public),Locked Bag 7 Hunter Region Mail Centre,NEWCASTLE NSW,2310,Dr Chris Geraghty ,02 4921 1211,02 4921 1694,cgeraghty@doh.health.nsw.gov.au
+BELMONT HOSPITAL (Public),Croudace Bay Rd ,BELMONT NSW ,2280,Dr Peter Sietken,02 4923 2227,02 4923 2189, 
+MAITLAND HOSPITAL (Public),High St ,MAITLAND NSW ,2320, ,02 4939 2000,02 4939 2173, 
+CAMDEN DISTRICT HOSPITAL (Public),Menangle Rd ,CAMDEN NSW ,2570,Dr David Hugelmeyer ,02 4625 9222,02 4629 1016,David.Hugelmeyer@swsahs.nsw.gov.au
+CAMPBELLTOWN HOSPITAL (Public),PO Box 149,CAMPBELLTOWN NSW ,2560,Dr David Hugelmeyer,02 4629 1770,02 4628 6412,David.Hugelmeyer@swsahs.nsw.gov.au
+GOSFORD HOSPITAL (Public),PO Box 361 ,GOSFORD NSW ,2250,Dr David Kirkpatrick ,02 4320 3560,02 4320 2808,dkirkpatrick@doh.health.nsw.gov.au
+WYONG HOSPITAL (Public),PO Box 4200 ,LAKEHAVEN NSW ,2263,Dr Gary Nieuwkamp ,02 4393 8176,02 4393 8190,gnieuwkamp@doh.health.nsw.gov.au
+ILLAWARRA REGIONAL HOSPITAL - WOLLONGONG (Public),Crown St ,WOLLONGONG NSW ,2500,Dr Andrew Bezinna ,02 4220 1330,02 4220 1313, 
+SHELLHARBOUR HOSPITAL (Public),Madigan Blvd ,MOUNT WARRIGAL NSW ,2528, ,02 4295 2478,02 4295 2492, 
+SHOALHAVEN HOSPITAL (Public),Shoalhaven St ,NOWRA NSW ,2541, ,02 4423 9345,02 4421 4967, 
+****ALBURY BASE HOSPITAL (Public),Borella Rd ,ALBURY NSW ,2640,Dr Peter Love,02 6058 4444,02 6058 4447,peter.love@gmhs.nsw.gov.au
+BROKEN HILL BASE HOSPITAL (Public),Thomas St ,BROKENHILL NSW ,2880,Dr Hamish Black,08 8080 1368,08 8080 1188, 
+BATHURST BASE HOSPITAL (Public),Howick St ,BATHURST NSW ,2795,Dr Geof Marshall ,02 6333 1311,02 6333 1302,geof@doh.health.nsw.gov.au
+ORANGE BASE HOSPITAL (Public),Dalton St ,ORANGE NSW ,2800,Dr Karen Mahlo ,02 6362 1411,02 6393 3593, 
+MANNING BASE HOSPITAL (Public),PO Box 35,TAREE NSW ,2430,Dr Jim Wills,02 6592 9111,02 6551 4125,jwills@doh.health.nsw.gov.au
+COFFS HARBOUR BASE HOSPITAL (Public),Locked Bag 812 ,COFFS HARBOUR NSW ,2450, ,02 6659 1948,02 6652 8420, 
+PORT MACQUARIE BASE HOSPITAL (Public),Wrights Rd ,PORT MACQUARIE NSW ,2444,Dr John Roberts ,02 6580 1053,02 6580 1050,john.roberts@maynegroup.com
+KEMPSEY DISTRICT HOSPITAL (Public),River St ,WEST KEMPSEY NSW ,2440,Dr David Douglas,02 6562 0258,02 6562 2038, 
+NEW ENGLAND REGIONAL HOSPITAL - ARMIDALE (Public),Rusden St ,ARMIDALE NSW ,2350,Dr Ron Hawksford ,02 6776 4622,02 67764630, 
+TAMWORTH BASE HOSPITAL (Public),PO Box 83 ,TAMWORTH NSW ,2340,Dr Nick Ryan ,02 6766 1722 ,02 6768 3367,nryan@doh.health.nsw.gov.au
+LISMORE BASE HOSPITAL (Public),PO Box 419 ,LISMORE NSW ,2480,Dr Chris Gavahan ,02 6621 8000,02 6622 1963,chrisg@nrhs.health.nsw.gov.au
+GRAFTON BASE HOSPITAL (Public),Arthur St ,GRAFTON NSW ,2460,Amy Lowe ,02 6640 2232,02 6642 1390, 
+GRIFFITH BASE HOSPITAL (Public),Animoo Ave ,GRIFFITH NSW ,2680,Dr Marshall Pitt ,02 6962 1266,02 6962 7578:, 
+WAGGA WAGGA BASE HOSPITAL (Public),Edward St ,WAGGA WAGGA NSW ,2650,Dr Shane Curran,02 6938 6666,02 6921 5632,shane.curran@swsahs.nsw.gov.au
+BOWRAL DISTRICT HOSPITAl (Public),Mona Rd ,BOWAL NSW ,2576, ,02 4861 0200,02 4861 4511, 
+GOULBURN BASE HOSPITAL (Public),Goldsmith St ,GOULBURN NSW ,2580,Dr Trish Saccasan Whelan,02 4827 3023,02 4827 3249, 
+DUBBO BASE HOSPITAL (Public),Myall St ,DUBBO NSW ,2830,Dr Graham Pickford ,02 6885 8633,02 6882 9034,gpickford@bigpond.com
+TWEED HEADS DISTRICT HOSPITAL (Public),PO Box 904 ,TWEED HEADS NSW ,2485,Dr Geoff Ramin,07 5536 1133,07 5599 1680,geoffr@doh.health.nsw.gov.au

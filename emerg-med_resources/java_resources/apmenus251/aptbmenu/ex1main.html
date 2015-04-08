@@ -1,0 +1,112 @@
+<html>
+
+<head>
+<title>Apycom | Free Java Menu Applets | apButtonMenu Examples</title>
+<link REL=stylesheet HREF=exstyle.css TYPE=text/css>
+</head>
+
+<body bgcolor="#CCFF99"  leftmargin=4 topmargin=0 marginheight=0 marginwidth=0>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+
+  <tr>
+    <td bgColor=#ccff99>
+       <table border="0" cellspacing="0" cellpadding="10" width="600" align="center">
+          <tr>
+            <td width="100%" bgColor=#66ccff>
+
+<p><span class=bmtext>This example demonstrates:</span></p>
+<span class=mtext>
+<ul>
+<li>Tab type 3 - thin borders
+<li>Default selected tab is "Example #1" (pressedItem=1)
+<li>Using apTabMenu with frames - click any button to see how the main frame toggles
+<li>Item icons - <img src=pix/app.gif border=0><img src=pix/params.gif border=0><img src=pix/help.gif border=0><img src=pix/down.gif border=0><img src=pix/links.gif border=0><img src=pix/cont.gif border=0><img src=pix/feed.gif border=0>
+<li>Click sound
+</ul>
+</span>
+<p><span class=bmtext>HTML Source</span></p>
+
+<p>
+<span class=mtext>
+  &lt;applet Code=apTabMenu Archive=apTabMenu.jar Width=600 Height=21><br>
+  &lt;param name="Copyright" value="Apycom Software - www.apycom.com"><br>
+  &lt;param name="bottomLine" value="true"><br>
+  &lt;param name="pressedItem" value="1"><br>
+  &lt;param name="clickSound" value="pix/type.au"><br>
+  &lt;param name="tabType" value="3">&nbsp;<br>
+  &lt;param name="status" value="link"><br>
+  &lt;param name="backColor" value="ffffff"><br>
+  &lt;param name="tabColor" value="ffffff"><br>
+  &lt;param name="tabHighColor" value="66ccff"><br>
+  &lt;param name="fontColor" value="44aadd"><br>
+  &lt;param name="fontHighColor" value="ffffff"><br>
+  &lt;param name="font" value="Arial,11,0"><br>
+  &lt;param name="menuItems" value="<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {Example #1,ex1main.html,main_wnd,pix/app.gif}<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {Java applets,pix/ex1tst.html,main_wnd,pix/params.gif}<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {Setup,pix/ex3tst.html,main_wnd,pix/help.gif}<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {Downloads,pix/ex4tst.html,main_wnd,pix/down.gif}<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {Links,pix/ex5tst.html,main_wnd,pix/links.gif}<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {Contact,pix/ex6tst.html,main_wnd,pix/cont.gif}<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {Feedback,pix/ex7tst.html,main_wnd,pix/feed.gif}<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "><br>
+  &lt;/applet>
+</span>
+</p>
+<p><span class=bmtext>ex1.html</span></p>
+
+<p>
+<span class=mtext>
+  &lt;FRAMESET rows=170,* border=0 frameBorder=0 frameSpacing=0><br>
+  &lt;FRAME name = top_wnd  scrolling=no  src="ex1top.html"><br>
+  &lt;FRAME name = main_wnd scrolling=no src="ex1main.html"><br>
+  &lt;/FRAMESET><br>
+</span>
+</p>
+          </tr>
+        </table>   
+    </td>
+  </tr>
+<!-- end example -->
+<tr><td><p>&nbsp;</p></td></tr>   
+  <tr>
+    <td >
+
+       <table bgColor=#60c020 border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td width="100%">
+              <table border="0" cellpadding="0" cellspacing="1" width="100%">
+                <tr>
+                  <td width="100%" bgColor=#ffffff>
+        <table border="0" cellpadding="3" cellspacing="0" width="55%" align="center">
+          <tr>
+            <td width="38%" align="center"><span class=bmtext>Previous Example</span></td>
+            <td width="33%" align="center"><a href="../index.html" target=_parent class=boldlink>Example Index</a></td>
+            <td width="31%" align="center"><a href="ex2.html" target=_parent class=boldlink>Next Example</a></td>                  
+          </tr>
+        </table>                  
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        
+    </td>
+  </tr>
+<!-- end nav3 --> 
+  <tr>
+    <td>  
+<br>      
+<p align="center">
+<span class=mtext>Copyright (c) 1998-2001, </span><span class=bmtext>Apycom Software</span> 
+</p>    
+    </td>
+  </tr>      
+<!-- main table -->     
+</table>
+
+</body>
+
+</html>

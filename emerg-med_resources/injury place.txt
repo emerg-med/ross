@@ -1,0 +1,13 @@
+H{Home
+R{Road/ Street/ Highway 
+I{Residential / elderly care 
+S{School/ Daycare/ Public area
+A{Sports area
+T{Trade/ Service area - shops
+M{Hospital  
+P{Park
+F{Farm              
+C{Industrial/ Construction
+Q{Mine/ Quarry   
+O{Other - Not above
+U{Unknown

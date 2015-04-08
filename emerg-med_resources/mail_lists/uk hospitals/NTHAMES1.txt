@@ -1,0 +1,9 @@
+Barnet General Hospital,Barnet,Herts,EN5 3DJ,0181 216 4000,0181 732 4681
+Basildon and Thurrock General Hospital,Basildon,Essex,SS16 5NL,01268 533911,01268 593757
+Essex County Hospital,Colchester,Essex,CO3 3NB,01206 853535,01206 560372
+Havering Hospital NHS Trust,Romford,Essex,RM7 0BE,01708 746090,01708 738171
+North Herts NHS Trust,Stevenage,Herts,SG1 4AB,01438 314333,01438 781154
+Queen Elizabeth Hospital,Welwyn Garden City,Herts,AL7 4HQ,01707 328111,01707 373359
+Southend Hospital,Westcliff,Essex,SS0 0RY,01702 435555,01702 221300
+St John's Hospital,Chelmsford,Essex,CM2 9BG,01245 491149,01245 353670
+St Margaret's Hospital,Epping,Essex,CM16 6TN,01992 561666,01279 827597

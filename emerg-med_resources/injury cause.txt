@@ -1,0 +1,30 @@
+9{Fall - low  <1 metre
+10{Fall - high >1 metre
+24{Struck/ collision object
+23{Struck/ collision person
+17{Poisoning - Medication
+18{Poisoning - Other/ Unknown
+20{Cutting/ Piercing
+19{Firearm related
+5{Cyclist - Rider/ Passenger
+1{Motor Vehicle - Driver
+2{Motor Vehicle - Passenger
+3{Motorcycle - Driver
+4{Motorcycle - Passenger
+6{Pedestrian
+8{Other transport related
+21{Dog related
+7{Horse related
+22{Other animal related
+14{Fire/ flames/ smoke
+26{Electricity 
+28{Cold Conditions
+27{Hot Conditions    
+16{Contact Burn
+15{Scalds
+11{(Near) Drowning - Pool
+12{(Near) Drowning - Other
+13{Threat to breathing
+29{Other known cause
+30{Unknown cause
+                   

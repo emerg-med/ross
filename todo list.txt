@@ -1,0 +1,36 @@
+bedreq 0.75 (disch-arrive) for discharged patients
+
+at the moment, the locking cookie relies on the browser to expire
+
+doctor superusers
+	
+	my medhelp list
+	when deleting medhelp, check for pages linking to it
+	needs (re-)validation list
+	extract data
+
+investigate why waiting room message not editable on ba11 (?setup)
+
+*************************************
+
+
+admin - delete non current users - put onto users screen
+
+GP lists 
+put GPs into phone book
+setup routine.
+turn off patient functions (make system help only) ?just change header?	if $helponly .
+asthma
+secs in year=31536000 revalidation
+
+
+open source guru who has been on US med ed schol
+http://www.veranda.com.ph/hermant/resume.htm
+
+
+stuff to put into the database
+	divide head injury into minor and major.
+	GCS
+	sort out the drugs
+
+store ecgs	

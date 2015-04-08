@@ -1,0 +1,687 @@
+
+
+<script>
+function UpdateStandaloneText(sDirection, sFromText, sToText)
+{
+
+  //alert("Update Function");
+  //alert("Updater = " + document.frm.FromToTextOn.value);
+  
+  //alert("Actual Updater = " + sDirection);
+  
+  if (document.frm.FromToTextOn.value == "on")
+  {
+	if (sDirection=="From") {sNewText = sToText} else {sNewText = sFromText};
+  
+	//alert("sNewText = " + sNewText);
+  
+	var ie = (document.all)? true :false;
+  
+	if (is_gecko || is_ie4up)
+	{
+	  if (is_ie4up)
+	  {
+		FromToStandaloneText.innerHTML = "<span class='FromToStandaloneTextStyle'>" + sNewText + "</span>";
+	  }
+	  if (is_gecko)
+	  {
+		var myElement = document.getElementById("FromToStandaloneText");
+		myElement.innerHTML = "<span class='FromToStandaloneTextStyle'>" + sNewText + "</span>";
+	  } 
+	}
+	else
+	{
+	  var Lyr = document.layers["FromToStandaloneText"].document;					
+	  Lyr.open();
+	  Lyr.write("<span class='FromToStandaloneTextStyle'>" + sNewText + "</span>"); 
+	  Lyr.close();
+	}
+  }
+}
+</script>
+<html>
+<head>
+
+<SCRIPT language="JavaScript">
+<!--
+function openWindow(url) {
+  popupWin = window.open(url, '', 'scrollbars,resizable,width=590,height=390')
+}
+// -->
+</SCRIPT>
+
+<script language="JavaScript">
+
+var PRODUCT_ID = "LBA";
+var PRODUCT_NAME = "Leeds Bradford International Airport ";
+var PRODUCT_DEPARTURE = "Leeds Bradford International Airport ";
+var PRODUCT_DEPARTURE_CODE = "LBA";
+var PRODUCT_CARRIER = "";
+var PRODUCT_TYPE = "AIRPORT";
+var ERROR_SELECT_DEPARTURE = "Please enter a valid City/Airport name or code.";
+var ERROR_SELECT_ARRIVAL = "Please enter a valid City/Airport name or code.";
+var ERROR_INVALID_DATE = "";
+var DHTML_CODELOOKUP = "False";
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="main.css">
+
+<script language="JavaScript">
+//<comment>
+//    <module_name></module_name>
+//    <vss_header>
+// $Header: 
+//    </vss_header>
+//    <Author>Chris Bayes</Author>
+//    <inputs_required>
+//    <p_name></p_name>
+//    <p_description></p_description>
+//    </inputs_required>
+//    
+//    <inputs_optional>
+//    <p_name></p_name>
+//    <p_description></p_description>
+//    </inputs_optional>
+//
+//    <outputs>
+//    <p_name>None.</p_name>
+//    <p_description>No description.</p_description>
+//    </outputs>
+//
+//    <methods>
+//    <p_name></p_name>
+//    <p_description></p_description>
+//    </methods>
+//
+//    <description>This function is used to set up the initial screen form. Avoids backbutton problems.
+//    </description>
+//    <modification_history>
+//      <m_user>Chris Bayes</m_user>  <m_date>27-Jul-2000</m_date>  <m_desc>Added Standard Header</m_desc>
+//		<m_user>Chris Bayes</m_user>  <m_date>27-Jul-2000</m_date>  <m_desc>Added Standard Header</m_desc>
+//    </modification_history>
+//    <todo>
+//      <m_desc></m_desc>
+//    </todo>
+//</comment>
+
+	function func_window_onload(){
+	
+		return;
+	
+		var ie = (document.all)? true :false;
+		
+		if (PRODUCT_TYPE == "AIRPORT"){
+			
+			if (document.frm.optFlightDirection[0].checked){ 
+			
+				if (! ie){
+					//var Lyr = document.layers["ArrCitySearchDiv"].document;
+					//Lyr.open();
+					//Lyr.write("Select a Arrival");
+					//Lyr.close();
+				}else{
+					ArrCitySearchDiv.innerHTML = "Select a Arrival";
+				}
+				
+				//document.all.tableDep.style.display = "none";
+				//document.all.tableArr.style.display = "block";
+			}
+		
+			if (document.frm.optFlightDirection[1].checked){
+				
+				if (! ie){
+					var Lyr = document.layers["ArrCitySearchDiv"].document;
+					Lyr.open();
+					Lyr.write("Select a Departure");
+					Lyr.close();
+				}else{
+					ArrCitySearchDiv.innerHTML = "Select a Departure";
+				}
+				
+				//document.all.tableDep.style.display = "block";
+				//document.all.tableArr.style.display = "none";
+			}
+		}
+	}
+</script>
+<title>Leeds Bradford International Airport </title>
+</head>
+
+<body bgcolor="#ffffff" background="images/bground1.jpg">
+<form name="frm" method="post" action="flights.asp" onsubmit="return(ValidateForm());" autocomplete="off">
+Welcome to LBA's flight search facility.  This will allow you to search<br> 
+for scheduled flights to worldwide destinations using direct flights and<br>
+links via our hub airports.<br><br>
+
+	<table>
+	<tr>
+	<td valign="top">
+
+	<input type="hidden" value="off" name="FromToTextOn" id="FromToTextOn">
+	<input type="hidden" value="option" name="FromToType" id="FromToType">
+	<input type="hidden" value="" name="txtDYNAMIC_FROM" id="txtDYNAMIC_FROM">
+	<input type="hidden" value="" name="txtDYNAMIC_TO" id="txtDYNAMIC_TO">
+	
+	<table border="0" id="tblFromTo" class="FromTo">
+	<tr width="100%">
+      <td colspan="2" class="preferredtitle">Please select a direction for travel...</td>
+    </tr>
+    <tr width="100%">
+    
+      <td><input type="radio" class="Option" value="From" name="optFlightDirection" id="optFlightDirection" checked onclick="UpdateStandaloneText(this.value, document.frm.txtDYNAMIC_FROM.value, document.frm.txtDYNAMIC_TO.value);"></td>
+      <td class="Option">Flights from Leeds Bradford International Airport </td>
+    </tr>
+    <tr width="100%">
+    
+      <td><input type="radio" class="Option" value="To" name="optFlightDirection" id="optFlightDirection" onclick="UpdateStandaloneText(this.value, document.frm.txtDYNAMIC_FROM.value, document.frm.txtDYNAMIC_TO.value);"></td>
+      <td class="Option">Flights to Leeds Bradford International Airport </td>
+    </tr>
+  </table>
+  
+  
+  
+  <input type="hidden" name="txtFlightDirection" id="txtFlightDirection" value="From">
+  
+</td>
+	</tr>
+	</table>
+	
+	
+	<table>
+	<tr>
+	<td valign="top">	
+	<input type="hidden" id="HELOE" name="HELOE" value="IAN">
+	<input type="hidden" id="txtDep" name="txtDep" value="Leeds Bradford International Airport ">
+	<input type="hidden" id="txtDepCode" name="txtDepCode" value="LBA">
+	<input type="hidden" id="txtDepID" name="txtDepID" value="LBA">
+	<input type="hidden" id="txtDepOriginalName" name="txtDepOriginalName" value="Leeds Bradford International Airport ">
+
+</td>
+	</tr>
+	<tr>
+	<td valign="top">
+
+<table id="tableArr" name="tableArr" class="Arr" border="0">			
+	<tr>
+		<td class="arrivaltitle" colspan="4">Please Enter a City or Airport name or code.</td>
+	</tr>
+	<tr>
+		<td>
+		<input type="text" class="arrival" id="txtArr" size="18" name="txtArr" value=""></td>
+	</tr>
+	<tr>
+		<td valign="top" class="Examples">eg. Amsterdam or AMS</td>
+	</tr>
+
+	</table>
+	
+	<input type="hidden" id="txtArrID" name="txtArrID" value="">
+	<input type="hidden" id="txtArrOriginalName" name="txtArrOriginalName" value="">
+	
+	<script language="JavaScript">
+		
+function OpenCityArrWindow(sSearchString, sPrefix,sReturnTrip, sSearchType)
+{
+
+	var iX,iY, sURL;
+
+	sURL="CityLookupWindow.asp?CallBack=SetArrLocation&dir=Arr&SearchString=" + sSearchString + "&Function="  + sSearchType + "&Prefix=" + sPrefix + "&ReturnTrip=" + sReturnTrip + "&SearchType=" + sSearchType;
+
+	sURL = sURL.replace(" ", "+");
+
+	sSearchString = escape(sSearchString);
+	
+	iX=100;
+	iY=100;
+				
+	winStats='toolbar=no,location=no,directories=no,menubar=no,dependent=yes';
+	winStats+='scrollbars=no,width=600,height=160,resizable=yes';
+
+	if (navigator.appName.indexOf("Microsoft")>=0) 
+	{
+		winStats+=',left=' + iX + ',top=' + iY
+	}
+	else
+	{
+		winStats+=',screenX=' + iX + ',screenY=' + iY;
+	}
+	//floater=window.open("CityLookupWindow.asp?CallBack=SetArrLocation&dir=Arr&SearchString=" + sSearchString + "&Function=lookupname&Prefix=" + sPrefix + "&ReturnTrip=" + sReturnTrip,"",winStats) ;
+	floater=window.open(sURL,"",winStats) ;
+}
+		
+		
+function SetArrLocation(sValue, sName, sWhich)
+{
+	
+	if (sValue.length > 3)
+	{
+		if (sValue.substr(0,3)==sValue.substr(4,3))
+			{sCode = sValue.substr(0,3);}
+		else
+			{sCode = sValue.substr(4,3);}
+	}
+	else
+		sCode=sValue;
+	
+	document.frm.txtArrID.value = sValue;
+	document.frm.txtArr.value = sName;
+	document.frm.txtArrCode.value = sCode;
+}
+		
+</script>
+	
+</td>
+	</tr>
+	</table>
+	
+	<table>
+	<tr>
+	<td valign="top">
+<!------------------------------ CALENDAR CONTROL --------------------------------------------->	
+
+<script>
+var sMonthNames = "January,February,March,April,May,June,July,August,September,October,November,December".split(",");
+var sMonthShortNames = "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec".split(",");
+var sDayFullNames = "Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday".split(",");
+var sDateFormat = "ddmmyyyy";
+
+function fDateToName(sDate){
+	//alert("fDateToName");
+	
+	var aTmp = sDate.split("/");
+	if (sDateFormat=="ddmmyyyy")	{return aTmp[1] + " " + sMonthShortNames[aTmp[0]-1] + " " + aTmp[2];}
+	if (sDateFormat=="mmddyyyy")	{return sMonthShortNames[aTmp[0]-1] + " " + aTmp[1] + " " + aTmp[2];}
+}
+
+function fNameToDate(sDate){
+	//alert("fNameToDate");
+	
+	var i, sTmp="", aTmp;
+	//var sRegExp = new RegExp("-|/| ");
+	var iPos
+	
+	iPos=sDate.indexOf(" ");
+	if(iPos < 0)
+	{
+		if(iPos=sDate.indexOf("-") < 0)
+			iPos=sDate.indexOf("/");
+	}
+	
+	//sDate.search(sRegExp);
+	var sDelimiter = sDate.substr(iPos, 1);
+	var bStringNameFound = false;
+	
+	for (i=0; i < sMonthShortNames.length; i++){
+		//alert(sDate.toLowerCase() + " - " + sMonthShortNames[i].toLowerCase());
+	
+		if (sDate.toLowerCase().indexOf(sMonthShortNames[i].toLowerCase()) >= 0){
+	
+			bStringNameFound = true;
+			if ((sTmp = checkit(sDate.toLowerCase(), i+1, sMonthShortNames[i].toLowerCase(), sDelimiter)) != ""){ return sTmp; }
+			if ((sTmp = checkit(sDate.toLowerCase(), i+1, sMonthShortNames[i].toLowerCase(), sDelimiter)) != ""){ return sTmp; }
+			if ((sTmp = checkit(sDate.toLowerCase(), i+1, sMonthShortNames[i].toLowerCase(), sDelimiter)) != ""){ return sTmp; }
+		}
+	}
+	
+	//alert("UK Dates");
+	
+	if (bStringNameFound == false)
+		{
+			if (sDateFormat =="ddmmyyyy")
+			{
+				aTmp = sDate.split(sDelimiter);
+				sTmp = aTmp[0];
+				aTmp[0]=aTmp[1];
+				aTmp[1]=sTmp;
+				sDate = aTmp[0] + "/" + aTmp[1] + "/" + aTmp[2];
+			}
+		}
+	//alert(sDate);
+	return sDate;
+}
+
+function checkit(sDate, iMon, sMon, sChar){
+	var aTmp = sDate.split(sChar);
+	//alert(aTmp.length);
+	if (aTmp.length > 1){
+		var iFnd = -1;
+		for (i=0; i < aTmp.length; i++){
+			if (sMon == aTmp[i]){
+				iFnd = i;
+			}
+		}
+		if ((aTmp[2]*1) < 100){aTmp[2] = (aTmp[2]*1) + 2000;}
+		switch (iFnd){
+			case 0: return iMon + "/" + aTmp[1] + "/" + aTmp[2];
+			case 1: return iMon + "/" + aTmp[0] + "/" + aTmp[2];
+			default: return "";
+		}
+	}else{
+		return "";
+	}
+}
+</script>
+
+
+		<table class="preferreddate" border="0" cellpadding="0" cellspacing="0" style="display:block">
+			<tr>
+				<td class="preferreddatetitle" colspan="2">Preferred Date</td>
+			</tr>
+			<tr>
+				<td>
+					
+					<input type="text" size="12" class="preferreddate" id="preferredVisible_date" name="preferredVisible_date" value="30 Mar 2002" onchange="preferred_date_LossFocus(this);">		
+					<input type="hidden" id="preferred_date" name="preferred_date" value="3/30/2002" onchange="preferred_date_LossFocus(this);">		
+				</td>
+			
+				<td>
+					<a href="Javascript:OpenCalendarWindow(document.frm.preferredVisible_date);"><img src="../images/btn_calendar.gif" width="34" height="21" border="0"></a>
+				</td>
+			
+			</tr>
+		</table>
+		
+		<script>
+			var d 
+			var s = "Today's date is: ";
+			if ("" != ""){
+				document.frm.preferred_date.value = "";
+			}else{
+				if (document.frm.preferred_date.value =="")
+				{
+					d = new Date(document.frm.preferredVisible_date.value);  
+					s = (d.getMonth()+1) + "/" + d.getDate() + "/" + d.getFullYear();
+					document.frm.preferred_date.value = s;
+				}
+			}
+			
+			function getFullYear_y2k(sYear){
+				sYear=d.getFullYear()
+				if(sYear <= 1999)
+				{
+					sYear += 100;
+				}
+				return sYear;
+			}
+		
+			
+			
+			function preferred_date_LossFocus(obj)
+			{
+				//alert("Loss focus");
+				var re = new RegExp("-");
+				var sYear;
+								
+				//obj.value = obj.value.replace(re, "/")
+				//obj.value = obj.value.replace(re, "/")
+				
+				var sYearPos = obj.value.lastIndexOf("/");
+				
+				if (sYearPos == -1) sYearPos = obj.value.lastIndexOf("-");
+				
+				if (sYearPos != -1)
+				{
+					sYear = obj.value.slice(sYearPos+1);
+					if (sYear.length == 2)
+					{ 
+						sYear = "20" + sYear;
+						obj.value = obj.value.slice(0, sYearPos+1) + sYear;
+					}
+					if (sYear.length == 1)
+					{ 
+						sYear = "200" + sYear;
+						obj.value = obj.value.slice(0, sYearPos+1) + sYear;
+					}
+				}
+				
+				var d = new Date(fNameToDate(obj.value));
+				
+				if (isNaN(d)) {
+					alert("You have entered an incorrect date format.")
+				}else{
+					document.frm.preferred_date.value = (d.getMonth()+1) + "/" + d.getDate() + "/" + d.getFullYear();
+					obj.value = fDateToName(document.frm.preferred_date.value);
+				}
+				
+			}
+			
+			
+		</script>
+		
+		
+		
+		
+			<script language="JavaScript">
+			var bDHTML_Version ="False";
+	
+				
+			
+			function OpenCalendarWindow(obj)
+			{
+				var iX,iY;
+				var d,s;
+				
+				
+				s = fNameToDate(obj.value);
+				
+				if (s != "")
+				{
+					s = "?date=" + escape(s)
+				}
+				
+				iX=100 //GetPosition(obj, "left");
+				iY=100 //GetPosition(obj, "bottom");
+				
+				winStats='toolbar=no,location=no,directories=no,menubar=no,';
+				winStats+='scrollbars=no,width=182,height=180';
+					
+				if (navigator.appName.indexOf("Microsoft")>=0) 
+				{
+					winStats+=',left=' + iX + ',top=' + iY
+				}
+				else
+				{
+					winStats+=',screenX=' + iX + ',screenY=' + iY;
+				}
+	
+				floater=window.open("Calendar.asp"+s+"","",winStats) ;
+			}
+				
+				function SetChosenDate(ChosenDate)
+			{
+				document.frm.preferredVisible_date.value = fDateToName(ChosenDate);
+				document.frm.preferred_date.value = ChosenDate;
+			}
+			</script>
+
+		
+<!------------------------------ END OF CALENDAR CONTROL --------------------------------------------->
+</td>
+	<td valign="top">
+		<table class="preferredtime" border="0" cellpadding="0" cellspacing="0">
+		<tr><td class="preferredtimetitle">Preferred Time</td></tr>
+		<tr><td>
+			<!--
+			<select class="preferredtime" id="preferred_time" name="preferred_time">
+			
+			<option value="Any" >Any</option>
+			
+			<option value="Morning" >Morning</option>
+			
+			<option value="Afternoon" >Afternoon</option>
+			
+			<option value="Evening" >Evening</option>
+			-->
+			
+			<select class="preferredtime" id="preferred_time" name="preferred_time">
+			
+			<option value="Any" >Any&nbsp;</option>
+			
+			<option value="Morning" >Morning&nbsp;</option>
+			
+			<option value="Afternoon" >Afternoon&nbsp;</option>
+			
+			<option value="Evening" >Evening&nbsp;</option>
+			
+			<option value='00:00' >00:00</option>
+<option value='01:00' >01:00</option>
+<option value='02:00' >02:00</option>
+<option value='03:00' >03:00</option>
+<option value='04:00' >04:00</option>
+<option value='05:00' >05:00</option>
+<option value='06:00' >06:00</option>
+<option value='07:00' >07:00</option>
+<option value='08:00' >08:00</option>
+<option value='09:00' >09:00</option>
+<option value='10:00' >10:00</option>
+<option value='11:00' >11:00</option>
+<option value='12:00' >12:00</option>
+<option value='13:00' >13:00</option>
+<option value='14:00' >14:00</option>
+<option value='15:00' >15:00</option>
+<option value='16:00' >16:00</option>
+<option value='17:00' >17:00</option>
+<option value='18:00' >18:00</option>
+<option value='19:00' >19:00</option>
+<option value='20:00' >20:00</option>
+<option value='21:00' >21:00</option>
+<option value='22:00' >22:00</option>
+<option value='23:00' >23:00</option>
+
+			</select>
+			<!--</span>-->
+		</td></tr>
+		</table>
+	</td>
+	</tr>
+	</table>
+	
+	
+	<table width="80%">
+	<tr>
+	<td valign="top" width="40%">
+		<table class="preferredairlines">
+			<tr><td colspan="2" class="preferredtitle">Preferred Airlines</td></tr>
+			
+				<tr><td class="preferredairlines">1</td>
+				<td><input class="preferredairlines" type="text" id="txtAirline1" name="txtAirline1" value = "" size="20">
+				<input type="hidden" size="2" id="txtAirline1ID" name="txtAirline1ID" value = "">
+				</td></tr>
+			
+				<tr><td class="preferredairlines">2</td>
+				<td><input class="preferredairlines" type="text" id="txtAirline2" name="txtAirline2" value = "" size="20">
+				<input type="hidden" size="2" id="txtAirline2ID" name="txtAirline2ID" value = "">
+				</td></tr>
+			
+				<tr><td class="preferredairlines">3</td>
+				<td><input class="preferredairlines" type="text" id="txtAirline3" name="txtAirline3" value = "" size="20">
+				<input type="hidden" size="2" id="txtAirline3ID" name="txtAirline3ID" value = "">
+				</td></tr>
+				
+			<input type="hidden" name="preferred_airline_count" value="3">
+			</table>
+		
+		
+		
+			
+			<script language="JavaScript">
+				function OpenCityAirlineWindow(sSearchString, which){
+					var iX,iY, sPrefix="", sReturnTrip="";
+					sSearchString = escape(sSearchString)
+					iX=100
+					iY=100
+					
+					winStats='toolbar=no,location=no,directories=no,menubar=no,';
+					winStats+='scrollbars=no,width=450,height=160,resizable=yes';
+
+					if (navigator.appName.indexOf("Microsoft")>=0) 
+					{
+						winStats+=',left=' + iX + ',top=' + iY
+					}
+					else
+					{
+						winStats+=',screenX=' + iX + ',screenY=' + iY;
+					}
+					//alert("CityLookupWindow.asp?SearchString=" + sSearchString + "&Function=lookupcode&Prefix=" + sPrefix + "&ReturnTrip=" + sReturnTrip);
+					//alert(winStats);
+					floater=window.open("CityLookupWindow.asp?CallBack=SetAirline&Which=" + which + "&SearchString=" + sSearchString + "&Function=lookupairline&Prefix=" + sPrefix + "&ReturnTrip=" + sReturnTrip,"",winStats) ;					
+				}
+				function SetAirline(sCode, sName, sWhich){	
+					eval("document.frm.txtAirline" + sWhich + "ID.value = sCode");
+					eval("document.frm.txtAirline" + sWhich + ".value = sName");
+				}
+			</script>
+		</td>
+	</tr>
+	</table>
+	
+	<br>
+		<table width="200">
+	<tr>
+	<td valign="left">
+		<table class="Button" cellspacing=0 cellpadding=0>
+			<tr>
+			<td>
+				<span class="ButtonRow" style="cursor:hand;">
+				<A class="ButtonRow1" href="javascript:document.frm.submit();">
+				&nbsp;Submit&nbsp;
+				</A>
+				</span>
+			</td>
+			</tr>
+		</table>	
+	</td>
+	<td align="right">
+		<table class="Button" cellspacing=0 cellpadding=0>
+			<tr>
+			<td>
+ 				<span class="ButtonRow" style="cursor:hand;">
+				<A class="ButtonRow1" href="default.asp?lang=">
+				New Selection
+				</a>
+				</span>
+			</td>
+			</tr>
+		</table>
+	</td>
+	</tr>
+	</table>
+
+	<input type="hidden" name="chkDirect" value="on">
+	<input type="hidden" name="chkMarketed" value="off">
+	<input type="hidden" name="chkFree" value="off">
+	
+	<input type="hidden" name="Leg1ID" value="">
+	<input type="hidden" name="Leg2ID" value="">
+	<input type="hidden" name="out1ID" value="">
+	<input type="hidden" name="out2ID" value="">
+	<input type="hidden" name="outpreferred_time" value="">
+	<input type="hidden" name="outpreferred_date" value="">
+	<input type="hidden" name="chkReturn" value="">
+	<input type="hidden" name="chkSearchedForConnex" value="">
+	
+	<input type="hidden" value="EN" name="lang" id="lang">
+	<input type="hidden" value="LBA" name="Product_ID" id="Product_ID">
+	<input type="hidden" value="" name="txtStartDirection" id="txtStartDirection">
+	<input type="hidden" value="False" name="DHTML_CODELOOKUP" id="DHTML_CODELOOKUP">
+	
+</form>
+<br>
+
+<center>
+
+<span class="Disclaimer">Schedules Updated Every Day<BR>Schedule Display Services provided by OAG Flight Engine<BR>Schedule data Copyright © OAG Worldwide Limited. All rights reserved. </span>
+
+</center>
+
+</body>
+<script language="JavaScript">
+	func_window_onload();
+</script>
+
+
+
+<script language="JavaScript" src="../includes/inc_validate_form_1_0_0.js"></script>
+
+</html>

@@ -1,0 +1,9 @@
+L{Leisure
+W{Working for income
+C{Working (not paid)
+N{Being nursed/ cared for
+E{Education
+V{Vital activity    
+S{Sports
+O{Other specified activity          
+U{Unknown

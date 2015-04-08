@@ -1,0 +1,496 @@
+create table Patients (
+key_ID bigint(9) zerofill unsigned auto_increment,
+
+UR tinytext,
+Medicare tinytext,
+MedicareSuffix varchar(3),
+DVA varchar(9),
+
+Sex varchar (1),
+DateOfBirth varchar(8) default '00000000',
+Country tinytext,
+
+Indigenous varchar(1) default '2',
+Language varchar(2) default '19',
+Locality tinytext,
+Postcode tinytext,
+
+ArriveTrans varchar (2),
+ReferredBy varchar (2),
+ArriveSource varchar (4),
+
+TypeVisit varchar (2) default '1',
+Compensable varchar (1) default '6',
+
+AmbCase tinytext,
+
+ArrivalDate varchar (8),
+ArrivalTime varchar (4),
+
+TriageDate varchar (8),
+TriageTime varchar (4),
+
+TriageNurse tinytext,
+TriageCategory enum ('1','2','3','4','5','6'),
+
+DoctorDate varchar (8),
+DoctorTime varchar (4),
+
+Procedures tinytext,
+
+BedReq	varchar (1),
+BedReqDate varchar (8),
+BedReqTime varchar (4),
+
+DepartureDate varchar (8),
+DepartureTime varchar (4),
+
+DischargedStatus varchar(2),
+TransHosp tinytext,
+DischargedTo varchar(2),
+
+CareComm varchar(1) default 'Y',
+
+TransReason varchar(1),
+TransEscort varchar(1),
+TransMode varchar(2),
+
+Diagnosis1 tinytext,
+Diagnosis2 tinytext,
+Diagnosis3 tinytext,
+
+InjuryNatureof varchar(2),
+InjuryBodyRegion varchar(2),
+
+TriageDiagnosis varchar(100),
+InjuryCause varchar(2),
+InjuryIntent varchar(2),
+InjuryPlace varchar(1),
+InjuryActivity varchar(1),
+
+ArrivalTimeStamp int(12),
+TriageTimeStamp int(12),
+DoctorTimeStamp int(12),
+BedReqTimeStamp int(12),
+DischargeTimeStamp int(12),
+
+FirstName tinytext,
+Surname tinytext,
+GP tinytext,
+Address tinytext,
+
+Location tinytext,
+
+StatusReport varchar(100),
+Doctor tinytext,
+AdmitWard tinytext,
+Age varchar(9),
+Locked tinytext,
+LockedReg tinytext,
+TriageNurseCode varchar (4),
+TriagePosition int (2) unsigned,
+
+
+PatientTitle tinytext,
+PhoneHome tinytext,
+PhoneWork tinytext,
+PhoneMob tinytext,
+Email tinytext,
+Marital varchar(1),
+Religeon varchar(2),
+PrevName tinytext,
+MedAlert varchar(1) default 'N',
+DrugAlert varchar (1) default 'N',
+
+PrivInsurance tinytext,
+PrivNumber tinytext,
+ClericalID tinytext,
+
+primary key (key_ID)
+);
+
+
+
+*********
+create table DischargedPatients (
+
+
+*********
+
+
+
+create table Postcode (
+key_ID bigint(10)unsigned auto_increment,
+Locality tinytext,
+Code tinytext,
+
+primary key (key_ID)
+);
+
+
+
+create table Hospitals (
+key_ID bigint(10) unsigned auto_increment,
+Hospital tinytext,
+Code tinytext,
+
+primary key (key_ID)
+);
+
+
+
+create table ICD10 (
+key_ID bigint(10) unsigned auto_increment,
+Diagnosis tinytext,
+Code tinytext,
+
+primary key (key_ID)
+);
+
+
+
+
+create table Country (
+key_ID bigint(10) unsigned auto_increment,
+Country tinytext,
+Code tinytext,
+Main varchar(2),
+
+primary key (key_ID)
+);
+
+create table Private (
+key_ID bigint(10) unsigned auto_increment,
+Insurance tinytext,
+
+primary key (key_ID)
+);
+
+
+
+create table Language (
+key_ID bigint(10) unsigned auto_increment,
+Language tinytext,
+Code tinytext,
+
+primary key (key_ID)
+);
+
+
+
+create table Expected (
+Key_ID bigint(10) unsigned auto_increment,
+FirstName tinytext,
+Surname tinytext,
+Age int(3),
+TriageDiagnosis tinytext,
+Sex varchar(1),
+
+primary key (key_ID)
+);
+
+
+create table Quality (
+key_ID bigint(10) unsigned auto_increment,
+UR tinytext,
+QualTimeStamp int(12),
+Surname tinytext,
+FirstName tinytext,
+QualityText tinytext,
+Current varchar (1) default 'Y',
+
+primary key (key_ID)
+);
+
+
+create table Alerts (
+key_ID bigint(10) unsigned auto_increment,
+Alert tinytext,
+AlertName tinytext,
+AlertUR tinytext,
+AlertSuperuser tinytext,
+AlertDate tinytext,
+
+primary key (key_ID)
+);
+
+
+
+create table GP (
+Key_ID bigint(10)unsigned default '2' ,
+GP tinytext,
+GPSurname tinytext,
+GPPhone tinytext,
+GPFax tinytext,
+GPEmail tinytext,
+Current varchar (3),
+Code bigint(10) unsigned auto_increment,
+
+primary key (Code)
+);
+
+
+
+
+create table User (
+key_ID bigint(10) unsigned auto_increment,
+Name tinytext,
+Email tinytext,
+Username tinytext,
+Password tinytext,
+Current varchar (3),
+UserType varchar (2),
+AdminIP tinytext,
+AdminTimeOut int(11) unsigned,
+
+primary key (key_ID)
+);
+
+
+
+
+create table TriageDiagnosis (
+key_ID bigint(10) unsigned auto_increment,
+TriageDiagnosis text,
+TriageA text,
+TriageB text,
+TriageC text,
+TriageD text,
+TriageE text,
+TriageF text,
+TriageNotes text,
+
+primary key (key_ID)
+);
+
+
+
+
+create table InjuryMatrix (
+key_ID bigint(10) unsigned auto_increment,
+InjuryMain tinytext,
+InjuryBodyRegion tinytext,
+ICD10 tinytext,
+
+primary key (key_ID)
+);
+
+
+
+create table Phone (
+key_ID bigint(10) unsigned auto_increment,
+Name tinytext,
+Phone tinytext,
+Email tinytext,
+
+primary key (key_ID)
+);
+
+
+
+
+create table MedHelp (
+key_ID bigint(10) unsigned default '1000000' auto_increment,
+CreatedTimestamp int(12) unsigned,
+UpdatedTimestamp int(12) unsigned,
+Deleted enum ('Y','N') default 'N' not null,
+
+Title tinytext,
+Important tinytext,
+Department tinytext,
+Creator tinytext,
+AddressIP tinytext,
+AddressName tinytext,
+
+AuthorisedBy tinytext,
+MedHelpType tinytext,
+Keywords tinytext,
+
+Title1Main tinytext,
+Title1Side tinytext,
+Para1 text,
+Ref1 tinytext,
+Ref1URL tinytext,
+Pic1 mediumblob,
+
+Title2Main tinytext,
+Title2Side tinytext,
+Para2 text,
+Ref2 tinytext,
+Ref2URL tinytext,
+Pic2 mediumblob,
+
+Title3Main tinytext,
+Title3Side tinytext,
+Para3 text,
+Ref3 tinytext,
+Ref3URL tinytext,
+Pic3 mediumblob,
+
+Title4Main tinytext,
+Title4Side tinytext,
+Para4 text,
+Ref4 tinytext,
+Ref4URL tinytext,
+Pic4 mediumblob,
+
+Title5Main tinytext,
+Title5Side tinytext,
+Para5 text,
+Ref5 tinytext,
+Ref5URL tinytext,
+Pic5 mediumblob,
+
+Pic16 mediumblob,
+
+Title6Main tinytext,
+Title6Side tinytext,
+Para6 text,
+Ref6 tinytext,
+Ref6URL tinytext,
+Pic6 mediumblob,
+
+Title7Main tinytext,
+Title7Side tinytext,
+Para7 text,
+Ref7 tinytext,
+Ref7URL tinytext,
+Pic7 mediumblob,
+
+Title8Main tinytext,
+Title8Side tinytext,
+Para8 text,
+Ref8 tinytext,
+Ref8URL tinytext,
+Pic8 mediumblob,
+
+Title9Main tinytext,
+Title9Side tinytext,
+Para9 text,
+Ref9 tinytext,
+Ref9URL tinytext,
+Pic9 mediumblob,
+
+Title10Main tinytext,
+Title10Side tinytext,
+Para10 text,
+Ref10 tinytext,
+Ref10URL tinytext,
+Pic10 mediumblob,
+
+Title11Main tinytext,
+Title11Side tinytext,
+Para11 text,
+Ref11 tinytext,
+Ref11URL tinytext,
+Pic11 mediumblob,
+
+Title12Main tinytext,
+Title12Side tinytext,
+Para12 text,
+Ref12 tinytext,
+Ref12URL tinytext,
+Pic12 mediumblob,
+
+Title13Main tinytext,
+Title13Side tinytext,
+Para13 text,
+Ref13 tinytext,
+Ref13URL tinytext,
+Pic13 mediumblob,
+
+Title14Main tinytext,
+Title14Side tinytext,
+Para14 text,
+Ref14 tinytext,
+Ref14URL tinytext,
+Pic14 mediumblob,
+
+Title15Main tinytext,
+Title15Side tinytext,
+Para15 text,
+Ref15 tinytext,
+Ref15URL tinytext,
+Pic15 mediumblob,
+
+primary key (key_ID)
+);
+
+
+
+create table Medicare (
+key_ID bigint(10) unsigned auto_increment,
+
+ItemNumber int(5) unsigned zerofill,
+SubItemNumber int(3) unsigned zerofill,
+MBSCategory varchar (3),
+MBSGroup varchar(3),
+MBSSubGroup varchar(3),
+MBSItemType varchar (1),
+MBSFeeType varchar (1),
+MBS_Procedure text,
+Description text,
+DerivedDescription text,
+Fee100 FLOAT (7,2) unsigned,
+Fee85 FLOAT (7,2) unsigned,
+Fee75 FLOAT (7,2) unsigned,
+AnaestUnits int (3),
+
+primary key (key_ID)
+);
+
+
+create table Setup (
+key_ID int(10)unsigned default '0' not null auto_increment,
+
+Name tinytext,
+Text1 text,
+Text2 text,
+Number1 int (11),
+Number2 int (11),
+
+primary key (key_ID)
+);
+
+
+
+
+
+create table Medhelptype (
+key_ID int(10)unsigned default '0' not null auto_increment,
+flg_deleted enum ('Y','N') default 'N' not null,
+type varchar(50) not null,
+
+primary key (key_ID)
+);
+
+
+
+
+
+
+****************
+
+
+create table EmergMedSetup (
+key_ID int(10)unsigned default '0' not null auto_increment,
+
+primary key (key_ID)
+);
+
+
+***********************************************************
+
+MedHelp numbering convention
+1-9999		emergency medicine
+10000 - 19999	medicine (general)
+20000 - 29999	surgery (general)
+30000 - 39999	anaesthetics
+40000 - 49999	icu
+50000 - 59999	pyschiatry
+general practice
+
+500000 - 600000	drugs
+600000 - 699999 poisons, toxicology
+
+1000000 -	user generated 

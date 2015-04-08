@@ -1,0 +1,34 @@
+ROYAL BRISBANE HOSPITAL (Public),Herston Rd ,HERSTON QLD ,4029,Dr R Pillay,07 3636 8210,07 3636 1643,demsec@health.qld.gov.au
+ROYAL CHILDRENS HOSPITAL (Public),Herston Rd ,HERSTON QLD ,4029,Dr Ronald Clark,07 3636 7192,07 3253 5381,ron.clark@health.qld.gov.au
+ST ANDREWS WAR MEMORIAL HOSPITAL (Private),457 Wickham Tce ,BRISBANE QLD ,4000,Dr Ian Brandon ,07 3834 4455,07 3376 4753,Ibrandon@sawmh.org.au
+GREENSLOPES PRIVATE HOSPITAL (Private),Newdegate St ,GREENSLOPES QLD ,4120,Dr Jeff Brain,07 3394 7654,07 3394 7757,jbrain@powerup.com.au
+WESLEY HOSPITAL (Private),Chasely St ,AUCHENFLOWER QLD ,4066,Dr Ian Knox,07 3232 7333 ,07 3232 7940,iknox@gil.com.au
+MATER MISERICORDIAE HOSPITAL - ADULT (Public),Raymond Tce ,SOUTH BRISBANE QLD ,4101,Dr John Holmes,07 3840 8421,07 3840 1661,jholmes@mater.org.au
+MATER MISERICORDIAE HOSPITAL - CHILDRENS (Public),Stanley St ,SOUTH BRISBANE QLD ,4101,Dr Robert Pitt ,07 3840 8325,07 3840 1962,rpitt@mater.org.au
+MATER PRIVATE HOSPITAL (Private),Vulture St ,SOUTH BRISBANE QLD ,4101,Dr Thomas Cheong ,07 3840 1000,07 3846 1199,des@mater.org.au
+PRINCESS ALEXANDRA HOSPITAL (Public),Ipswich Rd ,WOOLLOONGABBA QLD ,4102,Dr Phil Kay ,07 3240 7513,07 3240 7583,kayp@health.qld.gov.au
+QUEEN ELIZABETH II JUBILEE HOSPITAL (Public),Kessels Rd ,COOPERS PLAINS QLD ,4108,Dr David Evans,07 3275 6313 ,07 3277 8807, 
+***LOGAN HOSPITAL (Public),Loganlea Rd ,MEADOWBANK QLD ,4131,Dr David Lewis-Driver,07 3299 8899,07 3299 8832,lewisdrd@health.qld.gov.au
+REDLAND HOSPITAL (Public),Weippin St ,CLEVELAND QLD ,4163,Dr Peter Keneally,07 3281 9734,07 3286 9264,peter_keneally@health.qld.gov.au
+REDCLIFFE HOSPITAL (Public),Anzac Ave ,REDCLIFFE QLD ,4020,Dr Pat Naidoo ,07 3883 7777,07 3883 7903,PAT.NAIDOO@health.qld.gov.au
+CABOOLTURE HOSPITAL (Public),McKean St ,CABOOLTURE QLD ,4510,Dr Sylvia Andrew-Starkey ,07 5433 8680,07 5433 8725,sylvia_andrew-starkey@health.qld.gov.au
+IPSWICH GENERAL HOSPITAL (Public),PO Box 73 ,IPSWICH QLD ,4305,Dr Stephen Brierley,07 3810 1227,07 3812 3719,Stephen_Brierley@health.qld.gov.au
+ALLAMANDA PRIVATE HOSPITAL (Private),Queen St ,SOUTHPORT QLD ,4215,Dr David Spain,07 5591 9400,07 5591 9411,spaind@optusnet.com.au
+GOLD COAST HOSPITAL (Public),Nerang St ,SOUTHPORT QLD ,4215,Dr David Green,07 5571 8235,07 5571 8313,david_green@health.qld.gov.au
+JOHN FLYNN HOSPITAL (Private),Inland Drive ,TUGUN QLD ,4224,Dr Geoff Ramin,07 5598 9001,07 5598 9055, 
+PINDARA PRIVATE HOSPITAL (Private),Allchurch Ave ,BENOWA QLD ,4217,Dr Barry Rigby,07 5588 9000,07 5588 9465,criticare@bigpond.com
+CALOUNDRA HOSPITAL (Public),West Tce ,CALOUNDRA QLD ,4551,Dr Fabio Brecciaroli,07 5491 1888,07 5491 7540,brecciarolif@health.qld.gov.au
+NAMBOUR GENERAL HOSPITAL (Public),Hospital Rd ,NAMBOUR QLD ,4560,Dr Tony Harrington,07 5470 6670,07 5442 1301,harrington@health.qld.gov.au
+NOOSA PRIVATE HOSPITAL (Private),Goodchap St ,NOOSAVILLE QLD ,4566,Dr Peter Herron,07 5455 9200,07 5455 9416, 
+TOOWOOMBA BASE HOSPITAL (Public),Wilmot St ,TOOWOOMBA QLD ,4350,Contact:Dr Greg Comadira,07 4631 6300,07 4631 6302,comadirag@health.qld.gov.au
+***WARWICK HOSPITAL (Public),Locke St ,WARWICK QLD ,4370,Dr Blair Koppen,07 4661 6900,07 4661 6908,blair_koppen@health.qld.gov.au
+GYMPIE GENERAL HOSPITAL (Public),Henry St ,GYMPIE QLD ,4570,Dr Steve Costello,07 5482 1444,07 5482 7443,gymp_po.costells@health.qld.gov.au
+MARYBOROUGH BASE HOSPITAL (Public),Walker St ,MARYBOROUGH QLD ,4650,Dr Lawrence Lip,07 4123 8222,07 4123 4154, 
+BUNDABERG BASE HOSPITAL (Public),Bourbong St ,BUNDABERG QLD ,4670,Dr Kees Nydam,07 4152 1222,07 4150 2099,KEES_NYDAM@health.qld.gov.au
+GLADSTONE HOSPITAL (Public),PO Box 299,GLADSTONE QLD ,4680,Dr Paul De Jonge,07 4976 3200,07 4972 9586,Paul_deJong@health.qld.gov.au
+ROCKHAMPTON BASE HOSPITAL (Public),Canning St ,ROCKHAMPTON QLD ,4700,Dr Harvey Hunt ,07 4920 6211,07 4920 6770,hunth@health.qld.gov.au
+MACKAY BASE HOSPITAL (Public),Bridge Rd ,MACKAY QLD ,4740,Dr Bert Sadleir ,07 4968 6348,07 4968 6027,bert_sadleir@health.qld.gov.au
+TOWNSVILLE GENERAL HOSPITAL (Public),PO Box 670 ,TOWNSVILLE QLD ,4810,Dr Niall Small,07 4781 9211,07 4781 9122,niall_small@health.qld.gov.au
+MATER MISERICORDIAE HOSPITAL (Private),Fulham Rd ,TOWNSVILLE QLD ,4812,Dr John Elcock,07 4727 4111,07 4725 1034,matereu@medeserv.com.au
+CAIRNS BASE HOSPITAL (Public),The Esplanade,CAIRNS QLD ,4870,Dr Peter Periera,07 4050 6304,07 4050 6599,pereirap@health.qld.gov.au
+MOUNT ISA HOSPITAL (Public),Camooweal St ,MOUNT ISA QLD ,4825,Dr Nikki Blackwell ,07 4744 4427,07 4749 4511,nikki_blackwell@health.qld.gov.au

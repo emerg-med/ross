@@ -1,0 +1,236 @@
+<html>
+
+<head>
+<title>Apycom | Free Java Menu Applets | apPopupMenu Examples</title>
+<link REL=stylesheet HREF=exstyle.css TYPE=text/css>
+</head>
+
+<body bgcolor="#CCFF99"  leftmargin=4 topmargin=0 marginheight=0 marginwidth=0>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+<!-- main table --> 
+  <tr>
+    <td width="100%">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td width="50%">
+<a href=http://www.apycom.com><img src=logo.gif  border=0 alt="Apycom Software Home" width="160" height="45"></a>
+          </td>
+          <td width="50%" align="right"><span class=btitle>apPopupMenu Example #4&nbsp;&nbsp;</span></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+<!-- end header  -->   
+ <tr>
+ <td width="100%" align="center">
+        <table bgcolor="#60c020" border="0" cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td width="16%" align="center"><a class=ssmenu  href=http://www.apycom.com>Apycom Home</a></td>
+            <td width="16%" align="center"><a class=ssmenu  href=http://www.apycom.com/apmenu>Applets' Home</a></td>            
+            <td width="17%" align="center"><a class=ssmenu  href=http://www.apycom.com/apmenu/order.html>Order Applets</a></td>
+            <td width="17%" align="center"><a class=ssmenu  href=http://www.apycom.com/download.html>Download</a></td>
+            <td width="17%" align="center"><a class=ssmenu  href=http://www.apycom.com/apmenu/faq.html>FAQ</a></td>            
+            <td width="17%" align="center"><a class=ssmenu  href=http://www.apycom.com/contact.html>Contact</a></td>            
+          </tr>
+        </table>
+    </td>
+  </tr>
+<!-- end nav 1  -->   
+  <tr>
+    <td width="100%" align="center">
+        <table bgColor=#60c020 border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td width="100%">
+              <table border="0" cellpadding="0" cellspacing="1" width="100%">
+                <tr>
+                  <td width="40%" bgColor=#ffffff>
+ 
+
+       <table border="0" cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td width="30%" align="center"><a href="ex3.html" class=boldlink>Previous</a></td>
+            <td width="40%" align="center"><a href="../index.html" class=boldlink>Example Index</a></td>
+            <td width="30%" align="center"><a href="ex5.html" class=boldlink>Next</a></td>                  
+          </tr>
+        </table>                  
+
+
+                  </td>
+                  <td width="60%" bgColor=#CCFF99>                  
+        <table border="0" cellpadding="3" cellspacing="0" width="100%">
+          <tr>                  
+            <td width="25%" align="center"><a href="params.html" class=boldlink>Parameters</a></td>                  
+            <td width="25%" align="center"><a href="exframe.html" class=boldlink>Frame Example</a></td>            
+            <td width="25%" align="center"><a href="javascript.html" class=boldlink target=_blank>Javascript Tips</a></td>
+            <td width="25%" align="center"><a href="index.html" class=boldlink>Applet Index</a></td>
+          </tr>
+        </table>                  
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        
+    </td>
+  </tr>
+
+<tr><td><p>&nbsp;</p></td></tr>
+<!-- end nav 2  -->  
+  <tr>
+    <td bgColor=#ccff99>
+       <table border="0" cellspacing="2" cellpadding="10" width="600" align="center">
+          <tr>
+            <td width="100%" bgColor=#cceecc>
+<p align=left>
+<span class=blacktitle>apPopupMenu Example #4</span></p>
+
+<p align=left>
+<applet Code=apButtonMenu Archive=apButtonMenu.jar Width=245 Height=160 MAYSCRIPT>
+<param name="Copyright" value="Apycom Software - www.apycom.com">
+<param name="isHorizontal" value="false">
+<param name="3DBorder" value="true">
+<param name="buttonType" value="0"> 
+<param name="status" value="link">
+<param name="alignText" value="left"> 
+<param name="backColor" value="aaccaa">
+<param name="backHighColor" value="ff6600">
+<param name="fontColor" value="000000">
+<param name="fontHighColor" value="ffffff">
+<param name="font" value="Arial,11,0">
+<param name="menuItems" value="
+    {Apycom,testlink.html,_self,pix/new-41.gif}
+    {-}
+    {Click to call message box,javascript:1,_,pix/new-31.gif}
+    {Click to call confirmation dialog,javascript:2,_,pix/new-31.gif}
+    {Open 'Javascript Tips' in 680x600 window,javascript:3,_,pix/new-31.gif}
+    {Open 'Javascript Tips' in 300x200 window,javascript:4,_,pix/new-31.gif}
+    {Launch javascript function,javascript:5,_,pix/new-31.gif}
+    {-} 
+    {Contact,mailto:support@apycom.com,_self,pix/new-51.gif}
+">
+<param name="javascript:1" value="alert('Hello world!')">
+<param name="javascript:2" value="confirm('Do you want to confirm?')">
+<param name="javascript:3" value="open('javascript.html','_blank','scrollbars,width=680,height=600')">
+<param name="javascript:4" value="open('javascript.html','_blank','scrollbars,width=300,height=200')">
+<param name="javascript:5" value="my_js_function()">
+</applet></p>
+
+<script language="Javascript">
+function my_js_function()
+{
+  alert('Click to continue...');
+  if (confirm('Do you want to open two small windows?'))
+  {
+  open('javascript.html','_blank','width=150,height=150');
+  open('javascript.html','_blank','width=100,height=100');
+  }
+  else
+  {
+  alert('Canceled...');
+  }
+}
+</script>
+
+<p><span class=bmtext>This example demonstrates:</span></p>
+<span class=mtext>
+<ul>
+<li>Javascript calls. For more info see <a class=txtlink target=_blank href=javascript.html >"Javascript tips"</a>
+<li>Item icons - <img src=pix/new-41.gif border=0 width="20" height="19"><img src=pix/new-31.gif border=0 width="21" height="19"><img src=pix/new-51.gif border=0 width="19" height="19">
+<li>Applet's 3D border
+<li>Button type 0 ("no buttons")
+<li>Separators
+<li>Vertical menu direction
+<li>Text aligned to left
+
+</ul>
+</span>
+<p><span class=bmtext>HTML Source</span></p>
+
+<p>
+<span class=mtext>&lt;applet Code=apButtonMenu Archive=apButtonMenu.jar Width=245 
+Height=160 MAYSCRIPT&gt;<br>
+&lt;param name=&quot;Copyright&quot; value=&quot;Apycom Software - www.apycom.com&quot;&gt;<br>
+&lt;param name=&quot;isHorizontal&quot; value=&quot;false&quot;&gt;<br>
+&lt;param name=&quot;3DBorder&quot; value=&quot;true&quot;&gt;<br>
+&lt;param name=&quot;buttonType&quot; value=&quot;0&quot;&gt; <br>
+&lt;param name=&quot;status&quot; value=&quot;link&quot;&gt;<br>
+&lt;param name=&quot;alignText&quot; value=&quot;left&quot;&gt; <br>
+&lt;param name=&quot;backColor&quot; value=&quot;aaccaa&quot;&gt;<br>
+&lt;param name=&quot;backHighColor&quot; value=&quot;ff6600&quot;&gt;<br>
+&lt;param name=&quot;fontColor&quot; value=&quot;000000&quot;&gt;<br>
+&lt;param name=&quot;fontHighColor&quot; value=&quot;ffffff&quot;&gt;<br>
+&lt;param name=&quot;font&quot; value=&quot;Arial,11,0&quot;&gt;<br>
+&lt;param name=&quot;menuItems&quot; value=&quot;<br>
+&nbsp;&nbsp;&nbsp;&nbsp; {Apycom,testlink.html,_self,pix/new-41.gif}<br>
+&nbsp;&nbsp;&nbsp;&nbsp; {-}<br>
+&nbsp;&nbsp;&nbsp;&nbsp; {Click to call message 
+box,javascript:1,_,pix/new-31.gif}<br>
+&nbsp;&nbsp;&nbsp;&nbsp; {Click to call confirmation 
+dialog,javascript:2,_,pix/new-31.gif}<br>
+&nbsp;&nbsp;&nbsp;&nbsp; {Open 'Javascript Tips' in 680x600 
+window,javascript:3,_,pix/new-31.gif}<br>
+&nbsp;&nbsp;&nbsp;&nbsp; {Open 'Javascript Tips' in 300x200 
+window,javascript:4,_,pix/new-31.gif}<br>
+&nbsp;&nbsp;&nbsp;&nbsp; {Launch javascript 
+function,javascript:5,_,pix/new-31.gif}<br>
+&nbsp;&nbsp;&nbsp;&nbsp; {-} <br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+{Contact,mailto:support@apycom.com,_self,pix/new-51.gif}<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &quot;&gt;<br>
+&lt;param name=&quot;javascript:1&quot; value=&quot;alert('Hello world!')&quot;&gt;<br>
+&lt;param name=&quot;javascript:2&quot; value=&quot;confirm('Do you want to confirm?')&quot;&gt;<br>
+&lt;param name=&quot;javascript:3&quot; value=&quot;open('javascript.html','_blank','width=680,height=600')&quot;&gt;<br>
+&lt;param name=&quot;javascript:4&quot; value=&quot;open('javascript.html','_blank','width=300,height=200')&quot;&gt;<br>
+&lt;param name=&quot;javascript:5&quot; value=&quot;my_js_function()&quot;&gt;<br>
+&lt;/applet&gt;<br>
+</span>
+</p>
+
+          </tr>
+        </table>   
+    </td>
+  </tr>
+<!-- end example -->
+<tr><td><p>&nbsp;</p></td></tr>   
+  <tr>
+    <td >
+
+       <table bgColor=#60c020 border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td width="100%">
+              <table border="0" cellpadding="0" cellspacing="1" width="100%">
+                <tr>
+                  <td width="100%" bgColor=#ffffff>
+        <table border="0" cellpadding="3" cellspacing="0" width="55%" align="center">
+          <tr>
+            <td width="38%" align="center"><a href="ex3.html" class=boldlink>Previous Example</a></td>
+            <td width="33%" align="center"><a href="../index.html" class=boldlink>Example Index</a></td>
+            <td width="31%" align="center"><a href="ex5.html" class=boldlink>Next Example</a></td>                  
+          </tr>
+        </table>                  
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        
+    </td>
+  </tr>
+<!-- end nav3 --> 
+  <tr>
+    <td>  
+<br>      
+<p align="center">
+<span class=mtext>Copyright (c) 1998-2001, </span><span class=bmtext>Apycom Software</span> 
+</p>    
+    </td>
+  </tr>      
+<!-- main table -->     
+</table>
+
+</body>
+
+</html>
