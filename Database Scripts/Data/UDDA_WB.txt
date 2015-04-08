@@ -1,0 +1,621 @@
+010101	Adult - Common	URTI (viral)	URTI (viral)	urti viral  cold cough throat nose	J069
+010102	Adult - Common	Minor Head Injury	Minor Head Injury	minor head injury concussion	S00
+010103	Adult - Common	ACS	ACS	acs mi heart attack angina	I200
+010104	Adult - Common	Sprained ankle	Sprained ankle	sprained ankle twisted	S9340
+010105	Adult - Common	Fracture distal radius	Fracture distal radius	fracture distal radius colles smiths bartons	S525
+010106	Adult - Common	Fracture scaphoid	Fracture scaphoid	fracture scaphoid 	S620
+010107	Adult - Common	Soft tissue injury neck	Soft tissue injury neck	soft tissue injury neck 	S136
+010108	Adult - Common	Back pain (mechanical)	Back pain (mechanical)	back pain mechanical sciatica lumbago	M5459
+010109	Adult - Common	Asthma	Asthma	asthma wheeze	J459
+010110	Adult - Common	Exacerbation COPD	Exacerbation COPD	exacerbation copd chronic obstructive airways pulmonary disease	J449
+010111	Adult - Common	LRTI/ Pneumonia	LRTI/ Pneumonia	lrti pneumonia lower respiratory tract infection pneumonia	J22
+010112	Adult - Common	Urinary Tract Infection	Urinary Tract Infection	urinary tract infection uti cystitis	N390
+010113	Adult - Common	Costochondritis	Costochondritis	costochondritis 	M940
+010114	Adult - Common	Stroke	Stroke	stroke CVA bleed brain SAH subarachnoid	I64
+010115	Adult - Common	TIA	TIA	tia transient ischaemic attack	G459
+020101	Paed - Common	URTI (viral)	URTI (viral)	urti viral 	J069
+020102	Paed - Common	Minor Head Injury	Minor Head Injury	minor head injury concussion	S00
+020103	Paed - Common	Gastroenteritis - viral	Gastroenteritis - viral	gastroenteritis - viral diarrhoea vomiting	A09
+020104	Paed - Common	Croup	Croup	croup viral URTI wheeze asthma	J050
+020105	Paed - Common	Asthma	Asthma	asthma wheeze URTI	J459
+020106	Paed - Common	Otitis media	Otitis media	otitis media ear infection virus glue	H669
+020107	Paed - Common	Bronchiolitis	Bronchiolitis	bronchiolitis asthma wheeze	J219
+020108	Paed - Common	Sprained ankle	Sprained ankle	sprained ankle twisted	S9340
+020109	Paed - Common	Fracture distal radius	Fracture distal radius	fracture distal radius greenstick torus colles	S525
+020110	Paed - Common	Constipation	Constipation	constipation abdominal pain	K590
+020111	Paed - Common	UTI	UTI	uti urinary tract infection cystitis	N390
+020112	Paed - Common	LRTI	LRTI	lrti lower respiratory tract infection pneumonia	J22
+020113	Paed - Common	Chicken pox	Chicken pox	chicken pox 	B019
+020114	Paed - Common	Tonsillitis - bacterial	Tonsillitis - bacterial	tonsillitis - bacterial 	J03.9
+020115	Paed - Common	Allergic reaction	Allergic reaction	allergic reaction 	T784
+030101	Soft Tiss Inj/ wounds	Sprain/ ligament injury	Cervical spine 	whiplash sprain ligament neck spine cervical	S136
+030102	Soft Tiss Inj/ wounds	Sprain/ ligament injury	Shoulder joint	clavicle sprain ligament shoulder joint	S437
+030103	Soft Tiss Inj/ wounds	Sprain/ ligament injury	Elbow joint	sprain ligament injury elbow joint	S5340
+030104	Soft Tiss Inj/ wounds	Sprain/ ligament injury	Wrist joint	sprain ligament injury wrist joint	S6350
+030105	Soft Tiss Inj/ wounds	Sprain/ ligament injury	Hand	sprain ligament injury hand	S637
+030106	Soft Tiss Inj/ wounds	Sprain/ ligament injury	Finger/ thumb	sprain ligament injury finger thumb	S636
+030107	Soft Tiss Inj/ wounds	Sprain/ ligament injury	Thoracic spine	sprain ligament injury thoracic spine	S233
+030108	Soft Tiss Inj/ wounds	Sprain/ ligament injury	Lumbar spine	sprain ligament injury lumbar spine	S335
+030109	Soft Tiss Inj/ wounds	Sprain/ ligament injury	Hip joint	sprain ligament injury hip joint	S337
+030110	Soft Tiss Inj/ wounds	Sprain/ ligament injury	Knee joint	sprain ligament injury knee joint	S83
+030111	Soft Tiss Inj/ wounds	Sprain/ ligament injury	Ankle joint	sprain ligament injury ankle joint	S934
+030112	Soft Tiss Inj/ wounds	Sprain/ ligament injury	Foot/ toe	sprain ligament injury foot toe	S935
+030201	Soft Tiss Inj/ wounds	Bruise/ contusion/ abrasion	Head	bruise contusion abrasion head	S00
+030202	Soft Tiss Inj/ wounds	Bruise/ contusion/ abrasion	Face	bruise contusion abrasion face	S008
+030203	Soft Tiss Inj/ wounds	Bruise/ contusion/ abrasion	Neck 	whiplash bruise contusion neck throat	S1090
+030204	Soft Tiss Inj/ wounds	Bruise/ contusion/ abrasion	Thorax	bruise contusion abrasion thorax	S20
+030205	Soft Tiss Inj/ wounds	Bruise/ contusion/ abrasion	Abdomen	bruise contusion abrasion abdomen	S301
+030206	Soft Tiss Inj/ wounds	Bruise/ contusion/ abrasion	Perineum	bruise contusion abrasion perineum	S302
+030207	Soft Tiss Inj/ wounds	Bruise/ contusion/ abrasion	Shoulder	bruise contusion abrasion shoulder	S400
+030208	Soft Tiss Inj/ wounds	Bruise/ contusion/ abrasion	Upper arm	bruise contusion abrasion upper arm	S400
+030209	Soft Tiss Inj/ wounds	Bruise/ contusion/ abrasion	Forearm	bruise contusion abrasion forearm	S50
+030210	Soft Tiss Inj/ wounds	Bruise/ contusion/ abrasion	Hand/ wrist	bruise contusion abrasion hand wrist	S602
+030211	Soft Tiss Inj/ wounds	Bruise/ contusion/ abrasion	Finger/ thumb	bruise contusion abrasion finger thumb	S600
+030212	Soft Tiss Inj/ wounds	Bruise/ contusion/ abrasion	Thigh	bruise contusion abrasion thigh	S701
+030213	Soft Tiss Inj/ wounds	Bruise/ contusion/ abrasion	Lower Leg	bruise contusion abrasion lower leg	S80
+030215	Soft Tiss Inj/ wounds	Bruise/ contusion/ abrasion	Foot/ ankle	bruise contusion abrasion foot ankle	S90
+030301	Soft Tiss Inj/ wounds	Muscle injury	Neck 	whiplash muscle neck injury cervical	S16
+030302	Soft Tiss Inj/ wounds	Muscle injury	Shoulder	muscle injury shoulder	S46
+030303	Soft Tiss Inj/ wounds	Muscle injury	Upper arm	muscle injury upper arm	S46
+030304	Soft Tiss Inj/ wounds	Muscle injury	Forearm	muscle injury forearm	S56
+030305	Soft Tiss Inj/ wounds	Muscle injury	Hand	muscle injury hand	S66
+030306	Soft Tiss Inj/ wounds	Muscle injury	Thigh	muscle injury thigh	S76
+030307	Soft Tiss Inj/ wounds	Muscle injury	Lower Leg	muscle injury lower leg	S86
+030308	Soft Tiss Inj/ wounds	Muscle injury	Foot	muscle injury foot	S96
+030401	Soft Tiss Inj/ wounds	Tendon injury	Shoulder joint	tendon injury shoulder joint	S46
+030402	Soft Tiss Inj/ wounds	Tendon injury	Elbow joint	tendon injury elbow joint	S56
+030403	Soft Tiss Inj/ wounds	Tendon injury	Wrist joint	tendon injury wrist joint	S66
+030404	Soft Tiss Inj/ wounds	Tendon injury	Hand	tendon injury hand	S66
+030405	Soft Tiss Inj/ wounds	Tendon injury	Finger/ thumb	tendon injury finger thumb	S66
+030406	Soft Tiss Inj/ wounds	Tendon injury	Patellar tendon	tendon injury patellar tendon	S761
+030407	Soft Tiss Inj/ wounds	Tendon injury	Achilles tendon	tendon injury achilles tendon	S860
+030408	Soft Tiss Inj/ wounds	Tendon injury	Foot/ toe	tendon injury foot toe	S96
+030501	Soft Tiss Inj/ wounds	Crush/ degloving injury	Head	crush degloving injury head	S079
+030502	Soft Tiss Inj/ wounds	Crush/ degloving injury	Face	crush degloving injury face	S070
+030503	Soft Tiss Inj/ wounds	Crush/ degloving injury	Neck 	crush degloving injury neck 	S179
+030504	Soft Tiss Inj/ wounds	Crush/ degloving injury	Thorax	crush degloving injury thorax	S280
+030505	Soft Tiss Inj/ wounds	Crush/ degloving injury	Abdomen	crush degloving injury abdomen	S38
+030506	Soft Tiss Inj/ wounds	Crush/ degloving injury	Perineum	crush degloving injury perineum	S38
+030507	Soft Tiss Inj/ wounds	Crush/ degloving injury	Shoulder	crush degloving injury shoulder	S47
+030508	Soft Tiss Inj/ wounds	Crush/ degloving injury	Upper arm	crush degloving injury upper arm	S47
+030509	Soft Tiss Inj/ wounds	Crush/ degloving injury	Forearm	crush degloving injury forearm	S57
+030510	Soft Tiss Inj/ wounds	Crush/ degloving injury	Hand	crush degloving injury hand	S67
+030511	Soft Tiss Inj/ wounds	Crush/ degloving injury	Finger/ thumb	crush degloving injury finger thumb	S670
+030512	Soft Tiss Inj/ wounds	Crush/ degloving injury	Thigh	crush degloving injury thigh	S771
+030513	Soft Tiss Inj/ wounds	Crush/ degloving injury	Lower Leg	crush degloving injury lower leg	S87
+030514	Soft Tiss Inj/ wounds	Crush/ degloving injury	Ankle	crush degloving injury ankle	S970
+030515	Soft Tiss Inj/ wounds	Crush/ degloving injury	Foot/ toe	crush degloving injury foot toe	S978
+030601	Soft Tiss Inj/ wounds	Complication of soft tissue injury	Neurological	complication of soft tissue injury neurological	S246
+030602	Soft Tiss Inj/ wounds	Complication of soft tissue injury	Vascular	complication of soft tissue injury vascular	T145
+030603	Soft Tiss Inj/ wounds	Complication of soft tissue injury	Rhabdomyolysis	complication of soft tissue injury rhabdomyolysis	T796
+030701	Soft Tiss Inj/ wounds	Wound: lac/ incised/ bite	Head	wound: lac incised bite head laceration	S019
+030702	Soft Tiss Inj/ wounds	Wound: lac/ incised/ bite	Face	wound: lac incised bite face laceration	S0180
+030703	Soft Tiss Inj/ wounds	Wound: lac/ incised/ bite	Neck 	wound: lac incised bite neck laceration	S119
+030704	Soft Tiss Inj/ wounds	Wound: lac/ incised/ bite	Thorax	wound: lac incised bite thorax laceration	S219
+030705	Soft Tiss Inj/ wounds	Wound: lac/ incised/ bite	Abdomen	wound: lac incised bite abdomen laceration	S31
+030706	Soft Tiss Inj/ wounds	Wound: lac/ incised/ bite	Perineum	wound: lac incised bite perineum laceration	S311
+030707	Soft Tiss Inj/ wounds	Wound: lac/ incised/ bite	Shoulder	wound: lac incised bite shoulder laceration	S410
+030708	Soft Tiss Inj/ wounds	Wound: lac/ incised/ bite	Upper arm	wound: lac incised bite upper arm laceration	S411
+030709	Soft Tiss Inj/ wounds	Wound: lac/ incised/ bite	Forearm	wound: lac incised bite forearm laceration	S519
+030710	Soft Tiss Inj/ wounds	Wound: lac/ incised/ bite	Hand	wound: lac incised bite hand laceration	S619
+030711	Soft Tiss Inj/ wounds	Wound: lac/ incised/ bite	Finger/ thumb	wound: lac incised bite finger thumb laceration	S611
+030712	Soft Tiss Inj/ wounds	Wound: lac/ incised/ bite	Thigh	wound: lac incised bite thigh laceration	S711
+030713	Soft Tiss Inj/ wounds	Wound: lac/ incised/ bite	Lower Leg	wound: lac incised bite lower leg laceration	S819
+030715	Soft Tiss Inj/ wounds	Wound: lac/ incised/ bite	Foot/ toe	wound: lac incised bite foot toe laceration	S913
+030801	Soft Tiss Inj/ wounds	Burn	Head	burn head	T200
+030802	Soft Tiss Inj/ wounds	Burn	Eye	burn eye	T26
+030803	Soft Tiss Inj/ wounds	Burn	Face	burn face	T200
+030804	Soft Tiss Inj/ wounds	Burn	Airway	burn airway	T27
+030805	Soft Tiss Inj/ wounds	Burn	Neck 	burn neck 	T200
+030806	Soft Tiss Inj/ wounds	Burn	Thorax	burn thorax	T2102
+030807	Soft Tiss Inj/ wounds	Burn	Abdomen	burn abdomen	T2103
+030808	Soft Tiss Inj/ wounds	Burn	Perineum	burn perineum	T210
+030809	Soft Tiss Inj/ wounds	Burn	Shoulder	burn shoulder	T220
+030810	Soft Tiss Inj/ wounds	Burn	Upper arm	burn upper arm	T220
+030811	Soft Tiss Inj/ wounds	Burn	Forearm	burn forearm	T220
+030812	Soft Tiss Inj/ wounds	Burn	Hand	burn hand	T230
+030813	Soft Tiss Inj/ wounds	Burn	Finger/ thumb	burn finger thumb	T230
+030814	Soft Tiss Inj/ wounds	Burn	Thigh	burn thigh	T240
+030815	Soft Tiss Inj/ wounds	Burn	Lower Leg	burn lower leg	T240
+030817	Soft Tiss Inj/ wounds	Burn	Foot	burn foot	T250
+030818	Soft Tiss Inj/ wounds	Burn	Toe	burn toe	T250
+030901	Soft Tiss Inj/ wounds	Complication of wound/ burn	Neurological	complication of wound burn neurological	T95
+030902	Soft Tiss Inj/ wounds	Complication of wound/ burn	Vascular	complication of wound burn vascular	T95
+030903	Soft Tiss Inj/ wounds	Complication of wound/ burn	Infection	complication of wound burn infection	T95
+030904	Soft Tiss Inj/ wounds	Complication of wound/ burn	Rhabdomyolysis	complication of wound burn rhabdomyolysis	T95
+030905	Soft Tiss Inj/ wounds	Complication of wound/ burn	Foreign body	complication of wound burn foreign body	T95
+040101	Fractures/ dislocations	Closed fracture	Skull	closed fracture skull	S029
+040102	Fractures/ dislocations	Closed fracture	Facial bones/ mandible	closed fracture facial bones mandible	S030
+040103	Fractures/ dislocations	Closed fracture	Cervical spine 	closed fracture cervical spine 	S129
+040104	Fractures/ dislocations	Closed fracture	Shoulder/ clavicle	closed fracture shoulder clavicle	S429
+040105	Fractures/ dislocations	Closed fracture	Humerus	closed fracture humerus	S423
+040106	Fractures/ dislocations	Closed fracture	Elbow joint	closed fracture elbow joint	S5200
+040107	Fractures/ dislocations	Closed fracture	Radius/ ulna	closed fracture radius ulna	S529
+040108	Fractures/ dislocations	Closed fracture	Carpal bones	closed fracture carpal bones	S628
+040109	Fractures/ dislocations	Closed fracture	Hand	closed fracture hand	S628
+040110	Fractures/ dislocations	Closed fracture	Finger/ thumb	closed fracture finger thumb	S626
+040111	Fractures/ dislocations	Closed fracture	Thoracic spine	closed fracture thoracic spine	S220
+040112	Fractures/ dislocations	Closed fracture	Rib/ sternum	closed fracture rib sternum	S229
+040113	Fractures/ dislocations	Closed fracture	Lumbar spine	closed fracture lumbar spine	S3200
+040114	Fractures/ dislocations	Closed fracture	Pelvis	closed fracture pelvis	S3283
+040115	Fractures/ dislocations	Closed fracture	Neck of femur	closed fracture neck of femur	S7208
+040116	Fractures/ dislocations	Closed fracture	Femur	closed fracture femur	S729
+040117	Fractures/ dislocations	Closed fracture	Tibia/ fibula	closed fracture tibia fibula	S829
+040118	Fractures/ dislocations	Closed fracture	Ankle	closed fracture ankle	S8288
+040119	Fractures/ dislocations	Closed fracture	Foot/ toe	closed fracture foot toe	S929
+040201	Fractures/ dislocations	Open fracture	Skull	open fracture skull	S0291
+040202	Fractures/ dislocations	Open fracture	Facial bones/ mandible	open fracture facial bones mandible	S0291
+040203	Fractures/ dislocations	Open fracture	Cervical spine 	open fracture cervical spine 	S1291
+040204	Fractures/ dislocations	Open fracture	Shoulder/ clavicle	open fracture shoulder clavicle	S4291
+040205	Fractures/ dislocations	Open fracture	Humerus	open fracture humerus	S4231
+040206	Fractures/ dislocations	Open fracture	Elbow joint	open fracture elbow joint	S5201
+040207	Fractures/ dislocations	Open fracture	Radius/ ulna	open fracture radius ulna	S5291
+040208	Fractures/ dislocations	Open fracture	Calrpal bones	open fracture calrpal bones	S6211
+040209	Fractures/ dislocations	Open fracture	Hand	open fracture hand	S6281
+040210	Fractures/ dislocations	Open fracture	Finger/ thumb	open fracture finger thumb	S6261
+040211	Fractures/ dislocations	Open fracture	Thoracic spine	open fracture thoracic spine	S2201
+040212	Fractures/ dislocations	Open fracture	Rib/ sternum	open fracture rib sternum	S2291
+040213	Fractures/ dislocations	Open fracture	Lumbar spine	open fracture lumbar spine	S3201
+040214	Fractures/ dislocations	Open fracture	Pelvis	open fracture pelvis	S3281
+040215	Fractures/ dislocations	Open fracture	Femur	open fracture femur	S7291
+040216	Fractures/ dislocations	Open fracture	Tibia/ fibula	open fracture tibia fibula	S8291
+040217	Fractures/ dislocations	Open fracture	Ankle	open fracture ankle	S8281
+040218	Fractures/ dislocations	Open fracture	Foot/ toe	open fracture foot toe	S9291
+040301	Fractures/ dislocations	Dislocation	Cervical spine 	dislocation cervical spine 	S131
+040302	Fractures/ dislocations	Dislocation	Thoracic spine	dislocation thoracic spine	S231
+040303	Fractures/ dislocations	Dislocation	Lumbar spine	dislocation lumbar spine	S331
+040304	Fractures/ dislocations	Dislocation	Shoulder joint	dislocation shoulder joint	T112
+040305	Fractures/ dislocations	Dislocation	Elbow joint	dislocation elbow joint	S5310
+040306	Fractures/ dislocations	Dislocation	Wrist/ hand	dislocation wrist hand	S6300
+040307	Fractures/ dislocations	Dislocation	Finger/ thumb	dislocation finger thumb	S631
+040308	Fractures/ dislocations	Dislocation	Hip (prosthetic joint)	dislocation hip prosthetic joint	S730
+040309	Fractures/ dislocations	Dislocation	Hip (natural joint)	dislocation hip natural joint	S730
+040310	Fractures/ dislocations	Dislocation	Knee joint	dislocation knee joint	S8310
+040311	Fractures/ dislocations	Dislocation	Ankle joint	dislocation ankle joint	S930
+040312	Fractures/ dislocations	Dislocation	Foot (Lisfranc)	dislocation foot lisfranc	S9330
+040313	Fractures/ dislocations	Dislocation	Toe	dislocation toe	S931
+040501	Fractures/ dislocations	Complication of fracture/ dislocation	Neurological	complication of fracture dislocation neurological	S246
+040502	Fractures/ dislocations	Complication of fracture/ dislocation	Vascular	complication of fracture dislocation vascular	T145
+040503	Fractures/ dislocations	Complication of fracture/ dislocation	Tendon injury	complication of fracture dislocation tendon injury	T146
+040504	Fractures/ dislocations	Complication of fracture/ dislocation	Pathological fracture	complication of fracture dislocation pathological fracture	M8449
+050101	Trauma/ FB	Head injury	Major head injury (GCS<13)	head injury major head injury gcs<13	S069
+050102	Trauma/ FB	Head injury	Minor head injury (GCS>12)	head injury minor head injury gcs>12	S069
+050103	Trauma/ FB	Head injury	Penetrating eye injury	head injury penetrating eye injury	S054
+050201	Trauma/ FB	Neck injury	Airway injury	neck injury airway injury	S199
+050202	Trauma/ FB	Neck injury	Vascular injury	neck injury vascular injury	S159
+050204	Trauma/ FB	Neck injury	Neurological injury	neck injury neurological injury	S146
+050301	Trauma/ FB	Thoracic injury	Traumatic pneumothorax	thoracic injury traumatic pneumothorax	S270
+050302	Trauma/ FB	Thoracic injury	Haemopneumothorax	thoracic injury haemopneumothorax	S272
+050303	Trauma/ FB	Thoracic injury	Massive haemothorax	thoracic injury massive haemothorax	S271
+050304	Trauma/ FB	Thoracic injury	Flail chest	thoracic injury flail chest	S280
+050305	Trauma/ FB	Thoracic injury	Open chest wound	thoracic injury open chest wound	S219
+050306	Trauma/ FB	Thoracic injury	Internal injury	thoracic injury internal injury	S279
+050401	Trauma/ FB	Abdominal injury	Internal injury	abdominal injury internal injury	S369
+050501	Trauma/ FB	Amputation/ partial amputation	Ear	amputation partial amputation ear	S081
+050502	Trauma/ FB	Amputation/ partial amputation	Nose	amputation partial amputation nose	S088
+050503	Trauma/ FB	Amputation/ partial amputation	Tongue	amputation partial amputation tongue	S088
+050504	Trauma/ FB	Amputation/ partial amputation	Upper arm/ shoulder	amputation partial amputation upper arm shoulder	S481
+050505	Trauma/ FB	Amputation/ partial amputation	Forearm	amputation partial amputation forearm	S589
+050506	Trauma/ FB	Amputation/ partial amputation	Finger	amputation partial amputation finger	S689
+050507	Trauma/ FB	Amputation/ partial amputation	Genital	amputation partial amputation genital	S382
+050508	Trauma/ FB	Amputation/ partial amputation	Femur	amputation partial amputation femur	S781
+050509	Trauma/ FB	Amputation/ partial amputation	Tibia/ fibula	amputation partial amputation tibia fibula	S881
+050510	Trauma/ FB	Amputation/ partial amputation	Foot	amputation partial amputation foot	S980
+050511	Trauma/ FB	Amputation/ partial amputation	Toe	amputation partial amputation toe	S981
+050601	Trauma/ FB	Foreign Body	Foreign body in soft tissue	open wound fb	T141
+050602	Trauma/ FB	Foreign Body	Foreign body: aliment tract	foreign body digestive tract swallowed gi tract fb	T189
+050603	Trauma/ FB	Foreign Body	Foreign body: ear canal	foreign body ear	T16
+050604	Trauma/ FB	Foreign Body	Foreign body: external eye	foreign body eye fb	T159
+050605	Trauma/ FB	Foreign Body	Foreign body: genitourinary tract	foreign body urinary genito-urinary fb	T199
+050606	Trauma/ FB	Foreign Body	Foreign body: nose	nose foreign body nasal fb	T171
+050607	Trauma/ FB	Foreign Body	Foreign body: respiratory tract	respiratory foreign body inhaled lung bronchus trachea fb	T179
+050608	Trauma/ FB	Foreign Body	Foreign body: vulva & vagina	foreign body female genitalia vagina vulva fb	T192
+060101	Surgical	General Surgery	Constipation	constipation	K590
+060102	Surgical	General Surgery	Appendicitis	appendicitis	K359
+060102	Surgical	General Surgery	Irritable colon / Irritable Bowel Syndrome	irritable bowel	K589
+060103	Surgical	General Surgery	Anal fissure	anal fissure	K602
+060104	Surgical	General Surgery	"Abscess, perianal or anal"	perianal abscess	K610
+060105	Surgical	General Surgery	Rectal prolapse	rectal prolapse	K623
+060106	Surgical	General Surgery	PR Bleeding	haemorrhage anus rectum	K625
+060106	Surgical	General Surgery	Bowel obstruction	bowel obstruction ileus	K566
+060107	Surgical	General Surgery	Haemorrhoids	haemorrhoids	I849
+060107	Surgical	General Surgery	Gallstones with cholecystitis	gallstones with cholecystitis	K801
+060107	Surgical	General Surgery	Biliary colic	biliary colic	K805
+060107	Surgical	General Surgery	Ischaemic bowel	ischaemic bowel	K550
+060108	Surgical	General Surgery	Perforated/ ruptured viscus	perforation intestine	R198
+060108	Surgical	General Surgery	Mesenteric lymphadenitis	mesenteric lymphadenitis	I880
+060110	Surgical	General Surgery	Cholecystitis	cholecystitis	K819
+060110	Surgical	General Surgery	Acute pancreatitis	pancreatitis	K85
+060111	Surgical	General Surgery	Breast lump	breast lump	N63
+060112	Surgical	General Surgery	Surgical procedure complication	surgery complication	T819
+060113	Surgical	General Surgery	Attention to or removal of surgical dressings and sutures	attention to or removal of surgical dressings and sutures	Z480
+060114	Surgical	General Surgery	Inguinal hernia	groin 	K409
+060115	Surgical	General Surgery	Umbilical hernia	umbilical hernia	K429
+060116	Surgical	General Surgery	Incisional hernia	incisional hernia	K439
+060117	Surgical	General Surgery	Volvulus	volvulus	K562
+060119	Surgical	General Surgery	Diverticulosis	"diverticulum, diverticulitis"	K579
+060120	Surgical	General Surgery	Peritonitis	peritonitis	K659
+060125	Surgical	General Surgery	Peg tube fallen out	gastrostomy stoma	K918
+060128	Surgical	General Surgery	"Pilonidal cyst, fistula or sinus"	pilonidal cyst	L050
+060129	Surgical	General Surgery	Colostomy Problem	stoma	Z433
+060133	Surgical	General Surgery	Neck swelling / mass / lump	neck mass lump	R221
+060133	Surgical	General Surgery	Skin lump	skin lump	R229
+060133	Surgical	General Surgery	Other skin or subcutaneous tissue disorder	skin subcutaneous tissue	L989
+060201	Surgical	Orthopaedics	Lower back pain	sciatica	M5459
+060202	Surgical	Orthopaedics	Sciatica	back pain	M5439
+060203	Surgical	Orthopaedics	Tendonitis	tendon	M7799
+060204	Surgical	Orthopaedics	Osteoporosis	osteoporosis	M8199
+060205	Surgical	Orthopaedics	Septic Arthritis	septic arthritis suppurative arthritis infective	M0099
+060206	Surgical	Orthopaedics	Tenosynovitis / Synovitis	tenosynovitis tendon	M6599
+060207	Surgical	Orthopaedics	"Tendon rupture, non-traumatic"	tendon rupture	M6659
+060208	Surgical	Orthopaedics	Bursitis	bursitis bursa tendon	M7199
+060209	Surgical	Orthopaedics	Rotator cuff syndrome	rotator cuff supraspinatus tendon shoulder	M751
+060210	Surgical	Orthopaedics	Osteomyelitis	osteomyelitis	M8699
+060211	Surgical	Orthopaedics	Change of plaster/plaster check	change of plasterplaster check	Z478
+060212	Surgical	Orthopaedics	Other bone/joint disorder (see free text)	bone musculoskeletal	M8999
+060301	Surgical	Urology	Urinary tract calculus	ureteric stone calculus kidney renal colic	N209
+060302	Surgical	Urology	Haematuria	haematuria blood urine	R31
+060303	Surgical	Urology	Urinary Retention	urine retention 	R33
+060304	Surgical	Urology	Prostatic enlargement	prostate bph prostate enlargement	N40
+060305	Surgical	Urology	Prostatitis	prostatitis	N419
+060306	Surgical	Urology	Hydrocele	hydrocele	N433
+060307	Surgical	Urology	Testicular torsion	torsion testicle	N44
+060308	Surgical	Urology	Epididymitis / Orchitis / Epidymo-orchitis	epididymitis  orchitis  epidymo-orchitis	N459
+060309	Surgical	Urology	Scrotal swelling	scotum swelling	N508
+060310	Surgical	Urology	Paraphimosis / Adherent prepuce / Tight foreskin / Phimosis	paraphimosis	N47
+060311	Surgical	Urology	Balanitis / Balanoposthitis	balanitis	N481
+060312	Surgical	Urology	"Indwelling urinary catheter device, complication (blocked/leaking)"	complication catheter urinary	T830
+060313	Surgical	Urology	Other urinary system disorder (see free text)	other urinary system disorder see free text	N399
+060401	Surgical	Vascular	Thoracic aneurysm with rupture	thoracic aneurysm with rupture	I711
+060402	Surgical	Vascular	Thoracic aneurysm without rupture	thoracic aneurysm without rupture	I712
+060403	Surgical	Vascular	Abdominal aneurysm with rupture	abdominal aneurysm with rupture	I713
+060404	Surgical	Vascular	Abdominal aneurysm without rupture	abdominal aneurysm without rupture	I714
+060405	Surgical	Vascular	"Aneurysm, other specified artery"	"aneurysm, other specified artery"	I728
+060406	Surgical	Vascular	Peripheral vascular disease	peripheral vascular disease	I739
+060407	Surgical	Vascular	Arterial embolism / thrombosis	arterial embolism  thrombosis	I749
+060408	Surgical	Vascular	Deep Vein / Venous thrombosis	deep vein  venous thrombosis	I802
+060409	Surgical	Vascular	Thrombo/phlebitis of leg	thrombophlebitis of leg	I803
+060410	Surgical	Vascular	Varicose veins	varicose veins	I839
+060501	Surgical	ENT	Viral pharyngitis/ URTI	viral pharyngitis urti	J069
+060502	Surgical	ENT	Otitis media / Ear infection	otitis media	H669
+060503	Surgical	ENT	Epistaxis	epistaxis	R040
+060504	Surgical	ENT	Wax in Ear	ear wax cerumen	H612
+060505	Surgical	ENT	Quinsy / Peritonsillar abscess	quinsy  peritonsillar abscess	J26
+060506	Surgical	ENT	Labyrinthitis	labyrinthitis	H830
+060507	Surgical	ENT	Vestibular neuronitis	vestibular neuronitis	H812
+060508	Surgical	ENT	Benign paroxysmal vertigo	vertigo bpv	H811
+060509	Surgical	ENT	Ménière's disease	menieres vertigo	H810
+060510	Surgical	ENT	Chronic otitis media	otitis media	H668
+060511	Surgical	ENT	Otitis externa	otitis externa ear infection	H609
+060512	Surgical	ENT	Tonsillitis	tonsillitis	J03.9
+060513	Surgical	ENT	Sinusitis	sinusitis	J329
+060514	Surgical	ENT	Mastoiditis	mastoiditis	H709
+060515	Surgical	ENT	Traumatic rupture of ear drum	traumatic rupture of ear drum	S09.2
+060516	Surgical	ENT	Acute Otitis Media with tympanum rupture	tympanic perforation	H729
+060517	Surgical	ENT	Attention to tracheostomy	attention to tracheostomy	Z430
+060518	Surgical	ENT	Other disorder of ear (see free text)	ear disorder of ear	H938
+060601	Surgical	Eye	"Abscess, eyelid / Furuncle / Hordeolum / Cellulitis, eyelid / Stye"	stye hordeolum eyelid	H000
+060602	Surgical	Eye	Blocked nasolacrimal duct	lacrimal	H045
+060603	Surgical	Eye	"Inflammation of orbit / orbital cellulitis, acute"	orbital cellulitis	H050
+060604	Surgical	Eye	Conjunctivitis	conjunctivitis	H109
+060605	Surgical	Eye	Pterygium	pterygium conjunctiva	H110
+060606	Surgical	Eye	Conjunctival haemorrhage	haemorrhage conjunctiva	H113
+060607	Surgical	Eye	"Corneal ulcer, non-traumatic"	corneal ulcer	H160
+060608	Surgical	Eye	Keratitis	keratitis	H169
+060609	Surgical	Eye	"Iritis / Iridocyclitis, unspecified"	iritis	H209
+060610	Surgical	Eye	Hyphaema	hyphema	H210
+060611	Surgical	Eye	Cataract	cataract	H269
+060612	Surgical	Eye	"Retinal detachment, with/without defect, tear"	retinal detachment	H332
+060613	Surgical	Eye	"Glaucoma, unspecified"	glaucoma	H409
+060614	Surgical	Eye	Oculogyric crisis	oculogyric	H518
+060701	Surgical	Maxillo facial	Dental abscess	dental abscess toothache	K047
+060702	Surgical	Maxillo facial	Dental caries	dental caries toothache	K029
+060703	Surgical	Maxillo facial	Gingivitis / Gingivostomatitis	gingivitis	K051
+060704	Surgical	Maxillo facial	Temporomandibular joint disorder	tmj temporomandibular joint	K076
+070101	Medical	Cardiac	Acute coronary syndrome (ACS)	angina	I200
+070102	Medical	Cardiac	Myocardial infarction (NSTEMI)	mi myocardial infarction	I219
+070103	Medical	Cardiac	Myocardial infarction (STEMI)	mi myocardial infarction	I219
+070104	Medical	Cardiac	Cardiac arrest	cardiac arrest	I469
+070105	Medical	Cardiac	Angina - stable	angina	I209
+070106	Medical	Cardiac	Atrial fibrillation & flutter	af fibrillation flutter	I48
+070107	Medical	Cardiac	Supraventricular tachycardia	svt supraventricular tachycardia	I471
+070108	Medical	Cardiac	Conduction disorder / Heart block	heart block conduction	I459
+070109	Medical	Cardiac	Congestive cardiac failure	ccf heart failure cardiac failure	I500
+070110	Medical	Cardiac	Acute pulmonary oedema	pulmonary oedema edema	J81
+070111	Medical	Cardiac	Pericarditis	pericarditis	I319
+070112	Medical	Cardiac	Vasovagal syncope	collapse vasovagal faint syncope	R55
+070113	Medical	Cardiac	Micturition syncope	collapse vasovagal faint syncope	R55
+070114	Medical	Cardiac	Postural hypotension	postural hypotension	I95.1
+070115	Medical	Cardiac	Ventricular tachycardia	ventricular tachycardia	I472
+070116	Medical	Cardiac	Sick sinus syndrome	sick sinus syndrome node dysfunction	I495
+070117	Medical	Cardiac	Cardiogenic shock	cardiogenic shock	R570
+070118	Medical	Cardiac	Hypertension	hypertension high blood pressure	I10
+070119	Medical	Cardiac	Angina - unstable	angina	I200
+070120	Medical	Cardiac	Pericardial effusion	pericardial effusion pericarditis	I313
+070121	Medical	Cardiac	"Mechanical complication of cardiac electronic device (inc PPM, ICD) e.g. broken wire"	complication electronic pacemaker implantable device cardiac	T821
+070122	Medical	Cardiac	"Non-mechanical complication of cardiac electronic device (inc. PPM, ICD) e.g. malfunction"	complication pacemaker electronic device	T829
+070123	Medical	Cardiac	Myocarditis	myocarditis	I409
+070124	Medical	Cardiac	Cardiomyopathy	cardiomyopathy	I429
+070125	Medical	Cardiac	Arrhythmia - other	arrhythmia	I499
+070201	Medical	Gastroenterology	Gastro-oesophageal reflux	gastroesophageal reflux gord	K219
+070202	Medical	Gastroenterology	Oesophageal varices with bleeding	oesophageal varices with bleeding	I850
+070203	Medical	Gastroenterology	Oesophageal spasm 	oesophagus spasm	K224
+070204	Medical	Gastroenterology	Oesophageal stricture	oesophagus stricture	K222
+070205	Medical	Gastroenterology	Oesophageal perforation	oesophagus perforation	K223
+070206	Medical	Gastroenterology	"Peptic ulcer, acute, with haemorrhage"	peptic ulcer haemorrhage	K270
+070207	Medical	Gastroenterology	"Peptic ulcer, acute, with perforation"	peptic ulcer perforation	K271
+070208	Medical	Gastroenterology	Alcoholic gastritis	gastritis	K292
+070209	Medical	Gastroenterology	Gastritis	gastritis	K297
+070210	Medical	Gastroenterology	Gastro-oesophageal reflux	indigestion	K30
+070211	Medical	Gastroenterology	Melaena/ GI bleed	melaena gi bleed	K921
+070212	Medical	Gastroenterology	Haematemesis	haematemesis	K920
+070213	Medical	Gastroenterology	"Feeding tube, blockage / gastrostomy complication"	gastrostomy peg malfunction	T855
+070214	Medical	Gastroenterology	Hepatitis	hepatitis	K720
+070215	Medical	Gastroenterology	Hepatic failure or coma	liver failure hepatic failure	K729
+070216	Medical	Gastroenterology	Chronic liver disease	chronic liver disease	K769
+070217	Medical	Gastroenterology	Crohn's disease	crohn's disease	K509
+070218	Medical	Gastroenterology	Ulcerative colitis	uc ulcerative colitis	K519
+070219	Medical	Gastroenterology	Ascites	ascites	R18
+0703	Medical	Neurology	Delirium (acute confusion)	acute confusion delirium	F050
+070301	Medical	Neurology	Migraine	headache migraine 	G439
+070302	Medical	Neurology	Transient ischaemic attack	transient ischemic attack tia	G459
+070303	Medical	Neurology	Stroke	stroke cva cerebrovascular accident	I64
+070304	Medical	Neurology	Subarachnoid haemorrhage	subarachnoid sah	I609
+070305	Medical	Neurology	Intracerebral haemorrhage	cerebral haemorrhage	I619
+070306	Medical	Neurology	Tension headache	headache tension	G442
+070307	Medical	Neurology	Grand mal epilepsy	epilepsy	G406
+070308	Medical	Neurology	Status epilepticus	status epilepticus	G419
+070309	Medical	Neurology	Pseudoseizure	pseudo-fit pseudo seizure hysteria functional somatoform	F445
+070310	Medical	Neurology	Petit mal epilepsy	epilepsy petit-mal	G403
+070311	Medical	Neurology	Parkinson's disease	parkinson's	G20
+070312	Medical	Neurology	Alzheimer's disease	alzheimer's	G309
+070313	Medical	Neurology	Ventriculoperitoneal Shunt complication	catheter complication	T859
+070314	Medical	Neurology	Multiple sclerosis	ms multiple sclerosis	G35
+070315	Medical	Neurology	Bell's palsy	bell's palsy	G510
+070316	Medical	Neurology	Carpal tunnel syndrome	carpal tunnel	G560
+070317	Medical	Neurology	Guillain-Barré syndrome	guillan barre	G610
+070318	Medical	Neurology	Intracranial space occupying lesion	brain tumour intracranial space occupying 	R900
+070319	Medical	Neurology	Nervous system disorder (see free text)	nervous system neurology	G98
+070401	Medical	Respiratory	Asthma	asthma	J459
+070402	Medical	Respiratory	Chronic obstructive pulmonary disease	copd chronic obstructive lung disease	J449
+070403	Medical	Respiratory	Aspiration pneumonia	aspiration pneumonia	J690
+070404	Medical	Respiratory	Pleural effusion	pleural effusion	J90
+070405	Medical	Respiratory	Spontaneous Pneumothorax	spontaneous pneumothorax pneumothorax	J931
+070406	Medical	Respiratory	Pulmonary embolism	pe pulmonary embolism	I269
+070407	Medical	Respiratory	Respiratory failure	respiratory failure	J969
+070408	Medical	Respiratory	Haemoptysis	haemoptysis	R042
+070409	Medical	Respiratory	Respiratory arrest	respiratory arrest	R092
+070410	Medical	Respiratory	Cystic fibrosis	cystic fibrosis cf	E849
+070411	Medical	Respiratory	Other respiratory system disorder	airway obstruction	J988
+070501	Medical	Infectious disease - resp/skin	Upper respiratory tract infection	urti upper respiratory tract	J069
+070502	Medical	Infectious disease - resp/skin	"Hand, foot and mouth disease"	hand foot and mouth coxsackie a enterovirus	B084
+070503	Medical	Infectious disease - resp/skin	Lobar Pneumonia	lobar pneumonia	J181
+070504	Medical	Infectious disease - resp/skin	Bronchopneumonia	pneumonia	J180
+070505	Medical	Infectious disease - resp/skin	Lower Respiratory Tract Infection	lrti chest infection lower respiratory	J22
+070506	Medical	Infectious disease - resp/skin	Tuberculosis	tuberculosis	A169
+070507	Medical	Infectious disease - resp/skin	Pertussis / Whooping cough	pertussis  whooping cough	A379
+070508	Medical	Infectious disease - resp/skin	Acute Epiglottitis	epiglottitis	J051
+070509	Medical	Infectious disease - resp/skin	Bacterial Tracheitis	tracheitis	J041
+070510	Medical	Infectious disease - resp/skin	Cellulitis	cellulitis	L039
+070511	Medical	Infectious disease - resp/skin	Impetigo	impetigo	L010
+070512	Medical	Infectious disease - resp/skin	Boil / Furunculosis / Abscess	abscess furuncle	L029
+070513	Medical	Infectious disease - resp/skin	Paronychia	paronychia  cellulitis finger	L0301
+070514	Medical	Infectious disease - resp/skin	Chickenpox / Varicella	chickenpox  varicella	B019
+070515	Medical	Infectious disease - resp/skin	Herpes zoster infection (includes shingles)	herpes zoster infection includes shingles	B029
+070516	Medical	Infectious disease - resp/skin	Tinea capitis / Tinea barbae	fungal infection tinea capitis ringworm	B350
+070517	Medical	Infectious disease - resp/skin	Fungal foot infection	tinea pedis athlete's foot	B353
+070518	Medical	Infectious disease - resp/skin	Tinea versicolour	tinea versicolour pityriasis versicolour	B360
+070519	Medical	Infectious disease - resp/skin	Candidiasis	candida thrush	B373
+070520	Medical	Infectious disease - resp/skin	Ringworm / Dermatophytosis	ringworm  dermatophytosis	B359
+070521	Medical	Infectious disease - resp/skin	Molluscum contagiosum	molluscum contagiosum poxvirus	B081
+070522	Medical	Infectious disease - resp/skin	Lice infestation	pediculosis lice	B852
+070523	Medical	Infectious disease - resp/skin	Scabies	scabies	B86
+070524	Medical	Infectious disease - resp/skin	Oral herpes simplex	oral herpes simplex	B002
+070525	Medical	Infectious disease - resp/skin	Fungal infection / Fungaemia / Mycosis	fungal infection mycosis	B49
+070526	Medical	Infectious disease - resp/skin	Eczema herpeticum	eczema herpeticum	B000
+070527	Medical	Infectious disease - resp/skin	Viral exanthema		B09
+070601	Medical	Infectious disease	Infectious gastroenteritis	infectious gastroenteritis	A09
+070602	Medical	Infectious disease	Urinary tract infection	uti urinary tract infection urosepsis	N390
+070603	Medical	Infectious disease	Bacterial Meningitis	bacterial meningitis	G009
+070604	Medical	Infectious disease	Encephalitis and meningoencephalitis	encephalitis meningoencephalitis	G049
+070605	Medical	Infectious disease	Meningococcal Sepsis	meningococcal sepsis	A399
+070606	Medical	Infectious disease	Septicaemia	septicaemia	A418
+070607	Medical	Infectious disease	Septic shock	septic shock	A409
+070608	Medical	Infectious disease	Viral Meningitis	viral meningitis	A89
+070609	Medical	Infectious disease	Measles	measles	B059
+070610	Medical	Infectious disease	Influenza	influenza	J111
+070611	Medical	Infectious disease	Pyrexia of unknown origin	p.u.o pyrexia of unknown origin fever	R509
+070612	Medical	Infectious disease	Infectious Mononucleosis	infectious mononucleosis glandular fever	B279
+070613	Medical	Infectious disease	Giardia lamblia infestation	giardia intestinal parasite diarrhoea	A071
+070614	Medical	Infectious disease	Worms	worms  helminthiasis 	B839
+070615	Medical	Infectious disease	Malaria	malaria	B54
+070616	Medical	Infectious disease	Chlamydia	chlamydia	A749
+070617	Medical	Infectious disease	Gonorrhoea	gonorrhoea	A540
+070618	Medical	Infectious disease	Genital herpes	genital herpes	A609
+070619	Medical	Infectious disease	Genital warts	genital warts	A630
+070620	Medical	Infectious disease	Pelvic Inflammatory Disease	pelvic inflammatory disease	A749
+070621	Medical	Infectious disease	Trichomoniasis	trichomoniasis	A599
+070622	Medical	Infectious disease	Rubella / German measles	rubella  german measles	B069
+070623	Medical	Infectious disease	Human immunodeficiency virus infection	hiv	B24
+070624	Medical	Infectious disease	Mumps / Parotitis	parotitis orchitis parotid	B269
+070625	Medical	Infectious disease	Other infectious disease	infectious disease	B99
+070626	Medical	Infectious disease	Other parasitic disease	parasitic disease	B89
+070701	Medical	Haem/ oncology	Benign tumour	benign neoplasm benign tumour	D369
+070702	Medical	Haem/ oncology	Malignant tumour	malignant tumour	C80
+070703	Medical	Haem/ oncology	Hodgkin's disease	hodgkin's disease	C819
+070704	Medical	Haem/ oncology	Lymphoma 	lymphoma non-hodgkin's lymphoma	C859
+070705	Medical	Haem/ oncology	Multiple Myeloma	multiple myeloma	C900
+070706	Medical	Haem/ oncology	Lymphoid Leukaemia	lymphoid leukaemia	C919
+070707	Medical	Haem/ oncology	Myeloid Leukaemia	myeloid leukaemia	C929
+070708	Medical	Haem/ oncology	Leukemia	leukemia	C959
+070709	Medical	Haem/ oncology	Carcinoma	carcinoma	D099
+070710	Medical	Haem/ oncology	Haemangioma / lymphangioma	strawberry	D180
+070711	Medical	Haem/ oncology	Anaemia	anaemia	D649
+070712	Medical	Haem/ oncology	Iron deficiency anaemia	anaemia iron deficiency	D509
+070713	Medical	Haem/ oncology	Sickle cell crisis	sickle cell disease sickling sickle cell crisis	D570
+070714	Medical	Haem/ oncology	Sickle cell anaemia	sickle cell disease sickling sickle cell crisis	D570
+070715	Medical	Haem/ oncology	Thalassaemia	thalassaemia anaemia	D569
+070716	Medical	Haem/ oncology	Haemophilia	haemophilia hemophilia	D66
+070717	Medical	Haem/ oncology	Bleeding tendency / Bruising tendency / Coagulation defect	coagulation abnormality bleeding tendency	D689
+070718	Medical	Haem/ oncology	Idiopathic thrombocytopenic purpura	idiopathic thrombocytopenic purpura itp	D693
+070719	Medical	Haem/ oncology	Thrombocytopenia	thrombocytopenia platelet disorder low platelets	D696
+070720	Medical	Haem/ oncology	Neutropenia	neutropenia	D70
+070721	Medical	Haem/ oncology	Methaemoglobinaemia	methaemoglobinaemia	D749
+070722	Medical	Haem/ oncology	Other haematological disorder	blood dyscrasia haematology	D759
+070801	Medical	Endocrine/ metabolic	Type 1 Diabetes mellitus	dka diabetes	E10.9
+070802	Medical	Endocrine/ metabolic	Diabetic ketoacidosis	dka diabetes	E141
+070803	Medical	Endocrine/ metabolic	Diabetic coma	dka diabetes	E140
+070804	Medical	Endocrine/ metabolic	Type 2 Diabetes mellitus	diabetes 	E149
+070805	Medical	Endocrine/ metabolic	Hypoglycaemia without coma	hypoglycaemia	E162
+070806	Medical	Endocrine/ metabolic	Hypothyroidism / Myxoedema	hypothyroidism  myxoedema myxoedema coma	E039
+070807	Medical	Endocrine/ metabolic	Hyperthyroidism / Thyrotoxicosis	hyperthyroidism  tyrotoxicosis	E059
+070808	Medical	Endocrine/ metabolic	Addisonian crisis	addisons crisis adrenal insufficiency	E272
+070809	Medical	Endocrine/ metabolic	Endocrine disorder (see free text)	endocrine endocrinology	E349
+070810	Medical	Endocrine/ metabolic	Hyperkalaemia	potassium hyperkalaemia	E875
+070811	Medical	Endocrine/ metabolic	Hypokalaemia	potassium hypokalaemia	E876
+070812	Medical	Endocrine/ metabolic	"Fluid, electrolyte or acid-base disorder"	fluid electrolytes acid-base 	E878
+070901	Medical	Skin and Soft tissues	Atopic eczema / Dermatitis	eczema dermatitis	L209
+070902	Medical	Skin and Soft tissues	Contact dermatitis	dermatitis contact dermatitis	L258
+070903	Medical	Skin and Soft tissues	"Dermatitis, seborrhoeic"	seborrheic dermatitis	L219
+070904	Medical	Skin and Soft tissues	Erythema multiforme	erythema multiforme	L519
+070905	Medical	Skin and Soft tissues	Heat rash	heat rash	L740
+070906	Medical	Skin and Soft tissues	Pityriasis rosea	pityriasis rosea	L42
+070907	Medical	Skin and Soft tissues	Psoriasis	psoriasis	L409
+070908	Medical	Skin and Soft tissues	"Rash, drug"	urticaria drug reaction medicamentosa	L270
+070909	Medical	Skin and Soft tissues	Urticaria	uticaria	L509
+070910	Medical	Skin and Soft tissues	Bedsore / Decubitus ulcer	bedsore  decubitus ulcer pressure sore	L89
+070911	Medical	Skin and Soft tissues	Ingrowing nail of finger or toe	ingrowing toenail nail	L600
+070912	Medical	Skin and Soft tissues	Sebaceous cyst	sebaceous cyst	L721
+070913	Medical	Skin and Soft tissues	Sunburn	sunburn	L559
+071001	Medical	Rheumatology	Septic Arthritis	septic arthritis suppurative arthritis infective	M0099
+071002	Medical	Rheumatology	Rheumatoid arthritis	rheumatoid arthritis	M0699
+071003	Medical	Rheumatology	Gout	gout crystal arthropathy	M1099
+071004	Medical	Rheumatology	Osteoarthritis	oa osteoarthritis	M1999
+071005	Medical	Rheumatology	Haemarthrosis (excludes current injury)	haemarthrosis	M2509
+071006	Medical	Rheumatology	Other diffuse connective tissue disorder	other diffuse connective tissue disorder	M358
+071007	Medical	Rheumatology	Costochondritis		M94.0
+071101	Medical	Renal	Acute Renal failure	arf acute renal failure	N179
+071102	Medical	Renal	Chronic Renal failure	chronic renal failure	N189
+071103	Medical	Renal	Nephrotic syndrome	nephrotic syndrome	N049
+071104	Medical	Renal	Glomerulonephritis	glomerulonephritis	N059
+071105	Medical	Renal	Pyelonephritis	pyelonephritis	N12
+071106	Medical	Renal	Hydronephrosis	hydronephrosis	N133
+071107	Medical	Renal	Other renal system disorder (see free text)	other renal system disorder see free text	N28
+071201	Medical	Allergy	Allergy	allergy 	T784
+071202	Medical	Allergy	Anaphylactic shock	anaphylaxis	T780
+071203	Medical	Allergy	Angioneurotic oedema	angioedema angioneurotic oedema	T783
+071204	Medical	Allergy	Drug reaction	drug reaction adverse	T887
+071205	Medical	Allergy	Hayfever	hayfever	J301
+071206	Medical	Allergy	Urticaria	uticaria	L509
+071207	Medical	Allergy	Serum sickness / Reaction to vaccine	serum sickness transfusion reaction vaccine	T806
+080101	Paed/ O&G	Paediatric infections	Bacterial Tracheitis	tracheitis	J041
+080102	Paed/ O&G	Paediatric Infections	"Epiglottitis, acute"	epiglottitis	J051
+080103	Paed/ O&G	Paediatric Infections	Glue ear	otitis media effusion glue ear.	H653
+080104	Paed/ O&G	Paediatric Infections	Pertussis / Whooping cough	pertussis  whooping cough	A379
+080105	Paed/ O&G	Paediatric Infections	Scarlet fever	scarlet fever	A38
+080106	Paed/ O&G	Paediatric Infections	Meningococcal Sepsis	meningococcal sepsis	A399
+080107	Paed/ O&G	Paediatric Infections	Measles	measles	B059
+080108	Paed/ O&G	Paediatric Infections	Rubella / German measles	rubella  german measles	B069
+080109	Paed/ O&G	Paediatric Infections	Mumps / Parotitis	parotitis orchitis parotid	B269
+080110	Paed/ O&G	Paediatric Infections	Meningitis	meningitis viral non-bacterial	G039
+080201	Paed/ O&G	Paediatric respiratory	Croup	croup laryngotracheitis	J050
+080202	Paed/ O&G	Paediatric respiratory	Asthma	asthma	J450
+080203	Paed/ O&G	Paediatric respiratory	Cystic fibrosis	cystic fibrosis cf	E849
+080204	Paed/ O&G	Paediatric respiratory	URTI - viral	urti upper respiratory tract	J069
+080205	Paed/ O&G	Paediatric respiratory	Bronchiolitis	bronchioloitis	J219
+080206	Paed/ O&G	Paediatric respiratory	Viral wheeze		"B34.9,R06.2"
+080301	Paed/ O&G	Paediatric ortho/ surg	Pulled elbow	pulled elbow	S531
+080302	Paed/ O&G	Paediatric ortho/ surg	Irritable Hip	irritable hip	M2485
+080303	Paed/ O&G	Paediatric ortho/ surg	Perthes' disease	perthes' avascular necrosis femoral	M911
+080304	Paed/ O&G	Paediatric ortho/ surg	Osgood-Schlatter disease	osgood-schlatter	M925
+080305	Paed/ O&G	Paediatric ortho/ surg	Slipped Upper Femoral Epiphysis	epiphysis osteochondropathy	M939
+080306	Paed/ O&G	Paediatric ortho/ surg	Septic Arthritis	septic arthritis suppurative arthritis infective	M0099
+080307	Paed/ O&G	Paediatric ortho/ surg	Congenital dislocation of hip	congenital dislocation of hip	Q652
+080308	Paed/ O&G	Paediatric ortho/ surg	Pyloric stenosis	pyloric stenosis	Q400
+080309	Paed/ O&G	Paediatric ortho/ surg	Intussusception	intussusception	K561
+080310	Paed/ O&G	Paediatric ortho/ surg	Mesenteric lymphadenitis	mesenteric lymphadenitis	I880
+080311	Paed/ O&G	Paediatric ortho/ surg	Undescended testis / Cryptorchism	undescended testis  cryptorchism	Q539
+080401	Paed/ O&G	Paediatrics	Congenital heart disease	congenital heart disease	Q249
+080402	Paed/ O&G	Paediatrics	Jaundice in newborn	jaundice in newborn	P599
+080403	Paed/ O&G	Paediatrics	Hypoglycaemia in newborn	hypoglycaemia in newborn	P704
+080404	Paed/ O&G	Paediatrics	Henoch-Schönlein purpura	hsp henoch-schonlein purpura vasculitis	D690
+080405	Paed/ O&G	Paediatrics	"Seizure, newborn / Convulsions, newborn"	"seizure, newborn  convulsions, newborn"	P90
+080406	Paed/ O&G	Paediatrics	"Convulsions, febrile"	febrile convulsion	R560
+080407	Paed/ O&G	Paediatrics	Feeding problems in newborn	feeding newborn	P929
+080408	Paed/ O&G	Paediatrics	"Crying, persistent, infant / Irritable infant"	crying infant	R681
+080409	Paed/ O&G	Paediatrics	Sudden infant death syndrome	sudden infant death syndrome	R95
+080410	Paed/ O&G	Paediatrics	Child at risk	child at risk	Z616
+080411	Paed/ O&G	Paediatrics	Nephrotic syndrome	nephrotic syndrome	N049
+080412	Paed/ O&G	Paediatrics	Apnoeic episode/Breath-holding attacks	apnoeic episodebreath-holding attacks	R068
+080413	Paed/ O&G	Paediatrics	Nappy rash	nappy rash	L22
+080501	Paed/ O&G	Obstetrics	Pre-eclampsia	pre-eclampsia	O149
+080502	Paed/ O&G	Obstetrics	Eclampsia	eclampsia	O150
+080503	Paed/ O&G	Obstetrics	Premature rupture of membranes	premature rupture of membranes	O429
+080504	Paed/ O&G	Obstetrics	Ante-partum haemorrhage	ante-partum haemorrhage	O469
+080505	Paed/ O&G	Obstetrics	"Early, threatened, premature or preterm labour"	premature labour	O60
+080506	Paed/ O&G	Obstetrics	Post-partum haemorrhage	pph post-partum haemorrhage	O721
+080507	Paed/ O&G	Obstetrics	Post-partum infection	post-partum infection	O864
+080508	Paed/ O&G	Obstetrics	"Breast infection, post-partum."	mastitis	O912
+080509	Paed/ O&G	Obstetrics	"Single liveborn, born in Emergency Department"	birth delivery 	Z380
+080510	Paed/ O&G	Obstetrics	Other pregnancy-related condition	other pregnancy-related condition	O268
+080601	Paed/ O&G	Gynaecology - early pregnancy	Threatened Abortion	abortion threatened	O200
+080602	Paed/ O&G	Gynaecology - early pregnancy	Ectopic pregnancy	ectopic pregnancy	O009
+080603	Paed/ O&G	Gynaecology - early pregnancy	Hyperemesis gravidarum	pregnancy vomiting hyperemesis gravidarum	O210
+080604	Paed/ O&G	Gynaecology - early pregnancy	Missed abortion	missed abortion	O021
+080605	Paed/ O&G	Gynaecology - early pregnancy	Complete abortion	abortion complete spontaneous	O039
+080606	Paed/ O&G	Gynaecology - early pregnancy	Retained products of conception following abortion	retained products of conception following abortion	O044
+080607	Paed/ O&G	Gynaecology - early pregnancy	Complication following abortion	complication following abortion	O048
+080701	Paed/ O&G	Gynaecology	Infective complication contraceptive device	contraceptive device infection complication	T836
+080702	Paed/ O&G	Gynaecology	Non- infective complication contraceptive device	contraceptive device complication	T838
+080703	Paed/ O&G	Gynaecology	Contraceptive advice	contraceptive advice	Z300
+080704	Paed/ O&G	Gynaecology	Abscess of labia or vulva	labia vulval abscess bartholin	N764
+080705	Paed/ O&G	Gynaecology	Endometritis	endometritis	N719
+080706	Paed/ O&G	Gynaecology	Vaginal infection	vaginal infection	N760
+080707	Paed/ O&G	Gynaecology	Endometriosis	endometriosis	N809
+080708	Paed/ O&G	Gynaecology	Menorrhagia	heavy period bleeding	N920
+080709	Paed/ O&G	Gynaecology	Dysmenorrhoea	period pain bleeding menstruation	N946
+080710	Paed/ O&G	Gynaecology	Pelvic inflammatory disease	pid pelvic inflammatory disease	N739
+080711	Paed/ O&G	Gynaecology	Polycystic ovarian Syndrome	pcos polycystic ovary	E282
+080712	Paed/ O&G	Gynaecology	Uterine fibroid	uterine fibroid	D259
+080713	Paed/ O&G	Gynaecology	Genital prolapse	prolapse genital uterine	N819
+080714	Paed/ O&G	Gynaecology	Ovarian cyst	ovarian cyst	N832
+080715	Paed/ O&G	Gynaecology	Postcoital and contact bleeding	vaginal bleeding post-coital	N930
+080716	Paed/ O&G	Gynaecology	Postmenopausal bleeding	postmenopausal bleed menopause	N950
+080717	Paed/ O&G	Gynaecology	Uterine mass	uterine mass fibroid leiomyoma	N948
+090101	Psych/ tox/ D+A	Mental Health	Depression	depression	F329
+090102	Psych/ tox/ D+A	Mental Health	Personality disorder	antisocial dependant narcissistic psychopath PD 	F609
+090103	Psych/ tox/ D+A	Mental Health	Bipolar affective disorder	bipolar bipolar affective	F319
+090104	Psych/ tox/ D+A	Mental Health	Schizophrenia	schizophrenia	F209
+090105	Psych/ tox/ D+A	Mental Health	Anorexia nervosa	anorexia nervosa	F500
+090106	Psych/ tox/ D+A	Mental Health	Bulimia	bulimia eating disorder	F502
+090107	Psych/ tox/ D+A	Mental Health	Dementia	dementia	F03
+090108	Psych/ tox/ D+A	Mental Health	Anxiety		F41.9
+090109	Psych/ tox/ D+A	Mental Health	Panic attack		F41.0
+090110	Psych/ tox/ D+A	Mental Health	Other mental heath problem		F99
+090201	Psych/ tox/ D+A	Toxicology	Paracetamol Overdose	poisoning acetaminophen paracetamol	T391
+090202	Psych/ tox/ D+A	Toxicology	NSAID Overdose	poisoning nsaid	T393
+090203	Psych/ tox/ D+A	Toxicology	Antidepressant Overdose	poisoning antidepressant	T43
+090204	Psych/ tox/ D+A	Toxicology	Benzodiazepine Overdose	poisoning benzodiazepines sedatives	T424
+090205	Psych/ tox/ D+A	Toxicology	Opiate Overdose	poisoning opiate heroin diamorphine	T401
+090206	Psych/ tox/ D+A	Toxicology	Toxic effect of alcohol	alcohol toxicity	T519
+090207	Psych/ tox/ D+A	Toxicology	Cocaine Overdose/ poisoning	poisoning cocaine	T405
+090208	Psych/ tox/ D+A	Toxicology	Mixed Overdose (see free text)	mixed overdose see free text	T509
+090301	Psych/ tox/ D+A	Drug/ alcohol	Alcohol dependence syndrome	alcohol dependence syndrome	F10.2
+090302	Psych/ tox/ D+A	Drug/ alcohol	Dependence on opioids	dependence on opioids	F11.2
+090303	Psych/ tox/ D+A	Drug/ alcohol	Dependence on sedatives or hypnotics	dependence on sedatives or hypnotics	F13.2
+090304	Psych/ tox/ D+A	Drug/ alcohol	Illicit drug use	poisoning hallucinogen psychotropic	T409
+090305	Psych/ tox/ D+A	Drug/ alcohol	Alcohol Intoxication	alcohol intoxication	F100
+090306	Psych/ tox/ D+A	Drug/ alcohol	Alcohol Withdrawal	alcohol withdrawal delirium tremens	F103
+090307	Psych/ tox/ D+A	Drug/ alcohol	Cannabis Use	poisoning cannabis	T407
+090308	Psych/ tox/ D+A	Drug/ alcohol	Illicit drug use	poisoning hallucinogen psychotropic	T409
+100101	Environ/ social/ other	Environmental	Hypothermia	hypothermia	T68
+100102	Environ/ social/ other	Environmental	Heat stroke / Sun stroke	heat stroke	T670
+100201	Environ/ social/ other	Social	Homelessness	homelessness	Z590
+100301	Environ/ social/ other	Other	Attendance for specimen collection / Laboratory examination	laboratory specimen	Z017
+100302	Environ/ social/ other	Other	Issue of medical certificate	medical certificate	Z027
+100303	Environ/ social/ other	Other	Results only	blood results	Z029
+100304	Environ/ social/ other	Other	Blood alcohol & blood drug test	blood alcohol & blood drug test	Z040
+100305	Environ/ social/ other	Other	Attendance for follow-up	attendance for follow-up	Z099
+100306	Environ/ social/ other	Other	Died in Department	death died dead	R99
+100307	Environ/ social/ other	Other	Dead on arrival.	doa dead on arrival	R961
+100308	Environ/ social/ other	Other	No abnormality detected		Z71.1

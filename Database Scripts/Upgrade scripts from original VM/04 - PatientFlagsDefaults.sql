@@ -1,0 +1,2 @@
+ALTER TABLE `ED`.`Patients` MODIFY COLUMN `FlagsDischargeScreen` VARCHAR(4) NOT NULL DEFAULT '----',
+ MODIFY COLUMN `FlagsTreatment` CHAR(3) NOT NULL DEFAULT '---';

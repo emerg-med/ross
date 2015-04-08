@@ -1,0 +1,159 @@
+Cardiac arrest non-traumatic	CAN08_CVS_CPRN
+Cardiac arrest traumatic	CAN08_CVS_CPRT
+Chest pain - cardiac	CAN08_CVS_CPCA
+Chest pain - non-cardiac	CAN08_CVS_CPNC
+Palpitations/ irregular heart beat	CAN08_CVS_PALP
+Hypertension	CAN08_CVS_HYTN
+General weakness	CAN08_CVS_WEAK
+Syncope./ pre-syncope	CAN08_CVS_SYNC
+Oedema - generalised	CAN08_CVS_OEDG
+Unilateral leg swelling/ oedema	CAN08_CVS_LEGS
+Cool pulseless limb	CAN08_CVS_VASC
+Unilateral hot red limb	CAN08_CVS_HOTL
+Earache	CAN08_HAN_ACHE
+Foreign body ear	CAN08_HAN_FBER
+Loss of hearing	CAN08_HAN_LOSS
+Tinnitus	CAN08_HAN_TINN
+Ear discharge	CAN08_HAN_DISCH
+Ear injury	CAN08_HAN_EINJ
+Dental problem	CAN08_HAN_DENP
+Facial trauma	CAN08_HAN_FACT
+Sore throat	CAN08_HAN_SORE
+Neck swelling/ pain	CAN08_HAN_NKPN
+Neck Trauma	CAN08_HAN_NKTR
+Difficulty swallowing	CAN08_HAN_DYSF
+Facial pain	CAN08_HAN_FACP
+Nosebleed/ epistaxis	CAN08_HAN_NBLD
+Nasal congestion/ hayfever	CAN08_HAN_HAYF
+Foreign body nose	CAN08_HAN_FBNS
+URTI complaints	CAN08_HAN_URTI
+Nasal trauma	CAN08_HAN_NOST
+Frostbite	CAN08_ENV_FRST
+Noxious inhalation	CAN08_ENV_NOXI
+Electrical injury	CAN08_ENV_ELEC
+Chemical exposure	CAN08_ENV_CHEM
+Hypothermia	CAN08_ENV_HYPO
+Near drowning	CAN08_ENV_DRWN
+Abdominal pain	CAN08_GIT_ABDP
+Anorexia	CAN08_GIT_ANRX
+Constipation	CAN08_GIT_CONS
+Diarrhoea	CAN08_GIT_DIAR
+Foreign body in rectum	CAN08_GIT_FBRE
+Groin pain/ mass	CAN08_GIT_GRPN
+Vomiting and or nausea	CAN08_GIT_VANN
+Rectal/ perineal pain	CAN08_GIT_RECP
+Vomiting blood	CAN08_GIT_HMTS
+Blood in stool/ melaena	CAN08_GIT_MLNA
+Jaundice	CAN08_GIT_JAUN
+Hiccoughs	CAN08_GIT_HIKP
+Abdominal mass/ distension	CAN08_GIT_ABDM
+Anal/ rectal trauma	CAN08_GIT_ANTR
+Oral/ oesophageal foreign body	CAN08_GIT_FBOR
+Flank pain	CAN08_URO_FLPN
+Haematuria	CAN08_URO_HMTU
+Genital discharge/ lesion	CAN08_URO_GEND
+Penile swelling	CAN08_URO_PENS
+Scrotal pain and/or swelling	CAN08_URO_SCRT
+Urinary retention	CAN08_URO_URET
+UTI complaints	CAN08_URO_UTIC
+Oliguria	CAN08_URO_OLIG
+Polyuria	CAN08_URO_POLY
+Genital trauma	CAN08_URO_GENT
+Depression/ suicidal/ deliberate self harm	CAN08_MEN_DDSH
+Anxiety/ situational crisis	CAN08_MEN_ANXY
+Hallucinations/ delusions	CAN08_MEN_HALL
+Insomnia	CAN08_MEN_INSM
+Violent behaviour	CAN08_MEN_VIOL
+Paediatric disruptive behaviour	CAN08_MEN_PDSR
+Social problem	CAN08_MEN_SOCP
+Bizarre behaviour	CAN08_MEN_BIZZ
+Concern for patient's welfare	CAN08_MEN_WELF
+Altered level of consciousness	CAN08_NEU_CONS
+Confusion	CAN08_NEU_CONF
+Vertigo	CAN08_NEU_VERT
+Headache	CAN08_NEU_HAKE
+Seizure	CAN08_NEU_FITS
+Gait disturbance/ ataxia	CAN08_NEU_GAIT
+Head injury	CAN08_NEU_HINJ
+Tremor	CAN08_NEU_TREM
+Extremity weakness/ symptoms of stroke	CAN08_NEU_WEAK
+Floppy child	CAN08_NEU_FLOP
+Sensory loss/ parasthesia	CAN08_NEU_SENS
+Menstrual problems	CAN08_OBG_MENS
+Foreign body in vagina	CAN08_OBG_FBVG
+Vaginal discharge	CAN08_OBG_VDIS
+Sexual assault	CAN08_OBG_SASS
+Vaginal bleed	CAN08_OBG_VBLD
+Labial swelling	CAN08_OBG_LABS
+Vaginal pain/ itch	CAN08_OBG_VAGP
+Pregnancy problems >20 weeks	CAN08_OBG_PRGO
+Pregnancy problems <20 weeks	CAN08_OBG_PRGG
+Chemical exposure - eye 	CAN08_EYE_CHEM
+Foreign body in/on eye	CAN08_EYE_FBEY
+Visual disturbance	CAN08_EYE_VDIS
+Eye pain	CAN08_EYE_EYPN
+Red eye, discharge	CAN08_EYE_REDI
+Photophobia	CAN08_EYE_PHOT
+Diplopia (double vision)	CAN08_EYE_DIPL
+Periorbital swelling	CAN08_EYE_PERI
+Eye trauma	CAN08_EYE_EYTR
+Eye review	CAN08_EYE_IREV
+Back pain	CAN08_ORT_BKPN
+Traumatic back/ spine injury	CAN08_ORT_SPIN
+Amputation	CAN08_ORT_AMPT
+Upper limb injury	CAN08_ORT_ULIN
+Lower limb injury	CAN08_ORT_LLIN
+Upper limb pain 	CAN08_ORT_ULPN
+Lower limb pain	CAN08_ORT_LLPN
+Joint swelling	CAN08_ORT_JSWL
+Shortness of breath	CAN08_RSP_SHOB
+Apnoeic spells in infant	CAN08_RSP_APNA
+Respiratory arrest	CAN08_RSP_RARR
+Cough, congestion	CAN08_RSP_COFF
+Hyperventilation	CAN08_RSP_HYPR
+Haemoptysis	CAN08_RSP_HEMP
+Respiratory foreign body	CAN08_RSP_FBRS
+Allergic reaction	CAN08_RSP_ALLR
+Bite	CAN08_SKN_BITE
+Sting	CAN08_SKN_STNG
+Abrasion	CAN08_SKN_ABRS
+Laceration/ puncture	CAN08_SKN_LACN
+Burn	CAN08_SKN_BURN
+Blood/ body fluid exposure	CAN08_SKN_BEXP
+Pruritis (itchy skin)	CAN08_SKN_ITCH
+Rash	CAN08_SKN_RASH
+Localised swelling/ redness	CAN08_SKN_SWEL
+Wound check	CAN08_SKN_WCHK
+Other skin condition	CAN08_SKN_OTHS
+Lumps, bumps calluses	CAN08_SKN_LUMP
+Rule out infestations	CAN08_SKN_INFS
+Cyanosis	CAN08_SKN_CYAN
+Spontaneous bruising	CAN08_SKN_BRUS
+Foreign body in/on skin	CAN08_SKN_FBSK
+Substance misuse/ intoxication	CAN08_SUB_INTX
+Overdose ingestion	CAN08_SUB_ODTX
+Substance withdrawal	CAN08_SUB_WITH
+Major trauma - penetrating 	CAN08_TRA_MAJP
+Major trauma - blunt	CAN08_TRA_MAJB
+Isolated chest trauma - penetrating	CAN08_TRA_CHTP
+Isolated chest trauma - blunt	CAN08_TRA_CHTB
+Isolated abdominal trauma - penetrating	CAN08_TRA_ABTP
+Isolated abdominal trauma - blunt	CAN08_TRA_ABTB
+Exposure to communicable disease	CAN08_MIN_COMM
+Fever, unspecified	CAN08_MIN_FEVR
+Hyperglycaemia	CAN08_MIN_HYPR
+Hypoglycaemia	CAN08_MIN_HYPO
+Direct referral for admission	CAN08_MIN_ADMT
+Dressing change	CAN08_MIN_DRSS
+Removal of staples/ sutures	CAN08_MIN_REMV
+Cast check	CAN08_MIN_CAST
+Imaging tests	CAN08_MIN_IMAG
+Medical device problem	CAN08_MIN_DEVP
+Medication/ prescription request	CAN08_MIN_SCRP
+Ring removal	CAN08_MIN_RING
+Abnormal results follow-up	CAN08_MIN_TEST
+Post-op complications	CAN08_MIN_PSTP
+Congenital Problem in child	CAN08_MIN_CONG
+Inconsolable crying in infant	CAN08_MIN_CRYI
+Pallor/ anaemia	CAN08_MIN_PALE
+Minor complaints, unspecified	CAN08_MIN_MINR
